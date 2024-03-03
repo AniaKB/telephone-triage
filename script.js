@@ -245,120 +245,169 @@ const bodySystem = [
             true: 'Go to Fainting Protocol (228) “Seek medical care within 2 to 4 hours if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [ 'Keep person safely lying down until fully awake and responsive.', 'Turn person on side if vomiting.', 'Do not leave person unattended.', 'If person has diabetes and experiences a sudden change in level of consciousness, give source of sugar immediately but only if person is awake enough to eat or drink. Good sources of sugar include orange juice, flavored drink mixes (such as Kool-Aid), cola, or candy.', 'If event is alcohol- or drug-related, see also Alcohol Problems protocol and Substance Abuse, Use, or Exposure protocol (581). For future assistance, contact local resources for assistance: counseling, detoxification programs, inpatient/outpatient treatment programs, AA, or Al-Anon.'
-        ]
+        homeCareInstructions: [
+          'Keep person safely lying down until fully awake and responsive.',
+          'Turn person on side if vomiting.',
+          'Do not leave person unattended.',
+          'If person has diabetes and experiences a sudden change in level of consciousness, give source of sugar immediately but only if person is awake enough to eat or drink. Good sources of sugar include orange juice, flavored drink mixes (such as Kool-Aid), cola, or candy.',
+          'If event is alcohol- or drug-related, see also Alcohol Problems protocol and Substance Abuse, Use, or Exposure protocol (581). For future assistance, contact local resources for assistance: counseling, detoxification programs, inpatient/outpatient treatment programs, AA, or Al-Anon.'
+        ],
+        reportToPCP: '',
+        seekEmergencyCare: '',
       }
     ],
     'Confusion' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Dizziness' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Facial Problems' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Fainting' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Headache' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Headache: Causes and Character
     {istics (Appendix T)' = [
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-    nurseAlert: '',
-    assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: [],
+      homeCareInstructions: [],
+      reportToPCP: '',
+      seekEmergencyCare: ''
     }
     ],
     'Head Injury' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Insomnia' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Neurologic Symptoms' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Numbness and Tingling' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Seizure' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Seizure, Febrile' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Sinus Problems' = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
     'Speaking Difficulty = [
       {
-      keyQuestrions: '',
-      otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: []
+        keyQuestrions: '',
+        otherProtocolstoConsider: '',
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: ''
       }
     ],
   ],
