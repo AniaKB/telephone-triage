@@ -237,11 +237,16 @@ const bodySystem = [
             true: '“Call ambulance” and “Give person with diabetes and AMS immediate source of sugar” and See Home Care Instructions'
           },
           { C: 'If person arouses easily, are any of the following present?',
-            list: 'Headache, fever, or stiff and painful neck', 'Recent head injury or trauma', 'New seizure or prolonged postictal state', 'Persistent high fever', 'New onset of auditory (voices, buzzing, clicks), sensory (bug crawling), or visual hallucinations or delusions'
+            list: [ 'Headache, fever, or stiff and painful neck', 'Recent head injury or trauma', 'New seizure or prolonged postictal state', 'Persistent high fever', 'New onset of auditory (voices, buzzing, clicks), sensory (bug crawling), or visual hallucinations or delusions' ],
+            true: '“Seek emergency care now”'
+          },
+          { D: 'Is the following present?',
+            list: [ 'Brief episode of loss of consciousness' ],
+            true: 'Go to Fainting Protocol (228) “Seek medical care within 2 to 4 hours if no improvement” and Follow Home Care Instructions'
           }
-        ]
+        }
       }
-    },
+    ],
     { 'Confusion': [] },
     { 'Dizziness': [] },
     { 'Facial Problems': [] },
