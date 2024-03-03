@@ -222,7 +222,7 @@ Wound Healing and Infection
 
 const bodySystem = [
   'Neurologic & Head Problems' = [
-    { 'Altered Mental Status (AMS)':
+    'Altered Mental Status (AMS)' = [
       {
         keyQuestions: 'Name, Age, Onset, Cause If Known, Medications, Prior History',
         otherProtocolstoConsider: 'Alcohol Problems (22); Breathing Problems (101); Chest Pain (118); Confusion (142); Dehydration (173); Diabetes Problems (180); Dizziness (192); Fainting (228); Fever, Adult (241), Child (244); Headache (303); Heart Rate Problems (317); Seizure (530), Seizure Febrile (533); Substance Abuse, Use, or Exposure (581); Urination, Difficult (622).',
@@ -244,23 +244,123 @@ const bodySystem = [
             list: [ 'Brief episode of loss of consciousness' ],
             true: 'Go to Fainting Protocol (228) “Seek medical care within 2 to 4 hours if no improvement” and Follow Home Care Instructions'
           }
-        }
+        ],
+        homeCareInstructions: [ 'Keep person safely lying down until fully awake and responsive.', 'Turn person on side if vomiting.', 'Do not leave person unattended.', 'If person has diabetes and experiences a sudden change in level of consciousness, give source of sugar immediately but only if person is awake enough to eat or drink. Good sources of sugar include orange juice, flavored drink mixes (such as Kool-Aid), cola, or candy.', 'If event is alcohol- or drug-related, see also Alcohol Problems protocol and Substance Abuse, Use, or Exposure protocol (581). For future assistance, contact local resources for assistance: counseling, detoxification programs, inpatient/outpatient treatment programs, AA, or Al-Anon.'
+        ]
       }
     ],
-    { 'Confusion': [] },
-    { 'Dizziness': [] },
-    { 'Facial Problems': [] },
-    { 'Fainting': [] },
-    { 'Headache': [] },
-    { 'Headache: Causes and Characteristics (Appendix T)': [] },
-    { 'Head Injury': [] },
-    { 'Insomnia': [] },
-    { 'Neurologic Symptoms': [] },
-    { 'Numbness and Tingling': [] },
-    { 'Seizure': [] },
-    { 'Seizure, Febrile': [] },
-    { 'Sinus Problems': [] },
-    { 'Speaking Difficulty': [] }
+    'Confusion' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Dizziness' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Facial Problems' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Fainting' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Headache' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Headache: Causes and Character
+    {istics (Appendix T)' = [
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+    nurseAlert: '',
+    assessment: []
+    }
+    ],
+    'Head Injury' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Insomnia' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Neurologic Symptoms' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Numbness and Tingling' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Seizure' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Seizure, Febrile' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Sinus Problems' = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
+    'Speaking Difficulty = [
+      {
+      keyQuestrions: '',
+      otherProtocolstoConsider: '',
+      nurseAlert: '',
+      assessment: []
+      }
+    ],
   ],
   Eyes = [
     { 'Contact Lens Problems' : [] },
