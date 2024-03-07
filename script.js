@@ -723,7 +723,8 @@ const bodySystem = [
     ],
   ],
   Eyes = [
-      'Contact Lens Problems' = {
+    {
+      'Contact Lens Problems': {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
@@ -753,14 +754,163 @@ const bodySystem = [
       homeCareInstructions: [],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
-    }
-   ],
-    [ 'Eye Injury' : [] ],
-    [ 'Eye Problems' : [] ],
-    [ 'Foreign Body, Eye' : [] ],
-    [ 'Pinkeye' : [] ],
-    [ 'Vision Problems' : [] ]
-  ],
+      },
+      'Eye Injury': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+        },
+      'Eye Problems': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+        },
+      'Foreign Body, Eye': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+        },
+      'Pinkeye': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+        },
+      'Vision Problems': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+        },
+      },
   Ears = [
     { 'Earache, Drainage': [] },
     { 'Ear Injury, Foreign Body': [] },
