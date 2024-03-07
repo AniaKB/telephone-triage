@@ -252,8 +252,9 @@ const bodySystem = [
           'If person has diabetes and experiences a sudden change in level of consciousness, give source of sugar immediately but only if person is awake enough to eat or drink. Good sources of sugar include orange juice, flavored drink mixes (such as Kool-Aid), cola, or candy.',
           'If event is alcohol- or drug-related, see also Alcohol Problems protocol and Substance Abuse, Use, or Exposure protocol (581). For future assistance, contact local resources for assistance: counseling, detoxification programs, inpatient/outpatient treatment programs, AA, or Al-Anon.'
         ],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: 'No improvement or condition worsens',
+        seekEmergencyCare: [ 'Loss of consciousness > 1 time during the day', 'Difficulty breathing', 'AMS and any of the following:', 'severe headache', 'chest pain/discomfort', 'rapid heartbeat', 'severe abdominal pain', 'pain worsens upon sitting or standing', 'child with fever and rigid or flaccid body', 'persistent AMS', 'drowsiness and difficulty in arousing', 'headache, fever, or stiff and painful neck' ],
+        footnote: 'If the caller agrees with the advice given, document the call, and encourage the caller to call back or see PCP if the problem worsens. If the caller does not agree with the advice given, reevaluate and advise the caller to follow up with PCP, Clinic, or ED.'
       }
     ],
     'Confusion' = [
@@ -264,7 +265,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Dizziness' = [
@@ -275,7 +277,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Facial Problems' = [
@@ -286,7 +289,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Fainting' = [
@@ -297,7 +301,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Headache' = [
@@ -308,19 +313,21 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
-    'Headache: Causes and Character
-    {istics (Appendix T)' = [
+    'Headache: Causes and Characteristics (Appendix T)' = [
+      {
         keyQuestrions: '',
         otherProtocolstoConsider: '',
-      nurseAlert: '',
-      assessment: [],
-      homeCareInstructions: [],
-      reportToPCP: '',
-      seekEmergencyCare: ''
-    }
+        nurseAlert: '',
+        assessment: [],
+        homeCareInstructions: [],
+        reportToPCP: '',
+        seekEmergencyCare: '',
+        footnote: ''
+      }
     ],
     'Head Injury' = [
       {
@@ -330,7 +337,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Insomnia' = [
@@ -341,7 +349,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Neurologic Symptoms' = [
@@ -352,7 +361,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Numbness and Tingling' = [
@@ -363,7 +373,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Seizure' = [
@@ -374,7 +385,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Seizure, Febrile' = [
@@ -385,7 +397,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
     'Sinus Problems' = [
@@ -396,10 +409,11 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
-    'Speaking Difficulty = [
+    'Speaking Difficulty' = [
       {
         keyQuestrions: '',
         otherProtocolstoConsider: '',
@@ -407,7 +421,8 @@ const bodySystem = [
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
-        seekEmergencyCare: ''
+        seekEmergencyCare: '',
+        footnote: ''
       }
     ],
   ],
