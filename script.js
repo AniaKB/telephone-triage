@@ -224,12 +224,13 @@ const bodySystem = [
   'Neurologic & Head Problems' = [
     'Altered Mental Status (AMS)' = [
       {
-        keyQuestions: 'Name, Age, Onset, Cause If Known, Medications, Prior History',
-        otherProtocolstoConsider: 'Alcohol Problems (22); Breathing Problems (101); Chest Pain (118); Confusion (142); Dehydration (173); Diabetes Problems (180); Dizziness (192); Fainting (228); Fever, Adult (241), Child (244); Headache (303); Heart Rate Problems (317); Seizure (530), Seizure Febrile (533); Substance Abuse, Use, or Exposure (581); Urination, Difficult (622).',
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause If Known', 'Medications', 'Prior History' ],
+        otherProtocolstoConsider: [ 'Alcohol Problems', 'Breathing Problems (101)', 'Chest Pain (118)', 'Confusion (142)', 'Dehydration (173)', 'Diabetes Problems (180)', 'Dizziness (192)', 'Fainting (228)', 'Fever, Adult (241)', 'Child (244)', 'Headache (303)', 'Heart Rate Problems (317)', 'Seizure (530)', 'Seizure Febrile (533)', 'Substance Abuse, Use, or Exposure (581)', 'Urination, Difficult' ],
         nurseAlert: 'Signs of altered mental status may include: confusion; irritability; less responsive to voice or touch; drowsiness; combative; uncooperative; nonsensical verbalizing; sudden change in behavior, thinking process, or ability to communicate; auditory (voices, buzzing, clicks), sensory (bug crawling), or visual hallucinations. • AMS may be one of the first indicators of a UTI, dehydration, or a stroke in the elderly. • In a child, AMS may be one of the first indicators of rapidly progressing meningitis or a head injury after trauma.',
+        alertBullets: '',
         assessment: [
           { A: 'Is the following present?',
-            list: ['Unconsciousness, not breathing'],
+            list: ['Unconsciousness', 'not breathing'],
             true: 'Call ambulance and begin CPR'
           },
           { B: 'Are any of the following present?',
@@ -252,28 +253,51 @@ const bodySystem = [
           'If person has diabetes and experiences a sudden change in level of consciousness, give source of sugar immediately but only if person is awake enough to eat or drink. Good sources of sugar include orange juice, flavored drink mixes (such as Kool-Aid), cola, or candy.',
           'If event is alcohol- or drug-related, see also Alcohol Problems protocol and Substance Abuse, Use, or Exposure protocol (581). For future assistance, contact local resources for assistance: counseling, detoxification programs, inpatient/outpatient treatment programs, AA, or Al-Anon.'
         ],
-        reportToPCP: 'No improvement or condition worsens',
+        reportToPCP: [ 'No improvement or condition worsens' ],
         seekEmergencyCare: [ 'Loss of consciousness > 1 time during the day', 'Difficulty breathing', 'AMS and any of the following:', 'severe headache', 'chest pain/discomfort', 'rapid heartbeat', 'severe abdominal pain', 'pain worsens upon sitting or standing', 'child with fever and rigid or flaccid body', 'persistent AMS', 'drowsiness and difficulty in arousing', 'headache, fever, or stiff and painful neck' ],
         footnote: 'If the caller agrees with the advice given, document the call, and encourage the caller to call back or see PCP if the problem worsens. If the caller does not agree with the advice given, reevaluate and advise the caller to follow up with PCP, Clinic, or ED.'
       }
     ],
     'Confusion' = [
       {
-        keyQuestrions: '',
-        otherProtocolstoConsider: '',
-        nurseAlert: '',
-        assessment: [],
-        homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
-        footnote: ''
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Alcohol Problems (22)', 'Altered Mental Status (29)', 'Fever, Adult (241), Child (244)', 'Headache (303)', 'Seizure (530)', 'Seizure, Febrile (533)', 'Substance Abuse, Use or Exposure (581)' ],
+        nurseAlert: 'Signs of confusion may include irritability, less responsive to voice or touch, drowsiness, combative, uncooperative, nonsensical verbalizing, sudden change in behavior, thinking process, or ability to communicate, auditory (voices, buzzing, clicks), sensory (bug crawling), or visual hallucinations.',
+        alertBullets: [ 'In the elderly, confusion may be one of the first indicators of a UTI, dehydration, or a stroke.', 'In a child, confusion may be one of the first indicators of rapidly progressing meningitis or a head injury after trauma.' ],
+        assessment: [
+          {
+            A: 'Are any of the following present?',
+            list: [ 'History of recent head trauma', 'Exposure to chemicals or drug ingestion', 'Diabetes', 'History of stroke, high blood pressure, or cardiac disease', 'Disorientation to name, date, place, or situation', 'Fruity breath', 'Flushing or dry skin', 'Severe vomiting', 'Temperature > 102°F (38.9°C)', 'Stiff neck, severe headache, rigidity', 'Sudden weakness on one side of body', 'Facial drooping on one side with smile', 'Difficulty speaking', 'Sudden change in vision', 'Pale, diaphoretic, and light-headed or weak', 'Ill child and sudden change in behavior; combative, uncooperative, nonsensical verbalizing' ],
+            true: 'Call ambulance or Seek emergency care now'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [  'New onset of hallucinations or paranoia', 'History of drug or alcohol abuse', 'Temperature > 101°F (38.3°C) in a child, the elderly,or immunosuppressed', 'Seizure disorder' ],
+            true: 'Seek medical care within 2 hours'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ 'Currently taking medications known to cause confusion', 'Recently taking a new medication', 'Temperature > 101°F (38.3°C)', 'History of dementia or chronic brain syndrome and change in mental status', 'Recent abrupt cessation of drugs (OTC or prescription), alcohol, or caffeine' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: 'Are any of the following present?',
+            list: [ 'History of dementia or chronic brain syndrome and no change in status' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+          },
+        ],
+        homeCareInstructions: [ 'If taking medications that can cause delirium (antihistamines, belladonna, alkaloids), discontinue use and call back or call PCP if no improvement within 1 hour.', 'Keep person comfortable in a well-lighted room in familiar surroundings and with someone in attendance.', 'Give usual medication for fever (such as acetaminophen). Give cool baths to reduce fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+        reportToPCP: [ 'Persistent confusion > 1 hour', 'Persistent confusion after fever is controlled', 'Other symptoms are present after delirium clears' ],
+        seekEmergencyCare: ['Severe headache or stiff neck or rigidity', 'Sudden weakness on one side of body', 'Difficulty speaking', 'Pale, diaphoretic, and light-headed or weak', 'Hallucination, paranoia, or suicidal threat or attempt', 'Ill child and sudden change in behavior', 'Severe vomiting', 'Fruity breath', 'Flushing or dry skin' ],
+        footnote: 'If the caller agrees with the advice given, document the call, and encourage the caller to call back or see PCP if the problem worsens. If the caller does not agree with the advice given, reevaluate and advise the caller to follow up with PCP, Clinic, or ED.'
       }
     ],
     'Dizziness' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -283,9 +307,10 @@ const bodySystem = [
     ],
     'Facial Problems' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -295,9 +320,10 @@ const bodySystem = [
     ],
     'Fainting' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -307,9 +333,10 @@ const bodySystem = [
     ],
     'Headache' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -319,9 +346,10 @@ const bodySystem = [
     ],
     'Headache: Causes and Characteristics (Appendix T)' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -331,9 +359,10 @@ const bodySystem = [
     ],
     'Head Injury' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -343,9 +372,10 @@ const bodySystem = [
     ],
     'Insomnia' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -355,9 +385,10 @@ const bodySystem = [
     ],
     'Neurologic Symptoms' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -367,9 +398,10 @@ const bodySystem = [
     ],
     'Numbness and Tingling' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -379,9 +411,10 @@ const bodySystem = [
     ],
     'Seizure' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -391,9 +424,10 @@ const bodySystem = [
     ],
     'Seizure, Febrile' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -403,9 +437,10 @@ const bodySystem = [
     ],
     'Sinus Problems' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
@@ -415,9 +450,10 @@ const bodySystem = [
     ],
     'Speaking Difficulty' = [
       {
-        keyQuestrions: '',
+        keyQuestions: '',
         otherProtocolstoConsider: '',
         nurseAlert: '',
+        alertBullets: '',
         assessment: [],
         homeCareInstructions: [],
         reportToPCP: '',
