@@ -294,14 +294,40 @@ const bodySystem = [
     ],
     'Dizziness' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
-        nurseAlert: '',
-        alertBullets: '',
-        assessment: [],
-        homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'History', 'Medications' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Chest Pain (118)', 'Confusion (142)', 'Dehydration (173)', 'Earache and Drainage (200)', 'Fainting (228)', 'Falls (231)', 'Headache (303)', 'Heart Rate Problems (317)', 'Heat-Exposure Problems (320)', 'Hypertension (347)', 'Hyperventilation (350)', 'Neurologic Symptoms (420)', 'Rectal Bleeding (510)', 'Substance Abuse, Use, and Exposure (581)', 'Weakness (645)' ],
+        nurseAlert: 'Dizziness can be a minor symptom caused by inadequate fluid or food intake, heat or sun exposure, or standing up too quickly. It may also be an indication of a serious condition related to an infectious process, cardiovascular, respiratory, gastrointestinal, or neurologic disorder. Dizziness may be described as light-headedness, feeling faint, fuzzy, woozy, or a sensation of motion by the person or the environment such as spinning or whirling.',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: 'Is chest pain present?',
+            list: [ '' ],
+            true: 'Go to Chest Pain protocol (118)'
+          },
+          {
+            B: 'In addition to the dizziness, are any of the following present?',
+            list: [ 'Sudden onset of weakness or numbness in the face, arms, or legs on one side of the body', 'Difficulty speaking or walking, confusion, facial droop', 'Fainting spells or loss of consciousness', 'Heart rate < 50 or > 130 bpm or irregular heart rhythm', 'Persistent severe headache or change in vision', 'Fever, pale skin, and weakness' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ 'History of recent trauma or blow to the head < 48 hours ago', 'Recent history of severe vomiting, diarrhea, or bleeding and dizziness and pulse increase when sitting or standing', 'History of diabetes ' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            D: 'Are any of the following present?',
+            list: [ 'Earache, ringing in the ears, or loss of hearing', 'Fever unresponsive to fever-reducing measures', 'Persistent light-headedness > 3 days', 'Recent abrupt cessation of drugs (OTC or prescription), alcohol, or caffeine' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            E: 'Are any of the following present?',
+            list: [ 'Dizziness interferes with activities', 'History of dieting, and dizziness does not improve after eating', 'Dizziness occurs after taking a new medication', 'Increase in stress', 'Dizziness occurs during or after drinking alcohol', 'Dizziness occurs when moving the head' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [ 'During the dizzy spell, reach out and touch something, then lie flat or sit with head down on your lap and take deep breaths for a few minutes.', 'If dizziness is accompanied by anxiety, rapid breathing, and numbness in the face or fingers, breathe into a paper bag for 5 to 10 minutes, making sure the mouth and nose are covered by the bag.', 'Sit up or stand up slowly. Avoid sudden changes in posture.', 'If diagnosed with labyrinthitis, consider having someone else provide transportation. Dizziness can take up to 4 weeks to resolve after starting treatment.', 'In the case of persistent dizziness, avoid noisy environments.', 'Limit intake of caffeinated beverages and alcohol.', 'If dehydrated, drink plenty of water or sports drinks.', 'Use a night light.', 'Consider OTC motion sickness medications (Benadryl, Bonine) if dizziness is related to motion, and follow the instructions on the label.', 'If dizziness caused by Ménière disease, reinforce the importance of restricting salt intake.', 'When feeling a “dizzy attack” coming on, stop moving for a few minutes. Reach out and lightly touch something solid and firm, then sit down and stay still.' ],
+        reportToPCP: [ 'Problem persists > 1 week or worsens', 'Persistent vomiting and dizziness' ],
+        seekEmergencyCare: [ 'Chest pain', 'Decrease in level of consciousness', 'Weakness or difficulty speaking', 'Heart rate < 50 or > 130 bpm or irregular heart rhythm' ],
         footnote: ''
       }
     ],
@@ -311,10 +337,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -324,10 +371,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -337,10 +405,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -350,10 +439,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -363,10 +473,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -376,10 +507,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -389,10 +541,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -402,10 +575,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -415,10 +609,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -428,10 +643,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -441,10 +677,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
@@ -454,10 +711,31 @@ const bodySystem = [
         otherProtocolstoConsider: '',
         nurseAlert: '',
         alertBullets: '',
-        assessment: [],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: ''
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: ''
+          }
+        ],
         homeCareInstructions: [],
-        reportToPCP: '',
-        seekEmergencyCare: '',
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ],
         footnote: ''
       }
     ],
