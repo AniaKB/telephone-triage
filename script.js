@@ -619,35 +619,40 @@ const bodySystem = [
     ],
     'Seizure, Febrile' = [
       {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'History of Seizures', 'Temperature (if known)', 'Does Child Feel Hot', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Altered Mental Status (29)', ' Confusion (142)', ' Fever, Adult (241), Child (244)', ' Head Injury (307)' ],
         nurseAlert: '',
         alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Multiple seizures', 'Difficulty breathing or breathing stopped > 60 seconds', 'Seizure lasts > 5 minutes' ],
+            true: 'Call ambulance and Begin rescue breathing if child is not breathing'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ ' First-time seizure', 'Child younger than 6 months or older than 5 years of age', 'Severe headache, stiff or painful neck' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            C: 'Is the following present?',
+            list: [ 'Persistent temperature > 102°F (38.9°C) that is unresponsive to fever-reducing measures' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Alert and oriented after seizure', 'Child wants to sleep after seizure but can be aroused without irritability' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [
+          'Protect the Airway' = [ 'Lay the victim on side or stomach with the head turned toward the side to prevent choking on secretions or vomit.', 'If there is any noisy breathing, pull the jaw and chin forward. Do not put your fingers, medication, or any other object in the seizing person’s mouth.', 'Loosen clothing.' ],
+          'Protect From Injury' = [ 'Move the seizing person to a safe area away from objects that could cause injury.', 'Protect the head from hitting a hard surface.', 'Do not try to hold the person and restrict movement. Allow the seizure to run its course.' ],
+          'Postictal Phase' = [ 'Expect drowsiness. Allow rest in a cool room. Lightly dress the victim in undergarments.', 'Do not give anything by mouth until fully awake.' ],
+          'Reduce High Fever After the Seizure' = [ 'Remove clothing and sponge with cool water. Stop the bath if shivering occurs.', 'Apply cold compresses to the forehead, face, neck, and underarms.', 'Give acetaminophen for fever and follow instructions on the label. Use acetaminophen suppositories if drowsiness persists. Give every 4 hours if fever persists, even during the night, until fever < 100°F (37.8°C). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Do not bathe with alcohol rubs.' ],
+        ],
+        reportToPCP: [ 'Repeated seizure activity', 'No improvement or condition worsens', 'Fever unresponsive to fever-reducing measures' ],
+        seekEmergencyCare: [ 'Difficulty breathing or breathing stops > 60 seconds', 'Seizure lasts > 5 minutes', 'Face, lips, or nails turn blue', 'Injury occurs during seizure', 'Persistent confusion', 'Severe headache, stiff or painful neck' ]
       }
     ],
     'Sinus Problems' = [
