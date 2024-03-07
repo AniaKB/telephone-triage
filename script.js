@@ -505,35 +505,35 @@ const bodySystem = [
     ],
     'Neurologic Symptoms' = [
       {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Back/Neck Injury (56)', 'Confusion (142)', 'Dizziness (192)', 'Falls (231)', 'Headache (303)', 'Head Injury (307)', 'Numbness and Tingling (433)', 'Vision Problems (635)', 'Weakness (645)' ],
         nurseAlert: '',
-        alertBullets: [ '' ],
+        alertBullets: [ 'Sudden changes in vision, weakness, numbness, speech, or mental status may be signs of a stroke or other serious neurologic disorder. Prompt treatment may prevent extensive damage to the brain or spinal cord and reduce permanent disability. Medications used to break up a clot in the brain need to be administered within 3 hours of symptom onset.', 'Ask how current condition is different from normal.' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Did any of the following symptoms suddenly occur?',
+            list: [ 'Numbness or weakness in face, arm, or leg on one side of the body', 'Unexplained dizziness or falls', 'Difficulty breathing', 'Altered mental status', 'Inability to stand, walk, or bear weight', 'Difficulty speaking', 'Facial drooping on one side', 'Difficulty swallowing', 'Unable to move a limb', 'Visual changes', 'Sudden, severe headache', 'Recent history of head trauma and elevated blood pressure' ],
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'Transient focal neurologic deficits that completely resolve within hours', 'New and sudden onset of bladder or bowel incontinence', 'New onset of back pain and numbness to groin or rectal area', 'Unable to urinate and bladder full', 'Headache worse than prior headaches', 'Low blood glucose and weakness, confusion, dizziness, headache, tremors, or vision problems, and unresponsive to usual home remedies' ],
+            true: 'Seek medical care immediately'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Is the following present?',
+            list: [ 'Tremors and history of heavy alcohol use' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Poor attention span', 'Transient tingling in hands or feet', 'New onset of tremors and no history of diabetes, alcohol abuse, Parkinson disease, or seizures' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Provide reassurance that foot or hand tingling after prolonged sitting or pressure to the area will resolve with movement and stretching.', 'Avoid crossing legs at the knees or ankles.', 'Avoid smoking.', 'Take medications as prescribed.', 'Avoid driving or operating machinery when experiencing transient symptoms.', 'Take fall precautions. Remove safety hazards. Place bell or other communication device within reach of person to summon help before trying to get up.' ],
+        reportToPCP: [ 'Weakness or numbness in the face, arms, or legs', 'Difficulty understanding', 'Persistent vision changes', 'Persistent dizziness', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ 'Weakness on one side of the body', 'Unexplained dizziness or falls', 'Difficulty breathing', 'Altered mental status', 'Inability to stand, walk, or bear weight', 'Difficulty speaking or swallowing', 'Facial drooping on one side', 'Unable to move a limb', 'Severe headache', 'Visual changes' ]
       }
     ],
     'Numbness and Tingling' = [
