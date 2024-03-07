@@ -581,35 +581,40 @@ const bodySystem = [
     ],
     'Seizure' = [
       {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'History of Seizures', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ ' Alcohol Problems (22)', 'Altered Mental Status (29)', 'Confusion (142)', 'Fever, Adult (241), Child (244)', 'Head Injury (307)', 'Seizure, Febrile (533)' ],
         nurseAlert: '',
         alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Multiple seizures', 'Difficulty breathing', 'Seizure lasts > 5 minutes', 'Severe headache', 'Persistent unusual lethargy', 'History of recent head injury', 'History of recent drug ingestion', 'First-time seizure', 'Pregnancy' ],
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'Injury during seizure', 'History of habitual heavy alcohol or drug use and recently quit drinking or taking drugs', 'High fever', 'Frequent seizures while on seizure medication' ],
+            true: 'Seek medical care within 2 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' Stopped taking seizure medication', 'History of diabetes, cerebrovascular accident, cancer, or cardiovascular or neuromuscular disease' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: ' Is the following present?',
+            list: [ 'History of seizures and alert and oriented after waking up from the seizure' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [
+          'Protect the Airway' = [ 'Lay the victim on side or stomach with the head turned toward the side to prevent choking on secretions or vomit.', 'If there is noisy breathing, pull the jaw and chin forward. Do not put your fingers, medication, or any other object in the seizing person\'s mouth.', 'Loosen tie or other restrictive clothing.' ],
+          'Protect From Injury' = [ 'Move the seizing person to a safe area away from objects that could cause injury.', 'Protect the head from hitting a hard surface.', 'Do not try to hold the person and restrict movement. Allow the seizure to run its course.' ],
+          'Postictal Phase' = [ 'Expect the person to sleep approximately 30 minutes after the seizure and slowly awaken.', 'Do not allow person to drive after a seizure.', 'Do not give anything by mouth until fully awake.' ],
+          'Reduce High Fever After the Seizure' = [ 'Remove clothing and sponge with cool water.', 'Apply cool compresses to the forehead, face, and neck.', 'Give acetaminophen for fever. Use acetaminophen suppositories if person is still groggy. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ]
+        ],
+        reportToPCP: [ 'Repeated seizure activity', 'No improvement or condition worsens', 'Fever unresponsive to fever-reducing measures after a seizure' ],
+        seekEmergencyCare: [ 'Difficulty breathing', 'Severe headache, stiff or painful neck', 'Persistent confusion' ]
       }
     ],
     'Seizure, Febrile' = [
