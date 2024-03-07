@@ -538,35 +538,45 @@ const bodySystem = [
     ],
     'Numbness and Tingling' = [
       {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Location', 'Associated Symptoms', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Arm or Hand Problems (46)', 'Back/Neck Injury (56)', 'Back Pain (59)', 'Chest Pain (118)', 'Headache (303)', 'Head Injury (307)', 'Hyperventilation (350)', 'Neurologic Symptoms (420)', 'Weakness (645)' ],
         nurseAlert: '',
-        alertBullets: [ '' ],
+        alertBullets: [ 'Sudden changes in vision, weakness, numbness, speech, or mental status may be signs of a stroke or other serious neurologic disorder. Prompt treatment may prevent extensive damage to the brain or spinal cord and reduce permanent disability. Medications used to break up a clot in the brain need to be administered within 3 hours of symptom onset.', 'Ask how current condition is different from normal.' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Confusion', 'Change in mental status' ],
+            true: 'Go to Altered Mental Status protocol (29)'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Is the following present?',
+            list: [ 'Severe headache' ],
+            true: 'Go to Headache protocol (303)'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ 'One side of the body affected', 'Sudden weakness in arms and/or legs', 'Difficulty speaking, slurred speech', 'Blurred vision', 'Loss of bladder or bowel control', 'Fingers or toes are cold or blue compared with other fingers or toes', 'Headache prior to onset of symptoms', 'Chest pain' ],
+            true: 'Call ambulance or Seek emergency care now'
+          },
+          {
+            D: 'Are any of the following present?',
+            list: [ ' History of recent heavy lifting or strenuous exercise', 'Area painful, swollen, and/or warm', 'Severe pain' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Numbness, tingling, and/or a sharp pain in the hand or arm at night', 'History of recent illness or surgery', 'Gradual onset', 'Stiff or painful neck and no known injury', 'Diagnosed carpal tunnel and worsening symptoms', 'Pregnant' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            F: 'Are any of the following present?',
+            list: [ 'Symptoms followed prolonged sitting or lying in one position', 'Rapid breathing, dizziness, and hands, face, or lips affected' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Avoid sitting in one position for long periods of time.', 'Periodically tighten and release muscles in affected area to stimulate circulation.', 'Protect numb area from injury.', 'To slow rapid breathing and control numbness and tingling, see next page.', 'Avoid repetitive motions; take breaks and do stretching exercises.', 'Apply heat or cold to stiff neck.', 'Sit down and focus on slowing breathing, one breath every 5 seconds.', 'Cover mouth and nose with a paper bag and breathe in and out 10 times.', 'If no improvement, continue breathing in the bag for 5 to 15 minutes.', 'Breathe without the bag for a few minutes.', 'Repeat breathing with and without the bag until condition improves.' ],
+        reportToPCP: [ 'No improvement in 20 to 30 minutes or condition worsens', 'Symptoms interfere with daily activities' ],
+        seekEmergencyCare: [ 'Change in mental status', 'Sudden weakness on one side of body', 'Difficulty speaking or slurred speech', 'Loss of bowel or bladder control', 'Chest pain', 'Vision changes', 'Fingers or toes are blue' ]
       }
     ],
     'Seizure' = [
