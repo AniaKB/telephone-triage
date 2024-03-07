@@ -478,34 +478,29 @@ const bodySystem = [
     'Insomnia' = [
       {
         keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ '' ],
+        otherProtocolstoConsider: [ ' Alcohol Problems (22)', 'Anxiety (37)', 'Depression (177)', 'Heartburn (313)', 'Substance Abuse, Use, or Exposure (581)', 'Suicide Attempt, Threat (584).' ],
         nurseAlert: '',
         alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: ' Is the following present?',
+            list: [ 'Suicidal ideation' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Persistent pain, itching, coughing, or fever that interferes with sleep and is unresponsive to home care measures', 'Persistent depression, anxiety, or stress' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            C: 'Are any of the following present?',
+            list: [ ' Persistent difficulty sleeping > 7 days', 'Consistently unable to sleep > 2-3 hours', 'Requesting medication for sleep', 'Urinary or bowel problems that frequently interrupt sleep', 'Problem interferes with work, school, or other daily activity', 'Ingestion of caffeine products', 'Intermittent episodes lasting 3–5 days', 'Recent withdrawal from drugs or alcohol', 'Prescribed sleep medication ineffective', 'Taking a new medication', 'Ingestion of OTC products', 'Feeling overwhelmed' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Increase daily exercise. Avoid strenuous exercise 2 to 3 hours before bedtime. Do gentle stretching exercises for 10 minutes before retiring.', 'Read non-work-related materials or listen to soothing music at bedtime.', 'Avoid caffeine and other stimulants 11 hours before bedtime.', 'Take a warm bath or shower 2 hours before retiring.', 'Drink warm milk before bed.', 'Drink 8 ounces of orange juice before bedtime if alcoholic beverages have been consumed earlier; this helps to speed the breakdown of alcohol and reduces reawakening after a few hours of sleep.', 'Try relaxation techniques, such as deep breathing exercises or visualizing flower-filled meadows.', 'Identify stress factors and try to reduce them. If awakening prompts worry about things to be done, devise a plan of action, list the items, and try to go back to sleep.', 'Avoid eating 3 hours before bedtime. Sip 1 tbsp of apple cider vinegar diluted with water or juice 30 minutes after dinner to help speed gastric flow through the stomach and reduce gastric reflux.', 'If difficulty sleeping is due to gastric reflux, sleep lying on the left side as tolerated to help speed stomach emptying and prevent reflux into the esophagus.', 'If stress, anxiety, or depression interferes with sleep, seek help from a local counseling center or mental health services.', 'Consider taking Benadryl or melatonin on a short-term basis. Follow the instructions on the label.', 'If taking supplements, choose energizing supplements like B-complex vitamins in the morning and soothing minerals such as calcium and magnesium at night.', 'Plug in a red, blue, or green nightlight to avoid turning on bright lights to use the restroom at night.', 'Keep the bedroom dark, cool, and quiet. Use a fan or other appliance to block noise.', 'Wear loose-fitting nightclothes.', 'Call back immediately if feeling overwhelmed.' ],
+        reportToPCP: [ 'No improvement with home care measures or problem worsens', 'Problem interferes with work, school, or other daily activity', 'Feeling overwhelmed' ],
+        seekEmergencyCare: [ 'Suicidal ideation' ]
       }
     ],
     'Neurologic Symptoms' = [
