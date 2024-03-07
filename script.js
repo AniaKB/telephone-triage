@@ -333,64 +333,74 @@ const bodySystem = [
     ],
     'Facial Problems' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Congestion (145)',  'Facial Skin Problems (225)',  'Mouth Problems (410)',  'Numbness and Tingling (433)',  'Piercing Problems (446)',  'Rash, Adult (501), Child (505)',  'Sinus Problems (556)',  'Shingles: Suspected or Exposure (545)',  'Skin Lesions: Lumps, Bumps, and Sores (559)',  'Tattoo Problems (602)',  'Toothache (611).' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: ''
+            A: 'Are any of the following present?',
+            list: [ ' Sudden loss of vision', 'Severe pain on one side of face, over eye, blurred vision, and red eye', 'Adult with shoulder, chest, neck, or arm pain', 'History of glaucoma', 'Sudden onset of facial drooping on one side' ],
+            true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: ''
+            B: 'Are any of the following present?',
+            list: [ 'Sudden severe pain interferes with activity', 'Facial paralysis', 'Pain, swelling, redness, warmth, drainage, or fever' ],
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: ''
+            C: 'Are any of the following present?',
+            list: [ 'Increased pain in afternoon or when bending over', 'Green, brown, or yellow nasal discharge', 'Pain along ridge between nose and lower eyelid', 'Temperature > 101°F (38.3°C)', 'Persistent swelling', 'Facial rash, blisters, or lesions' ],
+            true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: ''
+            D: 'Are any of the following present?',
+            list: [ ' Recent red, blistered facial rash', 'Pain, swelling, or bruising after blow to the face', 'History of recent cold', 'Pain follows ingestion of ice-cold foods or fluids', 'Nose and eye drainage' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ],
+        homeCareInstructions: [ 'Alternate cold and warm compresses to forehead and cheeks 1 minute each for 10 minutes, 4 times a day. A sock filled with rice and heated in the microwave works well.', 'Increase fluid intake.', 'Apply ice pack to face injury for 10 to 20 minutes, 4 times a day for first 24 hours to help reduce swelling.', 'Sit in a steamy bathroom for 20 minutes several times a day to promote sinus drainage.', 'Take OTC decongestants as needed for congestion and follow instructions on the label. Ask your pharmacist for product suggestions.', 'Take usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort and fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label. ' ],
+        reportToPCP: [ 'Persistent pain or condition worsens', 'Temperature > 101°F (38.3°C)', 'Signs of infection: pain, swelling, redness, warmth, drainage, or red streaks', 'Persistent nasal discharge', 'Change in vision, hearing, smell, or taste' ],
+        seekEmergencyCare: [ 'Sudden loss of vision', 'Severe pain on one side of face, over eye, blurred vision, and red eye', 'Adult with shoulder, chest, neck, or arm pain', 'Sudden facial drooping on one side of the face' ],
         footnote: ''
       }
     ],
     'Fainting' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Additional Injuries', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Alcohol Problems (22)', 'Confusion (142)', 'Diabetes Problems (180)', 'Dizziness (192)', 'Heart Rate Problems (317)', 'Heat-Exposure Problems (320)', 'Pregnancy Problems (481)', 'Weakness (645)' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
+            A: 'Is the person still unconscious or has slow, irregular, or noisy breathing?',
             list: [ '' ],
-            true: ''
+            true: 'Call ambulance'
           },
           {
-            B: '',
+            B: 'Is chest, jaw, neck, shoulder, or arm pain present?',
             list: [ '' ],
-            true: ''
+            true: 'Go to Chest Pain protocol (118)'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            D: '',
+            D: 'Is chest, jaw, neck, shoulder, or arm pain present?',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            E: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            F: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -401,30 +411,30 @@ const bodySystem = [
     ],
     'Headache' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -435,30 +445,30 @@ const bodySystem = [
     ],
     'Headache: Causes and Characteristics (Appendix T)' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -469,30 +479,30 @@ const bodySystem = [
     ],
     'Head Injury' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -503,30 +513,30 @@ const bodySystem = [
     ],
     'Insomnia' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -537,30 +547,30 @@ const bodySystem = [
     ],
     'Neurologic Symptoms' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -571,30 +581,30 @@ const bodySystem = [
     ],
     'Numbness and Tingling' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -605,30 +615,30 @@ const bodySystem = [
     ],
     'Seizure' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -639,30 +649,30 @@ const bodySystem = [
     ],
     'Seizure, Febrile' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -673,30 +683,30 @@ const bodySystem = [
     ],
     'Sinus Problems' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
@@ -707,30 +717,30 @@ const bodySystem = [
     ],
     'Speaking Difficulty' = [
       {
-        keyQuestions: '',
-        otherProtocolstoConsider: '',
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
-        alertBullets: '',
+        alertBullets: [ '' ],
         assessment: [
           {
             A: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek emergency care now'
           },
           {
             B: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 2 to 4 hours'
           },
           {
             C: '',
             list: [ '' ],
-            true: ''
+            true: 'Seek medical care within 24 hours'
           },
           {
             D: '',
             list: [ '' ],
-            true: ''
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
