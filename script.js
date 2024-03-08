@@ -657,34 +657,29 @@ const bodySystem = [
     ],
     'Sinus Problems' = [
       {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'Prior Sinus', 'Problems', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Cough (163)', 'Earache, Drainage (200)', 'Facial Pain (222)', 'Fever, Adult (241), Child (244)', 'Headache (303)', 'Sore Throat (567)' ],
+        nurseAlert: 'Use the protocol if history of sinus problems or under current treatment for a sinus condition.',
         alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Redness and swelling in cheek, forehead, or eyelid', 'Vision change' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Persistent fever and sinus congestion or facial pain > 2–3 days', 'Yellow or green nasal discharge > 3–5 days', 'Persistent dull ache or tenderness around eyes or cheekbones', 'No improvement after 48 hours of antibiotic therapy', 'Pain worsens when bending over' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Some sinus discomfort and clear nasal discharge', 'Recent cold', 'History of allergies', 'Postnasal drainage', 'Chronic cough' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
+        homeCareInstructions: [ 'Use a vaporizer or humidifier to keep air moist, especially at night, and change the water daily.', 'Breathe steam several times a day to help promote sinus drainage. Sit in a steam-filled bathroom for 10 to 20 minutes or cover head with a towel and breathe steam from a tea kettle or basin filled with hot water.', 'Apply hot packs to area around the eyes and cheekbones. Diabetics should use heat with caution.', 'Take OTC decongestant of choice, and follow instructions on the label. If hypertensive or pregnant, such medications may not be appropriate. Check label on container before taking such medications.', 'For nasal congestion, use saline nose drops or spray.', 'For postnasal drainage, may try phenylephrine (Neo-Synephrine) or oroxymetazoline nasal (Afrin) nose drops for as long as 3 days. Then discontinue use. Prolonged use may worsen congestion when use of spray is discontinued. Do not take if cardiac disease, hypertension, or prostate problems are present.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) as tolerated for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present.', 'Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid dairy products.', 'Drink at least six 8-ounce glasses of liquids a day, unless on fluidrestriction diet.' ],
+        reportToPCP: [ 'Yellow or green nasal discharge for > 3 to 5 days', 'No improvement after 48 hours of antibiotic therapy', 'Redness and swelling in cheek, forehead, or eyelid', 'No improvement after 5 days or condition worsens' ],
         seekEmergencyCare: [ '' ]
       }
     ],
