@@ -1,4 +1,4 @@
-const [
+/*const [
   Abdominal Pain, Adult
 Abdominal Pain, Child
 Abdominal Swelling
@@ -218,7 +218,7 @@ West Nile Virus
 Wheezing
 Wound Care: Sutures or Staples
 Wound Healing and Infection
-]
+]*/
 
 const bodySystem = [
   'Neurologic & Head Problems' = [
@@ -685,133 +685,133 @@ const bodySystem = [
     ],
     'Speaking Difficulty' = [
       {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Anxiety (37)', 'Asthma (49)', 'Breathing Problems (101)', 'Confusion (142)', 'Headache (303)', 'Mouth Problems (410)', 'Neurologic Symptoms (420)', 'Piercing Problems (446)', 'Sore Throat (567)', 'Tongue Problems (608)' ],
+        nurseAlert: ': Sudden changes in vision, speech, or mental status, weakness, and numbness may be signs of a stroke or other serious neurologic disorder. Prompt treatment may prevent extensive damage to the brain or spinal cord and reduce permanent disability. Medications used to break up a clot in the brain need to be administered within 3 hours of symptom onset.',
+        alertBullets: [ 'Ask how current condition is different from normal.' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: ' In addition to difficulty speaking, are any of the following present?',
+            list: [ 'Weakness on one side of body', 'Difficulty breathing', 'Difficulty swallowing', 'Severe headache', 'Confusion/disorientation', 'New onset and history of blood clots or heart problems', 'Words or ideas are mixed up', 'Trauma to the neck' ],
+            true: 'Call ambulance'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Numbness or weakness', 'Frequent or intermittent episodes of difficulty speaking', 'Inability to move muscles on one side of face', 'History of recent injury or trauma', 'Dizziness or light-headedness', 'Blurred vision', 'New onset and unable to start sentences without repeating first word or unable to start a sentence when ready to speak' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            C: 'Is the following present?',
+            list: [ 'Pain in mouth or face' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ ' Under medical care for problem and condition is worsening', 'Increased stress level', 'Taking a new OTC or prescribed medication', 'Poor attention span', 'New onset of stuttering in child', 'Parent concerned' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Speak slowly while facing the person and give short, simple directions.', 'Do not rush the person; allow ample time for a response.', 'Use paper and pencil to communicate as necessary.', 'Person with a diagnosed speech problem may show frustration through swearing, yelling, or acting out. Be patient, positive, and nonjudgmental. Do not take the person’s actions personally.', 'Encourage and allow for as much independent behavior as possible.', 'Decrease the stress level through relaxation, exercise, or taking a break from stressors.' ],
+        reportToPCP: [ 'Condition persists or worsens, and cause of the problem is unknown', 'Numbness or weakness', 'Dizziness or light-headedness', 'Blurred vision' ],
+        seekEmergencyCare: [ ' Weakness on one side of the body', 'Difficulty breathing', 'Difficulty swallowing', 'Confusion or disorientation', 'Severe headache' ]
       }
     ],
   ],
   Eyes = [
     {
       'Contact Lens Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Type of Contact', 'Pain Scale', 'Medications' ],
+      otherProtocolstoConsider: [ 'Eye Injury (216)', 'Eye Problems (219)', 'Foreign Body, Eye (261)', 'Vision Problems (635)' ],
       nurseAlert: '',
       alertBullets: [ '' ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: ' Are any of the following present?',
+          list: [ 'Sudden loss of vision', 'Severe pain', 'Penetrating injury (such as hard lens embedded in the surface of the eye)', 'Severe pain after insertion of lenses that were not properly cleaned and rinsed before insertion' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: ' Are any of the following present?',
+          list: [ 'Hard lens broken in eye', 'Persistent pain that is unresponsive to home care', 'Blurred or changed vision ' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
+          C: ' Are any of the following present?',
+          list: [ 'Puslike drainage from eye', 'No improvement or condition worsens after home care treatment', 'Inability to remove contact lens', 'Persistent sensation of a foreign body in the eye', 'Severe sensitivity to light' ],
+          true: 'Seek medical care within 12 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: ' Are any of the following present?',
+          list: [ 'Discomfort', 'Eyes red or swollen and no change in vision', 'Scratchy sensation', 'Frequent tearing' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ '**Wash hands thoroughly before any eye care.', 'To remove hard contact lens:', 'Penlight or magnification is helpful.', 'Eyelid may need to be turned inside out.', 'Place several drops of saline in eye.', 'Move lens with gentle pressure through the eyelid.', 'To remove soft contact lens:', 'Place several drops of saline in the eye.', 'Gently move lens to white part of the eye.', 'Grasp lens with thumb and forefinger and remove.', 'Gently irrigate affected eye with saline or water for 10 to 20 minutes.', 'Rest eyes in a darkened room. Apply cold compresses or ice packs to eyes to reduce swelling.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen) to relieve discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Begin wearing lenses for limited periods of time 1 week after the problem is resolved or as directed by provider.', 'For eye drainage, apply warm compresses to eyes for 10 minutes several times a day. Use separate towels and wash cloths for other family members. Do not wear contact lenses when eye drainage is present. Wash hands frequently.', 'Avoid rubbing or scratching eyes.', 'Check contact lens for tears or irregularities.', 'Sterilize contact lenses thoroughly before reinserting them after infection resolves.' ],
+      reportToPCP: [ 'Persistent redness or irritation to eyes', 'Puslike drainage or frequent tearing', 'Light sensitivity', 'No improvement or condition worsens', 'Inability to remove lens' ],
+      seekEmergencyCare: [ 'Sudden loss of vision', 'Severe pain to one or both eyes' ]
       },
       'Eye Injury': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Contact Lens Wearer', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Burns, Chemical (107)', 'Eye Problems (219)', 'Foreign Body, Eye (261)', 'Head Injury (307)', 'Piercing Problems (446)', 'Vision Problems (635)' ],
         nurseAlert: '',
         alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Laceration or penetrating injury to the eye or eyelid', 'Blow to the eye and sudden loss of vision', 'Bulging eyeball', 'Clear jellylike discharge from injured eye', 'Blunt trauma to the eye', 'Pupils of unequal size', 'Blood in the colored part of the eye', 'Persistent severe pain', 'Exposure to acid such as battery acid or caustic substance (drain cleaner, lye)' ],
+            true: 'Seek emergency care now and for chemical exposure, flush eye with cold running water and Follow Home Care Instructions'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'Swelling, pain, and tearing > 30 minutes', 'Exposure to a strong light, such as a welder\'s arc or sun lamp', 'Injury caused by hot water, chemical, or foreign body and pain persists after home care treatment or white part of eye becomes cloudy', 'Persistent blurred or double vision' ],
+            true: 'Seek medical care within 2 hours and for chemical exposure, flush eye with cold running water and Follow Home Care Instructions'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Discomfort or irritation persists 24 hours after the injury or removal of a foreign body', 'Signs of infection develop after an injury: pain, swelling, redness, drainage, or fever' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Area surrounding the eye is black and blue', 'Blood on white part of the eye for > 3 days' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-        },
+        homeCareInstructions: [ 'Chemicals in the eye: Immediately flush eye with cold running water for 20 to 30 minutes. Tilt head under running water with injured eye down. While holding eyelids apart, allow water to run across the inner eye to the outer part of the eye.', 'Do not rub eye.', 'Apply ice pack or cool compresses to reduce swelling for the first 24 hours.', 'Take acetaminophen for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label. ' ],
+        reportToPCP: [ ' Increased pain, swelling, drainage, or fever', 'Changes in vision', 'No improvement in pain after 48 hours', 'Bruising around the eye or bleeding persists > 2 weeks', 'White part of eye becomes cloudy' ],
+        seekEmergencyCare: [ ' Any bleeding or jellylike discharge from the eye', 'Sudden change in vision', 'Persistent severe pain' ]
+      },
       'Eye Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ ' Neurologic Symptoms (420)', 'Stye (579)', 'Vision Problem (635). If injury or foreign body, see Eye Injury (216) or Foreign Body, Eye (261)' ],
         nurseAlert: '',
         alertBullets: [ '' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Sudden or severe pain', 'Sudden vision loss or blurred or double vision', 'Sudden onset of pupils of unequal size', 'Curtain over field of vision', 'Sudden increase in floaters', 'Flashes of light', 'Halos or rainbows around light', 'Blood in the colored part of the eye', 'Redness and unable to open eye or keep it open', 'Fever, light sensitivity, bilateral swelling, and redness' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Pain, redness, watering, eye drainage, and wears contact lenses', 'Pain increases with pressure to the eye or eye movement', 'Lesion on the eyeball or corner of the eye', 'Eye swollen shut' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Persistent pain unresponsive to home care measures', 'Persistent itching, redness, burning, and drainage', 'Persistent pain after removing contact lenses and irrigating eyes', 'Swollen neck, lymph nodes, and redness around the entire eye', 'Stye returns or bleeds', 'Stye located on bottom eyelid near the nose is unresponsive to home care', 'Eye pain or drainage and fever > 100.5°F', 'Excessive persistent tearing of eye' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Blood in the white part of the eye > 3 days', 'History of eye pain late in the day', 'History of wearing contact lenses too long or improper cleaning', 'Tear duct area swollen and painful', 'Small red, swollen, tender area on upper or lower lid', 'Exposure to smoke, fumes, smog, pool water, known allergens, or sun lamp', 'Eyes dry and itching', 'Eyes crusted closed in the morning' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
         reportToPCP: [ '' ],
         seekEmergencyCare: [ '' ]
-        },
+      },
       'Foreign Body, Eye': {
         keyQuestions: [ '' ],
         otherProtocolstoConsider: [ '' ],
@@ -842,7 +842,7 @@ const bodySystem = [
         homeCareInstructions: [],
         reportToPCP: [ '' ],
         seekEmergencyCare: [ '' ]
-        },
+      },
       'Pinkeye': {
         keyQuestions: [ '' ],
         otherProtocolstoConsider: [ '' ],
@@ -873,7 +873,7 @@ const bodySystem = [
         homeCareInstructions: [],
         reportToPCP: [ '' ],
         seekEmergencyCare: [ '' ]
-        },
+      },
       'Vision Problems': {
         keyQuestions: [ '' ],
         otherProtocolstoConsider: [ '' ],
@@ -904,19 +904,264 @@ const bodySystem = [
         homeCareInstructions: [],
         reportToPCP: [ '' ],
         seekEmergencyCare: [ '' ]
-        },
       },
+    },
+  ],
   Ears = [
-    { 'Earache, Drainage': [] },
-    { 'Ear Injury, Foreign Body': [] },
-    { 'Ear Ringing': [] }
+    {
+      'Earache, Drainage': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+      'Ear Injury, Foreign Body': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+      'Ear Ringing': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+    }
   ],
   Nose = [
-    { 'Common Cold Symptoms': [] },
-    { 'Congestion': [] },
-    { 'Foreign Body, Nose': [] },
-    { 'Nosebleed': [] },
-    { 'Nose Injury': [] }
+    {
+      'Common Cold Symptoms': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+      'Congestion': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+      'Foreign Body, Nose': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+      'Nosebleed': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+      'Nose Injury': {
+        keyQuestions: [ '' ],
+        otherProtocolstoConsider: [ '' ],
+        nurseAlert: '',
+        alertBullets: [ '' ],
+        assessment: [
+          {
+            A: '',
+            list: [ '' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            B: '',
+            list: [ '' ],
+            true: 'Seek medical care within 2 to 4 hours'
+          },
+          {
+            C: '',
+            list: [ '' ],
+            true: 'Seek medical care within 24 hours'
+          },
+          {
+            D: '',
+            list: [ '' ],
+            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          }
+        ],
+        homeCareInstructions: [],
+        reportToPCP: [ '' ],
+        seekEmergencyCare: [ '' ]
+      },
+    }
   ],
   Throat/Mouth = [
     Bad Breath
