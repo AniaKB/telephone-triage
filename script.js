@@ -875,35 +875,35 @@ const bodySystem = [
         seekEmergencyCare: [ ' Unable to move eye', 'Abdominal pain or nausea' ]
       },
       'Vision Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Eye Injury (216)', 'Eye Problems (219)', 'Foreign Body, Eye (261)', 'Neurologic Symptoms (420)' ],
+        nurseAlert: null,
+        alertBullets: [ 'If eye injury or foreign body to the eye, use Eye Injury (216) or Foreign Body, Eye (261) protocols.', 'Sudden changes in vision, speech, or mental status, weakness, and numbness may be signs of a stroke or other serious neurologic disorder. Prompt treatment may prevent extensive damage to the brain or reduce permanent disability. Medications used to break up a clot in the brain need to be administered within 3 hours of symptom onset.' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ ' Sudden onset of severe eye pain', 'Sudden loss of partial or total vision in one or both eyes', 'Blood or pus in colored part of eye', 'Pupils of unequal size', 'History of recent head injury and vision changes', 'Sudden or gradual increase in number of floaters, light flashes, or curtain over field of vision' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ ' Sudden onset of blurred or double vision and eye pain', 'Pain increases with pressure to the eye or eye movement', 'Age > 50 years and recent or present temporal pain/ache', 'Signs of an eye infection: pain, redness, swelling, drainage, or fever' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' Increased sensitivity to light', 'History of flashing lights followed by a headache', 'New and sudden onset of flashing lights (has not', 'curred in the past) preceded by a headache', 'Persistent blurred or double vision', 'Change in vision after a change in medication' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Progressive blurred vision and older than 50 years', 'Intermittent episodes of blurred vision', 'Difficulty seeing distant objects', 'Difficulty reading', 'Eyes dry and itching' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'If drainage is present and eye infection is suspected, encourage family members to use separate towels and washcloths.', 'Avoid rubbing or touching eyes. Wash hands frequently.', 'Clean crusting or discharge with a cotton ball moistened in warm water. Discard cotton ball after use. Do not use the same cotton ball for both eyes.', 'Instill saline drops in dry, itchy eyes.', 'Make an appointment to have eyes checked for difficulty seeing close or distant objects.' ],
+        reportToPCP: [ 'Sudden changes in vision', 'Signs of infection', 'Condition persists or worsens' ],
+        seekEmergencyCare: [ ' Sudden onset of severe eye pain', 'Sudden loss of partial or total vision in one or both eyes', 'Pupils of unequal size', 'Sudden or gradual increase in number of floaters, light flashes, or curtain over field of vision' ]
       },
     },
   ],
