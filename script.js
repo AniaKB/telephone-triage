@@ -808,40 +808,35 @@ const bodySystem = [
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'If drainage is present, encourage family members to use separate towels and washcloths. Eye infections are highly contagious.', 'Avoid rubbing or touching eyes.', 'Clean crusting or discharge with cotton ball moistened in warm water. Discard cotton ball after use. Do not use same cotton ball for both eyes. Wash your hands after cleaning.', 'Apply warm compresses to eyes for 15 to 20 minutes, 4 times a day.', 'Wash hands frequently.', 'Instill saline drops in dry itchy eyes.', 'Avoid wearing contact lenses for several days until the problem is resolved.', 'For styes: See Home Care Instructions in Stye protocol (579).' ],
+        reportToPCP: [ ' Condition persists or worsens after 48 hours', 'Yellow or green discharge', 'Fever', 'Sores', 'Red and swollen eyelids' ],
+        seekEmergencyCare: [ 'Severe pain', 'Sudden loss of vision or blurred or double vision', 'Sudden onset of unequal pupil size', 'Blood in colored part of the eye', 'Redness and unable to open eye or keep it open', 'Fever, light sensitivity, bilateral swelling, and redness' ]
       },
       'Foreign Body, Eye': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Eye Injury (216)', 'Eye Problems (219)', 'Vision Problems (635)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Object is embedded in the eyeball', 'Severe pain after irrigating chemical substance from eye', 'Sudden change in vision', 'Bulging eyeball', 'Blood in the colored part of the eye', 'Clear jelly-like discharge from injured eye', 'Severe pain after foreign body removed', 'Unequal pupil size' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Foreign object is over the colored part of the eye', 'Swelling, pain, or tearing > 30 minutes', 'Injury caused by hot water, chemical, or foreign body, and pain persists after home care treatment', 'Unable to remove free-floating foreign body' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Discomfort or irritation persists 24 hours after the injury or removal of a foreign body', 'Signs of infection develop after an injury: pain, swelling, redness, drainage, or fever', 'Unable to remove contact lens' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ '**  Chemicals in the Eye: Immediately flush eye with cold running water for 20 to 30 minutes. Tilt head under running water with the injured eye down. While holding eyelids apart, allow water to run across the inner eye to the outer part of the eye.', 'Do not try to remove', 'foreign body embedded in the eye', 'metal chip', 'foreign body over the colored part of the eye', 'Foreign Body Removal (lint, specks of dirt, eyelashes):', 'Pull down the lower lid and remove the particle with the corner of a moistened handkerchief, tissue, or cotton-tipped swab.', 'Pull down the upper lid over the lower lid and hold in place for a moment. Release and look to see if object is visible; if so, remove it.', 'Do not rub eye.', 'Apply ice pack or cool compresses to reduce discomfort.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label. ' ],
+        reportToPCP: [ ' Increased pain, swelling, drainage, or fever', 'Changes in vision', 'No improvement in pain after 48 hours', 'Unable to remove free-floating foreign body' ],
+        seekEmergencyCare: [ null ]
       },
       'Pinkeye': {
         keyQuestions: [ '' ],
