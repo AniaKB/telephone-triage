@@ -839,35 +839,40 @@ const bodySystem = [
         seekEmergencyCare: [ null ]
       },
       'Pinkeye': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ ' Name', 'Age', 'Onset', 'Cause', 'Eye Appears Pink or Red', 'History', 'Medications', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Contact Lens Problem (155)', 'Eye Injury (216)', 'Eye Problems (219)', 'Foreign Body, Eye (261)', 'Vision Problems (635)' ],
+        nurseAlert: 'Use this protocol if previously diagnosed with pinkeye, known or suspected exposure to someone with pinkeye, and eye appears pink or red. Pinkeye is highly contagious.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ ' Injury to the eye', 'Foreign body in the eye' ],
+            true: 'Go to Eye Injury protocol (216) or Foreign Body, Eye protocol (261)'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'History of glaucoma', 'Abdominal pain or nausea', 'Unable to move eye', 'Partial loss of field of vision' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Red swollen eyelids', 'Ulcer or gray-white sore on eyeball', 'Severe pain', 'Flashes of light', 'Age younger than 5 years and severe redness or swelling around eye' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Persistent blinking, tearing with pain', 'Yellow/green eye discharge', 'Eyelids slightly puffy with red rims', 'Blurred vision', 'Sensitivity to light', 'History of previous eye infections', 'Eyelids stuck together upon awakening', 'Redness > 7 days', 'Exposure to welders or ultraviolet light', 'Earache on same side as pinkeye' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            E: 'Are any of the following present?',
+            list: [ ' Blood in the white part of the eye with no change in vision', 'Cold symptoms: congestion, earache, sore throat, or cough', 'Exposure to environmental irritants: smog, smoke, pool water, shampoo, onions, household cleaning products, or jalapeño peppers', 'History of hay fever or allergies, and eye itching', 'Clear eye discharge' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Rinse eyes frequently with warm water, every 1 to 2 hours when awake. Use a soft warm moist cloth to remove crusting and drainage.', 'If exposed to chemical irritants, rinse eyes with warm water for 5 minutes.', 'Apply alternating warm and cold compresses to eyes for 10 minutes every 2 hours for 24 hours.', 'Do not share towels or linens with other household members.', 'To control itching, try Benadryl for 24 to 48 hours. Follow instructions on the label.', 'Encourage children to avoid touching eyes and to wash hands frequently.' ],
+        reportToPCP: [ 'Red swollen eyelids', 'Ulcer or gray-white sore on eyeball', 'Severe pain', 'Flashes of light', 'Persistent blinking, tearing, or pain', 'Persistent eye drainage' ],
+        seekEmergencyCare: [ ' Unable to move eye', 'Abdominal pain or nausea' ]
       },
       'Vision Problems': {
         keyQuestions: [ '' ],
