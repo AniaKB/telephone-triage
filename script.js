@@ -910,35 +910,30 @@ const bodySystem = {
         seekEmergencyCare: [ 'Earache, stiff neck, fever' ]
       },
       'Ear Injury, Foreign Body': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Earache, Drainage (200)', 'Head Injury (307)', 'Hearing Loss (310)', 'Piercing Problems (446)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'After an injury to the ear, are any of the following present?',
+            list: [ 'Loss of coordination', 'Facial paralysis or drooping', 'Whirling vertigo' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ ' Hearing loss', 'Ear canal bleeding', 'Dizziness', 'Recent blow to head and clear or bloody ear canal drainage', 'Unable to remove foreign body or embedded piercing', 'Severe pain', 'Persistent ringing in ear', 'Lacerated earlobe', 'Insect in ear canal', 'Severe swelling of ear lobe', 'Persistent bleeding > 30 minutes' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
+            C: 'Are any of the following present?',
+            list: [ 'Persistent pain > 48 hours', 'Earache after a blast of air, noise, or a blow to the head', 'External ear red and swollen', 'Recent use of Q-tips', 'Minor laceration and tetanus immunization > 10 years', 'No improvement after 3 days of home care' ],
+            true: [ 'Seek medical care within 24 hours', 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions' ]
           },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Apply ice pack to ear for 20 minutes, 4 times a day, for the first 24 to 48 hours after injury.', 'Point the ear toward the light and pull up on the ear to encourage an insect to crawl out of the ear toward the light.', 'Do not try to remove foreign object if unable to remove by pointing ear down toward the ground and gently shaking the head while pulling up on the ear.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Watch for signs of infection: increased pain, drainage, fever, redness, or warmth.' ],
+        reportToPCP: [ 'Signs of infection: increased pain, drainage, fever, redness, or warmth', 'Persistent pain > 48 hours', 'Dizziness', 'Persistent ear canal drainage', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ ' Loss of coordination', 'Facial paralysis or drooping', 'Whirling vertigo' ]
       },
       'Ear Ringing': {
         keyQuestions: [ '' ],
