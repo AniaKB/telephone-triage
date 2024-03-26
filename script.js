@@ -1763,35 +1763,30 @@ const bodySystem = {
         seekEmergencyCare: [ ' Difficulty breathing or swallowing', 'Change in vision', 'Confusion', 'Chest pain', 'Sudden onset of hoarseness' ]
       },
       'Asthma': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Asthma History', 'Severity', 'Peak Flow Measurement', 'Prior Treatment', 'Medications', 'Prior History', 'Suspected or Known Triggers' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Choking (130)', 'Congestion (145)', 'Fever, Adult (241), Child (244)', 'Hay Fever Problems (300)', 'Wheezing (652)' ],
+        nurseAlert: ' Use this protocol only if previously diagnosed with asthma. Peak flow meters measure how well air is moving out of the lungs and help to gauge the severity of an asthma attack. Peak flow values are divided into three zones:',
+        alertBullets: [ 'Green: 80% of baseline or higher (Mild attack)', 'Yellow: 50% to 80% of baseline (Moderate attack)', 'Red: less than 50% of baseline (Severe attack)' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Persistent wheezing after a treatment', 'Difficulty breathing', 'Inability to breathe lying down; must sit up to breathe', 'Dusky or blue lips, tongue, or face', 'Sudden onset of wheezing after medication, food, bee sting, or exposure to known allergen', 'Weakness, listlessness', 'Speaking in short words', 'Peak flow rate < 50% baseline', 'Severe wheezing  or cough, and nebulizer or inhaler not available' ],
+            true: 'Seek emergency care now, if breathing difficulty is severe, call an ambulance'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Vomiting and inability to retain medication', 'Upper respiratory infection symptoms and history of:' = [ 'steroid treatment', 'prior hospitalization for same symptoms', 'intubations' ], 'Speaking in partial sentences', 'Peak flow rate 50%–80% of baseline and no improvement using nebulizer or inhaler', 'Nebulizer or inhaler used < every 4 hours' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
+            C: 'Are any of the following present?',
+            list: [ 'Fever > 100.5°F (38.1°C)', 'Cough unresponsive to medication', 'Minimal or temporary relief of asthma symptoms with current medications', 'Yellow or green sputum', 'Peak flow rate > 50%–80% of baseline' ],
+            true: 'Seek medical care within 24 hours and Follow Home Care Instructions'
           },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Increase fluid intake; consume water and clear fluids.', 'Treat symptoms early to decrease severity of asthma attack. Use preventive medication as prescribed by PCP.', 'Use a vaporizer, steamy bathroom, or cool damp air to help relieve symptoms.', 'Follow treatment plan as prescribed by PCP.', 'Avoid aspirin products and decongestants.', 'Shower every night to reduce pollen exposure.', 'Limit exposure to pets, particularly in sleeping areas.', 'Avoid smoky and dusty areas. Encourage smokers in the home to smoke outside.', 'Avoid known triggers, i.e., animal dander, body and hair products, and cleaning solvents', 'If asthma symptoms are induced by strenuous exercise, take medication 90 minutes before activity (use inhaler 30 minutes before activity).' ],
+        reportToPCP: [ ' No improvement after medication', 'Difficulty breathing', 'Prescribed treatment plan is unclear', 'Peak flow rate 50% to 80% of baseline', 'Nebulizer or inhaler used < every 4 hours' ],
+        seekEmergencyCare: [ ' Breathing difficulty worsens', 'Face, tongue, or lips become dusky or blue', 'Weakness, listlessness', 'Peak flow rate < 50% of baseline' ]
       },
       'Breathing Problems': {
         keyQuestions: [ '' ],
