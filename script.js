@@ -1126,35 +1126,25 @@ const bodySystem = {
   },
   'Throat/Mouth': {
       'Bad Breath': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Diabetes Problems (180)', 'Gas/Belching (282)', 'Indigestion (370)', 'Mouth Problems (410)', 'Swallowing Difficulty (589)', 'Tongue Problems (608)', 'Toothache (611)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ ' Breath smells fruity or ammonia-like', 'Foul odor accompanied by abdominal swelling and pain', 'Fever and sores in the mouth or throat', 'Severe pain in mouth or tongue' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            B: 'Are any of the following present?',
+            list: [ 'Persistent gum bleeding or swelling', 'Persistent cough with foul-smelling sputum', 'Loose, missing, or decayed teeth', 'Frequent use of cast iron cooking utensils or dishes', 'Recent ingestion of a large dose of vitamins or minerals', 'History of gastrointestinal or chronic lung disease', 'History of chronic allergies or sinus problems ' ],
+            true: 'Call PCP or dentist for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Rinse mouth with antiseptic mouthwash, such as Listerine.', 'Brush teeth or dentures, gums, and tongue twice a day and floss regularly.', 'Remove and soak bridges and dentures daily.', 'Decrease dosage of vitamins and mineral supplements if they are believed to be the cause of bad breath.', 'Reduce use of cast iron cooking utensils (unless recommended by physician).', 'Reduce ingestion of garlic, onions, alcohol, or coffee.', 'See dentist regularly and as dental problems occur.' ],
+        reportToPCP: [ ' Severe pain or fever', 'No improvement or condition worsens', 'Breath smells like fruit or ammonia' ],
+        seekEmergencyCare: [ null ]
       },
       'Foreign Body, Swallowing of': {
         keyQuestions: [ '' ],
@@ -7907,16 +7897,15 @@ const bodySystem = {
         reportToPCP: [ '' ],
         seekEmergencyCare: [ '' ]
       },
-  
   }
 };
 
 /* let Appendix = []; */
 
 
-function createList () {
+function createList(items) {
   const list = document.createElement('ul');
-  items.forEach((item) => {
+  items.forEach(item => {
     const listItem = document.createElement('li');
     listItem.textContent = item;
     list.appendChild(listItem);
@@ -7930,28 +7919,43 @@ function createParagraph(text) {
   return paragraph;
 }
 
+function toggleVisibility(element) {
+  if (element.style.display === 'none') {
+    element.style.display = 'block';
+  } else {
+    element.style.display = 'none';
+  }
+}
+
 function createContent(data) {
   const container = document.getElementById('triage-list');
   for (const heading in data) {
     const headingElement = document.createElement('h2');
     headingElement.textContent = heading;
+    headingElement.addEventListener('click', () => {
+      toggleVisibility(container.querySelector('h3'));
+      toggleVisibility(container.querySelector('p'));
+    });
     container.appendChild(headingElement);
     for (const subHeading in data[heading]) {
       const subHeadingElement = document.createElement('h3');
       subHeadingElement.textContent = subHeading;
+      subHeadingElement.style.display = 'none'; // Initially hide subheading content
       container.appendChild(subHeadingElement);
-      const subData = data[heading][subheading];
+      const subData = data[heading][subHeading];
       for (const key in subData) {
-        if (Array.isArray(subData[key]));
-        const listElement = createList(subData[key]);
-        container.appendChild(listElement);
-      } else if (typeof subData[key] === 'string') {
-        const paragraphElement = createParagraph(subData[key]);
-        container.appendChild(paragraphElement);
+        if (Array.isArray(subData[key])) {
+          const listElement = createList(subData[key]);
+          listElement.style.display = 'none'; // Initially hide list content
+          container.appendChild(listElement);
+        } else if (typeof subData[key] === 'string') {
+          const paragraphElement = createParagraph(subData[key]);
+          paragraphElement.style.display = 'none'; // Initially hide paragraph content
+          container.appendChild(paragraphElement);
+        }
       }
     }
   }
-}
 }
 
 createContent(bodySystem);
