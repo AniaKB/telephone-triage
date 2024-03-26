@@ -1245,35 +1245,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Sudden swelling in back of throat or tongue', 'Jaw feels locked in place, inability to open mouth', 'Unable to swallow own saliva' ]
       },
       'Sore Throat': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale', 'Associated Symptoms' ],
+        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Congestion (145)', 'Cough (163)', 'Earache, Drainage (200)', 'Fever, Adult (241), Child (244)', 'Hoarseness (341)', 'Mouth Problems (410)', 'Pregnancy, Cold Symptoms (466)', 'Swallowing Difficulty (589)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Difficulty breathing (for reasons other than nasal congestion)', 'Excessive drooling by a small child', 'Stridor', 'Inability to swallow own saliva', 'Inability to open mouth fully' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Significant difficulty swallowing because of pain', 'Temperature > 104°F (40°C)', 'Temperature > 101°F (38.3°C) in the elderly or immunosuppressed', 'Signs of dehydration' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' History of rheumatic fever, mitral valve prolapse, or other heart valve problem', 'Skin rash', 'Close contact with someone with strep throat within the past 2 weeks', 'Yellow pus or white mucus at back of throat', 'Red or enlarged tonsils', 'Persistent sore throat > 3 days', 'Ear pain', 'Fever or chills unresponsive to fever-reducing measures', 'Diabetes, elderly, or immunosuppressed', 'Dizziness/faintness', 'Foul-smelling breath' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Nasal congestion', 'Cough or sneezing', 'Feeling of fullness in ear' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Take your usual pain medication (acetaminophen, aspirin, ibuprofen) for headache or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Gargle with salt water several times a day for throat discomfort (¼ tsp regular salt to ½ cup warm water) or sip warm chicken broth. Use frozen cough drops or hard candy for additional relief if age > 4 years.', 'Increase fluids; try warm tea with lemon and honey, apple juice, gelatin, or sucking on flavored ice. Take frequent small sips if it is painful to swallow.', 'If you smoke, decrease or stop smoking.', 'Use a vaporizer or humidifier to keep the air moist, especially at night, or put a pot of water near the heat source.', 'Take decongestants to help relieve congestion, unless there is a history of hypertension or pregnancy. Discuss with PCP or pharmacist. ' ],
+        reportToPCP: [ ' Fever > 101°F (38.3°C) for several days', 'Sore throat persists > 3 days or worsens', 'Earache', 'No improvement or condition worsens', 'Drooling', 'Signs of dehydration' ],
+        seekEmergencyCare: [ ' Unable to swallow own saliva', 'Difficulty breathing/stridor', 'Chest pain', 'Excessive drooling', 'Unable to open mouth fully' ]
       },
       'Swallowing Difficulty': {
         keyQuestions: [ '' ],
