@@ -1402,35 +1402,35 @@ const bodySystem = {
   },
   'Back/Neck Problems': {
       'Back/Neck Injury': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Mechanism of Injury', 'Medications', 'Pain Scale', 'History' ],
+        otherProtocolstoConsider: [ 'Back Pain (59)', 'Breathing Problems (101)', 'Headache (303)', 'Incontinence, Stool (365), Urine (368)', 'Numbness and Tingling (433)', 'Weakness (645)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: ' Did the injury result from a new traumatic event, and are any of the following present?',
+            list: [ 'Difficulty breathing', 'Severe back or neck pain', 'Inability to move fingers or toes', 'Numbness, tingling, or weakness in arms, legs, fingers, or toes', 'Incontinence' ],
+            true: 'Call ambulance, support breathing, do not move person and follow emergency home care instructions'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Traumatic event within past week and the following:', 'Weakness or incontinence', 'Increasing or persistent numbness or tingling' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Age > 65 years History of cancer or bleeding disorder' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ ' Continued mild to moderate neck or back pain unresponsive to rest, heat, ice, and pain medications', 'Mild to moderate neck or back pain and home care measures not initiated' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Emergency Instructions' = [ 'Do not move injured person; keep person warm.', 'Apply sandbags, books, rolled magazines, sheets, or towels to both sides of the neck if a neck injury is suspected. Secure with tape from one support, across the forehead, to the opposite support.', 'If the victim is in the water, support the body and neck as one unit until medical help arrives. Positioned at the head of the victim, the rescuer should extend his/her arms under the victim’s head, neck, and shoulders, keeping the back and neck in a straight line. Do not allow the neck to bend forward, backward, or side to side.' ], 'Apply ice packs to affected area for 20 minutes every 2 to 4 hours for as long as 48 hours after injury.', 'After 48 hours, apply heat to the area for discomfort.', 'Take your usual pain medication. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rest; limit activities until medically evaluated or pain subsides.' ],
+        reportToPCP: [ ' Shooting pain into leg, buttocks, or arms Pain worsens No improvement in 3 days' ],
+        seekEmergencyCare: [ ' Severe headaches', 'Tingling, weakness, or numbness in the extremities', 'Bowel or urine incontinence' ]
       },
       'Back Pain': {
         keyQuestions: [ '' ],
