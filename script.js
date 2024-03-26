@@ -1178,35 +1178,40 @@ const bodySystem = {
         seekEmergencyCare: [ 'Drooling, gagging, choking, or difficulty breathing or swallowing' ]
       },
       'Jaw Pain': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Radiation', 'Associated Symptoms', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Heartburn (313)', 'Indigestion (370)', 'Mouth Problems (410)', 'Neck Pain (417)', 'Toothache (611)', 'Tooth Injury (614)' ],
+        nurseAlert: 'There are many conditions that cause jaw pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with jaw pain. Women with jaw, neck, or back pain, nausea, and/or shortness of breath may be experiencing a heart attack.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ ' Chest pain', 'Difficulty breathing' ],
+            true: 'Go to Chest Pain protocol (118) or Breathing Problems protocol (101)'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ ' Intermittent jaw pain and history of hypertension, cardiovascular disease, high cholesterol, obesity, heavy smoker, or age > 30 years', 'New onset and pain radiates to neck, shoulders, or arms' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            C: 'Are any of the following present?',
+            list: [ 'Severe pain', 'Recent trauma to the area', 'Teeth do not align as usual ' ],
+            true: 'Seek medical or dental care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Jaw locks in certain positions', 'Signs of infection (increased pain, swelling, drainage, red streaks, or warmth)' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            E: 'Are any of the following present?',
+            list: [ ' Pain > 2 weeks', 'Headache, neck, and shoulder pain', 'Clicking, snapping, or popping sound with jaw movement', 'Difficulty opening mouth wide', 'Pain in jaw joint', 'Ear or eye pain', 'Intermittent swelling over the area' ],
+            true: 'Call back or call PCP or dentist for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Avoid chewing gum or tough foods.', 'Alternate cold and hot packs to the jaw 6 times a day.', 'Avoid cradling the telephone receiver between the jaw and shoulder.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort and swelling, as tolerated. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Massage muscles around the jaw.' ],
+        reportToPCP: [ ' Persistent pain unrelieved by home care measures', 'Condition worsens', 'Signs of infection: increased pain, swelling, drainage, red streaks, warmth, or fever' ],
+        seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing', 'New pain radiates to neck, shoulders, or arms' ]
       },
       'Mouth Problems': {
         keyQuestions: [ '' ],
