@@ -1558,67 +1558,31 @@ const bodySystem = {
         reportToPCP: [ ' No improvement or condition worsens', 'Localized area of painful blisters or rash' ],
         seekEmergencyCare: [ 'Continuous or intermittent pain, tightness, pressure, or discomfort accompanied by' = [ 'shortness of breath', 'dizziness', 'cool, moist skin', 'nausea or vomiting', 'pain in the neck, shoulders, jaw, teeth, back, or arms', 'blue or gray face, lips, earlobes, or fingernails', 'heart palpitations' ], 'No relief from repeated nitroglycerin every 5 minutes for two doses', 'Repeated shocks with internal defibrillator in place', 'Severe pain' ]
       },
-      'Chest Pain: Causes and Characteristics (Appendix S)': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
       'Chest Trauma': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'Pain Scale', 'History' ],
+        otherProtocolstoConsider: [ 'Bleeding, Severe (86)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Cough (163)', 'Shock, Suspected (548)', 'Weakness (645)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Recent injury to the chest or trunk and are any of the following present?',
+            list: [ 'Severe shortness of breath', 'Altered mental status', 'Lips or face are blue, very pale, or gray', 'Air bubbles in chest wound with inspiration', 'Severe pain in chest wall or over breastbone', 'Foreign object impaled in chest wall', 'Difficulty breathing, pain, and chest moves in with inspiration and out with expiration' ],
+            true: 'Call ambulance and Follow Emergency Home are Instructions'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ ' Increasing pain with movement or breathing', 'Increasing shortness of breath', 'Coughing up blood or pink frothy sputum' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            C: 'Are any of the following present?',
+            list: [ 'Persistent pain > 48 hours', 'Fever', 'Green, yellow, or brown sputum > 48 hours', 'Light-headedness develops after 24 hours' ],
+            true: 'Seek medical care within 24 hours and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Emergency Instructions' = [ 'For sucking chest wound, cover wound with plastic wrap or layers of tape to prevent the movement of air into the wound. Seal in place when patient is exhaling.', 'Do not remove objects impaled in chest.' ], 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Support painful ribs with a pillow if movement increases pain.' ],
+        reportToPCP: [ ' Increased difficulty breathing, fever, pain, or light-headedness', 'Green, yellow, or brown sputum' ],
+        seekEmergencyCare: [ ' Altered mental status', 'Sudden severe pain or shortness of breath', 'Cool, clammy, pale skin', 'Coughing up blood or pink frothy sputum' ]
       },
       'Heartburn': {
         keyQuestions: [ '' ],
