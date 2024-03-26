@@ -936,35 +936,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Loss of coordination', 'Facial paralysis or drooping', 'Whirling vertigo' ]
       },
       'Ear Ringing': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ ' Congestion (145)', 'Dizziness (192)', 'Earache, Drainage (200)', 'Ear Injury, Foreign Body (203)', 'Hearing Loss (310).' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is the following present?',
+            list: [ 'Overdose or frequent ingestion of aspirin or aspirin products' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Foreign body in the ear', 'Severe ear pain unresponsive to home care measures' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' Recent ingestion of aspirin or medications containing aspirin, quinine, or streptomycin', 'History of recent head injury or recent ear surgery', 'Dizziness or vertigo', 'Nausea or vomiting', 'Persistent ear pain', 'Ear drainage', 'Persistent hearing loss' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Upper respiratory infection', 'Congestion associated with allergies', 'Feeling of fullness in one or both ears', 'Excessive wax buildup', 'History of Ménière disease with similar symptoms' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Take decongestants to relieve ear congestion. Follow instructions on the label. Ask your pharmacist for product suggestions.', 'If taking medications containing aspirin, quinine, or streptomycin, stop taking and notify PCP.', 'Do not poke at wax or try to remove with fingers or cotton swabs. These measures worsen the problem.', 'Decrease use of salt, caffeine, and alcohol if history of Ménière disease is present.' ],
+        reportToPCP: [ 'Significant hearing loss or dizziness', 'Ear pain or drainage', 'Persistent vomiting, increased ringing, headache' ],
+        seekEmergencyCare: [ null ]
       },
   },
   Nose: {
