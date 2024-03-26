@@ -1678,35 +1678,40 @@ const bodySystem = {
         seekEmergencyCare: [ 'Severe headache or blurred vision', 'Drowsiness or confusion', 'Persistent numbness and tingling in hands and feet', 'Coughing up blood or blood-tinged sputum', 'Difficulty breathing', 'Chest pain or heart palpitations', 'Persistent nosebleed' ]
       },
       'Hypotension': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Last Systolic Blood Pressure Reading', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Cold Exposure Problems (135)', 'Confusion (142)', 'Dizziness (192)', 'Fainting (228)', 'Heart rate Problems (317)', 'Weakness (645)' ],
+        nurseAlert: 'Use this protocol only if caller has questions about low blood pressure, regularly takes blood pressure readings and is concerned about low blood pressure reading, or known low blood pressure reading and symptoms of concern',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'In addition to low blood pressure, is chest pain present?',
+            list: [ null ],
+            true: 'Go to Chest Pain protocol'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Systolic pressure < 90 mm Hg, sudden onset, and are any of the following present?',
+            list: [ 'Cool, pale, moist skin', 'Drowsiness or confusion', 'Hot dry skin and rapid pulse', 'Shoulder or abdominal pain', 'Recent injury, fall, or blunt force', 'Rapid pulse > 120 bpm', 'Fainting', 'Fever, rapid pulse, hypotension' ],
+            true: 'Call ambulance or Seek emergency care now'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ ' Feeling faint when sitting or rising from seated position', 'Persistent bleeding' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Periods of dizziness after starting new blood pressure medication', 'While taking blood pressure medication or diuretics, hypotension and symptoms persist', 'Pregnancy' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            E: 'Is the following present?',
+            list: [ 'Persistent systolic blood pressure readings < 90 mm Hg and no other symptoms', 'Caller concerned about low blood pressure and no other symptoms' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Change positions slowly when rising to a sitting or standing position.', 'Take prescribed medications as directed.', 'Avoid sudden significant weight loss while dieting or use of diuretics in weight control.', 'If taking blood pressure medication, avoid cold remedies with antihistamines and decongestants. Consult with PCP before taking such medications.', 'Take blood pressure medication regularly and do not skip doses.' ],
+        reportToPCP: [ ' Periods of dizziness after starting new blood pressure medication', 'Under medical care for blood pressure control and systolic persistent blood pressure < 90 mm Hg', 'Repeated fainting episodes' ],
+        seekEmergencyCare: [ 'Cool, pale, moist skin', 'Drowsiness or confusion', 'Hot dry skin and rapid pulse', 'Chest or abdominal pain', 'Rapid pulse > 120 bpm', 'Fever, hypotension, or rapid pulse', 'Fainting' ]
       },
       'Shock, Suspected': {
         keyQuestions: [ '' ],
