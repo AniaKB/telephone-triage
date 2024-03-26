@@ -1714,35 +1714,20 @@ const bodySystem = {
         seekEmergencyCare: [ 'Cool, pale, moist skin', 'Drowsiness or confusion', 'Hot dry skin and rapid pulse', 'Chest or abdominal pain', 'Rapid pulse > 120 bpm', 'Fever, hypotension, or rapid pulse', 'Fainting' ]
       },
       'Shock, Suspected': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medication', 'History' ],
+        otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Anxiety (37)', 'Bleeding, Severe (86)', 'Breathing Problems (101)', 'Confusion (142)', 'Electric Injury (210)', 'Heart Rate Problems (317)', 'Heat-Exposure Problems (320)', 'Hypotension (353)', 'Weakness (645)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            A: 'In addition to the classic signs of shock (pale, sweaty skin, and confusion or drowsiness), are any of the following present?',
+            list: [ ' Weak, rapid heart rate', 'Rapid, shallow breathing', 'Anxiety, restlessness', 'Thirst', 'Faintness, dizziness, weakness, altered mental status, unresponsive' ],
+            true: 'Call ambulance and Follow Home Care Instrucions.Seek medical care now and Follow Home Care Instructions and See Other Protocols to Consider'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Clear the airway and provide CPR as needed.', 'Lay the victim down with a pillow under the head and the legs elevated about 12″ (30 cm).', 'If suspected injury to head, neck, back, or chest, keep the legs flat and support neck.', 'Control any bleeding by applying firm direct pressure to the area.', 'Keep warm; cover with a blanket. In hot climates, keep the victim cool.', 'If vomiting occurs, roll the victim to one side, keeping the head, neck, and body in a straight line.', 'Do not give anything to drink, even if the victim is thirsty.', 'Provide comfort and reassurance to help relieve anxiety.' ],
+        reportToPCP: [ null ],
+        seekEmergencyCare: [ null ]
       },
   },
   'Respiratory Problems': {
