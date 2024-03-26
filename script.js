@@ -1338,35 +1338,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Difficulty breathing', 'Swelling of the back of the mouth' ]
       },
       'Toothache': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'If injury occurred, see Tooth Injury protocol (614)' ],
+        otherProtocolstoConsider: [ 'Chest Pain (118)', 'Facial Pain (222)', 'Jaw Pain (389)', 'Mouth Problems (410)', 'Tooth Injury (614)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is the following present?',
+            list: [ 'Gnawing pain in lower teeth and neck, chest, shoulder, or arm' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'History of cardiovascular disease or diabetes and jaw pain (no known injury or dental problem)', 'Temperature > 100.4°F (38.0°C) ' ],
+            true: 'Seek medical care within 2 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
+            C: 'Are any of the following present?',
+            list: [ ' Persistent pain and swelling over upper or lower jaw', 'Drainage from dental abscess', 'Broken tooth (nontraumatic) ' ],
+            true: 'Seek dental care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ ' Pain interferes with daily activities', 'Red, swollen, bleeding gums', 'Pain when biting food for several days', 'Recent filling and pain for several days', 'History of problems with same tooth (previous break or crack, hot or cold sensitivity)', 'Pain without trauma, fracture, fever, or facial swelling', 'Sores in mouth', 'Tooth loose, chipped, or decayed', 'Pain during or just after eating' ],
+            true: 'Call back or call dentist for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Apply ice pack for 20 minutes, 4 times a day, to reduce swelling.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rinse mouth with ½ tsp baking soda or salt in a cup of warm water several times a day if sores are present.', 'Brush teeth at least twice a day.', 'Call a dentist for an appointment.' ],
+        reportToPCP: [ 'Persistent pain unresponsive to pain medication', 'Facial swelling', 'Fever', 'Drainage from dental abscess' ],
+        seekEmergencyCare: [ 'Pain in chest, shoulder, or arms', 'Gnawing pain in lower teeth and neck' ]
       },
       'Tooth Injury': {
         keyQuestions: [ '' ],
