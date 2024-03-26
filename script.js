@@ -1506,261 +1506,261 @@ const bodySystem = {
       },
   },
   'Chest/Cardiovascular Problems': {
-      'Bleeding, Severe': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Location', 'Medications', 'Pain Scale', 'History' ],
-        otherProtocolstoConsider: [ 'Bites, Animal/Human (73)', 'Chest Trauma (122)', 'Extremity Injury (213)', 'Vomiting, Adult (638), Child (641)', 'Nosebleed (427)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Shock, Suspected (548)', 'Vaginal Bleeding (630).' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Gunshot, knife, or other penetrating wound and difficulty controlling bleeding', 'Signs of shock:' = [ 'light-headedness', 'skin is pale, cold, or moist', 'thirst', 'rapid pulse' ], 'Blood is spurting from the wound and cannot be controlled with direct pressure', 'Penetrating wound to abdomen, chest, or neck', 'Exposed bone or deformity at injury site' ],
-            true: 'Call ambulance and Follow Home Care Instructions. Do not remove penetrating object'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Persistent bleeding > 10 minutes after application of “Seek emergency direct pressure', 'Gaping bleeding wounds', 'History of bleeding disorder and difficulty controlling the bleeding', 'Taking a blood thinner medication', 'Unable to move limb or digit beyond the injury site' ],
-            true: 'Seek emergency care now'
-          }
-        ],
-        homeCareInstructions: [ ' Lay person down and elevate the injured part.', 'Apply pressure directly over the area for at least 10 minutes.', 'If wound is spurting blood, apply pressure with palm of hand and sterile or clean bandages directly over the wound.', 'If spurting persists with direct pressure, apply pressure to the artery between the heart and injury site.', 'Maintain pressure until bleeding stops or help arrives.', 'If bandage is saturated with blood, do not remove; apply additional bandages on top of the bandage.' ],
-        reportToPCP: [ 'Swelling/bleeding occurs > 24 hours after bleeding is under control', 'Signs of infection: increased pain, drainage, fever, swelling, pus, streaks, or redness' ],
-        seekEmergencyCare: [ 'Signs of shock:' = [ 'light-headedness', 'pale, cold, or moist skin', 'excessive thirst', 'rapid pulse' ] ]
-      },
-      'Chest Pain': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'History of Myocardial Infarction', 'Coronary Artery Disease', 'Diabetes', 'Pulmonary Embolus, or Deep Vein Thrombosis', 'Associated Symptoms', 'Medications', 'Pain Scale', 'History', 'Implanted Device in Chest' ],
-        otherProtocolstoConsider: [ 'Anxiety (37)', 'Breathing Problems (101)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Dizziness (192)', 'Heartburn (313)', 'Heart Rate Problems (317)', 'Indigestion (370)', 'Vomiting, Adult (638)', 'Sweating, Excessive (592)', 'Weakness (645)' ],
-        nurseAlert: 'There are many conditions that cause chest pain; some can be potentially life-threatening. Err on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Continuous or intermittent pain, tightness, pressure, or discomfort accompanied by:' = [ 'shortness of breath', 'dizziness or weakness', 'cool, moist skin', 'nausea or vomiting', 'pain in the neck, shoulders, jaw, back, or arms', 'blue or gray face, lips, earlobes, or fingernails', 'heart palpitations' ], 'Chest pain persists, unrelieved by rest, pain medication, antacids, or nitroglycerin every 5 minutes for three doses' ],
-            true: 'Call ambulance and chew one adult aspirin unless allergic to aspirin'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Change in chest pain pattern in known cardiac patient', 'Pain not relieved by two nitroglycerin tablets', 'Chest pain at rest or that awakens person', 'Recent period of prolonged sitting (such as during traveling)', 'Strong family history of heart disease, heart attack, stroke, or diabetes', 'History of diabetes, heart disease, CHF, or blood clotting problems', 'Age > 30 and heavy smoker with high blood pressure, high cholesterol, or obesity', 'Pain, swelling, warmth, or redness of leg', 'Sudden onset of swollen ankles', 'Coughing up blood', 'Fever, cough, congestion, and shortness of breath', 'Trauma, childbirth, or surgery in past month', 'History of blood clotting problems', 'Recreational street drug or prescription drug abuse within past 24 hours', 'Age > 35 and heart palpitations', 'Repeated shocks and internal defibrillator in place' ],
-            true: 'Seek emergency care now, do not drive yourself. If another driver is not available, call an ambulance'
-          },
-          {
-            C: 'Is the following present?',
-            list: [ 'Localized area of painful blisters or rash', 'Recent injury and pain increases with movement', 'Chest pain with exertion that is relieved with rest', 'Fracture < 2 months previously' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Pain occurs with deep breathing', 'Pain occurs when pressure is applied to the area', 'Intermittent mild chest discomfort with deep productive coughing' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'For heartburn or GERD:' = [ 'Take your usual antacid (Maalox, Mylanta, Riopan, Tums, Pepcid, Prilosec, or other antacid) for indigestion and follow instructions on the label.', 'Liquids provide faster relief than tablets.', 'Consult with PCP if taking other medications.', 'Do not give Pepto-Bismol to a child.', 'Avoid eating 2 to 3 hours before bedtime.' ], 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Take nitroglycerin as directed by PCP if pain is typical chest anginal pain; if no relief after 3 to 5 minutes, take aspirin and another nitroglycerin dose and have someone drive you to the ED or call an ambulance. Do not take aspirin if you are currently on anticoagulant therapy.', 'If pain is related to an injury that occurred 24 hours ago or longer and pain increases with movement, apply heat to the area for 20 minutes, 4 times a day.', 'For a cough:' = [ 'Drink 6 to 8 glasses of water daily (if no fluid restrictions prescribed).', 'Breathe steam from a shower or tea kettle with towel held over the head for 10 to 15 minutes to loosen phlegm.', 'Elevate head of bed to reduce coughing at night.', 'Drink warm lemonade, apple cider, or tea to help soothe cough.', 'Avoid irritants such as smoking, smog, and chemicals.', 'Turn down the heat, open the windows, or go out into cooler air to help suppress cough.', 'Take cough suppressants (ask your pharmacist for product suggestions) if cough is interfering with activity, causing chest pain or vomiting, or interrupting sleep at night. Follow instructions on the label. Do not use if age < 1 year.', 'If congested, avoid milk products.', 'Take OTC medications as needed, being sure to follow instructions on the label: for a wet cough, use a decongestant; for a dry cough, use an expectorant during the day and suppressant at night; for an allergy, use an antihistamine or decongestant. Ask your pharmacist for product suggestions.' ] ],
-        reportToPCP: [ ' No improvement or condition worsens', 'Localized area of painful blisters or rash' ],
-        seekEmergencyCare: [ 'Continuous or intermittent pain, tightness, pressure, or discomfort accompanied by' = [ 'shortness of breath', 'dizziness', 'cool, moist skin', 'nausea or vomiting', 'pain in the neck, shoulders, jaw, teeth, back, or arms', 'blue or gray face, lips, earlobes, or fingernails', 'heart palpitations' ], 'No relief from repeated nitroglycerin every 5 minutes for two doses', 'Repeated shocks with internal defibrillator in place', 'Severe pain' ]
-      },
-      'Chest Trauma': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'Pain Scale', 'History' ],
-        otherProtocolstoConsider: [ 'Bleeding, Severe (86)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Cough (163)', 'Shock, Suspected (548)', 'Weakness (645)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Recent injury to the chest or trunk and are any of the following present?',
-            list: [ 'Severe shortness of breath', 'Altered mental status', 'Lips or face are blue, very pale, or gray', 'Air bubbles in chest wound with inspiration', 'Severe pain in chest wall or over breastbone', 'Foreign object impaled in chest wall', 'Difficulty breathing, pain, and chest moves in with inspiration and out with expiration' ],
-            true: 'Call ambulance and Follow Emergency Home are Instructions'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ ' Increasing pain with movement or breathing', 'Increasing shortness of breath', 'Coughing up blood or pink frothy sputum' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Persistent pain > 48 hours', 'Fever', 'Green, yellow, or brown sputum > 48 hours', 'Light-headedness develops after 24 hours' ],
-            true: 'Seek medical care within 24 hours and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Emergency Instructions' = [ 'For sucking chest wound, cover wound with plastic wrap or layers of tape to prevent the movement of air into the wound. Seal in place when patient is exhaling.', 'Do not remove objects impaled in chest.' ], 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Support painful ribs with a pillow if movement increases pain.' ],
-        reportToPCP: [ ' Increased difficulty breathing, fever, pain, or light-headedness', 'Green, yellow, or brown sputum' ],
-        seekEmergencyCare: [ ' Altered mental status', 'Sudden severe pain or shortness of breath', 'Cool, clammy, pale skin', 'Coughing up blood or pink frothy sputum' ]
-      },
-      'Heartburn': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Associated Symptoms', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Gas/Belching (282)', 'Indigestion (370)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
-        nurseAlert: 'Heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics: Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'In addition to a burning or heavy sensation, are any of the following present?',
-            list: [ 'Shortness of breath', 'Cool, moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ ' History of diabetes or cardiac disease', 'Dizziness or light-headedness' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' Discomfort persists after taking antacids', 'Condition worsening, requiring more frequent use of antacids', 'Difficult or painful swallowing', 'Sensation that pill is stuck in esophagus' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Pain increased with use of medications', 'Increased pain bending over, exercising, or lying down soon after eating', 'Nausea or vomiting', 'Pregnancy', 'Frequent belching', 'Burping stomach contents into mouth', 'Obesity', 'Heavy tobacco or alcohol use', 'Increased stress' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Try OTC antacids (Maalox, Mylanta, Riopan, Tums) and follow directions on bottle. Try OTC Pepcid AC, Tagamet HB, Zantac, or Prilosec. Consult with PCP if taking other prescription medications. Liquids provide faster relief than tablets. Do not give Pepto-Bismol to a child. Ask pharmacist for additional product suggestions.', 'Avoid eating or drinking 2 to 3 hours before going to bed.', 'Do not lie down, bend over, or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks, or lie on left side to help speed stomach emptying and reduce reflux.', 'Eat small meals, but eat them more than three times a day.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, or any other food or drink that triggers heartburn.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top pantyhose, and pants or skirts with a tight-fitting waistband.', 'Fifty minutes after dinner, sip 1 tsp apple cider vinegar, diluted in water or juice; this will help hasten digestion of food, lessening reflux when sleeping.' ],
-        reportToPCP: [ 'Discomfort occurs after taking prescribed medication', 'No improvement in 3 days or condition worsens', 'No relief from antacids or other OTC drugs (such as Pepcid AC or Zantac)', 'Frequent use of antacids', 'Difficult or painful swallowing' ],
-        seekEmergencyCare: [ 'Shortness of breath', 'Dizziness', 'Cool, moist skin', 'Pain or discomfort in neck, jaw, shoulders, back, or arms', 'Blue or gray face or lips', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ]
-      },
-      'Heart Rate Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Rate', 'Medications', 'History', 'Implanted Device in Chest' ],
-        otherProtocolstoConsider: [ 'Alcohol Problems (22)', 'Anxiety (37)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Dizziness (192)', 'Fatigue (235)', 'Headache (303)', 'Hypertension (347)', 'Hyperventilation (350)', 'Hypotension (353)', 'Weakness (645)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is heart rate > 150 bpm and are any of the following present?',
-            list: [ 'Chest, neck, jaw, or arm pain or discomfort', 'Difficulty breathing', 'Skin cool and moist or hot and dry', 'Face or lips blue, gray, or very pale', 'Fainting' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Persistent rapid heart rate of > 150 bpm for > 30 minutes', 'Light-headedness, faintness, or dizziness', 'Persistent rapid heart rate and history of thyroid disease or heart disease', 'Repeated shocks with internal defibrillator in place', 'Slow heart rate and extreme fatigue or frequent episodes of a slow heart rate', 'Persistent slow heart rate and pauses of > 3 seconds (count 1,001, 1,002, 1,003)' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Frequent episodes of a rapid heart rate', 'Persistent slow heart rate and history of heart disease, general ill feeling, or frequent falls', 'Recent history of persistent vomiting or diarrhea' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'History of prior treatment for rapid heart rate', 'Recent ingestion of diuretics, diet pills, decongestants, cold remedies, β-blockers, thyroid medication, a new medication, or recreational drugs', 'History of bronchodilator use and new prescription or increase in dose', 'Excessive use of caffeine, tobacco, alcohol, or herbal stimulants', 'Difficulty sleeping or persistent fatigue', 'Increase in stress', 'Exercise < 30 minutes before onset of symptoms', 'Frequent skipped beats', 'Unexplained weight gain, fatigue, and feeling cold', 'Fever' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'To slow down heart rate:' = [ 'take a deep breath; hold and pinch nostrils closed. Gently try to exhale through the nose', 'take a deep breath and bear down as if having a bowel movement', 'try to blow up a balloon', 'take a cold shower and let cold water splash on the face and head', 'try to remain calm', 'rest and relax', 'try to identify the trigger and discuss it with PCP if problem persists', 'avoid medications that seem to worsen the problem', 'avoid caffeine and alcohol' ] ],
-        reportToPCP: [ 'Problem persists or worsens', 'Light-headedness or faintness' ],
-        seekEmergencyCare: [ 'Chest, neck, jaw, or arm pain', 'Difficulty breathing', 'Cool and moist skin', 'Face or lips blue, gray, or very pale', 'Fainting', 'Loss of consciousness or altered mental status' ]
-      },
-      'Hypertension': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Known Hypertension', 'Last Elevated Blood Pressure Reading', 'Medications', 'History (If pregnant, see Pregnancy, Hypertension protocol)' ],
-        otherProtocolstoConsider: [ 'Dizziness (192)', 'Headache (303)', 'Hypotension (353)', 'Nosebleed (427)', 'Pregnancy, Hypertension (472)', 'Pregnancy Problems (481)' ],
-        nurseAlert: 'Use this protocol only if caller has questions about high blood pressure, has been diagnosed with hypertension, is taking medication for hypertension, or regularly takes blood pressure readings and is concerned about elevated reading.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Chest pain in addition to high blood pressureChest pain in addition to high blood pressure' ],
-            true: 'Go to Chest Pain protocol (118)'
-          },
-          {
-            B: 'Elevated blood pressure (diastolic > 100 mm Hg), and are any of the following present?',
-            list: [ 'History of thoracic or abdominal dissection', 'Severe headache, blurred vision, nausea, or vomiting', 'Drowsiness or confusion', 'Persistent numbness and tingling in hands and feet', 'Coughing up blood or blood-tinged sputum', 'Difficulty breathing', 'Persistent nosebleed unresponsive to home care measures', 'Diastolic blood pressure of > 110 mm Hg', 'Severe weakness', 'Under medical care for blood pressure control, and persistent blood pressure > 160/100 mm Hg and under medical care for blood pressure control', 'Dizziness or light-headedness' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' Periods of dizziness after starting new blood pressure medication', 'Intermittent nosebleed', 'Blood pressure elevation and recent change in blood pressure medications', 'Blood pressure elevation and taking OTC cold medications' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Persistent blood pressure readings > 140/90 mm Hg', 'Recent increase in stress', 'Increased use of alcohol', 'Blood pressure elevation and missed a dose of medication' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Measure blood pressure weekly if > 140/90 mm Hg.', 'Avoid smoking and alcohol consumption.', 'Eat a well-balanced, low-fat, low-salt diet. If overweight, start a weight-reduction program. Discontinue use of caffeine, nicotine, and licorice.', 'Exercise regularly. Start with walking.', 'Learn how to manage stress effectively. Read, exercise, take classes on stress reduction, meditate, do yoga.', 'If taking blood pressure medication, avoid cold remedies with antihistamines and decongestants. Consult with PCP before taking such medications.', 'Take blood pressure medication regularly. Do not skip doses. Do not stop or change medication without consulting PCP.', 'When experiencing symptoms of high blood pressure, do not drive.' ],
-        reportToPCP: [ 'Periods of dizziness, constipation, impotence, or tongue swelling after starting new blood pressure medication', 'Under medical care for blood pressure control and persistent elevated blood pressure > 160/100 mm Hg', 'Blood pressure > 140/90 mm Hg consistently for > 3 months' ],
-        seekEmergencyCare: [ 'Severe headache or blurred vision', 'Drowsiness or confusion', 'Persistent numbness and tingling in hands and feet', 'Coughing up blood or blood-tinged sputum', 'Difficulty breathing', 'Chest pain or heart palpitations', 'Persistent nosebleed' ]
-      },
-      'Hypotension': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Last Systolic Blood Pressure Reading', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Cold Exposure Problems (135)', 'Confusion (142)', 'Dizziness (192)', 'Fainting (228)', 'Heart rate Problems (317)', 'Weakness (645)' ],
-        nurseAlert: 'Use this protocol only if caller has questions about low blood pressure, regularly takes blood pressure readings and is concerned about low blood pressure reading, or known low blood pressure reading and symptoms of concern',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'In addition to low blood pressure, is chest pain present?',
-            list: [ null ],
-            true: 'Go to Chest Pain protocol'
-          },
-          {
-            B: 'Systolic pressure < 90 mm Hg, sudden onset, and are any of the following present?',
-            list: [ 'Cool, pale, moist skin', 'Drowsiness or confusion', 'Hot dry skin and rapid pulse', 'Shoulder or abdominal pain', 'Recent injury, fall, or blunt force', 'Rapid pulse > 120 bpm', 'Fainting', 'Fever, rapid pulse, hypotension' ],
-            true: 'Call ambulance or Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' Feeling faint when sitting or rising from seated position', 'Persistent bleeding' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Periods of dizziness after starting new blood pressure medication', 'While taking blood pressure medication or diuretics, hypotension and symptoms persist', 'Pregnancy' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Is the following present?',
-            list: [ 'Persistent systolic blood pressure readings < 90 mm Hg and no other symptoms', 'Caller concerned about low blood pressure and no other symptoms' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Change positions slowly when rising to a sitting or standing position.', 'Take prescribed medications as directed.', 'Avoid sudden significant weight loss while dieting or use of diuretics in weight control.', 'If taking blood pressure medication, avoid cold remedies with antihistamines and decongestants. Consult with PCP before taking such medications.', 'Take blood pressure medication regularly and do not skip doses.' ],
-        reportToPCP: [ ' Periods of dizziness after starting new blood pressure medication', 'Under medical care for blood pressure control and systolic persistent blood pressure < 90 mm Hg', 'Repeated fainting episodes' ],
-        seekEmergencyCare: [ 'Cool, pale, moist skin', 'Drowsiness or confusion', 'Hot dry skin and rapid pulse', 'Chest or abdominal pain', 'Rapid pulse > 120 bpm', 'Fever, hypotension, or rapid pulse', 'Fainting' ]
-      },
-      'Shock, Suspected': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medication', 'History' ],
-        otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Anxiety (37)', 'Bleeding, Severe (86)', 'Breathing Problems (101)', 'Confusion (142)', 'Electric Injury (210)', 'Heart Rate Problems (317)', 'Heat-Exposure Problems (320)', 'Hypotension (353)', 'Weakness (645)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'In addition to the classic signs of shock (pale, sweaty skin, and confusion or drowsiness), are any of the following present?',
-            list: [ ' Weak, rapid heart rate', 'Rapid, shallow breathing', 'Anxiety, restlessness', 'Thirst', 'Faintness, dizziness, weakness, altered mental status, unresponsive' ],
-            true: 'Call ambulance and Follow Home Care Instrucions.Seek medical care now and Follow Home Care Instructions and See Other Protocols to Consider'
-          }
-        ],
-        homeCareInstructions: [ 'Clear the airway and provide CPR as needed.', 'Lay the victim down with a pillow under the head and the legs elevated about 12″ (30 cm).', 'If suspected injury to head, neck, back, or chest, keep the legs flat and support neck.', 'Control any bleeding by applying firm direct pressure to the area.', 'Keep warm; cover with a blanket. In hot climates, keep the victim cool.', 'If vomiting occurs, roll the victim to one side, keeping the head, neck, and body in a straight line.', 'Do not give anything to drink, even if the victim is thirsty.', 'Provide comfort and reassurance to help relieve anxiety.' ],
-        reportToPCP: [ null ],
-        seekEmergencyCare: [ null ]
-      },
+    'Bleeding, Severe': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Location', 'Medications', 'Pain Scale', 'History' ],
+      otherProtocolstoConsider: [ 'Bites, Animal/Human (73)', 'Chest Trauma (122)', 'Extremity Injury (213)', 'Vomiting, Adult (638), Child (641)', 'Nosebleed (427)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Shock, Suspected (548)', 'Vaginal Bleeding (630).' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Gunshot, knife, or other penetrating wound and difficulty controlling bleeding', 'Signs of shock:' = [ 'light-headedness', 'skin is pale, cold, or moist', 'thirst', 'rapid pulse' ], 'Blood is spurting from the wound and cannot be controlled with direct pressure', 'Penetrating wound to abdomen, chest, or neck', 'Exposed bone or deformity at injury site' ],
+          true: 'Call ambulance and Follow Home Care Instructions. Do not remove penetrating object'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Persistent bleeding > 10 minutes after application of “Seek emergency direct pressure', 'Gaping bleeding wounds', 'History of bleeding disorder and difficulty controlling the bleeding', 'Taking a blood thinner medication', 'Unable to move limb or digit beyond the injury site' ],
+          true: 'Seek emergency care now'
+        }
+      ],
+      homeCareInstructions: [ ' Lay person down and elevate the injured part.', 'Apply pressure directly over the area for at least 10 minutes.', 'If wound is spurting blood, apply pressure with palm of hand and sterile or clean bandages directly over the wound.', 'If spurting persists with direct pressure, apply pressure to the artery between the heart and injury site.', 'Maintain pressure until bleeding stops or help arrives.', 'If bandage is saturated with blood, do not remove; apply additional bandages on top of the bandage.' ],
+      reportToPCP: [ 'Swelling/bleeding occurs > 24 hours after bleeding is under control', 'Signs of infection: increased pain, drainage, fever, swelling, pus, streaks, or redness' ],
+      seekEmergencyCare: [ 'Signs of shock:' = [ 'light-headedness', 'pale, cold, or moist skin', 'excessive thirst', 'rapid pulse' ] ]
+    },
+    'Chest Pain': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'History of Myocardial Infarction', 'Coronary Artery Disease', 'Diabetes', 'Pulmonary Embolus, or Deep Vein Thrombosis', 'Associated Symptoms', 'Medications', 'Pain Scale', 'History', 'Implanted Device in Chest' ],
+      otherProtocolstoConsider: [ 'Anxiety (37)', 'Breathing Problems (101)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Dizziness (192)', 'Heartburn (313)', 'Heart Rate Problems (317)', 'Indigestion (370)', 'Vomiting, Adult (638)', 'Sweating, Excessive (592)', 'Weakness (645)' ],
+      nurseAlert: 'There are many conditions that cause chest pain; some can be potentially life-threatening. Err on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Continuous or intermittent pain, tightness, pressure, or discomfort accompanied by:' = [ 'shortness of breath', 'dizziness or weakness', 'cool, moist skin', 'nausea or vomiting', 'pain in the neck, shoulders, jaw, back, or arms', 'blue or gray face, lips, earlobes, or fingernails', 'heart palpitations' ], 'Chest pain persists, unrelieved by rest, pain medication, antacids, or nitroglycerin every 5 minutes for three doses' ],
+          true: 'Call ambulance and chew one adult aspirin unless allergic to aspirin'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Change in chest pain pattern in known cardiac patient', 'Pain not relieved by two nitroglycerin tablets', 'Chest pain at rest or that awakens person', 'Recent period of prolonged sitting (such as during traveling)', 'Strong family history of heart disease, heart attack, stroke, or diabetes', 'History of diabetes, heart disease, CHF, or blood clotting problems', 'Age > 30 and heavy smoker with high blood pressure, high cholesterol, or obesity', 'Pain, swelling, warmth, or redness of leg', 'Sudden onset of swollen ankles', 'Coughing up blood', 'Fever, cough, congestion, and shortness of breath', 'Trauma, childbirth, or surgery in past month', 'History of blood clotting problems', 'Recreational street drug or prescription drug abuse within past 24 hours', 'Age > 35 and heart palpitations', 'Repeated shocks and internal defibrillator in place' ],
+          true: 'Seek emergency care now, do not drive yourself. If another driver is not available, call an ambulance'
+        },
+        {
+          C: 'Is the following present?',
+          list: [ 'Localized area of painful blisters or rash', 'Recent injury and pain increases with movement', 'Chest pain with exertion that is relieved with rest', 'Fracture < 2 months previously' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Pain occurs with deep breathing', 'Pain occurs when pressure is applied to the area', 'Intermittent mild chest discomfort with deep productive coughing' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'For heartburn or GERD:' = [ 'Take your usual antacid (Maalox, Mylanta, Riopan, Tums, Pepcid, Prilosec, or other antacid) for indigestion and follow instructions on the label.', 'Liquids provide faster relief than tablets.', 'Consult with PCP if taking other medications.', 'Do not give Pepto-Bismol to a child.', 'Avoid eating 2 to 3 hours before bedtime.' ], 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Take nitroglycerin as directed by PCP if pain is typical chest anginal pain; if no relief after 3 to 5 minutes, take aspirin and another nitroglycerin dose and have someone drive you to the ED or call an ambulance. Do not take aspirin if you are currently on anticoagulant therapy.', 'If pain is related to an injury that occurred 24 hours ago or longer and pain increases with movement, apply heat to the area for 20 minutes, 4 times a day.', 'For a cough:' = [ 'Drink 6 to 8 glasses of water daily (if no fluid restrictions prescribed).', 'Breathe steam from a shower or tea kettle with towel held over the head for 10 to 15 minutes to loosen phlegm.', 'Elevate head of bed to reduce coughing at night.', 'Drink warm lemonade, apple cider, or tea to help soothe cough.', 'Avoid irritants such as smoking, smog, and chemicals.', 'Turn down the heat, open the windows, or go out into cooler air to help suppress cough.', 'Take cough suppressants (ask your pharmacist for product suggestions) if cough is interfering with activity, causing chest pain or vomiting, or interrupting sleep at night. Follow instructions on the label. Do not use if age < 1 year.', 'If congested, avoid milk products.', 'Take OTC medications as needed, being sure to follow instructions on the label: for a wet cough, use a decongestant; for a dry cough, use an expectorant during the day and suppressant at night; for an allergy, use an antihistamine or decongestant. Ask your pharmacist for product suggestions.' ] ],
+      reportToPCP: [ ' No improvement or condition worsens', 'Localized area of painful blisters or rash' ],
+      seekEmergencyCare: [ 'Continuous or intermittent pain, tightness, pressure, or discomfort accompanied by' = [ 'shortness of breath', 'dizziness', 'cool, moist skin', 'nausea or vomiting', 'pain in the neck, shoulders, jaw, teeth, back, or arms', 'blue or gray face, lips, earlobes, or fingernails', 'heart palpitations' ], 'No relief from repeated nitroglycerin every 5 minutes for two doses', 'Repeated shocks with internal defibrillator in place', 'Severe pain' ]
+    },
+    'Chest Trauma': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'Pain Scale', 'History' ],
+      otherProtocolstoConsider: [ 'Bleeding, Severe (86)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Cough (163)', 'Shock, Suspected (548)', 'Weakness (645)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Recent injury to the chest or trunk and are any of the following present?',
+          list: [ 'Severe shortness of breath', 'Altered mental status', 'Lips or face are blue, very pale, or gray', 'Air bubbles in chest wound with inspiration', 'Severe pain in chest wall or over breastbone', 'Foreign object impaled in chest wall', 'Difficulty breathing, pain, and chest moves in with inspiration and out with expiration' ],
+          true: 'Call ambulance and Follow Emergency Home are Instructions'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ ' Increasing pain with movement or breathing', 'Increasing shortness of breath', 'Coughing up blood or pink frothy sputum' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Persistent pain > 48 hours', 'Fever', 'Green, yellow, or brown sputum > 48 hours', 'Light-headedness develops after 24 hours' ],
+          true: 'Seek medical care within 24 hours and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Emergency Instructions' = [ 'For sucking chest wound, cover wound with plastic wrap or layers of tape to prevent the movement of air into the wound. Seal in place when patient is exhaling.', 'Do not remove objects impaled in chest.' ], 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Support painful ribs with a pillow if movement increases pain.' ],
+      reportToPCP: [ ' Increased difficulty breathing, fever, pain, or light-headedness', 'Green, yellow, or brown sputum' ],
+      seekEmergencyCare: [ ' Altered mental status', 'Sudden severe pain or shortness of breath', 'Cool, clammy, pale skin', 'Coughing up blood or pink frothy sputum' ]
+    },
+    'Heartburn': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Associated Symptoms', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Gas/Belching (282)', 'Indigestion (370)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
+      nurseAlert: 'Heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics: Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'In addition to a burning or heavy sensation, are any of the following present?',
+          list: [ 'Shortness of breath', 'Cool, moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ ' History of diabetes or cardiac disease', 'Dizziness or light-headedness' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' Discomfort persists after taking antacids', 'Condition worsening, requiring more frequent use of antacids', 'Difficult or painful swallowing', 'Sensation that pill is stuck in esophagus' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Pain increased with use of medications', 'Increased pain bending over, exercising, or lying down soon after eating', 'Nausea or vomiting', 'Pregnancy', 'Frequent belching', 'Burping stomach contents into mouth', 'Obesity', 'Heavy tobacco or alcohol use', 'Increased stress' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Try OTC antacids (Maalox, Mylanta, Riopan, Tums) and follow directions on bottle. Try OTC Pepcid AC, Tagamet HB, Zantac, or Prilosec. Consult with PCP if taking other prescription medications. Liquids provide faster relief than tablets. Do not give Pepto-Bismol to a child. Ask pharmacist for additional product suggestions.', 'Avoid eating or drinking 2 to 3 hours before going to bed.', 'Do not lie down, bend over, or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks, or lie on left side to help speed stomach emptying and reduce reflux.', 'Eat small meals, but eat them more than three times a day.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, or any other food or drink that triggers heartburn.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top pantyhose, and pants or skirts with a tight-fitting waistband.', 'Fifty minutes after dinner, sip 1 tsp apple cider vinegar, diluted in water or juice; this will help hasten digestion of food, lessening reflux when sleeping.' ],
+      reportToPCP: [ 'Discomfort occurs after taking prescribed medication', 'No improvement in 3 days or condition worsens', 'No relief from antacids or other OTC drugs (such as Pepcid AC or Zantac)', 'Frequent use of antacids', 'Difficult or painful swallowing' ],
+      seekEmergencyCare: [ 'Shortness of breath', 'Dizziness', 'Cool, moist skin', 'Pain or discomfort in neck, jaw, shoulders, back, or arms', 'Blue or gray face or lips', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ]
+    },
+    'Heart Rate Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Rate', 'Medications', 'History', 'Implanted Device in Chest' ],
+      otherProtocolstoConsider: [ 'Alcohol Problems (22)', 'Anxiety (37)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Dizziness (192)', 'Fatigue (235)', 'Headache (303)', 'Hypertension (347)', 'Hyperventilation (350)', 'Hypotension (353)', 'Weakness (645)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is heart rate > 150 bpm and are any of the following present?',
+          list: [ 'Chest, neck, jaw, or arm pain or discomfort', 'Difficulty breathing', 'Skin cool and moist or hot and dry', 'Face or lips blue, gray, or very pale', 'Fainting' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Persistent rapid heart rate of > 150 bpm for > 30 minutes', 'Light-headedness, faintness, or dizziness', 'Persistent rapid heart rate and history of thyroid disease or heart disease', 'Repeated shocks with internal defibrillator in place', 'Slow heart rate and extreme fatigue or frequent episodes of a slow heart rate', 'Persistent slow heart rate and pauses of > 3 seconds (count 1,001, 1,002, 1,003)' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Frequent episodes of a rapid heart rate', 'Persistent slow heart rate and history of heart disease, general ill feeling, or frequent falls', 'Recent history of persistent vomiting or diarrhea' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'History of prior treatment for rapid heart rate', 'Recent ingestion of diuretics, diet pills, decongestants, cold remedies, β-blockers, thyroid medication, a new medication, or recreational drugs', 'History of bronchodilator use and new prescription or increase in dose', 'Excessive use of caffeine, tobacco, alcohol, or herbal stimulants', 'Difficulty sleeping or persistent fatigue', 'Increase in stress', 'Exercise < 30 minutes before onset of symptoms', 'Frequent skipped beats', 'Unexplained weight gain, fatigue, and feeling cold', 'Fever' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'To slow down heart rate:' = [ 'take a deep breath; hold and pinch nostrils closed. Gently try to exhale through the nose', 'take a deep breath and bear down as if having a bowel movement', 'try to blow up a balloon', 'take a cold shower and let cold water splash on the face and head', 'try to remain calm', 'rest and relax', 'try to identify the trigger and discuss it with PCP if problem persists', 'avoid medications that seem to worsen the problem', 'avoid caffeine and alcohol' ] ],
+      reportToPCP: [ 'Problem persists or worsens', 'Light-headedness or faintness' ],
+      seekEmergencyCare: [ 'Chest, neck, jaw, or arm pain', 'Difficulty breathing', 'Cool and moist skin', 'Face or lips blue, gray, or very pale', 'Fainting', 'Loss of consciousness or altered mental status' ]
+    },
+    'Hypertension': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Known Hypertension', 'Last Elevated Blood Pressure Reading', 'Medications', 'History (If pregnant, see Pregnancy, Hypertension protocol)' ],
+      otherProtocolstoConsider: [ 'Dizziness (192)', 'Headache (303)', 'Hypotension (353)', 'Nosebleed (427)', 'Pregnancy, Hypertension (472)', 'Pregnancy Problems (481)' ],
+      nurseAlert: 'Use this protocol only if caller has questions about high blood pressure, has been diagnosed with hypertension, is taking medication for hypertension, or regularly takes blood pressure readings and is concerned about elevated reading.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Chest pain in addition to high blood pressureChest pain in addition to high blood pressure' ],
+          true: 'Go to Chest Pain protocol (118)'
+        },
+        {
+          B: 'Elevated blood pressure (diastolic > 100 mm Hg), and are any of the following present?',
+          list: [ 'History of thoracic or abdominal dissection', 'Severe headache, blurred vision, nausea, or vomiting', 'Drowsiness or confusion', 'Persistent numbness and tingling in hands and feet', 'Coughing up blood or blood-tinged sputum', 'Difficulty breathing', 'Persistent nosebleed unresponsive to home care measures', 'Diastolic blood pressure of > 110 mm Hg', 'Severe weakness', 'Under medical care for blood pressure control, and persistent blood pressure > 160/100 mm Hg and under medical care for blood pressure control', 'Dizziness or light-headedness' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' Periods of dizziness after starting new blood pressure medication', 'Intermittent nosebleed', 'Blood pressure elevation and recent change in blood pressure medications', 'Blood pressure elevation and taking OTC cold medications' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Persistent blood pressure readings > 140/90 mm Hg', 'Recent increase in stress', 'Increased use of alcohol', 'Blood pressure elevation and missed a dose of medication' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Measure blood pressure weekly if > 140/90 mm Hg.', 'Avoid smoking and alcohol consumption.', 'Eat a well-balanced, low-fat, low-salt diet. If overweight, start a weight-reduction program. Discontinue use of caffeine, nicotine, and licorice.', 'Exercise regularly. Start with walking.', 'Learn how to manage stress effectively. Read, exercise, take classes on stress reduction, meditate, do yoga.', 'If taking blood pressure medication, avoid cold remedies with antihistamines and decongestants. Consult with PCP before taking such medications.', 'Take blood pressure medication regularly. Do not skip doses. Do not stop or change medication without consulting PCP.', 'When experiencing symptoms of high blood pressure, do not drive.' ],
+      reportToPCP: [ 'Periods of dizziness, constipation, impotence, or tongue swelling after starting new blood pressure medication', 'Under medical care for blood pressure control and persistent elevated blood pressure > 160/100 mm Hg', 'Blood pressure > 140/90 mm Hg consistently for > 3 months' ],
+      seekEmergencyCare: [ 'Severe headache or blurred vision', 'Drowsiness or confusion', 'Persistent numbness and tingling in hands and feet', 'Coughing up blood or blood-tinged sputum', 'Difficulty breathing', 'Chest pain or heart palpitations', 'Persistent nosebleed' ]
+    },
+    'Hypotension': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Last Systolic Blood Pressure Reading', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Cold Exposure Problems (135)', 'Confusion (142)', 'Dizziness (192)', 'Fainting (228)', 'Heart rate Problems (317)', 'Weakness (645)' ],
+      nurseAlert: 'Use this protocol only if caller has questions about low blood pressure, regularly takes blood pressure readings and is concerned about low blood pressure reading, or known low blood pressure reading and symptoms of concern',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'In addition to low blood pressure, is chest pain present?',
+          list: [ null ],
+          true: 'Go to Chest Pain protocol'
+        },
+        {
+          B: 'Systolic pressure < 90 mm Hg, sudden onset, and are any of the following present?',
+          list: [ 'Cool, pale, moist skin', 'Drowsiness or confusion', 'Hot dry skin and rapid pulse', 'Shoulder or abdominal pain', 'Recent injury, fall, or blunt force', 'Rapid pulse > 120 bpm', 'Fainting', 'Fever, rapid pulse, hypotension' ],
+          true: 'Call ambulance or Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' Feeling faint when sitting or rising from seated position', 'Persistent bleeding' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Periods of dizziness after starting new blood pressure medication', 'While taking blood pressure medication or diuretics, hypotension and symptoms persist', 'Pregnancy' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Is the following present?',
+          list: [ 'Persistent systolic blood pressure readings < 90 mm Hg and no other symptoms', 'Caller concerned about low blood pressure and no other symptoms' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Change positions slowly when rising to a sitting or standing position.', 'Take prescribed medications as directed.', 'Avoid sudden significant weight loss while dieting or use of diuretics in weight control.', 'If taking blood pressure medication, avoid cold remedies with antihistamines and decongestants. Consult with PCP before taking such medications.', 'Take blood pressure medication regularly and do not skip doses.' ],
+      reportToPCP: [ ' Periods of dizziness after starting new blood pressure medication', 'Under medical care for blood pressure control and systolic persistent blood pressure < 90 mm Hg', 'Repeated fainting episodes' ],
+      seekEmergencyCare: [ 'Cool, pale, moist skin', 'Drowsiness or confusion', 'Hot dry skin and rapid pulse', 'Chest or abdominal pain', 'Rapid pulse > 120 bpm', 'Fever, hypotension, or rapid pulse', 'Fainting' ]
+    },
+    'Shock, Suspected': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medication', 'History' ],
+      otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Anxiety (37)', 'Bleeding, Severe (86)', 'Breathing Problems (101)', 'Confusion (142)', 'Electric Injury (210)', 'Heart Rate Problems (317)', 'Heat-Exposure Problems (320)', 'Hypotension (353)', 'Weakness (645)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'In addition to the classic signs of shock (pale, sweaty skin, and confusion or drowsiness), are any of the following present?',
+          list: [ ' Weak, rapid heart rate', 'Rapid, shallow breathing', 'Anxiety, restlessness', 'Thirst', 'Faintness, dizziness, weakness, altered mental status, unresponsive' ],
+          true: 'Call ambulance and Follow Home Care Instrucions.Seek medical care now and Follow Home Care Instructions and See Other Protocols to Consider'
+        }
+      ],
+      homeCareInstructions: [ 'Clear the airway and provide CPR as needed.', 'Lay the victim down with a pillow under the head and the legs elevated about 12″ (30 cm).', 'If suspected injury to head, neck, back, or chest, keep the legs flat and support neck.', 'Control any bleeding by applying firm direct pressure to the area.', 'Keep warm; cover with a blanket. In hot climates, keep the victim cool.', 'If vomiting occurs, roll the victim to one side, keeping the head, neck, and body in a straight line.', 'Do not give anything to drink, even if the victim is thirsty.', 'Provide comfort and reassurance to help relieve anxiety.' ],
+      reportToPCP: [ null ],
+      seekEmergencyCare: [ null ]
+    },
   },
   'Respiratory Problems': {
       'Allergic Reaction': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Suspected Cause', 'Allergies', 'Prior History', 'Medications' ],
+        otherProtocolstoConsider: [ 'Bee Stings (69)', 'Bites, Insect (76)', 'Breathing Problems (101)', 'Food Allergy (252)', 'Hay Fever Problems (300)', 'Hives (335); Itching (384)', 'Piercing Problems (446)', 'Rash, Adult (501), Child (505)', 'Swelling (595)', 'Tattoo Problems (602)', 'Wheezing (652)' ],
+        nurseAlert: 'Signs of anaphylaxis, a severe life-threatening allergic reaction, can occur within seconds to an hour after exposure to the offending substance such as food, medication, a bee sting, etc. An anaphylactic reaction involves the respiratory, cardiovascular, and central nervous systems. Sudden onset of symptoms may include: difficulty breathing, feeling faint, swelling of the tongue, throat or lips, hives, wheezing or coughing, or a feeling of impending doom. The sooner symptoms occur after exposure to the antigen, the more severe the anaphylaxis.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Difficulty breathing', 'Difficulty swallowing', 'Swelling of tongue or back of mouth', 'Inability to speak', 'Chest pain' ],
+            true: 'Call ambulance'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ ' Faintness or dizziness', 'History of previous anaphylaxis to same allergen', 'Change in vision', 'Confusion', 'Rapid progression of symptoms', 'Speaking in short words', 'Sudden onset of hoarseness' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Swelling in face/extremities', 'Persistent nausea, vomiting, or diarrhea', 'Persistent rash, fever, fatigue, or headache', 'Speaking in partial sentences' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Cause of reaction unknown', 'Controlled nausea, vomiting, or diarrhea', 'Mild rash/itching', 'No respiratory problems', 'Normal breathing', 'Suspicion of medication reaction' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Use prescribed inhalers, medications or Epi Pen for known allergic reaction as directed by PCP.', 'If symptoms occurred shortly after taking an OTC medication, discontinue use.', 'Rest.', 'If hives are widespread, try baking soda or oatmeal baths, or OTC preparations (Benadryl, Caladryl, Cortaid, Cortizone, Claritin) for the itching. Follow instructions on the label. Ask your local pharmacist for OTC product suggestions.', 'Avoid hot showers. Heat can increase itching.', 'Apply cold cloth or ice to small area of itchy hives.' ],
+        reportToPCP: [ 'Symptoms occurred after taking a prescription medication', 'Symptoms persist after taking Benadryl and following Home Care Instructions', 'Rash worsens', 'Fever' ],
+        seekEmergencyCare: [ ' Difficulty breathing or swallowing', 'Change in vision', 'Confusion', 'Chest pain', 'Sudden onset of hoarseness' ]
       },
       'Asthma': {
         keyQuestions: [ '' ],
