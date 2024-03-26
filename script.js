@@ -1276,66 +1276,66 @@ const bodySystem = {
         seekEmergencyCare: [ ' Unable to swallow own saliva', 'Difficulty breathing/stridor', 'Chest pain', 'Excessive drooling', 'Unable to open mouth fully' ]
       },
       'Swallowing Difficulty': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Foreign Body, Swallowing of (274)', ' Heartburn (313)', ' Neurologic Symptoms (420)', ' Piercing Problems (446)', ' Sore Throat (567)', ' Weakness (645)' ],
+        nurseAlert: 'Sudden changes in ability to swallow, vision, speech, or mental status, weakness, and numbness may be signs of a stroke or other serious neurologic disorder. Prompt treatment may prevent extensive damage to the brain or reduce permanent disability. Medications used to break up a clot in the brain need to be administered within 3 hours of symptom onset.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Weakness of neck, chest, and limbs', 'Double or blurred vision, drooling, or drooping eyelids', 'Excessive drooling in small child who appears ill', 'Sudden swelling in face, tongue, or throat or itching, hives, or wheezing', 'Difficulty breathing', 'Pain in jaw, throat, neck, shoulders, chest, or arms', 'Inability to swallow own saliva' ],
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Is the following present?',
+            list: [ 'Sensation that bone or food is stuck in throat or esophagus' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Is the following present?',
+            list: [ 'Unexplained weight loss' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Difficulty swallowing because of sore throat', 'Intermittent chest pain on bending forward or lying down', 'Throat feels tight after swallowing', 'Recent increase in stress' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) as tolerated for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Gargle with salt water several times a day for throat discomfort. Suck on hard candy or lozenges.', 'Increase fluids. Sip warm tea with lemon and honey.', 'Swallow bread or soft foods, as tolerated.', 'Try OTC antacids, such as Gelusil, Maalox, Mylanta, Riopan, and Tums, and follow instructions on the label.', 'Do not lie down, bend over, or exercise soon after eating.', 'Eat small, frequent meals.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, vinegar, fatty foods, and carbonated beverages.' ],
+        reportToPCP: [ ' No improvement after 3 days or condition worsens', 'Burping or vomiting blood or dark coffee-grounds-like emesis', 'Excessive drooling', 'Persistent fever unresponsive to home care measures' ],
+        seekEmergencyCare: [ ' Weakness of neck, chest, and limbs', 'Double or blurred vision, drooling, or drooping eyelids', 'Excessive drooling in small child who appears ill', 'Sudden swelling in face, tongue, or throat or itching, hives, or wheezing', 'Difficulty breathing', 'Pain in jaw, throat, neck, shoulders, chest, or arms', 'Inability to swallow own saliva' ]
       },
       'Tongue Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Mouth Problems (410)', 'Piercing Problems (446)', 'Sore Throat (567)', 'Swallowing Difficulty (589)', 'Toothache (611)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is the following present?',
+            list: [ 'Sudden onset of tongue swelling and difficulty breathing' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Is the following present?',
+            list: [ 'Sudden onset of tongue swelling and no difficulty breathing', 'Pain, swelling, drainage around piercing', 'Gaping laceration from torn piercing' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Pain after taking a new medication', 'Pain on one side of face', 'Persistent hard lump on tongue or mouth', 'Persistent pain and diarrhea with loose, foul-smelling, bulky stools', 'Ulcers, cracks, redness, and persistent pain unresponsive to > 3 days of home care measures', 'Minor tear from piercing and last tetanus shot > 10 years' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Tongue bright red and swollen', 'Red tip and edges', 'Tongue appears hairy', 'Ulcers', 'Sore on one area of tongue', 'Tongue appears black from Pepto-Bismol', 'Irritation from dentures, rough tooth, or braces' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Drink through a straw to minimize discomfort.', 'Note relationship between certain foods and tongue pain and avoid those foods in the diet. Alcohol, hot food or spices, tobacco, chocolate, citrus foods, vinegar, pickles, salted nuts, and chips may irritate the tongue. Milk, gelatin, yogurt, ice cream, and custard are soothing to the tongue.', 'Rinse mouth 4 times a day with a salt or baking soda solution. Add ½ tsp salt or baking soda to 8 ounces of water.', 'If irritation is caused by a rough tooth or braces, contact your dentist.', 'If swelling is related to medication, discontinue use and contact PCP if it is a prescription medication.', 'Increase fluid intake.', 'If irritation is caused by dentures, remove dentures and contact dentist.' ],
+        reportToPCP: [ ' No improvement or condition worsens after 3 days of home care measures', 'Pain becomes intolerable', 'Fever, rash, facial swelling' ],
+        seekEmergencyCare: [ ' Difficulty breathing', 'Swelling of the back of the mouth' ]
       },
       'Toothache': {
         keyQuestions: [ '' ],
