@@ -1616,35 +1616,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Shortness of breath', 'Dizziness', 'Cool, moist skin', 'Pain or discomfort in neck, jaw, shoulders, back, or arms', 'Blue or gray face or lips', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ]
       },
       'Heart Rate Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Rate', 'Medications', 'History', 'Implanted Device in Chest' ],
+        otherProtocolstoConsider: [ 'Alcohol Problems (22)', 'Anxiety (37)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Dizziness (192)', 'Fatigue (235)', 'Headache (303)', 'Hypertension (347)', 'Hyperventilation (350)', 'Hypotension (353)', 'Weakness (645)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is heart rate > 150 bpm and are any of the following present?',
+            list: [ 'Chest, neck, jaw, or arm pain or discomfort', 'Difficulty breathing', 'Skin cool and moist or hot and dry', 'Face or lips blue, gray, or very pale', 'Fainting' ],
+            true: 'Call ambulance'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Persistent rapid heart rate of > 150 bpm for > 30 minutes', 'Light-headedness, faintness, or dizziness', 'Persistent rapid heart rate and history of thyroid disease or heart disease', 'Repeated shocks with internal defibrillator in place', 'Slow heart rate and extreme fatigue or frequent episodes of a slow heart rate', 'Persistent slow heart rate and pauses of > 3 seconds (count 1,001, 1,002, 1,003)' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Frequent episodes of a rapid heart rate', 'Persistent slow heart rate and history of heart disease, general ill feeling, or frequent falls', 'Recent history of persistent vomiting or diarrhea' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'History of prior treatment for rapid heart rate', 'Recent ingestion of diuretics, diet pills, decongestants, cold remedies, β-blockers, thyroid medication, a new medication, or recreational drugs', 'History of bronchodilator use and new prescription or increase in dose', 'Excessive use of caffeine, tobacco, alcohol, or herbal stimulants', 'Difficulty sleeping or persistent fatigue', 'Increase in stress', 'Exercise < 30 minutes before onset of symptoms', 'Frequent skipped beats', 'Unexplained weight gain, fatigue, and feeling cold', 'Fever' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'To slow down heart rate:' = [ 'take a deep breath; hold and pinch nostrils closed. Gently try to exhale through the nose', 'take a deep breath and bear down as if having a bowel movement', 'try to blow up a balloon', 'take a cold shower and let cold water splash on the face and head', 'try to remain calm', 'rest and relax', 'try to identify the trigger and discuss it with PCP if problem persists', 'avoid medications that seem to worsen the problem', 'avoid caffeine and alcohol' ] ],
+        reportToPCP: [ 'Problem persists or worsens', 'Light-headedness or faintness' ],
+        seekEmergencyCare: [ 'Chest, neck, jaw, or arm pain', 'Difficulty breathing', 'Cool and moist skin', 'Face or lips blue, gray, or very pale', 'Fainting', 'Loss of consciousness or altered mental status' ]
       },
       'Hypertension': {
         keyQuestions: [ '' ],
