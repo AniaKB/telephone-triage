@@ -878,527 +878,527 @@ const bodySystem = {
     },
   },
   Ears: {
-      'Earache, Drainage': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Common Cold Symptoms (138)', 'Crying, Excessive, in Infants (169)', 'Ear Injury, Foreign Body (203)', 'Fever, Adult (241), Child (244)', 'Hearing Loss (310)', 'Piercing Problems (446)', 'Sore Throat (567).' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Earache, stiff neck, and fever' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Swelling, pain, and redness on one side of the face', 'Traumatic blow to the ear followed by severe pain, loss of hearing, bruising behind the ear, bleeding in the ear canal, or significant swelling', 'Severe pain unresponsive to pain medication', 'History of diabetes or immunosuppression', 'Ear deviated outward', 'Tenderness of bone behind ear' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Sudden hearing loss and pain, ear drainage, or dizziness', 'Bloody or clear drainage (different from usual ear wax)', 'Swelling, pain, warmth, drainage, or fever', 'Increased pain when moving or touching the ear', 'Blisters or sores', 'Fever, congestion, or sore throat', 'Light-headedness' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Unable to remove wax plug with medication and pain or decreased hearing', 'Sunburned ears', 'Pain after exposure to cold', 'Muffled hearing but no pain', 'Pain after swimming or exposure to water', 'Itching', 'Sudden pain with cracking or popping noise, decreased hearing and congestion', 'Ringing in the ears', 'Taking antibiotics for ear infection > 3 days and earache persists' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Do not instill liquid drops in the ear if pain is related to an injury or a ruptured eardrum is suspected (sudden pain, hearing loss, bleeding or discharge, ringing in the ears, dizziness).', 'Apply cool compresses to sunburned ears or ice packs to swollen area caused by a blow to the ear.', 'To remove excessive ear wax, use Debrox (carbamide peroxide) as directed for as long as 3 days, or use two drops of mineral oil in the affected ear twice a day for 2 days.', 'Apply warm compresses for ear pain for 15 to 20 minutes, 4 times a day, until resolved or while waiting for appointment. Fill a sock half full of rice. Knot the end. Microwave the sock until warm and apply against the ear. Check temperature against inner wrist before applying to the ear.', 'Avoid swimming until ear pain and drainage subside.', 'Swimmer\'s ear prevention: Mix equal parts of white vinegar and rubbing alcohol. Instill five drops of the mixture in each ear before and after swimming.', 'Relieve ear congestion by frequent swallowing, chewing gum, and swallowing with the nose pinched closed.', 'Avoid air travel when an earache or congestion is present. If travel is unavoidable, take a decongestant before flying, and chew gum during takeoff and landing.', 'Take acetaminophen for earache or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
-        reportToPCP: [ 'No improvement in 3 days or condition worsens', 'Persistent fever unresponsive to fever-reducing measures', 'Vomiting, diarrhea, fatigue, lethargy, or stiff neck', 'Fever or swelling' ],
-        seekEmergencyCare: [ 'Earache, stiff neck, fever' ]
-      },
-      'Ear Injury, Foreign Body': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Earache, Drainage (200)', 'Head Injury (307)', 'Hearing Loss (310)', 'Piercing Problems (446)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'After an injury to the ear, are any of the following present?',
-            list: [ 'Loss of coordination', 'Facial paralysis or drooping', 'Whirling vertigo' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ ' Hearing loss', 'Ear canal bleeding', 'Dizziness', 'Recent blow to head and clear or bloody ear canal drainage', 'Unable to remove foreign body or embedded piercing', 'Severe pain', 'Persistent ringing in ear', 'Lacerated earlobe', 'Insect in ear canal', 'Severe swelling of ear lobe', 'Persistent bleeding > 30 minutes' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Persistent pain > 48 hours', 'Earache after a blast of air, noise, or a blow to the head', 'External ear red and swollen', 'Recent use of Q-tips', 'Minor laceration and tetanus immunization > 10 years', 'No improvement after 3 days of home care' ],
-            true: [ 'Seek medical care within 24 hours', 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions' ]
-          },
-        ],
-        homeCareInstructions: [ ' Apply ice pack to ear for 20 minutes, 4 times a day, for the first 24 to 48 hours after injury.', 'Point the ear toward the light and pull up on the ear to encourage an insect to crawl out of the ear toward the light.', 'Do not try to remove foreign object if unable to remove by pointing ear down toward the ground and gently shaking the head while pulling up on the ear.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Watch for signs of infection: increased pain, drainage, fever, redness, or warmth.' ],
-        reportToPCP: [ 'Signs of infection: increased pain, drainage, fever, redness, or warmth', 'Persistent pain > 48 hours', 'Dizziness', 'Persistent ear canal drainage', 'No improvement or condition worsens' ],
-        seekEmergencyCare: [ ' Loss of coordination', 'Facial paralysis or drooping', 'Whirling vertigo' ]
-      },
-      'Ear Ringing': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ ' Congestion (145)', 'Dizziness (192)', 'Earache, Drainage (200)', 'Ear Injury, Foreign Body (203)', 'Hearing Loss (310).' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Overdose or frequent ingestion of aspirin or aspirin products' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Foreign body in the ear', 'Severe ear pain unresponsive to home care measures' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' Recent ingestion of aspirin or medications containing aspirin, quinine, or streptomycin', 'History of recent head injury or recent ear surgery', 'Dizziness or vertigo', 'Nausea or vomiting', 'Persistent ear pain', 'Ear drainage', 'Persistent hearing loss' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Upper respiratory infection', 'Congestion associated with allergies', 'Feeling of fullness in one or both ears', 'Excessive wax buildup', 'History of Ménière disease with similar symptoms' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Take decongestants to relieve ear congestion. Follow instructions on the label. Ask your pharmacist for product suggestions.', 'If taking medications containing aspirin, quinine, or streptomycin, stop taking and notify PCP.', 'Do not poke at wax or try to remove with fingers or cotton swabs. These measures worsen the problem.', 'Decrease use of salt, caffeine, and alcohol if history of Ménière disease is present.' ],
-        reportToPCP: [ 'Significant hearing loss or dizziness', 'Ear pain or drainage', 'Persistent vomiting, increased ringing, headache' ],
-        seekEmergencyCare: [ null ]
-      },
+    'Earache, Drainage': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Common Cold Symptoms (138)', 'Crying, Excessive, in Infants (169)', 'Ear Injury, Foreign Body (203)', 'Fever, Adult (241), Child (244)', 'Hearing Loss (310)', 'Piercing Problems (446)', 'Sore Throat (567).' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Earache, stiff neck, and fever' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Swelling, pain, and redness on one side of the face', 'Traumatic blow to the ear followed by severe pain, loss of hearing, bruising behind the ear, bleeding in the ear canal, or significant swelling', 'Severe pain unresponsive to pain medication', 'History of diabetes or immunosuppression', 'Ear deviated outward', 'Tenderness of bone behind ear' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Sudden hearing loss and pain, ear drainage, or dizziness', 'Bloody or clear drainage (different from usual ear wax)', 'Swelling, pain, warmth, drainage, or fever', 'Increased pain when moving or touching the ear', 'Blisters or sores', 'Fever, congestion, or sore throat', 'Light-headedness' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Unable to remove wax plug with medication and pain or decreased hearing', 'Sunburned ears', 'Pain after exposure to cold', 'Muffled hearing but no pain', 'Pain after swimming or exposure to water', 'Itching', 'Sudden pain with cracking or popping noise, decreased hearing and congestion', 'Ringing in the ears', 'Taking antibiotics for ear infection > 3 days and earache persists' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Do not instill liquid drops in the ear if pain is related to an injury or a ruptured eardrum is suspected (sudden pain, hearing loss, bleeding or discharge, ringing in the ears, dizziness).', 'Apply cool compresses to sunburned ears or ice packs to swollen area caused by a blow to the ear.', 'To remove excessive ear wax, use Debrox (carbamide peroxide) as directed for as long as 3 days, or use two drops of mineral oil in the affected ear twice a day for 2 days.', 'Apply warm compresses for ear pain for 15 to 20 minutes, 4 times a day, until resolved or while waiting for appointment. Fill a sock half full of rice. Knot the end. Microwave the sock until warm and apply against the ear. Check temperature against inner wrist before applying to the ear.', 'Avoid swimming until ear pain and drainage subside.', 'Swimmer\'s ear prevention: Mix equal parts of white vinegar and rubbing alcohol. Instill five drops of the mixture in each ear before and after swimming.', 'Relieve ear congestion by frequent swallowing, chewing gum, and swallowing with the nose pinched closed.', 'Avoid air travel when an earache or congestion is present. If travel is unavoidable, take a decongestant before flying, and chew gum during takeoff and landing.', 'Take acetaminophen for earache or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+      reportToPCP: [ 'No improvement in 3 days or condition worsens', 'Persistent fever unresponsive to fever-reducing measures', 'Vomiting, diarrhea, fatigue, lethargy, or stiff neck', 'Fever or swelling' ],
+      seekEmergencyCare: [ 'Earache, stiff neck, fever' ]
+    },
+    'Ear Injury, Foreign Body': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Earache, Drainage (200)', 'Head Injury (307)', 'Hearing Loss (310)', 'Piercing Problems (446)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'After an injury to the ear, are any of the following present?',
+          list: [ 'Loss of coordination', 'Facial paralysis or drooping', 'Whirling vertigo' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ ' Hearing loss', 'Ear canal bleeding', 'Dizziness', 'Recent blow to head and clear or bloody ear canal drainage', 'Unable to remove foreign body or embedded piercing', 'Severe pain', 'Persistent ringing in ear', 'Lacerated earlobe', 'Insect in ear canal', 'Severe swelling of ear lobe', 'Persistent bleeding > 30 minutes' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Persistent pain > 48 hours', 'Earache after a blast of air, noise, or a blow to the head', 'External ear red and swollen', 'Recent use of Q-tips', 'Minor laceration and tetanus immunization > 10 years', 'No improvement after 3 days of home care' ],
+          true: [ 'Seek medical care within 24 hours', 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions' ]
+        },
+      ],
+      homeCareInstructions: [ ' Apply ice pack to ear for 20 minutes, 4 times a day, for the first 24 to 48 hours after injury.', 'Point the ear toward the light and pull up on the ear to encourage an insect to crawl out of the ear toward the light.', 'Do not try to remove foreign object if unable to remove by pointing ear down toward the ground and gently shaking the head while pulling up on the ear.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Watch for signs of infection: increased pain, drainage, fever, redness, or warmth.' ],
+      reportToPCP: [ 'Signs of infection: increased pain, drainage, fever, redness, or warmth', 'Persistent pain > 48 hours', 'Dizziness', 'Persistent ear canal drainage', 'No improvement or condition worsens' ],
+      seekEmergencyCare: [ ' Loss of coordination', 'Facial paralysis or drooping', 'Whirling vertigo' ]
+    },
+    'Ear Ringing': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ ' Congestion (145)', 'Dizziness (192)', 'Earache, Drainage (200)', 'Ear Injury, Foreign Body (203)', 'Hearing Loss (310).' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Overdose or frequent ingestion of aspirin or aspirin products' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Foreign body in the ear', 'Severe ear pain unresponsive to home care measures' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' Recent ingestion of aspirin or medications containing aspirin, quinine, or streptomycin', 'History of recent head injury or recent ear surgery', 'Dizziness or vertigo', 'Nausea or vomiting', 'Persistent ear pain', 'Ear drainage', 'Persistent hearing loss' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Upper respiratory infection', 'Congestion associated with allergies', 'Feeling of fullness in one or both ears', 'Excessive wax buildup', 'History of Ménière disease with similar symptoms' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Take decongestants to relieve ear congestion. Follow instructions on the label. Ask your pharmacist for product suggestions.', 'If taking medications containing aspirin, quinine, or streptomycin, stop taking and notify PCP.', 'Do not poke at wax or try to remove with fingers or cotton swabs. These measures worsen the problem.', 'Decrease use of salt, caffeine, and alcohol if history of Ménière disease is present.' ],
+      reportToPCP: [ 'Significant hearing loss or dizziness', 'Ear pain or drainage', 'Persistent vomiting, increased ringing, headache' ],
+      seekEmergencyCare: [ null ]
+    },
   },
   Nose: {
-      'Common Cold Symptoms': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Congestion': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Foreign Body, Nose': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Nosebleed': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Nose Injury': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
+    'Common Cold Symptoms': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Congestion': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Foreign Body, Nose': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Nosebleed': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Nose Injury': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
   },
   'Throat/Mouth': {
-      'Bad Breath': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Diabetes Problems (180)', 'Gas/Belching (282)', 'Indigestion (370)', 'Mouth Problems (410)', 'Swallowing Difficulty (589)', 'Tongue Problems (608)', 'Toothache (611)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ ' Breath smells fruity or ammonia-like', 'Foul odor accompanied by abdominal swelling and pain', 'Fever and sores in the mouth or throat', 'Severe pain in mouth or tongue' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Persistent gum bleeding or swelling', 'Persistent cough with foul-smelling sputum', 'Loose, missing, or decayed teeth', 'Frequent use of cast iron cooking utensils or dishes', 'Recent ingestion of a large dose of vitamins or minerals', 'History of gastrointestinal or chronic lung disease', 'History of chronic allergies or sinus problems ' ],
-            true: 'Call PCP or dentist for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Rinse mouth with antiseptic mouthwash, such as Listerine.', 'Brush teeth or dentures, gums, and tongue twice a day and floss regularly.', 'Remove and soak bridges and dentures daily.', 'Decrease dosage of vitamins and mineral supplements if they are believed to be the cause of bad breath.', 'Reduce use of cast iron cooking utensils (unless recommended by physician).', 'Reduce ingestion of garlic, onions, alcohol, or coffee.', 'See dentist regularly and as dental problems occur.' ],
-        reportToPCP: [ ' Severe pain or fever', 'No improvement or condition worsens', 'Breath smells like fruit or ammonia' ],
-        seekEmergencyCare: [ null ]
-      },
-      'Foreign Body, Swallowing of': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Piercing Problems (446)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Vomiting, Adult (638), Child (641)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Excessive saliva, drooling, or gagging', 'Difficulty swallowing', 'Coughing, choking, or breathing difficulties', 'Suicide attempt' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Pain or discomfort in throat or chest', 'Abdominal pain', 'Vomiting', 'Object was a battery or sharp object' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Metal object', 'Object size larger than a nickel' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Wood or plastic object', 'Dull glass object (piece of a jar or cup)', 'Object size smaller than a penny', 'Known substance swallowed but no symptoms' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'If no symptoms, try a sip of fluid. If no difficulty, try swallowing bread or soft food.', 'A dull glass object, such as a piece of a jar, cup, or ring, should pass with stools without difficulty in 3 to 4 days.', 'Do not give laxatives. Increase fiber (fruit, vegetables, whole grains) in the diet to help stimulate natural elimination.', 'Check stools for swallowed object.' ],
-        reportToPCP: [ ' Intermittent choking or gagging', 'Abdominal pain', 'No evidence of object in stools within 7 days', 'Vomiting', 'Chest pain', 'Fever' ],
-        seekEmergencyCare: [ 'Drooling, gagging, choking, or difficulty breathing or swallowing' ]
-      },
-      'Jaw Pain': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Radiation', 'Associated Symptoms', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Heartburn (313)', 'Indigestion (370)', 'Mouth Problems (410)', 'Neck Pain (417)', 'Toothache (611)', 'Tooth Injury (614)' ],
-        nurseAlert: 'There are many conditions that cause jaw pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with jaw pain. Women with jaw, neck, or back pain, nausea, and/or shortness of breath may be experiencing a heart attack.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ ' Chest pain', 'Difficulty breathing' ],
-            true: 'Go to Chest Pain protocol (118) or Breathing Problems protocol (101)'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ ' Intermittent jaw pain and history of hypertension, cardiovascular disease, high cholesterol, obesity, heavy smoker, or age > 30 years', 'New onset and pain radiates to neck, shoulders, or arms' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Severe pain', 'Recent trauma to the area', 'Teeth do not align as usual ' ],
-            true: 'Seek medical or dental care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Jaw locks in certain positions', 'Signs of infection (increased pain, swelling, drainage, red streaks, or warmth)' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ ' Pain > 2 weeks', 'Headache, neck, and shoulder pain', 'Clicking, snapping, or popping sound with jaw movement', 'Difficulty opening mouth wide', 'Pain in jaw joint', 'Ear or eye pain', 'Intermittent swelling over the area' ],
-            true: 'Call back or call PCP or dentist for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Avoid chewing gum or tough foods.', 'Alternate cold and hot packs to the jaw 6 times a day.', 'Avoid cradling the telephone receiver between the jaw and shoulder.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort and swelling, as tolerated. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Massage muscles around the jaw.' ],
-        reportToPCP: [ ' Persistent pain unrelieved by home care measures', 'Condition worsens', 'Signs of infection: increased pain, swelling, drainage, red streaks, warmth, or fever' ],
-        seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing', 'New pain radiates to neck, shoulders, or arms' ]
-      },
-      'Mouth Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Bad Breath (62); Jaw Pain (389)', 'Piercing/Pocketing Problems (446)', 'Skin Lesions: Lumps, Bumps, and Sores (559)', 'Sore Throat (567)', 'Swallowing Difficulty (589)', 'Toothache (611)', 'Tooth Injury (614)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: ' Are any of the following present?',
-            list: [ ' Sudden swelling in back of throat or tongue', 'Jaw feels locked in place, inability to open mouth', 'Unable to swallow own saliva' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: ' Are any of the following present?',
-            list: [ ' Penetrating injury to mouth with sharp object', 'Persistent bleeding', 'Severe pain', 'Gaping laceration to lip, tongue, or inside mouth', 'Pain with facial swelling', 'Sensation of bone or food stuck in throat' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: ' Are any of the following present?',
-            list: [ 'Fever and mouth sores', 'Blisters', 'White patches on tongue, gums, or inner cheeks', 'General ill feeling', 'Pain with biting, chewing, or opening mouth', 'Persistent mouth pain unresponsive to home care measures', 'History of phenytoin (Dilantin) use', 'Long history of smoking or use of chewing tobacco', 'Foul odor despite regular hygiene', 'Red, swollen, tender gums with fever', 'Difficulty swallowing' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: ' Are any of the following present?',
-            list: [ ' History of oral herpes, canker sores, recent viral illness, or new medication', 'Taking large doses of vitamins', 'Red, swollen, tender gums and no fever', 'Sore spot on tongue', 'Poor eating habits or change in diet', 'Recent increase in stress', 'Dental caries' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Iced fluids may soothe mouth sores but will worsen a toothache.', 'Rinse mouth with warm water and ½ tsp salt or baking soda 4 times a day, or rinse with an antiseptic mouthwash.', 'Avoid spicy, citrus, or salty foods until sores are healed.', 'Avoid touching sores.', 'Brush, floss, and rinse teeth and mouth at least twice daily.', 'Take usual pain medication (acetaminophen or ibuprofen) for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Use OTC product containing Orabase to provide protective coating and diminish discomfort.' ],
-        reportToPCP: [ ' Mouth lesion persists > 2 weeks', 'Persistent pain or bleeding', 'Signs of infection: pain, swelling, drainage, warmth, or fever', 'Difficulty swallowing', 'No improvement or condition worsens' ],
-        seekEmergencyCare: [ ' Sudden swelling in back of throat or tongue', 'Jaw feels locked in place, inability to open mouth', 'Unable to swallow own saliva' ]
-      },
-      'Sore Throat': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale', 'Associated Symptoms' ],
-        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Congestion (145)', 'Cough (163)', 'Earache, Drainage (200)', 'Fever, Adult (241), Child (244)', 'Hoarseness (341)', 'Mouth Problems (410)', 'Pregnancy, Cold Symptoms (466)', 'Swallowing Difficulty (589)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Difficulty breathing (for reasons other than nasal congestion)', 'Excessive drooling by a small child', 'Stridor', 'Inability to swallow own saliva', 'Inability to open mouth fully' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Significant difficulty swallowing because of pain', 'Temperature > 104°F (40°C)', 'Temperature > 101°F (38.3°C) in the elderly or immunosuppressed', 'Signs of dehydration' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' History of rheumatic fever, mitral valve prolapse, or other heart valve problem', 'Skin rash', 'Close contact with someone with strep throat within the past 2 weeks', 'Yellow pus or white mucus at back of throat', 'Red or enlarged tonsils', 'Persistent sore throat > 3 days', 'Ear pain', 'Fever or chills unresponsive to fever-reducing measures', 'Diabetes, elderly, or immunosuppressed', 'Dizziness/faintness', 'Foul-smelling breath' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Nasal congestion', 'Cough or sneezing', 'Feeling of fullness in ear' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Take your usual pain medication (acetaminophen, aspirin, ibuprofen) for headache or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Gargle with salt water several times a day for throat discomfort (¼ tsp regular salt to ½ cup warm water) or sip warm chicken broth. Use frozen cough drops or hard candy for additional relief if age > 4 years.', 'Increase fluids; try warm tea with lemon and honey, apple juice, gelatin, or sucking on flavored ice. Take frequent small sips if it is painful to swallow.', 'If you smoke, decrease or stop smoking.', 'Use a vaporizer or humidifier to keep the air moist, especially at night, or put a pot of water near the heat source.', 'Take decongestants to help relieve congestion, unless there is a history of hypertension or pregnancy. Discuss with PCP or pharmacist. ' ],
-        reportToPCP: [ ' Fever > 101°F (38.3°C) for several days', 'Sore throat persists > 3 days or worsens', 'Earache', 'No improvement or condition worsens', 'Drooling', 'Signs of dehydration' ],
-        seekEmergencyCare: [ ' Unable to swallow own saliva', 'Difficulty breathing/stridor', 'Chest pain', 'Excessive drooling', 'Unable to open mouth fully' ]
-      },
-      'Swallowing Difficulty': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Foreign Body, Swallowing of (274)', ' Heartburn (313)', ' Neurologic Symptoms (420)', ' Piercing Problems (446)', ' Sore Throat (567)', ' Weakness (645)' ],
-        nurseAlert: 'Sudden changes in ability to swallow, vision, speech, or mental status, weakness, and numbness may be signs of a stroke or other serious neurologic disorder. Prompt treatment may prevent extensive damage to the brain or reduce permanent disability. Medications used to break up a clot in the brain need to be administered within 3 hours of symptom onset.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Weakness of neck, chest, and limbs', 'Double or blurred vision, drooling, or drooping eyelids', 'Excessive drooling in small child who appears ill', 'Sudden swelling in face, tongue, or throat or itching, hives, or wheezing', 'Difficulty breathing', 'Pain in jaw, throat, neck, shoulders, chest, or arms', 'Inability to swallow own saliva' ],
-            true: 'Call ambulance or Seek emergency care now'
-          },
-          {
-            B: 'Is the following present?',
-            list: [ 'Sensation that bone or food is stuck in throat or esophagus' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Is the following present?',
-            list: [ 'Unexplained weight loss' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Difficulty swallowing because of sore throat', 'Intermittent chest pain on bending forward or lying down', 'Throat feels tight after swallowing', 'Recent increase in stress' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) as tolerated for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Gargle with salt water several times a day for throat discomfort. Suck on hard candy or lozenges.', 'Increase fluids. Sip warm tea with lemon and honey.', 'Swallow bread or soft foods, as tolerated.', 'Try OTC antacids, such as Gelusil, Maalox, Mylanta, Riopan, and Tums, and follow instructions on the label.', 'Do not lie down, bend over, or exercise soon after eating.', 'Eat small, frequent meals.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, vinegar, fatty foods, and carbonated beverages.' ],
-        reportToPCP: [ ' No improvement after 3 days or condition worsens', 'Burping or vomiting blood or dark coffee-grounds-like emesis', 'Excessive drooling', 'Persistent fever unresponsive to home care measures' ],
-        seekEmergencyCare: [ ' Weakness of neck, chest, and limbs', 'Double or blurred vision, drooling, or drooping eyelids', 'Excessive drooling in small child who appears ill', 'Sudden swelling in face, tongue, or throat or itching, hives, or wheezing', 'Difficulty breathing', 'Pain in jaw, throat, neck, shoulders, chest, or arms', 'Inability to swallow own saliva' ]
-      },
-      'Tongue Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Mouth Problems (410)', 'Piercing Problems (446)', 'Sore Throat (567)', 'Swallowing Difficulty (589)', 'Toothache (611)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Sudden onset of tongue swelling and difficulty breathing' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Is the following present?',
-            list: [ 'Sudden onset of tongue swelling and no difficulty breathing', 'Pain, swelling, drainage around piercing', 'Gaping laceration from torn piercing' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Pain after taking a new medication', 'Pain on one side of face', 'Persistent hard lump on tongue or mouth', 'Persistent pain and diarrhea with loose, foul-smelling, bulky stools', 'Ulcers, cracks, redness, and persistent pain unresponsive to > 3 days of home care measures', 'Minor tear from piercing and last tetanus shot > 10 years' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Tongue bright red and swollen', 'Red tip and edges', 'Tongue appears hairy', 'Ulcers', 'Sore on one area of tongue', 'Tongue appears black from Pepto-Bismol', 'Irritation from dentures, rough tooth, or braces' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Drink through a straw to minimize discomfort.', 'Note relationship between certain foods and tongue pain and avoid those foods in the diet. Alcohol, hot food or spices, tobacco, chocolate, citrus foods, vinegar, pickles, salted nuts, and chips may irritate the tongue. Milk, gelatin, yogurt, ice cream, and custard are soothing to the tongue.', 'Rinse mouth 4 times a day with a salt or baking soda solution. Add ½ tsp salt or baking soda to 8 ounces of water.', 'If irritation is caused by a rough tooth or braces, contact your dentist.', 'If swelling is related to medication, discontinue use and contact PCP if it is a prescription medication.', 'Increase fluid intake.', 'If irritation is caused by dentures, remove dentures and contact dentist.' ],
-        reportToPCP: [ ' No improvement or condition worsens after 3 days of home care measures', 'Pain becomes intolerable', 'Fever, rash, facial swelling' ],
-        seekEmergencyCare: [ ' Difficulty breathing', 'Swelling of the back of the mouth' ]
-      },
-      'Toothache': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'If injury occurred, see Tooth Injury protocol (614)' ],
-        otherProtocolstoConsider: [ 'Chest Pain (118)', 'Facial Pain (222)', 'Jaw Pain (389)', 'Mouth Problems (410)', 'Tooth Injury (614)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Gnawing pain in lower teeth and neck, chest, shoulder, or arm' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'History of cardiovascular disease or diabetes and jaw pain (no known injury or dental problem)', 'Temperature > 100.4°F (38.0°C) ' ],
-            true: 'Seek medical care within 2 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' Persistent pain and swelling over upper or lower jaw', 'Drainage from dental abscess', 'Broken tooth (nontraumatic) ' ],
-            true: 'Seek dental care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Pain interferes with daily activities', 'Red, swollen, bleeding gums', 'Pain when biting food for several days', 'Recent filling and pain for several days', 'History of problems with same tooth (previous break or crack, hot or cold sensitivity)', 'Pain without trauma, fracture, fever, or facial swelling', 'Sores in mouth', 'Tooth loose, chipped, or decayed', 'Pain during or just after eating' ],
-            true: 'Call back or call dentist for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Apply ice pack for 20 minutes, 4 times a day, to reduce swelling.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rinse mouth with ½ tsp baking soda or salt in a cup of warm water several times a day if sores are present.', 'Brush teeth at least twice a day.', 'Call a dentist for an appointment.' ],
-        reportToPCP: [ 'Persistent pain unresponsive to pain medication', 'Facial swelling', 'Fever', 'Drainage from dental abscess' ],
-        seekEmergencyCare: [ 'Pain in chest, shoulder, or arms', 'Gnawing pain in lower teeth and neck' ]
-      },
-      'Tooth Injury': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Back/Neck Injury (56)', 'Jaw Pain (389)', 'Mouth Problems (410)', 'Toothache (611)' ],
-        nurseAlert: 'If the tooth has been knocked out, timing is critical since the success rate of reimplantation decreases significantly after 60 minutes. See home care instructions (616) for specific directions to help save the tooth.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Altered mental status', 'Severe neck pain', 'Numbness or tingling in arms or legs ' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Is the following present?',
-            list: [ 'Tooth (or teeth) knocked out', 'Tooth or teeth loose and about to fall out', 'Tooth repositioned', 'Unable to stop bleeding with pressure' ],
-            true: 'Seek dental or emergency care now and follow home care instructions'
-          },
-          {
-            C: 'After a traumatic injury to teeth, are any of the following present?',
-            list: [ 'Severe pain and swelling over affected area', 'Loose tooth or teeth', 'Tooth fractured through crown or to gum line', 'Painful cracked or chipped tooth', 'Frenum tear or laceration', 'Severe jaw pain' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Lacerated gum, cheek, or lip', 'Painless cracked or chipped tooth' ],
-            true: 'Call back or call dentist for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Find tooth, rinse gently with saliva, milk, or nonchlorinated bottle water and replace in socket as quickly as possible. Do not remove material adhered to tooth. Do not scrub tooth. Bite down on gauze pad or other material to help keep tooth in place.', 'If unable to replace tooth in socket, place tooth in a cup with ¼ tsp salt and 1 cup of milk. May place tooth under tongue if victim is alert and not a young child. Patient must be able to comprehend why it is important to keep tooth segment under the tongue so that there is no chance of swallowing tooth.', 'Bite down on a folded gauze dressing to control bleeding.', 'Call dentist.', 'Take your usual pain medication (acetaminophen, ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Apply ice to injured gum as tolerated to help control pain.' ],
-        reportToPCP: [ 'Persistent bleeding, swelling, or pain' ],
-        seekEmergencyCare: [ null ]
-      },
+    'Bad Breath': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Diabetes Problems (180)', 'Gas/Belching (282)', 'Indigestion (370)', 'Mouth Problems (410)', 'Swallowing Difficulty (589)', 'Tongue Problems (608)', 'Toothache (611)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ ' Breath smells fruity or ammonia-like', 'Foul odor accompanied by abdominal swelling and pain', 'Fever and sores in the mouth or throat', 'Severe pain in mouth or tongue' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Persistent gum bleeding or swelling', 'Persistent cough with foul-smelling sputum', 'Loose, missing, or decayed teeth', 'Frequent use of cast iron cooking utensils or dishes', 'Recent ingestion of a large dose of vitamins or minerals', 'History of gastrointestinal or chronic lung disease', 'History of chronic allergies or sinus problems ' ],
+          true: 'Call PCP or dentist for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Rinse mouth with antiseptic mouthwash, such as Listerine.', 'Brush teeth or dentures, gums, and tongue twice a day and floss regularly.', 'Remove and soak bridges and dentures daily.', 'Decrease dosage of vitamins and mineral supplements if they are believed to be the cause of bad breath.', 'Reduce use of cast iron cooking utensils (unless recommended by physician).', 'Reduce ingestion of garlic, onions, alcohol, or coffee.', 'See dentist regularly and as dental problems occur.' ],
+      reportToPCP: [ ' Severe pain or fever', 'No improvement or condition worsens', 'Breath smells like fruit or ammonia' ],
+      seekEmergencyCare: [ null ]
+    },
+    'Foreign Body, Swallowing of': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Piercing Problems (446)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Vomiting, Adult (638), Child (641)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Excessive saliva, drooling, or gagging', 'Difficulty swallowing', 'Coughing, choking, or breathing difficulties', 'Suicide attempt' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Pain or discomfort in throat or chest', 'Abdominal pain', 'Vomiting', 'Object was a battery or sharp object' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Metal object', 'Object size larger than a nickel' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Wood or plastic object', 'Dull glass object (piece of a jar or cup)', 'Object size smaller than a penny', 'Known substance swallowed but no symptoms' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'If no symptoms, try a sip of fluid. If no difficulty, try swallowing bread or soft food.', 'A dull glass object, such as a piece of a jar, cup, or ring, should pass with stools without difficulty in 3 to 4 days.', 'Do not give laxatives. Increase fiber (fruit, vegetables, whole grains) in the diet to help stimulate natural elimination.', 'Check stools for swallowed object.' ],
+      reportToPCP: [ ' Intermittent choking or gagging', 'Abdominal pain', 'No evidence of object in stools within 7 days', 'Vomiting', 'Chest pain', 'Fever' ],
+      seekEmergencyCare: [ 'Drooling, gagging, choking, or difficulty breathing or swallowing' ]
+    },
+    'Jaw Pain': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Radiation', 'Associated Symptoms', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Heartburn (313)', 'Indigestion (370)', 'Mouth Problems (410)', 'Neck Pain (417)', 'Toothache (611)', 'Tooth Injury (614)' ],
+      nurseAlert: 'There are many conditions that cause jaw pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with jaw pain. Women with jaw, neck, or back pain, nausea, and/or shortness of breath may be experiencing a heart attack.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ ' Chest pain', 'Difficulty breathing' ],
+          true: 'Go to Chest Pain protocol (118) or Breathing Problems protocol (101)'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ ' Intermittent jaw pain and history of hypertension, cardiovascular disease, high cholesterol, obesity, heavy smoker, or age > 30 years', 'New onset and pain radiates to neck, shoulders, or arms' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Severe pain', 'Recent trauma to the area', 'Teeth do not align as usual ' ],
+          true: 'Seek medical or dental care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Jaw locks in certain positions', 'Signs of infection (increased pain, swelling, drainage, red streaks, or warmth)' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ ' Pain > 2 weeks', 'Headache, neck, and shoulder pain', 'Clicking, snapping, or popping sound with jaw movement', 'Difficulty opening mouth wide', 'Pain in jaw joint', 'Ear or eye pain', 'Intermittent swelling over the area' ],
+          true: 'Call back or call PCP or dentist for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Avoid chewing gum or tough foods.', 'Alternate cold and hot packs to the jaw 6 times a day.', 'Avoid cradling the telephone receiver between the jaw and shoulder.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort and swelling, as tolerated. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Massage muscles around the jaw.' ],
+      reportToPCP: [ ' Persistent pain unrelieved by home care measures', 'Condition worsens', 'Signs of infection: increased pain, swelling, drainage, red streaks, warmth, or fever' ],
+      seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing', 'New pain radiates to neck, shoulders, or arms' ]
+    },
+    'Mouth Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Bad Breath (62); Jaw Pain (389)', 'Piercing/Pocketing Problems (446)', 'Skin Lesions: Lumps, Bumps, and Sores (559)', 'Sore Throat (567)', 'Swallowing Difficulty (589)', 'Toothache (611)', 'Tooth Injury (614)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: ' Are any of the following present?',
+          list: [ ' Sudden swelling in back of throat or tongue', 'Jaw feels locked in place, inability to open mouth', 'Unable to swallow own saliva' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: ' Are any of the following present?',
+          list: [ ' Penetrating injury to mouth with sharp object', 'Persistent bleeding', 'Severe pain', 'Gaping laceration to lip, tongue, or inside mouth', 'Pain with facial swelling', 'Sensation of bone or food stuck in throat' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: ' Are any of the following present?',
+          list: [ 'Fever and mouth sores', 'Blisters', 'White patches on tongue, gums, or inner cheeks', 'General ill feeling', 'Pain with biting, chewing, or opening mouth', 'Persistent mouth pain unresponsive to home care measures', 'History of phenytoin (Dilantin) use', 'Long history of smoking or use of chewing tobacco', 'Foul odor despite regular hygiene', 'Red, swollen, tender gums with fever', 'Difficulty swallowing' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: ' Are any of the following present?',
+          list: [ ' History of oral herpes, canker sores, recent viral illness, or new medication', 'Taking large doses of vitamins', 'Red, swollen, tender gums and no fever', 'Sore spot on tongue', 'Poor eating habits or change in diet', 'Recent increase in stress', 'Dental caries' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Iced fluids may soothe mouth sores but will worsen a toothache.', 'Rinse mouth with warm water and ½ tsp salt or baking soda 4 times a day, or rinse with an antiseptic mouthwash.', 'Avoid spicy, citrus, or salty foods until sores are healed.', 'Avoid touching sores.', 'Brush, floss, and rinse teeth and mouth at least twice daily.', 'Take usual pain medication (acetaminophen or ibuprofen) for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Use OTC product containing Orabase to provide protective coating and diminish discomfort.' ],
+      reportToPCP: [ ' Mouth lesion persists > 2 weeks', 'Persistent pain or bleeding', 'Signs of infection: pain, swelling, drainage, warmth, or fever', 'Difficulty swallowing', 'No improvement or condition worsens' ],
+      seekEmergencyCare: [ ' Sudden swelling in back of throat or tongue', 'Jaw feels locked in place, inability to open mouth', 'Unable to swallow own saliva' ]
+    },
+    'Sore Throat': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale', 'Associated Symptoms' ],
+      otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Congestion (145)', 'Cough (163)', 'Earache, Drainage (200)', 'Fever, Adult (241), Child (244)', 'Hoarseness (341)', 'Mouth Problems (410)', 'Pregnancy, Cold Symptoms (466)', 'Swallowing Difficulty (589)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Difficulty breathing (for reasons other than nasal congestion)', 'Excessive drooling by a small child', 'Stridor', 'Inability to swallow own saliva', 'Inability to open mouth fully' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Significant difficulty swallowing because of pain', 'Temperature > 104°F (40°C)', 'Temperature > 101°F (38.3°C) in the elderly or immunosuppressed', 'Signs of dehydration' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' History of rheumatic fever, mitral valve prolapse, or other heart valve problem', 'Skin rash', 'Close contact with someone with strep throat within the past 2 weeks', 'Yellow pus or white mucus at back of throat', 'Red or enlarged tonsils', 'Persistent sore throat > 3 days', 'Ear pain', 'Fever or chills unresponsive to fever-reducing measures', 'Diabetes, elderly, or immunosuppressed', 'Dizziness/faintness', 'Foul-smelling breath' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Nasal congestion', 'Cough or sneezing', 'Feeling of fullness in ear' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Take your usual pain medication (acetaminophen, aspirin, ibuprofen) for headache or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Gargle with salt water several times a day for throat discomfort (¼ tsp regular salt to ½ cup warm water) or sip warm chicken broth. Use frozen cough drops or hard candy for additional relief if age > 4 years.', 'Increase fluids; try warm tea with lemon and honey, apple juice, gelatin, or sucking on flavored ice. Take frequent small sips if it is painful to swallow.', 'If you smoke, decrease or stop smoking.', 'Use a vaporizer or humidifier to keep the air moist, especially at night, or put a pot of water near the heat source.', 'Take decongestants to help relieve congestion, unless there is a history of hypertension or pregnancy. Discuss with PCP or pharmacist. ' ],
+      reportToPCP: [ ' Fever > 101°F (38.3°C) for several days', 'Sore throat persists > 3 days or worsens', 'Earache', 'No improvement or condition worsens', 'Drooling', 'Signs of dehydration' ],
+      seekEmergencyCare: [ ' Unable to swallow own saliva', 'Difficulty breathing/stridor', 'Chest pain', 'Excessive drooling', 'Unable to open mouth fully' ]
+    },
+    'Swallowing Difficulty': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Foreign Body, Swallowing of (274)', ' Heartburn (313)', ' Neurologic Symptoms (420)', ' Piercing Problems (446)', ' Sore Throat (567)', ' Weakness (645)' ],
+      nurseAlert: 'Sudden changes in ability to swallow, vision, speech, or mental status, weakness, and numbness may be signs of a stroke or other serious neurologic disorder. Prompt treatment may prevent extensive damage to the brain or reduce permanent disability. Medications used to break up a clot in the brain need to be administered within 3 hours of symptom onset.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Weakness of neck, chest, and limbs', 'Double or blurred vision, drooling, or drooping eyelids', 'Excessive drooling in small child who appears ill', 'Sudden swelling in face, tongue, or throat or itching, hives, or wheezing', 'Difficulty breathing', 'Pain in jaw, throat, neck, shoulders, chest, or arms', 'Inability to swallow own saliva' ],
+          true: 'Call ambulance or Seek emergency care now'
+        },
+        {
+          B: 'Is the following present?',
+          list: [ 'Sensation that bone or food is stuck in throat or esophagus' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Is the following present?',
+          list: [ 'Unexplained weight loss' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Difficulty swallowing because of sore throat', 'Intermittent chest pain on bending forward or lying down', 'Throat feels tight after swallowing', 'Recent increase in stress' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) as tolerated for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Gargle with salt water several times a day for throat discomfort. Suck on hard candy or lozenges.', 'Increase fluids. Sip warm tea with lemon and honey.', 'Swallow bread or soft foods, as tolerated.', 'Try OTC antacids, such as Gelusil, Maalox, Mylanta, Riopan, and Tums, and follow instructions on the label.', 'Do not lie down, bend over, or exercise soon after eating.', 'Eat small, frequent meals.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, vinegar, fatty foods, and carbonated beverages.' ],
+      reportToPCP: [ ' No improvement after 3 days or condition worsens', 'Burping or vomiting blood or dark coffee-grounds-like emesis', 'Excessive drooling', 'Persistent fever unresponsive to home care measures' ],
+      seekEmergencyCare: [ ' Weakness of neck, chest, and limbs', 'Double or blurred vision, drooling, or drooping eyelids', 'Excessive drooling in small child who appears ill', 'Sudden swelling in face, tongue, or throat or itching, hives, or wheezing', 'Difficulty breathing', 'Pain in jaw, throat, neck, shoulders, chest, or arms', 'Inability to swallow own saliva' ]
+    },
+    'Tongue Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Mouth Problems (410)', 'Piercing Problems (446)', 'Sore Throat (567)', 'Swallowing Difficulty (589)', 'Toothache (611)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Sudden onset of tongue swelling and difficulty breathing' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Is the following present?',
+          list: [ 'Sudden onset of tongue swelling and no difficulty breathing', 'Pain, swelling, drainage around piercing', 'Gaping laceration from torn piercing' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Pain after taking a new medication', 'Pain on one side of face', 'Persistent hard lump on tongue or mouth', 'Persistent pain and diarrhea with loose, foul-smelling, bulky stools', 'Ulcers, cracks, redness, and persistent pain unresponsive to > 3 days of home care measures', 'Minor tear from piercing and last tetanus shot > 10 years' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Tongue bright red and swollen', 'Red tip and edges', 'Tongue appears hairy', 'Ulcers', 'Sore on one area of tongue', 'Tongue appears black from Pepto-Bismol', 'Irritation from dentures, rough tooth, or braces' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Drink through a straw to minimize discomfort.', 'Note relationship between certain foods and tongue pain and avoid those foods in the diet. Alcohol, hot food or spices, tobacco, chocolate, citrus foods, vinegar, pickles, salted nuts, and chips may irritate the tongue. Milk, gelatin, yogurt, ice cream, and custard are soothing to the tongue.', 'Rinse mouth 4 times a day with a salt or baking soda solution. Add ½ tsp salt or baking soda to 8 ounces of water.', 'If irritation is caused by a rough tooth or braces, contact your dentist.', 'If swelling is related to medication, discontinue use and contact PCP if it is a prescription medication.', 'Increase fluid intake.', 'If irritation is caused by dentures, remove dentures and contact dentist.' ],
+      reportToPCP: [ ' No improvement or condition worsens after 3 days of home care measures', 'Pain becomes intolerable', 'Fever, rash, facial swelling' ],
+      seekEmergencyCare: [ ' Difficulty breathing', 'Swelling of the back of the mouth' ]
+    },
+    'Toothache': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'If injury occurred, see Tooth Injury protocol (614)' ],
+      otherProtocolstoConsider: [ 'Chest Pain (118)', 'Facial Pain (222)', 'Jaw Pain (389)', 'Mouth Problems (410)', 'Tooth Injury (614)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Gnawing pain in lower teeth and neck, chest, shoulder, or arm' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'History of cardiovascular disease or diabetes and jaw pain (no known injury or dental problem)', 'Temperature > 100.4°F (38.0°C) ' ],
+          true: 'Seek medical care within 2 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' Persistent pain and swelling over upper or lower jaw', 'Drainage from dental abscess', 'Broken tooth (nontraumatic) ' ],
+          true: 'Seek dental care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Pain interferes with daily activities', 'Red, swollen, bleeding gums', 'Pain when biting food for several days', 'Recent filling and pain for several days', 'History of problems with same tooth (previous break or crack, hot or cold sensitivity)', 'Pain without trauma, fracture, fever, or facial swelling', 'Sores in mouth', 'Tooth loose, chipped, or decayed', 'Pain during or just after eating' ],
+          true: 'Call back or call dentist for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Apply ice pack for 20 minutes, 4 times a day, to reduce swelling.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rinse mouth with ½ tsp baking soda or salt in a cup of warm water several times a day if sores are present.', 'Brush teeth at least twice a day.', 'Call a dentist for an appointment.' ],
+      reportToPCP: [ 'Persistent pain unresponsive to pain medication', 'Facial swelling', 'Fever', 'Drainage from dental abscess' ],
+      seekEmergencyCare: [ 'Pain in chest, shoulder, or arms', 'Gnawing pain in lower teeth and neck' ]
+    },
+    'Tooth Injury': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Back/Neck Injury (56)', 'Jaw Pain (389)', 'Mouth Problems (410)', 'Toothache (611)' ],
+      nurseAlert: 'If the tooth has been knocked out, timing is critical since the success rate of reimplantation decreases significantly after 60 minutes. See home care instructions (616) for specific directions to help save the tooth.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Altered mental status', 'Severe neck pain', 'Numbness or tingling in arms or legs ' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Is the following present?',
+          list: [ 'Tooth (or teeth) knocked out', 'Tooth or teeth loose and about to fall out', 'Tooth repositioned', 'Unable to stop bleeding with pressure' ],
+          true: 'Seek dental or emergency care now and follow home care instructions'
+        },
+        {
+          C: 'After a traumatic injury to teeth, are any of the following present?',
+          list: [ 'Severe pain and swelling over affected area', 'Loose tooth or teeth', 'Tooth fractured through crown or to gum line', 'Painful cracked or chipped tooth', 'Frenum tear or laceration', 'Severe jaw pain' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Lacerated gum, cheek, or lip', 'Painless cracked or chipped tooth' ],
+          true: 'Call back or call dentist for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Find tooth, rinse gently with saliva, milk, or nonchlorinated bottle water and replace in socket as quickly as possible. Do not remove material adhered to tooth. Do not scrub tooth. Bite down on gauze pad or other material to help keep tooth in place.', 'If unable to replace tooth in socket, place tooth in a cup with ¼ tsp salt and 1 cup of milk. May place tooth under tongue if victim is alert and not a young child. Patient must be able to comprehend why it is important to keep tooth segment under the tongue so that there is no chance of swallowing tooth.', 'Bite down on a folded gauze dressing to control bleeding.', 'Call dentist.', 'Take your usual pain medication (acetaminophen, ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Apply ice to injured gum as tolerated to help control pain.' ],
+      reportToPCP: [ 'Persistent bleeding, swelling, or pain' ],
+      seekEmergencyCare: [ null ]
+    },
   },
   'Back/Neck Problems': {
       'Back/Neck Injury': {
@@ -1464,35 +1464,45 @@ const bodySystem = {
         seekEmergencyCare: [ ' New onset of persistent numbness or tingling in legs or feet, or loss of bowel or bladder control, or inability to urinate for > 8 hours', 'Weakness in the limbs', 'New-onset cool, moist skin, or pain radiates to neck, shoulders, jaw, or arm' ]
       },
       'Neck Pain': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Associated Symptoms', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Back/Neck Injury (56)', 'Chest Pain (118)', 'Glands, Swollen or Tender (292)', 'Jaw Pain (389)', 'Mumps (413)', 'Numbness and Tingling (433)' ],
+        nurseAlert: 'There are many conditions that can cause neck pain. When neck pain is associated with several other symptoms, triage with caution and note signs that may be an indication of a more serious condition such as meningitis (pain bending head forward, headache, fever, vomiting, confusion, photophobia) or a heart attack (chest, neck, back or jaw pain, sweating, palpitations, nausea, and/or vomiting).',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is neck pain related to an injury?',
+            list: [ null ],
+            true: 'Got to Back/Neck Injury protocol (56)'
+          },
+          {
+            B: ' Is chest pain present?',
+            list: [ null ],
+            true: 'Got to Chest Pain protocol (118)'
+          },
+          {
+            C: 'Sudden onset of pain, and are any of the following present?',
+            list: [ 'History of cardiac disease or angina', 'Jaw pain', 'Sweating, palpitations, nausea, and/or vomiting', 'Difficulty breathing', 'Pain worsens when head is bent toward chest and any of the following:' = [ 'confusion/drowsiness', 'severe headache', 'light sensitivity', 'fever', 'purple or blood-colored rash'], 'Numbness, tingling, weakness in both arms or legs', 'Changes in bowel or bladder control', 'Head involuntarily turns to side' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Weakness or numbness in one arm', 'Signs of infection: pain, swelling, redness, drainage, warmth, or red streaks', 'Fever > 103°F (39.4°C)', 'Fever > 101°F (38.3°C) and history of diabetes, elderly, immunosuppressed, or IV drug abuse', 'Swollen, painful lymph nodes > 1″ (2.5 cm)', 'Swollen, painful nodes and difficulty swallowing' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Rash', 'Sore throat associated with neck pain', 'Pain interferes with sleep or activity', 'Swelling on one or both sides of the neck' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            F: 'Are any of the following present?',
+            list: [ 'Slept in an awkward position', 'New exercise or activity', 'Recently carried heavy bag, purse, or other object using a shoulder strap', 'Pain worsens with lateral movement', 'History of prolonged sitting at a computer terminal or work station', 'Intermittent pain and history of prior neck problems' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Apply heat to neck for 20 minutes every 2 hours. Be careful with heat if diabetic. Do not sleep on a heating pad.', 'Sleep with a towel folded around neck to lessen neck movement.', 'Carry purse or briefcase under arm, rather than over the shoulder.', 'Avoid prolonged sitting. Frequently stretch and move around.', 'Exercise regularly to develop strong neck muscles.', 'Soak in hot bath or whirlpool.', 'Take usual pain medication (aspirin, acetaminophen, ibuprofen) as directed by your physician. Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Maintain good posture and proper body align ' ],
+        reportToPCP: [ 'Rash, fever, or increased pain bending neck forward', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing', 'Numbness, tingling, or weakness in both arms or legs', 'Severe headache and confusion', 'Sweating, palpitations, nausea, and/or vomiting', 'Swelling to one side of the neck with pain on palpation with or without fever', 'Loss of bowel or bladder control', 'Pain worsens when head is bent toward chest, confusion/drowsiness, severe headache, light sensitivity, fever, purple or blood-colored rash' ]
       },
   },
   'Chest/Cardiovascular Problems': {
