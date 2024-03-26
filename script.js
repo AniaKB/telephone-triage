@@ -1647,35 +1647,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Chest, neck, jaw, or arm pain', 'Difficulty breathing', 'Cool and moist skin', 'Face or lips blue, gray, or very pale', 'Fainting', 'Loss of consciousness or altered mental status' ]
       },
       'Hypertension': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Known Hypertension', 'Last Elevated Blood Pressure Reading', 'Medications', 'History (If pregnant, see Pregnancy, Hypertension protocol)' ],
+        otherProtocolstoConsider: [ 'Dizziness (192)', 'Headache (303)', 'Hypotension (353)', 'Nosebleed (427)', 'Pregnancy, Hypertension (472)', 'Pregnancy Problems (481)' ],
+        nurseAlert: 'Use this protocol only if caller has questions about high blood pressure, has been diagnosed with hypertension, is taking medication for hypertension, or regularly takes blood pressure readings and is concerned about elevated reading.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is the following present?',
+            list: [ 'Chest pain in addition to high blood pressureChest pain in addition to high blood pressure' ],
+            true: 'Go to Chest Pain protocol (118)'
+          },
+          {
+            B: 'Elevated blood pressure (diastolic > 100 mm Hg), and are any of the following present?',
+            list: [ 'History of thoracic or abdominal dissection', 'Severe headache, blurred vision, nausea, or vomiting', 'Drowsiness or confusion', 'Persistent numbness and tingling in hands and feet', 'Coughing up blood or blood-tinged sputum', 'Difficulty breathing', 'Persistent nosebleed unresponsive to home care measures', 'Diastolic blood pressure of > 110 mm Hg', 'Severe weakness', 'Under medical care for blood pressure control, and persistent blood pressure > 160/100 mm Hg and under medical care for blood pressure control', 'Dizziness or light-headedness' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' Periods of dizziness after starting new blood pressure medication', 'Intermittent nosebleed', 'Blood pressure elevation and recent change in blood pressure medications', 'Blood pressure elevation and taking OTC cold medications' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Persistent blood pressure readings > 140/90 mm Hg', 'Recent increase in stress', 'Increased use of alcohol', 'Blood pressure elevation and missed a dose of medication' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Measure blood pressure weekly if > 140/90 mm Hg.', 'Avoid smoking and alcohol consumption.', 'Eat a well-balanced, low-fat, low-salt diet. If overweight, start a weight-reduction program. Discontinue use of caffeine, nicotine, and licorice.', 'Exercise regularly. Start with walking.', 'Learn how to manage stress effectively. Read, exercise, take classes on stress reduction, meditate, do yoga.', 'If taking blood pressure medication, avoid cold remedies with antihistamines and decongestants. Consult with PCP before taking such medications.', 'Take blood pressure medication regularly. Do not skip doses. Do not stop or change medication without consulting PCP.', 'When experiencing symptoms of high blood pressure, do not drive.' ],
+        reportToPCP: [ 'Periods of dizziness, constipation, impotence, or tongue swelling after starting new blood pressure medication', 'Under medical care for blood pressure control and persistent elevated blood pressure > 160/100 mm Hg', 'Blood pressure > 140/90 mm Hg consistently for > 3 months' ],
+        seekEmergencyCare: [ 'Severe headache or blurred vision', 'Drowsiness or confusion', 'Persistent numbness and tingling in hands and feet', 'Coughing up blood or blood-tinged sputum', 'Difficulty breathing', 'Chest pain or heart palpitations', 'Persistent nosebleed' ]
       },
       'Hypotension': {
         keyQuestions: [ '' ],
