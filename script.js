@@ -1585,35 +1585,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Altered mental status', 'Sudden severe pain or shortness of breath', 'Cool, clammy, pale skin', 'Coughing up blood or pink frothy sputum' ]
       },
       'Heartburn': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Associated Symptoms', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Gas/Belching (282)', 'Indigestion (370)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
+        nurseAlert: 'Heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics: Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'In addition to a burning or heavy sensation, are any of the following present?',
+            list: [ 'Shortness of breath', 'Cool, moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ],
+            true: 'Call ambulance'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ ' History of diabetes or cardiac disease', 'Dizziness or light-headedness' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' Discomfort persists after taking antacids', 'Condition worsening, requiring more frequent use of antacids', 'Difficult or painful swallowing', 'Sensation that pill is stuck in esophagus' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Pain increased with use of medications', 'Increased pain bending over, exercising, or lying down soon after eating', 'Nausea or vomiting', 'Pregnancy', 'Frequent belching', 'Burping stomach contents into mouth', 'Obesity', 'Heavy tobacco or alcohol use', 'Increased stress' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Try OTC antacids (Maalox, Mylanta, Riopan, Tums) and follow directions on bottle. Try OTC Pepcid AC, Tagamet HB, Zantac, or Prilosec. Consult with PCP if taking other prescription medications. Liquids provide faster relief than tablets. Do not give Pepto-Bismol to a child. Ask pharmacist for additional product suggestions.', 'Avoid eating or drinking 2 to 3 hours before going to bed.', 'Do not lie down, bend over, or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks, or lie on left side to help speed stomach emptying and reduce reflux.', 'Eat small meals, but eat them more than three times a day.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, or any other food or drink that triggers heartburn.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top pantyhose, and pants or skirts with a tight-fitting waistband.', 'Fifty minutes after dinner, sip 1 tsp apple cider vinegar, diluted in water or juice; this will help hasten digestion of food, lessening reflux when sleeping.' ],
+        reportToPCP: [ 'Discomfort occurs after taking prescribed medication', 'No improvement in 3 days or condition worsens', 'No relief from antacids or other OTC drugs (such as Pepcid AC or Zantac)', 'Frequent use of antacids', 'Difficult or painful swallowing' ],
+        seekEmergencyCare: [ 'Shortness of breath', 'Dizziness', 'Cool, moist skin', 'Pain or discomfort in neck, jaw, shoulders, back, or arms', 'Blue or gray face or lips', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ]
       },
       'Heart Rate Problems': {
         keyQuestions: [ '' ],
