@@ -1507,35 +1507,25 @@ const bodySystem = {
   },
   'Chest/Cardiovascular Problems': {
       'Bleeding, Severe': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Location', 'Medications', 'Pain Scale', 'History' ],
+        otherProtocolstoConsider: [ 'Bites, Animal/Human (73)', 'Chest Trauma (122)', 'Extremity Injury (213)', 'Vomiting, Adult (638), Child (641)', 'Nosebleed (427)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Shock, Suspected (548)', 'Vaginal Bleeding (630).' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Gunshot, knife, or other penetrating wound and difficulty controlling bleeding', 'Signs of shock:' = [ 'light-headedness', 'skin is pale, cold, or moist', 'thirst', 'rapid pulse' ], 'Blood is spurting from the wound and cannot be controlled with direct pressure', 'Penetrating wound to abdomen, chest, or neck', 'Exposed bone or deformity at injury site' ],
+            true: 'Call ambulance and Follow Home Care Instructions. Do not remove penetrating object'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Persistent bleeding > 10 minutes after application of “Seek emergency direct pressure', 'Gaping bleeding wounds', 'History of bleeding disorder and difficulty controlling the bleeding', 'Taking a blood thinner medication', 'Unable to move limb or digit beyond the injury site' ],
             true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Lay person down and elevate the injured part.', 'Apply pressure directly over the area for at least 10 minutes.', 'If wound is spurting blood, apply pressure with palm of hand and sterile or clean bandages directly over the wound.', 'If spurting persists with direct pressure, apply pressure to the artery between the heart and injury site.', 'Maintain pressure until bleeding stops or help arrives.', 'If bandage is saturated with blood, do not remove; apply additional bandages on top of the bandage.' ],
+        reportToPCP: [ 'Swelling/bleeding occurs > 24 hours after bleeding is under control', 'Signs of infection: increased pain, drainage, fever, swelling, pus, streaks, or redness' ],
+        seekEmergencyCare: [ 'Signs of shock:' = [ 'light-headedness', 'pale, cold, or moist skin', 'excessive thirst', 'rapid pulse' ] ]
       },
       'Chest Pain': {
         keyQuestions: [ '' ],
