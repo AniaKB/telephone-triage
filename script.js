@@ -1528,35 +1528,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Signs of shock:' = [ 'light-headedness', 'pale, cold, or moist skin', 'excessive thirst', 'rapid pulse' ] ]
       },
       'Chest Pain': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'History of Myocardial Infarction', 'Coronary Artery Disease', 'Diabetes', 'Pulmonary Embolus, or Deep Vein Thrombosis', 'Associated Symptoms', 'Medications', 'Pain Scale', 'History', 'Implanted Device in Chest' ],
+        otherProtocolstoConsider: [ 'Anxiety (37)', 'Breathing Problems (101)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Dizziness (192)', 'Heartburn (313)', 'Heart Rate Problems (317)', 'Indigestion (370)', 'Vomiting, Adult (638)', 'Sweating, Excessive (592)', 'Weakness (645)' ],
+        nurseAlert: 'There are many conditions that cause chest pain; some can be potentially life-threatening. Err on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Continuous or intermittent pain, tightness, pressure, or discomfort accompanied by:' = [ 'shortness of breath', 'dizziness or weakness', 'cool, moist skin', 'nausea or vomiting', 'pain in the neck, shoulders, jaw, back, or arms', 'blue or gray face, lips, earlobes, or fingernails', 'heart palpitations' ], 'Chest pain persists, unrelieved by rest, pain medication, antacids, or nitroglycerin every 5 minutes for three doses' ],
+            true: 'Call ambulance and chew one adult aspirin unless allergic to aspirin'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'Change in chest pain pattern in known cardiac patient', 'Pain not relieved by two nitroglycerin tablets', 'Chest pain at rest or that awakens person', 'Recent period of prolonged sitting (such as during traveling)', 'Strong family history of heart disease, heart attack, stroke, or diabetes', 'History of diabetes, heart disease, CHF, or blood clotting problems', 'Age > 30 and heavy smoker with high blood pressure, high cholesterol, or obesity', 'Pain, swelling, warmth, or redness of leg', 'Sudden onset of swollen ankles', 'Coughing up blood', 'Fever, cough, congestion, and shortness of breath', 'Trauma, childbirth, or surgery in past month', 'History of blood clotting problems', 'Recreational street drug or prescription drug abuse within past 24 hours', 'Age > 35 and heart palpitations', 'Repeated shocks and internal defibrillator in place' ],
+            true: 'Seek emergency care now, do not drive yourself. If another driver is not available, call an ambulance'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Is the following present?',
+            list: [ 'Localized area of painful blisters or rash', 'Recent injury and pain increases with movement', 'Chest pain with exertion that is relieved with rest', 'Fracture < 2 months previously' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Pain occurs with deep breathing', 'Pain occurs when pressure is applied to the area', 'Intermittent mild chest discomfort with deep productive coughing' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'For heartburn or GERD:' = [ 'Take your usual antacid (Maalox, Mylanta, Riopan, Tums, Pepcid, Prilosec, or other antacid) for indigestion and follow instructions on the label.', 'Liquids provide faster relief than tablets.', 'Consult with PCP if taking other medications.', 'Do not give Pepto-Bismol to a child.', 'Avoid eating 2 to 3 hours before bedtime.' ], 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Take nitroglycerin as directed by PCP if pain is typical chest anginal pain; if no relief after 3 to 5 minutes, take aspirin and another nitroglycerin dose and have someone drive you to the ED or call an ambulance. Do not take aspirin if you are currently on anticoagulant therapy.', 'If pain is related to an injury that occurred 24 hours ago or longer and pain increases with movement, apply heat to the area for 20 minutes, 4 times a day.', 'For a cough:' = [ 'Drink 6 to 8 glasses of water daily (if no fluid restrictions prescribed).', 'Breathe steam from a shower or tea kettle with towel held over the head for 10 to 15 minutes to loosen phlegm.', 'Elevate head of bed to reduce coughing at night.', 'Drink warm lemonade, apple cider, or tea to help soothe cough.', 'Avoid irritants such as smoking, smog, and chemicals.', 'Turn down the heat, open the windows, or go out into cooler air to help suppress cough.', 'Take cough suppressants (ask your pharmacist for product suggestions) if cough is interfering with activity, causing chest pain or vomiting, or interrupting sleep at night. Follow instructions on the label. Do not use if age < 1 year.', 'If congested, avoid milk products.', 'Take OTC medications as needed, being sure to follow instructions on the label: for a wet cough, use a decongestant; for a dry cough, use an expectorant during the day and suppressant at night; for an allergy, use an antihistamine or decongestant. Ask your pharmacist for product suggestions.' ] ],
+        reportToPCP: [ ' No improvement or condition worsens', 'Localized area of painful blisters or rash' ],
+        seekEmergencyCare: [ 'Continuous or intermittent pain, tightness, pressure, or discomfort accompanied by' = [ 'shortness of breath', 'dizziness', 'cool, moist skin', 'nausea or vomiting', 'pain in the neck, shoulders, jaw, teeth, back, or arms', 'blue or gray face, lips, earlobes, or fingernails', 'heart palpitations' ], 'No relief from repeated nitroglycerin every 5 minutes for two doses', 'Repeated shocks with internal defibrillator in place', 'Severe pain' ]
       },
       'Chest Pain: Causes and Characteristics (Appendix S)': {
         keyQuestions: [ '' ],
