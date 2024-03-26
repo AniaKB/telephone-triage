@@ -1369,35 +1369,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Pain in chest, shoulder, or arms', 'Gnawing pain in lower teeth and neck' ]
       },
       'Tooth Injury': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Back/Neck Injury (56)', 'Jaw Pain (389)', 'Mouth Problems (410)', 'Toothache (611)' ],
+        nurseAlert: 'If the tooth has been knocked out, timing is critical since the success rate of reimplantation decreases significantly after 60 minutes. See home care instructions (616) for specific directions to help save the tooth.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Altered mental status', 'Severe neck pain', 'Numbness or tingling in arms or legs ' ],
+            true: 'Call ambulance'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Is the following present?',
+            list: [ 'Tooth (or teeth) knocked out', 'Tooth or teeth loose and about to fall out', 'Tooth repositioned', 'Unable to stop bleeding with pressure' ],
+            true: 'Seek dental or emergency care now and follow home care instructions'
+          },
+          {
+            C: 'After a traumatic injury to teeth, are any of the following present?',
+            list: [ 'Severe pain and swelling over affected area', 'Loose tooth or teeth', 'Tooth fractured through crown or to gum line', 'Painful cracked or chipped tooth', 'Frenum tear or laceration', 'Severe jaw pain' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Lacerated gum, cheek, or lip', 'Painless cracked or chipped tooth' ],
+            true: 'Call back or call dentist for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Find tooth, rinse gently with saliva, milk, or nonchlorinated bottle water and replace in socket as quickly as possible. Do not remove material adhered to tooth. Do not scrub tooth. Bite down on gauze pad or other material to help keep tooth in place.', 'If unable to replace tooth in socket, place tooth in a cup with ¼ tsp salt and 1 cup of milk. May place tooth under tongue if victim is alert and not a young child. Patient must be able to comprehend why it is important to keep tooth segment under the tongue so that there is no chance of swallowing tooth.', 'Bite down on a folded gauze dressing to control bleeding.', 'Call dentist.', 'Take your usual pain medication (acetaminophen, ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Apply ice to injured gum as tolerated to help control pain.' ],
+        reportToPCP: [ 'Persistent bleeding, swelling, or pain' ],
+        seekEmergencyCare: [ null ]
       },
   },
   'Back/Neck Problems': {
