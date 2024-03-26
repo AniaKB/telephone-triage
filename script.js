@@ -1214,35 +1214,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing', 'New pain radiates to neck, shoulders, or arms' ]
       },
       'Mouth Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Bad Breath (62); Jaw Pain (389)', 'Piercing/Pocketing Problems (446)', 'Skin Lesions: Lumps, Bumps, and Sores (559)', 'Sore Throat (567)', 'Swallowing Difficulty (589)', 'Toothache (611)', 'Tooth Injury (614)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: ' Are any of the following present?',
+            list: [ ' Sudden swelling in back of throat or tongue', 'Jaw feels locked in place, inability to open mouth', 'Unable to swallow own saliva' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: ' Are any of the following present?',
+            list: [ ' Penetrating injury to mouth with sharp object', 'Persistent bleeding', 'Severe pain', 'Gaping laceration to lip, tongue, or inside mouth', 'Pain with facial swelling', 'Sensation of bone or food stuck in throat' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: ' Are any of the following present?',
+            list: [ 'Fever and mouth sores', 'Blisters', 'White patches on tongue, gums, or inner cheeks', 'General ill feeling', 'Pain with biting, chewing, or opening mouth', 'Persistent mouth pain unresponsive to home care measures', 'History of phenytoin (Dilantin) use', 'Long history of smoking or use of chewing tobacco', 'Foul odor despite regular hygiene', 'Red, swollen, tender gums with fever', 'Difficulty swallowing' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: ' Are any of the following present?',
+            list: [ ' History of oral herpes, canker sores, recent viral illness, or new medication', 'Taking large doses of vitamins', 'Red, swollen, tender gums and no fever', 'Sore spot on tongue', 'Poor eating habits or change in diet', 'Recent increase in stress', 'Dental caries' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Iced fluids may soothe mouth sores but will worsen a toothache.', 'Rinse mouth with warm water and ½ tsp salt or baking soda 4 times a day, or rinse with an antiseptic mouthwash.', 'Avoid spicy, citrus, or salty foods until sores are healed.', 'Avoid touching sores.', 'Brush, floss, and rinse teeth and mouth at least twice daily.', 'Take usual pain medication (acetaminophen or ibuprofen) for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Use OTC product containing Orabase to provide protective coating and diminish discomfort.' ],
+        reportToPCP: [ ' Mouth lesion persists > 2 weeks', 'Persistent pain or bleeding', 'Signs of infection: pain, swelling, drainage, warmth, or fever', 'Difficulty swallowing', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ ' Sudden swelling in back of throat or tongue', 'Jaw feels locked in place, inability to open mouth', 'Unable to swallow own saliva' ]
       },
       'Sore Throat': {
         keyQuestions: [ '' ],
