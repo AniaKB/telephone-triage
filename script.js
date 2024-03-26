@@ -1433,35 +1433,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Severe headaches', 'Tingling, weakness, or numbness in the extremities', 'Bowel or urine incontinence' ]
       },
       'Back Pain': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Location', 'Medications', 'Pain Scale', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11); Back/Neck Injury (56); Chest Pain (118); Numbness and Tingling (433); Pregnancy Problems (481); Urination, Painful (626), Abnormal Color (628); Weakness (645)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ ' Progressive weakness in legs', 'New sudden onset of numbness or tingling in legs or feet or loss of bladder or bowel control', 'New onset of numbness in groin or rectal area', 'New-onset, rapidly increasing pain, and age >60 years', 'Dizziness, light-headedness, or abdominal fullness', 'Inability to urinate for >8 hours', 'Cool, moist skin', 'Pain radiates to neck, shoulders, jaw, or arm' ],
+            true: 'Seek emergency care now, See Back/Neck Injury protocol (56) if recent back injury or traumatic accident has occurred'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ ' Severe pain with blood in the urine “Seek medical care', 'Difficulty moving legs, feet, or toes', 'Fever with nausea or vomiting in a female', 'Sudden pain after a prolonged period of time in bed or a wheelchair, or if > age 60 years', 'New-onset, rapidly increasing pain, and age < 60 years', 'Pain radiates to groin or genitals' ],
+            true: 'Seek medical care immediately'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Pain radiates to buttocks or limbs', 'Persistent severe pain', 'Frequent urination or pain with urination', 'Some difficulty walking because of discomfort', 'No relief with OTC medications', 'Fever with nausea or vomiting in a male', 'History of trauma > 48 hours', 'History of diabetes, a weakened immune system, or steroid use', 'History of cancer or unexplained weight loss', 'Intravenous drug abuse', 'Pain worse at night or when lying down', 'Blisters or rash and pain in same area', 'Persistent loss of bowel or bladder control', 'Persistent numbness or tingling in legs or feet' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'History of chronic back pain, back problems, back surgery, kidney stones, or renal disease', 'Mild pain without radiation or limited movement', 'Fever with flu-like symptoms' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Restrict to light activities for 2 to 3 days.', 'Use a firm mattress or place a board under a soft mattress.', 'Avoid activities such as prolonged sitting, lifting, or jumping until the pain is resolved (do not stay in bed).', 'Take your usual pain medication for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'If pain is related to an injury, apply ice packs for the first 24 hours, then moist heat. Use moist heat (shower, tub, or moist hot towels) for 20 to 30 minutes every 2 hours for 48 hours, but only while person is awake.', 'Sleep in a fetal position or on the back with one to two pillows under the knees to help reduce discomfort.', 'For intermittent or chronic back discomfort, use a heating pad on the affected area 20 to 30 minutes every 2 to 4 hours. Do not sleep on a heating pad. Do not apply heating pad directly to the skin without a cloth barrier between heating pad and skin.' ],
+        reportToPCP: [ ' No improvement in 3 days', 'Pain worsens', 'Pain radiates into a limb, groin, or genitals', 'Painful urination, frequent urination, fever, or blood in the urine' ],
+        seekEmergencyCare: [ ' New onset of persistent numbness or tingling in legs or feet, or loss of bowel or bladder control, or inability to urinate for > 8 hours', 'Weakness in the limbs', 'New-onset cool, moist skin, or pain radiates to neck, shoulders, jaw, or arm' ]
       },
       'Neck Pain': {
         keyQuestions: [ '' ],
