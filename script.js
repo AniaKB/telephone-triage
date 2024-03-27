@@ -1861,35 +1861,40 @@ const bodySystem = {
         seekEmergencyCare: [ ' Difficulty breathing', 'Unable to swallow saliva or fluids', 'Coughing up blood or severe pain after dislodging foreign body from the throat' ]
       },
       'Common Cold Symptoms': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Runny or Stuffy Nose', 'Sore Throat', 'Fever', 'Cough', 'Headache', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Asthma (49); Avian Influenza (Bird Flu) Exposure (52); Breathing Problems (101); Chest Pain (118); Congestion (145); Cough (163); Earache (200); Fever, Adult (241), Child (244); Hay Fever Problems (300); Severe Acute Respiratory Syndrome (SARS) (536); Sore Throat (567); Swine Flu (H1N1 Virus) Exposure (598); West Nile Virus (648); Wheezing (652)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is there difficulty breathing for reasons other than nasal congestion?',
+            list: [ null ],
+            true: 'Go to Breathing Problems protocol (101)'
+          },
+          {
+            B: 'Is chest pain present unrelated to deep breathing or coughing?',
+            list: [ null ],
+            true: 'Got to Chest Pain protocol (118)'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'pinched skin does not spring back', 'excessive thirst or dry mouth', 'crying without tears' ], 'Fever and neck pain bending head forward', 'Altered mental status, change in behavior or responsiveness', 'Immunosuppressed, age > 60 years, history of diabetes or sickle cell anemia, or bedbound with temperature > 101°F (38.3°C)', 'Infant < 3 months with temperature > 100.4°F (38.0°C)', 'Child with temperature > 105°F (40.6°C)', 'Adult with temperature > 103°F (39.4°C)', 'Fever and child appears very ill', 'Change in child’s breathing pattern: labored, noisy, wheezing, or chest retractions > 30 minutes' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Sore throat or fever > 2 days', 'Wheezing and age < 4 years', 'Persistent wheezing unrelieved by home care measures', 'Ear pain or drainage', 'Sinus pain > 24 hours', 'Fever and history of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, or renal disease', 'Honey-colored crusts in nostril or ear canal or around the mouth', 'Fever and age > 65 years', 'Green, brown, or yellow sputum or nasal discharge > 7 days and condition worsening' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Green, brown, or yellow sputum or nasal discharge < 7 days', 'Blood streaks in sputum', 'History of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, or renal disease', 'Yellow eye drainage' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Do not give cold or cough medications to a child < 6 years old.', 'Take pain reliever of choice for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rest.', 'Drink 6 to 8 glasses of liquids daily, especially warm liquids, such as tea with lemon and honey. Do not give honey to a child < 1 year old.', 'Take decongestant of choice for congestion (unless there is a history of hypertension or the child < 6 years old).', 'Take expectorant of choice for cough. For child > 1 year of age, give 1/2 tsp lemon juice.', 'Suction secretions from infant’s nose with soft rubber suction bulb.', 'Use saline nose drops as needed for nasal congestion. (For homemade saline nasal drops, add 1/4 tsp regular salt to 1/2 cup warm water.) Place three drops in each nostril and wait 1 minute, then attempt to blow nose or suction with a soft rubber suction bulb.', 'Apply petroleum jelly to nasal opening to protect from irritation.', 'Use a vaporizer or humidifier to keep air moist, especially at night, and change the water daily.', 'If the throat is sore, gargle several times a day with warm water. Use frozen cough drops or hard candy, or sip warm chicken broth for additional relief if age > 4 years.', 'Use water to rinse red eyes and wipe with moistened cotton balls. Discard cotton ball after use in each eye.', 'Clear nose of child before breast- or bottle-feeding.', 'Remember that colds are very contagious and have an incubation period of 2 to 5 days. Use good hygiene, wash hands, dispose of used tissues, and cover mouth when sneezing or coughing.', 'Avoid smoking and exposure to second-hand smoke.' ],
+        reportToPCP: [ 'Persistent fever > 3 days or temperature of 105°F (40.6°C)', 'Nasal discharge > 10 days', 'Persistent earache, sinus pain, or yellow eye drainage', 'Formation of honey-colored crusts under nostrils', 'Productive cough or fever', 'Condition persists or worsens' ],
+        seekEmergencyCare: [ ' Difficulty breathing for reasons other than nasal congestion', 'Severe chest pain' ]
       },
       'Congestion': {
         keyQuestions: [ '' ],
