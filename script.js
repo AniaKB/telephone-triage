@@ -1825,35 +1825,40 @@ const bodySystem = {
         seekEmergencyCare: [ ' Chest pain', 'Blue lips or tongue, pale or gray face', 'Clammy skin', 'Feeling of suffocation', 'Frothy pink or copious white sputum', 'Decreased level of consciousness', 'Inability to speak', 'Drooling, unable to swallow saliva', 'Peak flow rate < 50% of baseline' ]
       },
       'Choking': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Pain Scale', 'History' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101); Cough (163); Foreign Body, Swallowing of (274); Sore Throat (567); Swallowing Difficulty (589); Weakness (645)' ],
+        nurseAlert: 'If actively choking, and unable to speak, cough, or breathe, instruct caller to call Emergency Medical Services (EMS) or 911. Dispatchers are specially trained in giving emergency procedure instructions over the phone while the ambulance is on the way. If caller is unable to call 911, make the call for them.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is the following present?',
+            list: [ 'Person is conscious and unable to speak, cough, or breathe' ],
+            true: 'Call EMS/911 for emergency choking procedures'
+          },
+          {
+            B: 'Is the following present?',
+            list: [ 'Person is unconscious and not breathing' ],
+            true: 'Call ambulance and begin CPR'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ 'Difficulty breathing', 'Blue lips or face' ],
+            true: 'Call ambulance'
+          },
+          {
+            D: 'Are any of the following present?',
+            list: [ 'Foreign body aspirated into lungs', 'Coughing up blood or severe pain after dislodging foreign body from throat', 'Unable to remove foreign object from throat and no other symptoms' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            E: 'Are any of the following present?',
+            list: [ 'Able to speak and cough', 'No difficulty breathing', 'Frequent episodes of choking on saliva, foods, or fluids' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'For frequent choking, eat slowly, taking smaller bites.', 'If there is a sensation that a fish bone is stuck in the throat, try washing down the bone with bread and milk.' ],
+        reportToPCP: [ 'Fish bone in throat and persistent scratchy throat > 2 hours', 'Signs of infection: persistent sore throat, fever, drainage', 'Difficulty swallowing', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ ' Difficulty breathing', 'Unable to swallow saliva or fluids', 'Coughing up blood or severe pain after dislodging foreign body from the throat' ]
       },
       'Common Cold Symptoms': {
         keyQuestions: [ '' ],
