@@ -1789,35 +1789,40 @@ const bodySystem = {
         seekEmergencyCare: [ ' Breathing difficulty worsens', 'Face, tongue, or lips become dusky or blue', 'Weakness, listlessness', 'Peak flow rate < 50% of baseline' ]
       },
       'Breathing Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Allergic Reaction (26); Asthma (49); Chest Pain (118); Choking (130); Congestion (145); Congestive Heart Failure (149); Cough (163); Foreign Body, Inhaled (263); Hyperventilation (350); Wheezing (652)' ],
+        nurseAlert: 'If known respiratory problems and prescribed inhalers, O2 or peak flow meters (to measure how well air is moving out of the lungs). Assess baseline functioning, O2 saturation level, % oxygen delivery amount and method. Peak flow values are divided into three zones:',
+        alertBullets: [ 'Green: 80% of baseline or higher (mild attack)', 'Yellow: 50% to 80% of baseline (moderate attack)', 'Red: <50% of baseline (severe attack)' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Chest pain', 'Blue lips or tongue', 'Clammy skin', 'Feeling of suffocation', 'Frothy pink or copious white sputum', 'Altered mental status', 'Severe shortness of breath with sudden onset', 'History of pulmonary embolus, blood clots, or lung collapse', 'Severe wheezing and history of asthma not relieved with inhaler', 'Inability to speak', 'Drooling and inability to swallow', 'Difficulty breathing' ],
+            true: 'Call ambulance'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Difficulty taking a deep breath because of severe pain', 'Severe SOB, wheezing, or noisy breathing started within past 2 hours', 'Recent trauma, surgery, or childbirth', 'Inhalation of a foreign body', 'Exposure to something that previously caused a significant reaction (sting, medication, plant, chemical, food, or animal)', 'Speaking in short words', 'Inability to breathe lying down or need to sit up to breathe', 'Immunosuppressed, age > 60, history of sickle cell anemia or diabetes, or bedridden and temperature > 101°F (38.3°C)', 'Peak flow rate < 50% baseline', 'Adult with temperature > 103°F (39.4°C)', 'Progressively worsening shortness of breath' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Speaking in partial sentences', 'Tight cough', 'Mild audible wheezes at rest', 'Pain increasing with breathing', 'Upper respiratory infection and prior hospitalizations for same symptoms', 'Inability to sleep > 1 to 2 hours due to coughing or difficulty breathing', 'History of diabetes or heart disease', 'Peak flow rate 50% to 80% baseline' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Fever', 'Productive cough with gray, green, or yellow sputum', 'Peak flow rate > 80% of baseline' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Numbness or tingling in the fingers or face', 'Recent exposure to a stressful event or situation', 'Exposure to environmental irritants, allergies, or recent cold or flu symptoms', 'Nasal congestion', 'Productive cough with clear sputum' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Use routine prescriptions as directed.', 'Rest or sleep with head elevated on a couple of pillows if lying flat increases breathing difficulty.', 'Increase fluid intake unless your physician has prescribed a fluid-restricted regimen.', 'Avoid environmental irritants (smoke, smog, garden cuttings, chemicals, animals) and other irritants that seem to worsen your symptoms.', 'If rapid breathing, tingling in the face or hands, and anxiety are present, breathe into a small paper bag held loosely around the mouth and nose for 5 minutes. The problem should resolve within that time period.', 'Rest and relax as much as possible.', 'If the problem is caused by excitement, heavy exertion (and resolved within a few minutes and there are no cardiac risk factors), or nasal congestion, there is no real cause for concern. Normal breathing should resume in a short period of time.', 'Monitor peak flow rates.' ],
+        reportToPCP: [ 'Condition worsens or no improvement in 2 days', 'Temperature > 101°F (38.3°C)', 'Peak flow rate 50% to 80% of baseline' ],
+        seekEmergencyCare: [ ' Chest pain', 'Blue lips or tongue, pale or gray face', 'Clammy skin', 'Feeling of suffocation', 'Frothy pink or copious white sputum', 'Decreased level of consciousness', 'Inability to speak', 'Drooling, unable to swallow saliva', 'Peak flow rate < 50% of baseline' ]
       },
       'Choking': {
         keyQuestions: [ '' ],
@@ -7856,6 +7861,7 @@ const bodySystem = {
 
 /* let Appendix = []; */
 
+alert("Please be aware that information has not been reviewed and may not be up to date. Use at own risk");
 
 function createList(items) {
   const list = document.createElement('ul');
