@@ -1897,35 +1897,50 @@ const bodySystem = {
         seekEmergencyCare: [ ' Difficulty breathing for reasons other than nasal congestion', 'Severe chest pain' ]
       },
       'Congestion': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Treatment', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Asthma (49)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Common Cold Symptoms (138)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Earache, Drainage (200)', 'Fever, Adult (241), Child (244)', 'Hay Fever Problems (300)', 'Influenza (374)', 'Severe Acute Respiratory Syndrome (SARS) (536)', 'Sore Throat (567)', 'Swine Flu (H1N1 Virus) Exposure (598)', 'Wheezing (652)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is there difficulty breathing for reasons other than nasal congestion?',
+            list: [ null ],
+            true: 'Go to Breathing Problems protocol (101)'
+          },
+          {
+            B: 'Is chest pain present?',
+            list: [ null ],
+            true: 'Go to Chest Pain protocol (118)'
+          },
+          {
+            C: 'Is wheezing present?',
+            list: [ null ],
+            true: 'Go to Wheezing protocol (652)'
+          },
+          {
+            D: 'Are any of the following present?',
+            list: [ 'Fever > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Fever > 100.4°F (38.0°C) and age < 3 months', 'Adult with fever > 103°F (39.4°C)', 'Child or elderly person appears very ill', 'Young child with signs of dehydration:', 'sunken eyes or fontanel', 'pinched skin that does not spring back', 'infant cries without tears', 'Child with severe pain, swelling, or redness of the upper part of the face' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Several signs of dehydration:' = [ 'infrequent urination', 'dark yellow urine', 'sunken eyes', 'pinched skin that does not spring back', 'excessive thirst', 'dry mouth or mucous membranes' ], 'Severe pain, swelling, or redness of the upper part of the face' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            F: 'Are any of the following present?',
+            list: [ 'Sore throat or fever > 2 days', 'Persistent fever > 100.4°F (38.0°C) > 3 days', 'Weakness and listlessness', 'Wheezing in a child younger than 4 years', 'Ear pain or drainage', 'History of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, renal disease, or weakened immune system', 'Adult with green, brown, or yellow sputum or nasal discharge > 72 hours', 'Child with green, brown, or yellow sputum or nasal discharge > 7 days and condition worsening', 'Persistent pain > 24 hours after home care' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            G: 'Are any of the following present?',
+            list: [ 'Blood streaks in sputum', 'Green, brown, or yellow sputum or nasal discharge < 72 hours', 'Persistent sinus congestion > 7 days after home care' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Do not give cold or cough medications to a child <6 years old.', 'Take your usual pain reliever (acetaminophen, ibuprofen) for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age <20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rest and drink 6 to 8 glasses of water a day. Warm liquids, such as tea with lemon and honey, are also soothing. Do not give honey to a child <1 year old.', 'Take OTC decongestants (ask the pharmacist for product suggestions) for congestion. Follow the instructions on the label. (Many decongestants are contraindicated if there is a history of hypertension, asthma, heart disease, glaucoma, or enlarged prostate.) Try a vaporizer, a humidifier, or a hot steamy shower and saline nose drops first; if no relief occurs, try decongestants.', 'For sinus pain, inhale the vapor of peppermint tea. Peppermint has anti- inflammatory compounds and pain relievers like menthol that relax constricted sinuses.', 'Take an expectorant (ask your pharmacist for product suggestions) for cough. Follow the instructions on the label.', 'Try antihistamine if congestion is due to allergy.', 'Use saline nose drops as needed for nasal congestion. (For homemade saline nasal drops, add 1/4 tsp of regular salt to 1/2 cup of warm water.) Blow each nostril separately.', 'Use a vaporizer or humidifier to keep the air moist, especially at night, and change the water daily.', 'If the throat is sore, gargle several times a day with warm water. Use frozen cough drops for additional relief.', 'Remember that infants <3 months old often have congestion and wheezing. Use saline nose drops and a humidifier to reduce congestion. Suction secretions from the infant’s nose with a soft rubber suction bulb.', 'Apply petroleum jelly to the nasal opening to protect it from irritation.', 'Clear the child’s nose before breast- or bottle-feeding.', 'Remember, colds are contagious; use good hygiene, wash hands, and dispose of used tissues. Cover the mouth with a tissue or inside the elbow sleeve when sneezing or coughing.', 'Avoid smoking or exposure to second-hand smoke.' ],
+        reportToPCP: [ 'Persistent temperature > 101°F (38.3°C) and age > 4 months', 'Sore throat > 2 days', 'Green or yellow sputum', 'Persistent earache, sinus pain, or yellow eye drainage', 'Chest pain', 'Severe pain, swelling, or redness of the upper part of the face', 'Difficulty breathing', 'Fever > 100.4°F (38.0°C) and age < 3 months' ],
+        seekEmergencyCare: [ 'Chest pain unrelated to coughing or deep breathing' ,'Difficulty breathing for reasons other than congestion' ,'Young child with sign of dehydration' ]
       },
       'Congestive Heart Failure': {
         keyQuestions: [ '' ],
