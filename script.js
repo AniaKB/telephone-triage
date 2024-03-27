@@ -1943,35 +1943,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Chest pain unrelated to coughing or deep breathing' ,'Difficulty breathing for reasons other than congestion' ,'Young child with sign of dehydration' ]
       },
       'Congestive Heart Failure': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ ' Name', 'Age', 'Onset', 'Under Treatment for CHF', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Ankle Problems (34)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Cough (163)', 'Swelling (595)', 'Weakness (645)', 'Wheezing (652).' ],
+        nurseAlert: 'Use this protocol only if previously diagnosed with CHF and currently under treatment for CHF.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Sudden onset of severe difficult breathing', 'Chest pain or pressure', 'Altered mental status', 'Dusky or blue lips, tongue, or fingernail beds', 'Pale or gray face', 'Unable to speak more than 2- to 3-word sentences due to shortness of breath', 'Extreme exhaustion', 'Frothy pink or copious white sputum', 'Feeling of suffocation' ],
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'Sweating', 'Increased anxiety', 'Gradual increase in shortness of breath when lying flat or with activity', 'Shortness of breath with exertion', 'Speaking in partial sentences', 'Upper respiratory infection with fever and cough', 'Sudden weight gain 3–4 pounds in 1–4 days', 'Sudden increased swelling in legs, feet, or abdomen' ],
+            true: 'Seek medical care immediately'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Difficulty sleeping', 'Increased ankle swelling', 'Increasing fatigue or weakness', 'Frequent dry hacking cough', 'Weight gain > 3 pounds in 1 day', 'Increased wheezing' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ ' Congestion, sneezing, cough, and no fever', 'Caregiver concerned and no other symptoms', 'Intermittent ankle swelling' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Take medications as prescribed.', 'Keep appointments with PCP and laboratory testing.', 'Weigh daily before breakfast and after toileting. Keep a record and take it to appointments.', 'Follow low-salt diet as instructed by health-care provider.', 'Pace activities. Slow down if activity causes increased difficulty breathing.', 'Avoid alcohol and smoking.' ],
+        reportToPCP: [ 'Increased difficulty breathing, wheezing, coughing, or fatigue', 'Difficulty sleeping due to breathing problems or increased urination', '>3 pounds weight gain in any 1 day', 'Worsening ankle swelling', 'Condition worsens or no improvement' ],
+        seekEmergencyCare: [ 'Sudden onset of severe difficulty breathing', 'Chest pain or pressure', 'Altered mental status', 'Dusky or blue lips, tongue, face, or fingernail beds', 'Inability to speak', 'Extreme exhaustion', 'Frothy pink or copious white sputum', 'Feeling of suffocation' ]
       },
       'Cough': {
         keyQuestions: [ '' ],
