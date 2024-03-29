@@ -1974,35 +1974,50 @@ const bodySystem = {
         seekEmergencyCare: [ 'Sudden onset of severe difficulty breathing', 'Chest pain or pressure', 'Altered mental status', 'Dusky or blue lips, tongue, face, or fingernail beds', 'Inability to speak', 'Extreme exhaustion', 'Frothy pink or copious white sputum', 'Feeling of suffocation' ]
       },
       'Cough': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Treatment', 'Related Symptoms', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Asthma (49); Breathing Problems (101)', 'Chest Pain (118)', 'Choking (130)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Foreign Body, Inhaled (263)', 'Influenza (374)', 'Pertussis (442)', 'Severe Acute Respiratory Syndrome (SARS) (536)', 'Sore Throat (567)', 'Wheezing (652)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Is coughing caused by choking on a foreign body, food, or vomit?',
+            list: [ null ],
+            true: 'Go to Choking protocol (130)'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'For reasons other than nasal congestion, is the following present?',
+            list: [ 'Sudden shortness of breath, rapid breathing, or wheezing' ],
+            true: 'Go to Breathing problems protocol (101)'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Is chest pain present?',
+            list: [ null ],
+            true: 'Go to Chest Pain protocol (118)'
+          },
+          {
+            D: 'Are any of the following present?',
+            list: [ 'Blue lips or tongue', 'Feeling of suffocation', 'Frothy pink sputum', 'Difficulty breathing and inability to speak', 'Difficulty breathing after smoke, flame, or fume inhalation', 'Sudden onset after exposure to something that previously caused a significant reaction (sting, medication, plant, chemical, food, or animal)' ],
+            true: 'Call ambulance or Seek Emergency Care Now'
+          },
+          {
+            E: 'Are any of the following present?',
+            list: [ 'Cough is unrelated to cold symptoms and person has a history of:' = [ 'chest trauma > 48 hours', 'blood clots or recent long sedentary period', 'recent surgery', 'recent childbirth', 'recent heart attack', 'asthma and unresponsiveness to home care measures or medication' ], 'Coughing up blood', 'Child younger than 6 months with rapid breathing and persistent cough', 'Child appears very ill', 'Change in child’s breathing pattern: labored, noisy, wheezing, or chest retractions > 30 minutes' ],
+            true: 'Seek medical care within 2 hours'
+          },
+          {
+            F: 'Are any of the following present?',
+            list: [ 'Persistent fever > 72 hours that is unresponsive to fever-reducing measures', 'Green or brown sputum > 72 hours', 'Child has a “barking” cough that is unrelieved by exposure to cool air, humidifier, or steam' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            G: 'Are any of the following present?',
+            list: [ 'Cough caused by exercise', 'Persistent or worsening cough during a period of several weeks or months', 'Intermittent mild chest discomfort with deep productive coughing', 'Child with temperature > 101°F (38.3°C) for > 24 hours', 'Cough with weight loss' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Drink 6 to 8 glasses of water daily.', 'Warm mist may help improve conditions. Breathe through a warm wet washcloth placed over the mouth and nose or sit in a steam-filled bathroom for 20 to 30 minutes.', 'Elevate head of bed to reduce coughing at night.', 'For children younger than 1 year, give 1/2 tsp lemon mixed with 1/2 tsp corn syrup to soothe cough.', 'Give older children and adults 1/2 tsp lemon mixed with 1/2 tsp honey or corn syrup. (DO NOT give honey to a child < 1 year.)', 'Drink warm lemonade, apple cider, or tea to help soothe cough.', 'Avoid irritants such as smoking, smog, and chemicals.', 'Turn down the heat, open the windows, or go out into cooler air to help suppress cough.', 'Take cough suppressants (ask your pharmacist for product suggestions) if cough is interfering with activity, causing chest pain or vomiting, or interrupting sleep at night. Do not give cough suppressants to a child < 1 year. Follow instructions on the label.', 'If congested, avoid milk products.', 'Take OTC medications as needed, being sure to follow instructions on the label: For a wet cough, use a decongestant; for a dry cough, use an expectorant during the day and suppressant at night; for an allergy, use an antihistamine or decongestant. Ask your pharmacist for product suggestions.' ],
+        reportToPCP: [ 'No improvement or condition worsens', 'Fever for > 72 hours', 'Green, brown, or gray sputum develops and lasts > 72 hours', 'Coughing up blood (more than streaks or flecks)' ],
+        seekEmergencyCare: [ 'Blue lips or tongue', 'Feeling of suffocation', 'Frothy pink sputum', 'Difficulty breathing and inability to speak' ]
       },
       'Croup': {
         keyQuestions: [ '' ],
