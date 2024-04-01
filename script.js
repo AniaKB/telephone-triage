@@ -2020,7 +2020,7 @@ const bodySystem = {
         seekEmergencyCare: [ 'Blue lips or tongue', 'Feeling of suffocation', 'Frothy pink sputum', 'Difficulty breathing and inability to speak' ]
       },
       'Croup': {
-        keyQuestions: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Description of Cough', 'Prior Treatment', 'Medications', 'Associated Symptoms', 'History' ],
         otherProtocolstoConsider: [ '' ],
         nurseAlert: '',
         alertBullets: [ '' ],
