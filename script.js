@@ -2325,35 +2325,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Infant not breathing', 'Skin turning blue', 'CPR in progress' ]
       },
       'Wheezing': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History of Intubation', 'Hospitalizations', 'History' ],
+        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Asthma (49)', 'Breathing Problems (101)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Croup (166)', 'Hay Fever Problems (300)' ],
+        nurseAlert: 'If known respiratory problems and prescribed inhalers, use O2 or peak flow meters (to measure how well air is moving out of the lungs). Assess baseline functioning, O2 saturation level, and % Oxygen delivered and method. Peak flow values are divided into three zones:',
+        alertBullets: [ 'Green: 80% of baseline or higher (mild attack)', 'Yellow: 50% to 80% of baseline (moderate attack)', 'Red: <50% of baseline (severe attack)' ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ ' Severe respiratory distress', 'Inability to speak', 'Chest retractions', 'Aspiration of foreign body', 'Blue lips or face', 'Severe chest pain', 'Sudden-onset wheezing after medication or exposure to known allergen', 'Peak flow rate < 50% of baseline (if asthmatic)' ],
+            true: 'Call ambulance'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Unresponsive to medication treatments', 'Unresponsive to home care measures', 'Must sit up to breathe', 'Wheezing similar to prior episodes that required hospitalization or injections', 'History of CHF, cardiac disease, pulmonary embolus, or blood clot in leg', 'Speaking in partial sentences', 'Peak flow rate 50%–80% of baseline (if asthmatic)' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Peak flow rate > 80% of baseline (if asthmatic)', 'Green, yellow, or rust-colored sputum', 'Infant, elderly, or immunosuppressed' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'First wheezing episode that resolves in short period of time', 'Fever', 'Speaking in full sentences' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Take medication as directed by PCP.', 'Use vaporizer with cool mist.', 'Identify cause and avoid irritant.' ],
+        reportToPCP: [ 'Condition worsens', 'No improvement with medication' ],
+        seekEmergencyCare: [ 'Lips or face turn blue', 'Fighting for air', 'Decreased level of consciousness', 'Inability to speak or speaking in short words', 'Severe chest pain', 'Peak flow rate < 50% of baseline (if asthmatic)' ]
       },
   },
   'Gastrointestinal Problems': {
