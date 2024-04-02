@@ -2299,35 +2299,30 @@ const bodySystem = {
         seekEmergencyCare: [ 'Prolonged period of not breathing', 'Skin turning blue', 'CPR in progress' ]
       },
       'Sleep Apnea, Infant': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Newborn Problems (423)', 'Spitting Up, Infant (573)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Infant not breathing', 'Skin turning blue' ],
+            true: 'Call ambulance and Start CPR'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'While infant was sleeping, did the following occur?',
+            list: [ 'Lapse in breathing for 1 minute', 'Skin turned gray or blue but is normal color now', 'Abnormal breathing after the episode', 'Rescue breathing was necessary' ],
+            true: 'Seek medical care immediately'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'While infant was sleeping, did the following occur?',
+            list: [ 'Lapse in breathing < 1 minute', 'No change in skin color', 'Infant breathing normally after episode', 'Rescue breathing was not necessary' ],
             true: 'Seek medical care within 24 hours'
           },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Provide reassurance. Some infants have a pause in breathing of < 15 seconds after several rapid respirations.', 'Reinforce importance of placing child on back for sleep.', 'Discuss use of a respiration monitor with PCP.', 'Obtain CPR training. Rapid identification of apnea and prompt CPR can successfully revive an infant without serious problems.' ],
+        reportToPCP: [ 'Persistent episodes of apnea' ],
+        seekEmergencyCare: [ 'Infant not breathing', 'Skin turning blue', 'CPR in progress' ]
       },
       'Wheezing': {
         keyQuestions: [ '' ],
