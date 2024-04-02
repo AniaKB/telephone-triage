@@ -2144,35 +2144,40 @@ const bodySystem = {
         seekEmergencyCare: [ ' Difficulty breathing, shortness of breath, or wheezing', 'Unable to swallow saliva or fluids', 'Feeling of suffocation' ]
       },
       'Hay Fever Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'History of Known Allergies', 'Medications', 'History. If no history of hay fever, see most severe symptom protocol' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Cough (163)', 'Earache, Drainage (200)', 'Sinus Problems (556)', 'Sore Throat (567)', 'Wheezing (652)' ],
+        nurseAlert: 'Use this protocol only if previously diagnosed with hay fever.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Is there difficulty breathing for reasons other than nasal congestion?',
+            list: [ null ],
+            true: 'Go to Breathing Problems protocol (101)'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Is chest pain present?',
+            list: [ null ],
+            true: 'Go to Chest Pain protocol (118)'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Wheezing in a client younger than 4 years', 'Persistent wheezing that is unresponsive to home care measures' ],
+            true: 'Go to Wheezing protocol (652)'
+          },
+          {
+            D: 'In addition to clear nasal discharge, sniffing, or sneezing, are any of the following present?',
+            list: [ 'Fever', 'Headache and muscle aches', 'Green, brown, or yellow nasal discharge or sputum for > 24 hours', 'Ear pain or drainage', 'Persistent uncontrollable coughing' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Symptoms persist, even when client avoids triggers', 'Symptoms interfere with daily activities', 'Intermittent coughing', 'Nasal itching', 'Red, itchy, or watery eyes', 'Sore throat', 'Clear nasal drainage' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Take OTC or prescription antihistamines of choice. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid use of nasal sprays unless prescribed by PCP. If sprays are used, do not use > 5 days.', 'Shower and wash hair at night and after having exposure to pollen, dust, or known irritants.', 'When pollen count is high, particularly in the morning, stay indoors with the doors and windows closed.', 'For itchy eyes, apply cold compresses to the eyelids.', 'Avoid pollen and other irritants that worsen the problem.' ],
+        reportToPCP: [ 'Persistent nasal discharge, sneezing, or sniffing that is unresponsive to medication' ,'Fever' ,'Sinus pressure or pain' ,'Green, brown, or yellow nasal discharge or sputum' ,'Earache' ,'Uncontrolled coughing' ,'Symptoms interfere with daily activity' ,'Persistent wheezing or coughing that is unresponsive to home care measures' ],
+        seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing for reasons other than nasal congestion' ]
       },
       'Hoarseness': {
         keyQuestions: [ '' ],
