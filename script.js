@@ -2211,35 +2211,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Sore throat, drooling, and difficulty breathing', 'Sensation of swelling tongue or throat', 'Speaking in short three-word sentences' ]
       },
       'Hyperventilation': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Associated Symptoms' ],
+        otherProtocolstoConsider: [ 'Anxiety (37)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Numbness and Tingling (433)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Is chest pain present?',
+            list: [ null ],
+            true: 'See Chest Pain protocol (118)'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'In addition to breathing rapidly, are any of the following present?',
+            list: [ ' Blue lips or fingernails', 'Unable to talk', 'Must sit up to breathe' ],
+            true: 'See Breathing Problems protocol (101)'
+          },
+          {
+            C: 'In addition to rapid breathing, are any of the following present?',
+            list: [ ' Severe pain', 'High fever unresponsive to fever-reducing measures', 'Abnormal drowsiness' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'In addition to rapid deep breathing, are any of the following present?',
+            list: [ ' Numbness and tingling around the face, mouth, fingers, or toes', 'Weakness', 'Feeling faint', 'Twitching in the hands and feet', 'Anxiety or emotional upset', 'History or prior episodes of similar symptoms' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Sit down and focus on slowing breathing, one breath every 5 seconds.', 'Cover mouth and nose with a paper bag and breathe in and out 10 times.', 'If no improvement, continue breathing in the bag for 5 to 15 minutes.', 'Breathe without the bag for a few minutes.', 'Repeat breathing with and without the bag until condition improves.' ],
+        reportToPCP: [ 'No improvement or condition worsens', 'Sudden fever occurs during an attack', 'Frequent attacks' ],
+        seekEmergencyCare: [ ' Fainting', 'Seizure', 'Blue lips or fingernails', 'Chest pain' ]
       },
       'Influenza': {
         keyQuestions: [ '' ],
