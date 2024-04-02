@@ -2108,35 +2108,40 @@ const bodySystem = {
         seekEmergencyCare: [ 'Sudden loss of vision', 'Severe pain on one side of face, over eye, blurred vision, and red eye', 'Adult with shoulder, chest, neck, or arm pain', 'Sudden facial drooping on one side of the face' ]
       },
       'Foreign Body, Inhaled': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ ' Name', 'Age', 'Onset', 'Object Inhaled', 'History', 'Medications' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Choking (130)', 'Cough (163)', 'Foreign Body, Swallowing of (274)', 'Piercing Problems (446)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Choking and unable to speak, cough, or breathe', 'Unconscious person who is not breathing' ],
+            true: 'Call ambulance and begin rescue breathing'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Difficulty breathing', 'Lips or face turning blue', 'Inability to cry or speak', 'Suicide attempt' ],
+            true: 'Call ambulance'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ 'Aspirated foreign body into the lungs', 'Coughing up blood or severe pain after dislodging foreign body from the throat', 'Unable to remove foreign object from throat but no other symptoms', 'Feeling of suffocation', 'Drooling', 'Speaking in short words', 'Unable to swallow saliva or fluids' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Fever', 'Speaking in partial sentences', 'Intermittent cough or wheezing after inhaling a foreign object, aerosol, or smoke' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            E: 'Are any of the following present?',
+            list: [ ' Able to speak and cough', 'No difficulty breathing', 'Frequent episodes of choking on saliva, foods, or fluids', 'Speaking in full sentences' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'For frequent choking, eat slowly, taking smaller bites.', 'If there is a sensation that a fish bone is stuck in the throat, try washing down the bone with bread and milk.' ],
+        reportToPCP: [ 'Fish or chicken bone in throat and persistent scratchy throat > 2 hours', 'Coughing up blood', 'Signs of infection: persistent sore throat, fever, or drainage', 'Difficulty swallowing', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ ' Difficulty breathing, shortness of breath, or wheezing', 'Unable to swallow saliva or fluids', 'Feeling of suffocation' ]
       },
       'Hay Fever Problems': {
         keyQuestions: [ '' ],
