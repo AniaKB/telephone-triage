@@ -2242,35 +2242,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Fainting', 'Seizure', 'Blue lips or fingernails', 'Chest pain' ]
       },
       'Influenza': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Symptoms', 'Known Exposure or Community Outbreak', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Avian Influenza (“Bird Flu”) (52)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Cough (163)', 'Fever, Adult (241), Child (244)', 'Headache (303)', 'Swine Flu (H1N1 Virus) Exposure (598)', 'Sore Throat (567)', 'West Nile Virus (648)' ],
+        nurseAlert: 'Use this protocol if exposure to influenza is known or suspected, there is a community outbreak, or previously diagnosed with Influenza.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Altered mental status', 'Difficulty breathing for reasons other than congestion', 'Fever > 104.9°F (40.5°C)', 'Flat purple or dark red spots on face or trunk and stiff or painful neck', 'Severe headache', 'Skin or lips turning blue', 'New onset of drooling or unable to swallow', 'Age < 6 weeks' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'Stiff or painful neck', 'Fever > 103.1°F (39.5°C)', 'Fever, and child or older adult appears very ill, lethargic, or very irritable', 'Signs of dehydration' ],
+            true: 'Seek medical care immediately'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Known exposure and any of the following: fatigue, fever < 103.1°F (39.5°C), dry cough, sore throat, GI symptoms, runny nose or congestion, muscle aches', 'History of CHF, immunosuppression, 6 weeks to 23 months of age, age > 65 years, pregnancy, long-term care resident, asthma, COPD, metabolic disorders' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Mild symptoms', 'No symptoms but parent or person concerned' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Wash hands frequently with soap and water or alcohol-based hand rubs.', 'Reinforce that influenza is highly contagious. Maintain good respiratory etiquette; cover mouth and nose with a tissue when coughing or sneezing.', 'Avoid contact with sick individuals.', 'If sick, avoid contact with other people. If coughing and sneezing, wear a surgical mask during close contact with others to prevent the spread of droplets. Change the mask if it becomes soiled or moist.', 'Get plenty of rest and drink plenty of fluids.', 'Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Give antivirals within 48 hours of symptom onset.' ],
+        reportToPCP: [ ' Stiff or painful neck', 'Fever > 103.1°F (39.5°C)', 'Fever, and child or older adult appears very ill, lethargic, or very irritable', 'Signs of dehydration' ],
+        seekEmergencyCare: [ ' Altered mental status', 'Difficulty breathing', 'Fever > 104.9°F (40.5°C)', 'Flat purple or dark red spots on face or trunk and stiff or painful neck', 'Severe headache', 'Skin or lips turning blue', 'New onset of drooling or unable to swallow' ]
       },
       'Sleep Apnea, Adult': {
         keyQuestions: [ '' ],
