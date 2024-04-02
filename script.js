@@ -2021,34 +2021,39 @@ const bodySystem = {
       },
       'Croup': {
         keyQuestions: [ 'Name', 'Age', 'Onset', 'Description of Cough', 'Prior Treatment', 'Medications', 'Associated Symptoms', 'History' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Congestion (145)', 'Cough (163)', 'Fever, Adult (241), Child (244)', 'Influenza (374)', 'Pertussis (442)', 'Sore Throat (567)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Drooling, difficulty swallowing, and child looks ill', 'Lips blue or dusky', 'Severe difficulty breathing', 'Chest caves in when breathing' ],
+            true: 'Call ambulance'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Crowing sound when breathing in that does not clear after 20 minutes of steam, or more than three episodes during the last 24 hours', 'Child appears very ill' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'History of pneumonia or other lung problems', 'History of asthma and no improvement after home breathing treatment and usual bronchodilator' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Condition worsens when lying down', 'Condition interferes with sleep', 'Temperature > 104°F (40°C) ' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Barking cough > 5 days', 'Cough worse at night', 'Barking cough heard during daytime hours' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Warm mist may help improve condition: Breathe through a warm wet washcloth placed over the mouth and nose or sit in a steam-filled bathroom for 20 to 30 minutes.', 'Continuous cool mist may help. Use a cool-mist humidifier or go out into the cool night air.', 'Drink warm clear fluids to soothe cough.', 'Use usual medication for fever (children’s Motrin, ibuprofen, children’s Tylenol, acetaminophen). Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+        reportToPCP: [ 'No improvement or condition worsens', 'Difficulty breathing', 'Temperature > 104°F (40°C)', 'Condition persists in child with asthma after home breathing treatment' ],
+        seekEmergencyCare: [ 'Drooling, difficulty swallowing, and child looks ill', 'Lips turn blue or dusky', 'Severe difficulty breathing', 'Child appears very ill', 'Chest caves in with breathing', 'Crowing sound that does not clear after 20 minutes of home care measures or more than three episodes in a 24-hour period' ]
       },
       'Drowning (Near Drowning)': {
         keyQuestions: [ '' ],
