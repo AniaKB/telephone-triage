@@ -2180,35 +2180,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing for reasons other than nasal congestion' ]
       },
       'Hoarseness': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Contributing Factors', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ ' Allergic Reaction (26)', 'Breathing Problems (101)', 'Cough (163)', 'Croup (166)', 'Hay Fever Problems (300)', 'Hives (335)', 'Foreign Body, Inhaled (263)', 'Sore Throat (567).' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Sudden onset of hoarseness, and are any of the following present?',
+            list: [ 'Sore throat, drooling, and difficulty breathing', 'Sensation of swelling tongue or throat', 'Recent trauma to neck', 'Speaking in short three-word sentences' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Sudden onset of swelling in face', 'Speaking in partial sentences' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' High fever and feels or looks ill', 'Persistent hoarseness >1 week', 'History of tobacco use, recent weight loss, and decreased appetite', 'Dry skin or hair, increased sensitivity to cold, increased fatigue, or unexplained weight gain' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Recent sore throat, cough, cold, or fever', 'Frequent use of voice in work (such as teacher or singer)', 'Heavy use of tobacco or alcohol', 'Recently used voice more than usual (yelling, cheering, singing)', 'Speaking in complete sentences' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Avoid tobacco or alcohol.', 'Rest voice as much as possible.', 'Drink plenty of fluids.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) as tolerated for discomfort or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Use honey or throat lozenges for throat discomfort or cough.' ],
+        reportToPCP: [ 'Condition persists > 1 week or worsens', 'High fever and appears ill' ],
+        seekEmergencyCare: [ 'Sore throat, drooling, and difficulty breathing', 'Sensation of swelling tongue or throat', 'Speaking in short three-word sentences' ]
       },
       'Hyperventilation': {
         keyQuestions: [ '' ],
