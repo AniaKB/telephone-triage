@@ -2273,35 +2273,30 @@ const bodySystem = {
         seekEmergencyCare: [ ' Altered mental status', 'Difficulty breathing', 'Fever > 104.9°F (40.5°C)', 'Flat purple or dark red spots on face or trunk and stiff or painful neck', 'Severe headache', 'Skin or lips turning blue', 'New onset of drooling or unable to swallow' ]
       },
       'Sleep Apnea, Adult': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Breathing Problems (101)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Person not breathing', 'Skin turning blue' ],
+            true: 'Call ambulance and Start CPR'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'While sleeping, did the following occur?',
+            list: [ 'Lapse in breathing for several minutes', 'Skin turned gray or blue and is normal color now', 'Abnormal breathing after the episode', 'Rescue breathing was necessary' ],
+            true: 'Seek medical care within 2 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            C: 'While sleeping, did the following occur?',
+            list: [ 'Lapse in breathing < 2 minutes', 'No change in skin color', 'Breathing normally after the episode', 'Rescue breathing was not necessary', 'Cycles of sleep, choking, sudden wakening, drowsiness, and sleep Follow Home Care Instructions', 'Persistent drowsiness and episodes of falling asleep during the day', 'Decreased ability to function or depression caused by lack of sleep' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Try to remain calm.', 'Eliminate as many contributing risk factors as possible: stress, anxiety, depression, obesity, smoking, and drug or alcohol abuse.', 'Obtain CPR training. Rapid identification of prolonged apnea and prompt CPR can help to prevent death or serious problems related to a lack of oxygen to the brain.', 'If apnea occurs only when sleeping on the back, sleep on the side or stomach. Use pillows for support. Consider attaching an object to the back of sleepwear to encourage other sleep positions.' ],
+        reportToPCP: [ 'Persistent episodes of apnea' ],
+        seekEmergencyCare: [ 'Prolonged period of not breathing', 'Skin turning blue', 'CPR in progress' ]
       },
       'Sleep Apnea, Infant': {
         keyQuestions: [ '' ],
