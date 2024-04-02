@@ -2038,17 +2038,17 @@ const bodySystem = {
           {
             C: 'Are any of the following present?',
             list: [ 'History of pneumonia or other lung problems', 'History of asthma and no improvement after home breathing treatment and usual bronchodilator' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            true: 'Seek medical care within 2 hours'
           },
           {
             D: 'Are any of the following present?',
-            list: [ ' Condition worsens when lying down', 'Condition interferes with sleep', 'Temperature > 104°F (40°C) ' ],
+            list: [ 'Condition worsens when lying down', 'Condition interferes with sleep', 'Temperature > 104°F (40°C) ' ],
             true: 'Seek medical care within 24 hours'
           },
           {
             E: 'Are any of the following present?',
             list: [ 'Barking cough > 5 days', 'Cough worse at night', 'Barking cough heard during daytime hours' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [ 'Warm mist may help improve condition: Breathe through a warm wet washcloth placed over the mouth and nose or sit in a steam-filled bathroom for 20 to 30 minutes.', 'Continuous cool mist may help. Use a cool-mist humidifier or go out into the cool night air.', 'Drink warm clear fluids to soothe cough.', 'Use usual medication for fever (children’s Motrin, ibuprofen, children’s Tylenol, acetaminophen). Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
@@ -2056,35 +2056,25 @@ const bodySystem = {
         seekEmergencyCare: [ 'Drooling, difficulty swallowing, and child looks ill', 'Lips turn blue or dusky', 'Severe difficulty breathing', 'Child appears very ill', 'Chest caves in with breathing', 'Crowing sound that does not clear after 20 minutes of home care measures or more than three episodes in a 24-hour period' ]
       },
       'Drowning (Near Drowning)': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'History', 'Water Source and Temperature (if known)' ],
+        otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Back/Neck Injury (56)', 'Breathing Problems (101)', 'Choking (130)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Victim experienced near drowning, and are any of the following present?',
+            list: [ 'Unresponsiveness', 'Suspected injury', 'Vomiting', 'Respiratory distress', 'Difficulty breathing', 'Lips or face blue' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            B: 'Did a near drowning occur?',
+            list: [ 'Victim was submerged under water but now is breathing and responsive' ],
+            true: 'Seek medical care within 2 to 4 hours and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'For suspected neck injury, do not move victim unless absolutely necessary. Support the head and neck and allow to float in water. If necessary to move, support head and neck and torso as one unit.', 'If vomiting occurs, turn victim to side and clear mouth.', 'Do not press on abdomen, or vomiting may occur.', 'Keep victim warm.' ],
+        reportToPCP: [ 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ null ]
       },
       'Facial Problems': {
         keyQuestions: [ '' ],
