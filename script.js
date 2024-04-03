@@ -2394,35 +2394,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Unusually firm or hard abdomen', 'Persistent vomiting', 'Severe persistent pain', 'Fainting/light-headedness', 'Bloody or black stools or emesis' ]
       },
       'Abdominal Pain, Child': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale', 'Associated Symptoms', 'Prior History', 'Date of Last Menstrual Period' ],
+        otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Constipation (152)', 'Diarrhea, Child (188)', 'Food Poisoning, Suspected (254)', 'Menstrual Problems (407)', 'Urination, Difficult (622)', 'Urination, Painful (626)', 'Vomiting, Child (641)' ],
+        nurseAlert: 'Many conditions can cause abdominal pain, and some can be potentially life threatening. Err on the side of caution when triaging callers with abdominal pain. Abdominal Pain: Causes and Characteristics: Appendix R (694) is provided to help the nurse gain a better understanding of the many conditions causing abdominal pain. It is NOT to be used to try and diagnose a caller’s condition.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Severe persistent pain > 2 hours', 'Rapidly increasing pain', 'RLQ pain with poor appetite, nausea and/or vomiting, fever, grasping abdomen, walking bent over, screaming, grunting respirations, or lying with knees drawn toward chest', 'Unusually heavy vaginal bleeding and possibility of pregnancy', 'Ingestion of unknown chemical substance, plant, or medication', 'Recent abdominal trauma', 'Black, bloody, or jelly-like stools unrelated to hemorrhoids or iron supplements', 'Weight loss', 'Vomiting blood or dark coffee-grounds–like emesis', 'Weakness and inability to walk', 'Severe pain and swelling in testicle(s) or scrotum' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Severe nausea and vomiting', 'Continuous pain > 2 hours and unresponsive to home care', 'Unexplained progressive abdominal swelling', 'Painful or difficult urination', 'Age < 2 years and intermittent pain', 'Pain interferes with activity', 'Decreased urine output', 'Nausea, vomiting, or diarrhea > 24 hours and unresponsive to home care', 'Known hernia or hydrocele and pain or crying > 2 hours' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
+            C: 'Are any of the following present?',
+            list: [ 'Vaginal or urethral discharge', 'History of abdominal pain, and usual treatment is ineffective', 'Significant increase in stress level', 'Blood in urine', 'Temperature > 101°F (38.3°C), cough, or weakness' ],
+            true: 'Seek medical care within 24 to 48 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Constipation', 'History of a nervous stomach and increased stress level', 'Intermittent mild pain associated with an empty stomach, eating certain foods, or use of pain, antibiotic, or anti-inflammatory medications', 'Mild infrequent diarrhea', 'Other family members are ill NO Follow Home Care', 'Persistent sore throat > 24 hours' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Rest.', 'Consume clear liquids (fruit juice diluted with ½ water, weak tea, broth, sports drinks, flavored ice, gelatin, clear soft drink) or bland diet (rice, potatoes, soda crackers, pretzels, dry toast, applesauce, bananas) for 12 to 24 hours. Recommend electrolyte/mineral supplement or other rehydrating fluid solution (such as Pedialyte) for small children or infants.', 'If diarrhea is present, avoid fruit juice or full-strength sports drinks.', 'Take medications as directed by the pharmacy. Some should be taken on an empty stomach and others with food. Avoid ibuprofen and other antiinflammatory medications. Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Apply a moist, hot towel or heating pad to the abdomen for cramping.' ],
+        reportToPCP: [ 'Severe pain > 1 hour', 'Fever', 'Pain worsens with heat or activity' ],
+        seekEmergencyCare: [ 'Unusually firm or hard abdomen', 'Persistent vomiting', 'Bloody or black stools or emesis', 'Weakness and inability to walk', 'Severe pain and swelling in testicle(s) or scrotum' ]
       },
       'Abdominal Pain: Causes and Characteristics (Appendix R)': {
         keyQuestions: [ '' ],
