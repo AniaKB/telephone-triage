@@ -1731,662 +1731,667 @@ const bodySystem = {
     },
   },
   'Respiratory Problems': {
-      'Allergic Reaction': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Suspected Cause', 'Allergies', 'Prior History', 'Medications' ],
-        otherProtocolstoConsider: [ 'Bee Stings (69)', 'Bites, Insect (76)', 'Breathing Problems (101)', 'Food Allergy (252)', 'Hay Fever Problems (300)', 'Hives (335); Itching (384)', 'Piercing Problems (446)', 'Rash, Adult (501), Child (505)', 'Swelling (595)', 'Tattoo Problems (602)', 'Wheezing (652)' ],
-        nurseAlert: 'Signs of anaphylaxis, a severe life-threatening allergic reaction, can occur within seconds to an hour after exposure to the offending substance such as food, medication, a bee sting, etc. An anaphylactic reaction involves the respiratory, cardiovascular, and central nervous systems. Sudden onset of symptoms may include: difficulty breathing, feeling faint, swelling of the tongue, throat or lips, hives, wheezing or coughing, or a feeling of impending doom. The sooner symptoms occur after exposure to the antigen, the more severe the anaphylaxis.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Difficulty breathing', 'Difficulty swallowing', 'Swelling of tongue or back of mouth', 'Inability to speak', 'Chest pain' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ ' Faintness or dizziness', 'History of previous anaphylaxis to same allergen', 'Change in vision', 'Confusion', 'Rapid progression of symptoms', 'Speaking in short words', 'Sudden onset of hoarseness' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Swelling in face/extremities', 'Persistent nausea, vomiting, or diarrhea', 'Persistent rash, fever, fatigue, or headache', 'Speaking in partial sentences' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Cause of reaction unknown', 'Controlled nausea, vomiting, or diarrhea', 'Mild rash/itching', 'No respiratory problems', 'Normal breathing', 'Suspicion of medication reaction' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Use prescribed inhalers, medications or Epi Pen for known allergic reaction as directed by PCP.', 'If symptoms occurred shortly after taking an OTC medication, discontinue use.', 'Rest.', 'If hives are widespread, try baking soda or oatmeal baths, or OTC preparations (Benadryl, Caladryl, Cortaid, Cortizone, Claritin) for the itching. Follow instructions on the label. Ask your local pharmacist for OTC product suggestions.', 'Avoid hot showers. Heat can increase itching.', 'Apply cold cloth or ice to small area of itchy hives.' ],
-        reportToPCP: [ 'Symptoms occurred after taking a prescription medication', 'Symptoms persist after taking Benadryl and following Home Care Instructions', 'Rash worsens', 'Fever' ],
-        seekEmergencyCare: [ ' Difficulty breathing or swallowing', 'Change in vision', 'Confusion', 'Chest pain', 'Sudden onset of hoarseness' ]
-      },
-      'Asthma': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Asthma History', 'Severity', 'Peak Flow Measurement', 'Prior Treatment', 'Medications', 'Prior History', 'Suspected or Known Triggers' ],
-        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Choking (130)', 'Congestion (145)', 'Fever, Adult (241), Child (244)', 'Hay Fever Problems (300)', 'Wheezing (652)' ],
-        nurseAlert: ' Use this protocol only if previously diagnosed with asthma. Peak flow meters measure how well air is moving out of the lungs and help to gauge the severity of an asthma attack. Peak flow values are divided into three zones:',
-        alertBullets: [ 'Green: 80% of baseline or higher (Mild attack)', 'Yellow: 50% to 80% of baseline (Moderate attack)', 'Red: less than 50% of baseline (Severe attack)' ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Persistent wheezing after a treatment', 'Difficulty breathing', 'Inability to breathe lying down; must sit up to breathe', 'Dusky or blue lips, tongue, or face', 'Sudden onset of wheezing after medication, food, bee sting, or exposure to known allergen', 'Weakness, listlessness', 'Speaking in short words', 'Peak flow rate < 50% baseline', 'Severe wheezing  or cough, and nebulizer or inhaler not available' ],
-            true: 'Seek emergency care now, if breathing difficulty is severe, call an ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Vomiting and inability to retain medication', 'Upper respiratory infection symptoms and history of:' = [ 'steroid treatment', 'prior hospitalization for same symptoms', 'intubations' ], 'Speaking in partial sentences', 'Peak flow rate 50%–80% of baseline and no improvement using nebulizer or inhaler', 'Nebulizer or inhaler used < every 4 hours' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Fever > 100.5°F (38.1°C)', 'Cough unresponsive to medication', 'Minimal or temporary relief of asthma symptoms with current medications', 'Yellow or green sputum', 'Peak flow rate > 50%–80% of baseline' ],
-            true: 'Seek medical care within 24 hours and Follow Home Care Instructions'
-          },
-        ],
-        homeCareInstructions: [ ' Increase fluid intake; consume water and clear fluids.', 'Treat symptoms early to decrease severity of asthma attack. Use preventive medication as prescribed by PCP.', 'Use a vaporizer, steamy bathroom, or cool damp air to help relieve symptoms.', 'Follow treatment plan as prescribed by PCP.', 'Avoid aspirin products and decongestants.', 'Shower every night to reduce pollen exposure.', 'Limit exposure to pets, particularly in sleeping areas.', 'Avoid smoky and dusty areas. Encourage smokers in the home to smoke outside.', 'Avoid known triggers, i.e., animal dander, body and hair products, and cleaning solvents', 'If asthma symptoms are induced by strenuous exercise, take medication 90 minutes before activity (use inhaler 30 minutes before activity).' ],
-        reportToPCP: [ ' No improvement after medication', 'Difficulty breathing', 'Prescribed treatment plan is unclear', 'Peak flow rate 50% to 80% of baseline', 'Nebulizer or inhaler used < every 4 hours' ],
-        seekEmergencyCare: [ ' Breathing difficulty worsens', 'Face, tongue, or lips become dusky or blue', 'Weakness, listlessness', 'Peak flow rate < 50% of baseline' ]
-      },
-      'Breathing Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Allergic Reaction (26); Asthma (49); Chest Pain (118); Choking (130); Congestion (145); Congestive Heart Failure (149); Cough (163); Foreign Body, Inhaled (263); Hyperventilation (350); Wheezing (652)' ],
-        nurseAlert: 'If known respiratory problems and prescribed inhalers, O2 or peak flow meters (to measure how well air is moving out of the lungs). Assess baseline functioning, O2 saturation level, % oxygen delivery amount and method. Peak flow values are divided into three zones:',
-        alertBullets: [ 'Green: 80% of baseline or higher (mild attack)', 'Yellow: 50% to 80% of baseline (moderate attack)', 'Red: <50% of baseline (severe attack)' ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Chest pain', 'Blue lips or tongue', 'Clammy skin', 'Feeling of suffocation', 'Frothy pink or copious white sputum', 'Altered mental status', 'Severe shortness of breath with sudden onset', 'History of pulmonary embolus, blood clots, or lung collapse', 'Severe wheezing and history of asthma not relieved with inhaler', 'Inability to speak', 'Drooling and inability to swallow', 'Difficulty breathing' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Difficulty taking a deep breath because of severe pain', 'Severe SOB, wheezing, or noisy breathing started within past 2 hours', 'Recent trauma, surgery, or childbirth', 'Inhalation of a foreign body', 'Exposure to something that previously caused a significant reaction (sting, medication, plant, chemical, food, or animal)', 'Speaking in short words', 'Inability to breathe lying down or need to sit up to breathe', 'Immunosuppressed, age > 60, history of sickle cell anemia or diabetes, or bedridden and temperature > 101°F (38.3°C)', 'Peak flow rate < 50% baseline', 'Adult with temperature > 103°F (39.4°C)', 'Progressively worsening shortness of breath' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Speaking in partial sentences', 'Tight cough', 'Mild audible wheezes at rest', 'Pain increasing with breathing', 'Upper respiratory infection and prior hospitalizations for same symptoms', 'Inability to sleep > 1 to 2 hours due to coughing or difficulty breathing', 'History of diabetes or heart disease', 'Peak flow rate 50% to 80% baseline' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Fever', 'Productive cough with gray, green, or yellow sputum', 'Peak flow rate > 80% of baseline' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Numbness or tingling in the fingers or face', 'Recent exposure to a stressful event or situation', 'Exposure to environmental irritants, allergies, or recent cold or flu symptoms', 'Nasal congestion', 'Productive cough with clear sputum' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Use routine prescriptions as directed.', 'Rest or sleep with head elevated on a couple of pillows if lying flat increases breathing difficulty.', 'Increase fluid intake unless your physician has prescribed a fluid-restricted regimen.', 'Avoid environmental irritants (smoke, smog, garden cuttings, chemicals, animals) and other irritants that seem to worsen your symptoms.', 'If rapid breathing, tingling in the face or hands, and anxiety are present, breathe into a small paper bag held loosely around the mouth and nose for 5 minutes. The problem should resolve within that time period.', 'Rest and relax as much as possible.', 'If the problem is caused by excitement, heavy exertion (and resolved within a few minutes and there are no cardiac risk factors), or nasal congestion, there is no real cause for concern. Normal breathing should resume in a short period of time.', 'Monitor peak flow rates.' ],
-        reportToPCP: [ 'Condition worsens or no improvement in 2 days', 'Temperature > 101°F (38.3°C)', 'Peak flow rate 50% to 80% of baseline' ],
-        seekEmergencyCare: [ ' Chest pain', 'Blue lips or tongue, pale or gray face', 'Clammy skin', 'Feeling of suffocation', 'Frothy pink or copious white sputum', 'Decreased level of consciousness', 'Inability to speak', 'Drooling, unable to swallow saliva', 'Peak flow rate < 50% of baseline' ]
-      },
-      'Choking': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Pain Scale', 'History' ],
-        otherProtocolstoConsider: [ 'Breathing Problems (101); Cough (163); Foreign Body, Swallowing of (274); Sore Throat (567); Swallowing Difficulty (589); Weakness (645)' ],
-        nurseAlert: 'If actively choking, and unable to speak, cough, or breathe, instruct caller to call Emergency Medical Services (EMS) or 911. Dispatchers are specially trained in giving emergency procedure instructions over the phone while the ambulance is on the way. If caller is unable to call 911, make the call for them.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Person is conscious and unable to speak, cough, or breathe' ],
-            true: 'Call EMS/911 for emergency choking procedures'
-          },
-          {
-            B: 'Is the following present?',
-            list: [ 'Person is unconscious and not breathing' ],
-            true: 'Call ambulance and begin CPR'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Difficulty breathing', 'Blue lips or face' ],
-            true: 'Call ambulance'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Foreign body aspirated into lungs', 'Coughing up blood or severe pain after dislodging foreign body from throat', 'Unable to remove foreign object from throat and no other symptoms' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Able to speak and cough', 'No difficulty breathing', 'Frequent episodes of choking on saliva, foods, or fluids' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'For frequent choking, eat slowly, taking smaller bites.', 'If there is a sensation that a fish bone is stuck in the throat, try washing down the bone with bread and milk.' ],
-        reportToPCP: [ 'Fish bone in throat and persistent scratchy throat > 2 hours', 'Signs of infection: persistent sore throat, fever, drainage', 'Difficulty swallowing', 'No improvement or condition worsens' ],
-        seekEmergencyCare: [ ' Difficulty breathing', 'Unable to swallow saliva or fluids', 'Coughing up blood or severe pain after dislodging foreign body from the throat' ]
-      },
-      'Common Cold Symptoms': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Runny or Stuffy Nose', 'Sore Throat', 'Fever', 'Cough', 'Headache', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Asthma (49); Avian Influenza (Bird Flu) Exposure (52); Breathing Problems (101); Chest Pain (118); Congestion (145); Cough (163); Earache (200); Fever, Adult (241), Child (244); Hay Fever Problems (300); Severe Acute Respiratory Syndrome (SARS) (536); Sore Throat (567); Swine Flu (H1N1 Virus) Exposure (598); West Nile Virus (648); Wheezing (652)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is there difficulty breathing for reasons other than nasal congestion?',
-            list: [ null ],
-            true: 'Go to Breathing Problems protocol (101)'
-          },
-          {
-            B: 'Is chest pain present unrelated to deep breathing or coughing?',
-            list: [ null ],
-            true: 'Got to Chest Pain protocol (118)'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'pinched skin does not spring back', 'excessive thirst or dry mouth', 'crying without tears' ], 'Fever and neck pain bending head forward', 'Altered mental status, change in behavior or responsiveness', 'Immunosuppressed, age > 60 years, history of diabetes or sickle cell anemia, or bedbound with temperature > 101°F (38.3°C)', 'Infant < 3 months with temperature > 100.4°F (38.0°C)', 'Child with temperature > 105°F (40.6°C)', 'Adult with temperature > 103°F (39.4°C)', 'Fever and child appears very ill', 'Change in child’s breathing pattern: labored, noisy, wheezing, or chest retractions > 30 minutes' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Sore throat or fever > 2 days', 'Wheezing and age < 4 years', 'Persistent wheezing unrelieved by home care measures', 'Ear pain or drainage', 'Sinus pain > 24 hours', 'Fever and history of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, or renal disease', 'Honey-colored crusts in nostril or ear canal or around the mouth', 'Fever and age > 65 years', 'Green, brown, or yellow sputum or nasal discharge > 7 days and condition worsening' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Green, brown, or yellow sputum or nasal discharge < 7 days', 'Blood streaks in sputum', 'History of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, or renal disease', 'Yellow eye drainage' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Do not give cold or cough medications to a child < 6 years old.', 'Take pain reliever of choice for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rest.', 'Drink 6 to 8 glasses of liquids daily, especially warm liquids, such as tea with lemon and honey. Do not give honey to a child < 1 year old.', 'Take decongestant of choice for congestion (unless there is a history of hypertension or the child < 6 years old).', 'Take expectorant of choice for cough. For child > 1 year of age, give 1/2 tsp lemon juice.', 'Suction secretions from infant’s nose with soft rubber suction bulb.', 'Use saline nose drops as needed for nasal congestion. (For homemade saline nasal drops, add 1/4 tsp regular salt to 1/2 cup warm water.) Place three drops in each nostril and wait 1 minute, then attempt to blow nose or suction with a soft rubber suction bulb.', 'Apply petroleum jelly to nasal opening to protect from irritation.', 'Use a vaporizer or humidifier to keep air moist, especially at night, and change the water daily.', 'If the throat is sore, gargle several times a day with warm water. Use frozen cough drops or hard candy, or sip warm chicken broth for additional relief if age > 4 years.', 'Use water to rinse red eyes and wipe with moistened cotton balls. Discard cotton ball after use in each eye.', 'Clear nose of child before breast- or bottle-feeding.', 'Remember that colds are very contagious and have an incubation period of 2 to 5 days. Use good hygiene, wash hands, dispose of used tissues, and cover mouth when sneezing or coughing.', 'Avoid smoking and exposure to second-hand smoke.' ],
-        reportToPCP: [ 'Persistent fever > 3 days or temperature of 105°F (40.6°C)', 'Nasal discharge > 10 days', 'Persistent earache, sinus pain, or yellow eye drainage', 'Formation of honey-colored crusts under nostrils', 'Productive cough or fever', 'Condition persists or worsens' ],
-        seekEmergencyCare: [ ' Difficulty breathing for reasons other than nasal congestion', 'Severe chest pain' ]
-      },
-      'Congestion': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Treatment', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Asthma (49)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Common Cold Symptoms (138)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Earache, Drainage (200)', 'Fever, Adult (241), Child (244)', 'Hay Fever Problems (300)', 'Influenza (374)', 'Severe Acute Respiratory Syndrome (SARS) (536)', 'Sore Throat (567)', 'Swine Flu (H1N1 Virus) Exposure (598)', 'Wheezing (652)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is there difficulty breathing for reasons other than nasal congestion?',
-            list: [ null ],
-            true: 'Go to Breathing Problems protocol (101)'
-          },
-          {
-            B: 'Is chest pain present?',
-            list: [ null ],
-            true: 'Go to Chest Pain protocol (118)'
-          },
-          {
-            C: 'Is wheezing present?',
-            list: [ null ],
-            true: 'Go to Wheezing protocol (652)'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Fever > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Fever > 100.4°F (38.0°C) and age < 3 months', 'Adult with fever > 103°F (39.4°C)', 'Child or elderly person appears very ill', 'Young child with signs of dehydration:', 'sunken eyes or fontanel', 'pinched skin that does not spring back', 'infant cries without tears', 'Child with severe pain, swelling, or redness of the upper part of the face' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Several signs of dehydration:' = [ 'infrequent urination', 'dark yellow urine', 'sunken eyes', 'pinched skin that does not spring back', 'excessive thirst', 'dry mouth or mucous membranes' ], 'Severe pain, swelling, or redness of the upper part of the face' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            F: 'Are any of the following present?',
-            list: [ 'Sore throat or fever > 2 days', 'Persistent fever > 100.4°F (38.0°C) > 3 days', 'Weakness and listlessness', 'Wheezing in a child younger than 4 years', 'Ear pain or drainage', 'History of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, renal disease, or weakened immune system', 'Adult with green, brown, or yellow sputum or nasal discharge > 72 hours', 'Child with green, brown, or yellow sputum or nasal discharge > 7 days and condition worsening', 'Persistent pain > 24 hours after home care' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            G: 'Are any of the following present?',
-            list: [ 'Blood streaks in sputum', 'Green, brown, or yellow sputum or nasal discharge < 72 hours', 'Persistent sinus congestion > 7 days after home care' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Do not give cold or cough medications to a child <6 years old.', 'Take your usual pain reliever (acetaminophen, ibuprofen) for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age <20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rest and drink 6 to 8 glasses of water a day. Warm liquids, such as tea with lemon and honey, are also soothing. Do not give honey to a child <1 year old.', 'Take OTC decongestants (ask the pharmacist for product suggestions) for congestion. Follow the instructions on the label. (Many decongestants are contraindicated if there is a history of hypertension, asthma, heart disease, glaucoma, or enlarged prostate.) Try a vaporizer, a humidifier, or a hot steamy shower and saline nose drops first; if no relief occurs, try decongestants.', 'For sinus pain, inhale the vapor of peppermint tea. Peppermint has anti- inflammatory compounds and pain relievers like menthol that relax constricted sinuses.', 'Take an expectorant (ask your pharmacist for product suggestions) for cough. Follow the instructions on the label.', 'Try antihistamine if congestion is due to allergy.', 'Use saline nose drops as needed for nasal congestion. (For homemade saline nasal drops, add 1/4 tsp of regular salt to 1/2 cup of warm water.) Blow each nostril separately.', 'Use a vaporizer or humidifier to keep the air moist, especially at night, and change the water daily.', 'If the throat is sore, gargle several times a day with warm water. Use frozen cough drops for additional relief.', 'Remember that infants <3 months old often have congestion and wheezing. Use saline nose drops and a humidifier to reduce congestion. Suction secretions from the infant’s nose with a soft rubber suction bulb.', 'Apply petroleum jelly to the nasal opening to protect it from irritation.', 'Clear the child’s nose before breast- or bottle-feeding.', 'Remember, colds are contagious; use good hygiene, wash hands, and dispose of used tissues. Cover the mouth with a tissue or inside the elbow sleeve when sneezing or coughing.', 'Avoid smoking or exposure to second-hand smoke.' ],
-        reportToPCP: [ 'Persistent temperature > 101°F (38.3°C) and age > 4 months', 'Sore throat > 2 days', 'Green or yellow sputum', 'Persistent earache, sinus pain, or yellow eye drainage', 'Chest pain', 'Severe pain, swelling, or redness of the upper part of the face', 'Difficulty breathing', 'Fever > 100.4°F (38.0°C) and age < 3 months' ],
-        seekEmergencyCare: [ 'Chest pain unrelated to coughing or deep breathing' ,'Difficulty breathing for reasons other than congestion' ,'Young child with sign of dehydration' ]
-      },
-      'Congestive Heart Failure': {
-        keyQuestions: [ ' Name', 'Age', 'Onset', 'Under Treatment for CHF', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Ankle Problems (34)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Cough (163)', 'Swelling (595)', 'Weakness (645)', 'Wheezing (652).' ],
-        nurseAlert: 'Use this protocol only if previously diagnosed with CHF and currently under treatment for CHF.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Sudden onset of severe difficult breathing', 'Chest pain or pressure', 'Altered mental status', 'Dusky or blue lips, tongue, or fingernail beds', 'Pale or gray face', 'Unable to speak more than 2- to 3-word sentences due to shortness of breath', 'Extreme exhaustion', 'Frothy pink or copious white sputum', 'Feeling of suffocation' ],
-            true: 'Call ambulance or Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Sweating', 'Increased anxiety', 'Gradual increase in shortness of breath when lying flat or with activity', 'Shortness of breath with exertion', 'Speaking in partial sentences', 'Upper respiratory infection with fever and cough', 'Sudden weight gain 3–4 pounds in 1–4 days', 'Sudden increased swelling in legs, feet, or abdomen' ],
-            true: 'Seek medical care immediately'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Difficulty sleeping', 'Increased ankle swelling', 'Increasing fatigue or weakness', 'Frequent dry hacking cough', 'Weight gain > 3 pounds in 1 day', 'Increased wheezing' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Congestion, sneezing, cough, and no fever', 'Caregiver concerned and no other symptoms', 'Intermittent ankle swelling' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Take medications as prescribed.', 'Keep appointments with PCP and laboratory testing.', 'Weigh daily before breakfast and after toileting. Keep a record and take it to appointments.', 'Follow low-salt diet as instructed by health-care provider.', 'Pace activities. Slow down if activity causes increased difficulty breathing.', 'Avoid alcohol and smoking.' ],
-        reportToPCP: [ 'Increased difficulty breathing, wheezing, coughing, or fatigue', 'Difficulty sleeping due to breathing problems or increased urination', '>3 pounds weight gain in any 1 day', 'Worsening ankle swelling', 'Condition worsens or no improvement' ],
-        seekEmergencyCare: [ 'Sudden onset of severe difficulty breathing', 'Chest pain or pressure', 'Altered mental status', 'Dusky or blue lips, tongue, face, or fingernail beds', 'Inability to speak', 'Extreme exhaustion', 'Frothy pink or copious white sputum', 'Feeling of suffocation' ]
-      },
-      'Cough': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Treatment', 'Related Symptoms', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Asthma (49); Breathing Problems (101)', 'Chest Pain (118)', 'Choking (130)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Foreign Body, Inhaled (263)', 'Influenza (374)', 'Pertussis (442)', 'Severe Acute Respiratory Syndrome (SARS) (536)', 'Sore Throat (567)', 'Wheezing (652)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is coughing caused by choking on a foreign body, food, or vomit?',
-            list: [ null ],
-            true: 'Go to Choking protocol (130)'
-          },
-          {
-            B: 'For reasons other than nasal congestion, is the following present?',
-            list: [ 'Sudden shortness of breath, rapid breathing, or wheezing' ],
-            true: 'Go to Breathing problems protocol (101)'
-          },
-          {
-            C: 'Is chest pain present?',
-            list: [ null ],
-            true: 'Go to Chest Pain protocol (118)'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Blue lips or tongue', 'Feeling of suffocation', 'Frothy pink sputum', 'Difficulty breathing and inability to speak', 'Difficulty breathing after smoke, flame, or fume inhalation', 'Sudden onset after exposure to something that previously caused a significant reaction (sting, medication, plant, chemical, food, or animal)' ],
-            true: 'Call ambulance or Seek Emergency Care Now'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Cough is unrelated to cold symptoms and person has a history of:' = [ 'chest trauma > 48 hours', 'blood clots or recent long sedentary period', 'recent surgery', 'recent childbirth', 'recent heart attack', 'asthma and unresponsiveness to home care measures or medication' ], 'Coughing up blood', 'Child younger than 6 months with rapid breathing and persistent cough', 'Child appears very ill', 'Change in child’s breathing pattern: labored, noisy, wheezing, or chest retractions > 30 minutes' ],
-            true: 'Seek medical care within 2 hours'
-          },
-          {
-            F: 'Are any of the following present?',
-            list: [ 'Persistent fever > 72 hours that is unresponsive to fever-reducing measures', 'Green or brown sputum > 72 hours', 'Child has a “barking” cough that is unrelieved by exposure to cool air, humidifier, or steam' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            G: 'Are any of the following present?',
-            list: [ 'Cough caused by exercise', 'Persistent or worsening cough during a period of several weeks or months', 'Intermittent mild chest discomfort with deep productive coughing', 'Child with temperature > 101°F (38.3°C) for > 24 hours', 'Cough with weight loss' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Drink 6 to 8 glasses of water daily.', 'Warm mist may help improve conditions. Breathe through a warm wet washcloth placed over the mouth and nose or sit in a steam-filled bathroom for 20 to 30 minutes.', 'Elevate head of bed to reduce coughing at night.', 'For children younger than 1 year, give 1/2 tsp lemon mixed with 1/2 tsp corn syrup to soothe cough.', 'Give older children and adults 1/2 tsp lemon mixed with 1/2 tsp honey or corn syrup. (DO NOT give honey to a child < 1 year.)', 'Drink warm lemonade, apple cider, or tea to help soothe cough.', 'Avoid irritants such as smoking, smog, and chemicals.', 'Turn down the heat, open the windows, or go out into cooler air to help suppress cough.', 'Take cough suppressants (ask your pharmacist for product suggestions) if cough is interfering with activity, causing chest pain or vomiting, or interrupting sleep at night. Do not give cough suppressants to a child < 1 year. Follow instructions on the label.', 'If congested, avoid milk products.', 'Take OTC medications as needed, being sure to follow instructions on the label: For a wet cough, use a decongestant; for a dry cough, use an expectorant during the day and suppressant at night; for an allergy, use an antihistamine or decongestant. Ask your pharmacist for product suggestions.' ],
-        reportToPCP: [ 'No improvement or condition worsens', 'Fever for > 72 hours', 'Green, brown, or gray sputum develops and lasts > 72 hours', 'Coughing up blood (more than streaks or flecks)' ],
-        seekEmergencyCare: [ 'Blue lips or tongue', 'Feeling of suffocation', 'Frothy pink sputum', 'Difficulty breathing and inability to speak' ]
-      },
-      'Croup': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Description of Cough', 'Prior Treatment', 'Medications', 'Associated Symptoms', 'History' ],
-        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Congestion (145)', 'Cough (163)', 'Fever, Adult (241), Child (244)', 'Influenza (374)', 'Pertussis (442)', 'Sore Throat (567)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Drooling, difficulty swallowing, and child looks ill', 'Lips blue or dusky', 'Severe difficulty breathing', 'Chest caves in when breathing' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Crowing sound when breathing in that does not clear after 20 minutes of steam, or more than three episodes during the last 24 hours', 'Child appears very ill' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'History of pneumonia or other lung problems', 'History of asthma and no improvement after home breathing treatment and usual bronchodilator' ],
-            true: 'Seek medical care within 2 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Condition worsens when lying down', 'Condition interferes with sleep', 'Temperature > 104°F (40°C) ' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Barking cough > 5 days', 'Cough worse at night', 'Barking cough heard during daytime hours' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Warm mist may help improve condition: Breathe through a warm wet washcloth placed over the mouth and nose or sit in a steam-filled bathroom for 20 to 30 minutes.', 'Continuous cool mist may help. Use a cool-mist humidifier or go out into the cool night air.', 'Drink warm clear fluids to soothe cough.', 'Use usual medication for fever (children’s Motrin, ibuprofen, children’s Tylenol, acetaminophen). Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
-        reportToPCP: [ 'No improvement or condition worsens', 'Difficulty breathing', 'Temperature > 104°F (40°C)', 'Condition persists in child with asthma after home breathing treatment' ],
-        seekEmergencyCare: [ 'Drooling, difficulty swallowing, and child looks ill', 'Lips turn blue or dusky', 'Severe difficulty breathing', 'Child appears very ill', 'Chest caves in with breathing', 'Crowing sound that does not clear after 20 minutes of home care measures or more than three episodes in a 24-hour period' ]
-      },
-      'Drowning (Near Drowning)': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'History', 'Water Source and Temperature (if known)' ],
-        otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Back/Neck Injury (56)', 'Breathing Problems (101)', 'Choking (130)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Victim experienced near drowning, and are any of the following present?',
-            list: [ 'Unresponsiveness', 'Suspected injury', 'Vomiting', 'Respiratory distress', 'Difficulty breathing', 'Lips or face blue' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Did a near drowning occur?',
-            list: [ 'Victim was submerged under water but now is breathing and responsive' ],
-            true: 'Seek medical care within 2 to 4 hours and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'For suspected neck injury, do not move victim unless absolutely necessary. Support the head and neck and allow to float in water. If necessary to move, support head and neck and torso as one unit.', 'If vomiting occurs, turn victim to side and clear mouth.', 'Do not press on abdomen, or vomiting may occur.', 'Keep victim warm.' ],
-        reportToPCP: [ 'No improvement or condition worsens' ],
-        seekEmergencyCare: [ null ]
-      },
-      'Facial Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Congestion (145)', 'Facial Skin Problems (225)', 'Mouth Problems (410)', 'Numbness and Tingling (433)', 'Piercing Problems (446)', 'Rash, Adult (501), Child (505)', 'Sinus Problems (556)', 'Shingles: Suspected or Exposure (545)', 'Skin Lesions: Lumps, Bumps, and Sores (559)', 'Tattoo Problems (602)', 'Toothache (611)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Sudden loss of vision', 'Severe pain on one side of face, over eye, blurred vision, and red eye', 'Adult with shoulder, chest, neck, or arm pain', 'History of glaucoma', 'Sudden onset of facial drooping on one side' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Sudden severe pain interferes with activity', 'Facial paralysis', 'Pain, swelling, redness, warmth, drainage, or fever' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Increased pain in afternoon or when bending over', 'Green, brown, or yellow nasal discharge', 'Pain along ridge between nose and lower eyelid', 'Temperature > 101°F (38.3°C)', 'Persistent swelling', 'Facial rash, blisters, or lesions' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Recent red, blistered facial rash', 'Pain, swelling, or bruising after blow to the face', 'History of recent cold', 'Pain follows ingestion of ice-cold foods or fluids', 'Nose and eye drainage' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Alternate cold and warm compresses to forehead and cheeks 1 minute each for 10 minutes, 4 times a day. A sock filled with rice and heated in the microwave works well.', 'Increase fluid intake.', 'Apply ice pack to face injury for 10 to 20 minutes, 4 times a day for first 24 hours to help reduce swelling.', 'Sit in a steamy bathroom for 20 minutes several times a day to promote sinus drainage.', 'Take OTC decongestants as needed for congestion and follow instructions on the label. Ask your pharmacist for product suggestions.', 'Take usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort and fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
-        reportToPCP: [ 'Persistent pain or condition worsens', 'Temperature > 101°F (38.3°C)', 'Signs of infection: pain, swelling, redness, warmth, drainage, or red streaks', 'Persistent nasal discharge', 'Change in vision, hearing, smell, or taste' ],
-        seekEmergencyCare: [ 'Sudden loss of vision', 'Severe pain on one side of face, over eye, blurred vision, and red eye', 'Adult with shoulder, chest, neck, or arm pain', 'Sudden facial drooping on one side of the face' ]
-      },
-      'Foreign Body, Inhaled': {
-        keyQuestions: [ ' Name', 'Age', 'Onset', 'Object Inhaled', 'History', 'Medications' ],
-        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Choking (130)', 'Cough (163)', 'Foreign Body, Swallowing of (274)', 'Piercing Problems (446)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Choking and unable to speak, cough, or breathe', 'Unconscious person who is not breathing' ],
-            true: 'Call ambulance and begin rescue breathing'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Difficulty breathing', 'Lips or face turning blue', 'Inability to cry or speak', 'Suicide attempt' ],
-            true: 'Call ambulance'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Aspirated foreign body into the lungs', 'Coughing up blood or severe pain after dislodging foreign body from the throat', 'Unable to remove foreign object from throat but no other symptoms', 'Feeling of suffocation', 'Drooling', 'Speaking in short words', 'Unable to swallow saliva or fluids' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Fever', 'Speaking in partial sentences', 'Intermittent cough or wheezing after inhaling a foreign object, aerosol, or smoke' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ ' Able to speak and cough', 'No difficulty breathing', 'Frequent episodes of choking on saliva, foods, or fluids', 'Speaking in full sentences' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'For frequent choking, eat slowly, taking smaller bites.', 'If there is a sensation that a fish bone is stuck in the throat, try washing down the bone with bread and milk.' ],
-        reportToPCP: [ 'Fish or chicken bone in throat and persistent scratchy throat > 2 hours', 'Coughing up blood', 'Signs of infection: persistent sore throat, fever, or drainage', 'Difficulty swallowing', 'No improvement or condition worsens' ],
-        seekEmergencyCare: [ ' Difficulty breathing, shortness of breath, or wheezing', 'Unable to swallow saliva or fluids', 'Feeling of suffocation' ]
-      },
-      'Hay Fever Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'History of Known Allergies', 'Medications', 'History. If no history of hay fever, see most severe symptom protocol' ],
-        otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Cough (163)', 'Earache, Drainage (200)', 'Sinus Problems (556)', 'Sore Throat (567)', 'Wheezing (652)' ],
-        nurseAlert: 'Use this protocol only if previously diagnosed with hay fever.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is there difficulty breathing for reasons other than nasal congestion?',
-            list: [ null ],
-            true: 'Go to Breathing Problems protocol (101)'
-          },
-          {
-            B: 'Is chest pain present?',
-            list: [ null ],
-            true: 'Go to Chest Pain protocol (118)'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Wheezing in a client younger than 4 years', 'Persistent wheezing that is unresponsive to home care measures' ],
-            true: 'Go to Wheezing protocol (652)'
-          },
-          {
-            D: 'In addition to clear nasal discharge, sniffing, or sneezing, are any of the following present?',
-            list: [ 'Fever', 'Headache and muscle aches', 'Green, brown, or yellow nasal discharge or sputum for > 24 hours', 'Ear pain or drainage', 'Persistent uncontrollable coughing' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Symptoms persist, even when client avoids triggers', 'Symptoms interfere with daily activities', 'Intermittent coughing', 'Nasal itching', 'Red, itchy, or watery eyes', 'Sore throat', 'Clear nasal drainage' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Take OTC or prescription antihistamines of choice. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid use of nasal sprays unless prescribed by PCP. If sprays are used, do not use > 5 days.', 'Shower and wash hair at night and after having exposure to pollen, dust, or known irritants.', 'When pollen count is high, particularly in the morning, stay indoors with the doors and windows closed.', 'For itchy eyes, apply cold compresses to the eyelids.', 'Avoid pollen and other irritants that worsen the problem.' ],
-        reportToPCP: [ 'Persistent nasal discharge, sneezing, or sniffing that is unresponsive to medication' ,'Fever' ,'Sinus pressure or pain' ,'Green, brown, or yellow nasal discharge or sputum' ,'Earache' ,'Uncontrolled coughing' ,'Symptoms interfere with daily activity' ,'Persistent wheezing or coughing that is unresponsive to home care measures' ],
-        seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing for reasons other than nasal congestion' ]
-      },
-      'Hoarseness': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Contributing Factors', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ ' Allergic Reaction (26)', 'Breathing Problems (101)', 'Cough (163)', 'Croup (166)', 'Hay Fever Problems (300)', 'Hives (335)', 'Foreign Body, Inhaled (263)', 'Sore Throat (567).' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Sudden onset of hoarseness, and are any of the following present?',
-            list: [ 'Sore throat, drooling, and difficulty breathing', 'Sensation of swelling tongue or throat', 'Recent trauma to neck', 'Speaking in short three-word sentences' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Sudden onset of swelling in face', 'Speaking in partial sentences' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' High fever and feels or looks ill', 'Persistent hoarseness >1 week', 'History of tobacco use, recent weight loss, and decreased appetite', 'Dry skin or hair, increased sensitivity to cold, increased fatigue, or unexplained weight gain' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Recent sore throat, cough, cold, or fever', 'Frequent use of voice in work (such as teacher or singer)', 'Heavy use of tobacco or alcohol', 'Recently used voice more than usual (yelling, cheering, singing)', 'Speaking in complete sentences' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Avoid tobacco or alcohol.', 'Rest voice as much as possible.', 'Drink plenty of fluids.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) as tolerated for discomfort or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Use honey or throat lozenges for throat discomfort or cough.' ],
-        reportToPCP: [ 'Condition persists > 1 week or worsens', 'High fever and appears ill' ],
-        seekEmergencyCare: [ 'Sore throat, drooling, and difficulty breathing', 'Sensation of swelling tongue or throat', 'Speaking in short three-word sentences' ]
-      },
-      'Hyperventilation': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Associated Symptoms' ],
-        otherProtocolstoConsider: [ 'Anxiety (37)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Numbness and Tingling (433)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is chest pain present?',
-            list: [ null ],
-            true: 'See Chest Pain protocol (118)'
-          },
-          {
-            B: 'In addition to breathing rapidly, are any of the following present?',
-            list: [ ' Blue lips or fingernails', 'Unable to talk', 'Must sit up to breathe' ],
-            true: 'See Breathing Problems protocol (101)'
-          },
-          {
-            C: 'In addition to rapid breathing, are any of the following present?',
-            list: [ ' Severe pain', 'High fever unresponsive to fever-reducing measures', 'Abnormal drowsiness' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'In addition to rapid deep breathing, are any of the following present?',
-            list: [ ' Numbness and tingling around the face, mouth, fingers, or toes', 'Weakness', 'Feeling faint', 'Twitching in the hands and feet', 'Anxiety or emotional upset', 'History or prior episodes of similar symptoms' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Sit down and focus on slowing breathing, one breath every 5 seconds.', 'Cover mouth and nose with a paper bag and breathe in and out 10 times.', 'If no improvement, continue breathing in the bag for 5 to 15 minutes.', 'Breathe without the bag for a few minutes.', 'Repeat breathing with and without the bag until condition improves.' ],
-        reportToPCP: [ 'No improvement or condition worsens', 'Sudden fever occurs during an attack', 'Frequent attacks' ],
-        seekEmergencyCare: [ ' Fainting', 'Seizure', 'Blue lips or fingernails', 'Chest pain' ]
-      },
-      'Influenza': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Symptoms', 'Known Exposure or Community Outbreak', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Avian Influenza (“Bird Flu”) (52)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Cough (163)', 'Fever, Adult (241), Child (244)', 'Headache (303)', 'Swine Flu (H1N1 Virus) Exposure (598)', 'Sore Throat (567)', 'West Nile Virus (648)' ],
-        nurseAlert: 'Use this protocol if exposure to influenza is known or suspected, there is a community outbreak, or previously diagnosed with Influenza.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Altered mental status', 'Difficulty breathing for reasons other than congestion', 'Fever > 104.9°F (40.5°C)', 'Flat purple or dark red spots on face or trunk and stiff or painful neck', 'Severe headache', 'Skin or lips turning blue', 'New onset of drooling or unable to swallow', 'Age < 6 weeks' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Stiff or painful neck', 'Fever > 103.1°F (39.5°C)', 'Fever, and child or older adult appears very ill, lethargic, or very irritable', 'Signs of dehydration' ],
-            true: 'Seek medical care immediately'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Known exposure and any of the following: fatigue, fever < 103.1°F (39.5°C), dry cough, sore throat, GI symptoms, runny nose or congestion, muscle aches', 'History of CHF, immunosuppression, 6 weeks to 23 months of age, age > 65 years, pregnancy, long-term care resident, asthma, COPD, metabolic disorders' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Mild symptoms', 'No symptoms but parent or person concerned' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Wash hands frequently with soap and water or alcohol-based hand rubs.', 'Reinforce that influenza is highly contagious. Maintain good respiratory etiquette; cover mouth and nose with a tissue when coughing or sneezing.', 'Avoid contact with sick individuals.', 'If sick, avoid contact with other people. If coughing and sneezing, wear a surgical mask during close contact with others to prevent the spread of droplets. Change the mask if it becomes soiled or moist.', 'Get plenty of rest and drink plenty of fluids.', 'Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Give antivirals within 48 hours of symptom onset.' ],
-        reportToPCP: [ ' Stiff or painful neck', 'Fever > 103.1°F (39.5°C)', 'Fever, and child or older adult appears very ill, lethargic, or very irritable', 'Signs of dehydration' ],
-        seekEmergencyCare: [ ' Altered mental status', 'Difficulty breathing', 'Fever > 104.9°F (40.5°C)', 'Flat purple or dark red spots on face or trunk and stiff or painful neck', 'Severe headache', 'Skin or lips turning blue', 'New onset of drooling or unable to swallow' ]
-      },
-      'Sleep Apnea, Adult': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Breathing Problems (101)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Person not breathing', 'Skin turning blue' ],
-            true: 'Call ambulance and Start CPR'
-          },
-          {
-            B: 'While sleeping, did the following occur?',
-            list: [ 'Lapse in breathing for several minutes', 'Skin turned gray or blue and is normal color now', 'Abnormal breathing after the episode', 'Rescue breathing was necessary' ],
-            true: 'Seek medical care within 2 hours'
-          },
-          {
-            C: 'While sleeping, did the following occur?',
-            list: [ 'Lapse in breathing < 2 minutes', 'No change in skin color', 'Breathing normally after the episode', 'Rescue breathing was not necessary', 'Cycles of sleep, choking, sudden wakening, drowsiness, and sleep Follow Home Care Instructions', 'Persistent drowsiness and episodes of falling asleep during the day', 'Decreased ability to function or depression caused by lack of sleep' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Try to remain calm.', 'Eliminate as many contributing risk factors as possible: stress, anxiety, depression, obesity, smoking, and drug or alcohol abuse.', 'Obtain CPR training. Rapid identification of prolonged apnea and prompt CPR can help to prevent death or serious problems related to a lack of oxygen to the brain.', 'If apnea occurs only when sleeping on the back, sleep on the side or stomach. Use pillows for support. Consider attaching an object to the back of sleepwear to encourage other sleep positions.' ],
-        reportToPCP: [ 'Persistent episodes of apnea' ],
-        seekEmergencyCare: [ 'Prolonged period of not breathing', 'Skin turning blue', 'CPR in progress' ]
-      },
-      'Sleep Apnea, Infant': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Newborn Problems (423)', 'Spitting Up, Infant (573)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Infant not breathing', 'Skin turning blue' ],
-            true: 'Call ambulance and Start CPR'
-          },
-          {
-            B: 'While infant was sleeping, did the following occur?',
-            list: [ 'Lapse in breathing for 1 minute', 'Skin turned gray or blue but is normal color now', 'Abnormal breathing after the episode', 'Rescue breathing was necessary' ],
-            true: 'Seek medical care immediately'
-          },
-          {
-            C: 'While infant was sleeping, did the following occur?',
-            list: [ 'Lapse in breathing < 1 minute', 'No change in skin color', 'Infant breathing normally after episode', 'Rescue breathing was not necessary' ],
-            true: 'Seek medical care within 24 hours'
-          },
-        ],
-        homeCareInstructions: [ 'Provide reassurance. Some infants have a pause in breathing of < 15 seconds after several rapid respirations.', 'Reinforce importance of placing child on back for sleep.', 'Discuss use of a respiration monitor with PCP.', 'Obtain CPR training. Rapid identification of apnea and prompt CPR can successfully revive an infant without serious problems.' ],
-        reportToPCP: [ 'Persistent episodes of apnea' ],
-        seekEmergencyCare: [ 'Infant not breathing', 'Skin turning blue', 'CPR in progress' ]
-      },
-      'Wheezing': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History of Intubation', 'Hospitalizations', 'History' ],
-        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Asthma (49)', 'Breathing Problems (101)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Croup (166)', 'Hay Fever Problems (300)' ],
-        nurseAlert: 'If known respiratory problems and prescribed inhalers, use O2 or peak flow meters (to measure how well air is moving out of the lungs). Assess baseline functioning, O2 saturation level, and % Oxygen delivered and method. Peak flow values are divided into three zones:',
-        alertBullets: [ 'Green: 80% of baseline or higher (mild attack)', 'Yellow: 50% to 80% of baseline (moderate attack)', 'Red: <50% of baseline (severe attack)' ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ ' Severe respiratory distress', 'Inability to speak', 'Chest retractions', 'Aspiration of foreign body', 'Blue lips or face', 'Severe chest pain', 'Sudden-onset wheezing after medication or exposure to known allergen', 'Peak flow rate < 50% of baseline (if asthmatic)' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Unresponsive to medication treatments', 'Unresponsive to home care measures', 'Must sit up to breathe', 'Wheezing similar to prior episodes that required hospitalization or injections', 'History of CHF, cardiac disease, pulmonary embolus, or blood clot in leg', 'Speaking in partial sentences', 'Peak flow rate 50%–80% of baseline (if asthmatic)' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Peak flow rate > 80% of baseline (if asthmatic)', 'Green, yellow, or rust-colored sputum', 'Infant, elderly, or immunosuppressed' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'First wheezing episode that resolves in short period of time', 'Fever', 'Speaking in full sentences' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Take medication as directed by PCP.', 'Use vaporizer with cool mist.', 'Identify cause and avoid irritant.' ],
-        reportToPCP: [ 'Condition worsens', 'No improvement with medication' ],
-        seekEmergencyCare: [ 'Lips or face turn blue', 'Fighting for air', 'Decreased level of consciousness', 'Inability to speak or speaking in short words', 'Severe chest pain', 'Peak flow rate < 50% of baseline (if asthmatic)' ]
-      },
+    'Allergic Reaction': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Suspected Cause', 'Allergies', 'Prior History', 'Medications' ],
+      otherProtocolstoConsider: [ 'Bee Stings (69)', 'Bites, Insect (76)', 'Breathing Problems (101)', 'Food Allergy (252)', 'Hay Fever Problems (300)', 'Hives (335); Itching (384)', 'Piercing Problems (446)', 'Rash, Adult (501), Child (505)', 'Swelling (595)', 'Tattoo Problems (602)', 'Wheezing (652)' ],
+      nurseAlert: 'Signs of anaphylaxis, a severe life-threatening allergic reaction, can occur within seconds to an hour after exposure to the offending substance such as food, medication, a bee sting, etc. An anaphylactic reaction involves the respiratory, cardiovascular, and central nervous systems. Sudden onset of symptoms may include: difficulty breathing, feeling faint, swelling of the tongue, throat or lips, hives, wheezing or coughing, or a feeling of impending doom. The sooner symptoms occur after exposure to the antigen, the more severe the anaphylaxis.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Difficulty breathing', 'Difficulty swallowing', 'Swelling of tongue or back of mouth', 'Inability to speak', 'Chest pain' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ ' Faintness or dizziness', 'History of previous anaphylaxis to same allergen', 'Change in vision', 'Confusion', 'Rapid progression of symptoms', 'Speaking in short words', 'Sudden onset of hoarseness' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Swelling in face/extremities', 'Persistent nausea, vomiting, or diarrhea', 'Persistent rash, fever, fatigue, or headache', 'Speaking in partial sentences' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Cause of reaction unknown', 'Controlled nausea, vomiting, or diarrhea', 'Mild rash/itching', 'No respiratory problems', 'Normal breathing', 'Suspicion of medication reaction' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Use prescribed inhalers, medications or Epi Pen for known allergic reaction as directed by PCP.', 'If symptoms occurred shortly after taking an OTC medication, discontinue use.', 'Rest.', 'If hives are widespread, try baking soda or oatmeal baths, or OTC preparations (Benadryl, Caladryl, Cortaid, Cortizone, Claritin) for the itching. Follow instructions on the label. Ask your local pharmacist for OTC product suggestions.', 'Avoid hot showers. Heat can increase itching.', 'Apply cold cloth or ice to small area of itchy hives.' ],
+      reportToPCP: [ 'Symptoms occurred after taking a prescription medication', 'Symptoms persist after taking Benadryl and following Home Care Instructions', 'Rash worsens', 'Fever' ],
+      seekEmergencyCare: [ ' Difficulty breathing or swallowing', 'Change in vision', 'Confusion', 'Chest pain', 'Sudden onset of hoarseness' ]
+    },
+    'Asthma': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Asthma History', 'Severity', 'Peak Flow Measurement', 'Prior Treatment', 'Medications', 'Prior History', 'Suspected or Known Triggers' ],
+      otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Choking (130)', 'Congestion (145)', 'Fever, Adult (241), Child (244)', 'Hay Fever Problems (300)', 'Wheezing (652)' ],
+      nurseAlert: ' Use this protocol only if previously diagnosed with asthma. Peak flow meters measure how well air is moving out of the lungs and help to gauge the severity of an asthma attack. Peak flow values are divided into three zones:',
+      alertBullets: [ 'Green: 80% of baseline or higher (Mild attack)', 'Yellow: 50% to 80% of baseline (Moderate attack)', 'Red: less than 50% of baseline (Severe attack)' ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Persistent wheezing after a treatment', 'Difficulty breathing', 'Inability to breathe lying down; must sit up to breathe', 'Dusky or blue lips, tongue, or face', 'Sudden onset of wheezing after medication, food, bee sting, or exposure to known allergen', 'Weakness, listlessness', 'Speaking in short words', 'Peak flow rate < 50% baseline', 'Severe wheezing  or cough, and nebulizer or inhaler not available' ],
+          true: 'Seek emergency care now, if breathing difficulty is severe, call an ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Vomiting and inability to retain medication', 'Upper respiratory infection symptoms and history of:' = [ 'steroid treatment', 'prior hospitalization for same symptoms', 'intubations' ], 'Speaking in partial sentences', 'Peak flow rate 50%–80% of baseline and no improvement using nebulizer or inhaler', 'Nebulizer or inhaler used < every 4 hours' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Fever > 100.5°F (38.1°C)', 'Cough unresponsive to medication', 'Minimal or temporary relief of asthma symptoms with current medications', 'Yellow or green sputum', 'Peak flow rate > 50%–80% of baseline' ],
+          true: 'Seek medical care within 24 hours and Follow Home Care Instructions'
+        },
+      ],
+      homeCareInstructions: [ ' Increase fluid intake; consume water and clear fluids.', 'Treat symptoms early to decrease severity of asthma attack. Use preventive medication as prescribed by PCP.', 'Use a vaporizer, steamy bathroom, or cool damp air to help relieve symptoms.', 'Follow treatment plan as prescribed by PCP.', 'Avoid aspirin products and decongestants.', 'Shower every night to reduce pollen exposure.', 'Limit exposure to pets, particularly in sleeping areas.', 'Avoid smoky and dusty areas. Encourage smokers in the home to smoke outside.', 'Avoid known triggers, i.e., animal dander, body and hair products, and cleaning solvents', 'If asthma symptoms are induced by strenuous exercise, take medication 90 minutes before activity (use inhaler 30 minutes before activity).' ],
+      reportToPCP: [ ' No improvement after medication', 'Difficulty breathing', 'Prescribed treatment plan is unclear', 'Peak flow rate 50% to 80% of baseline', 'Nebulizer or inhaler used < every 4 hours' ],
+      seekEmergencyCare: [ ' Breathing difficulty worsens', 'Face, tongue, or lips become dusky or blue', 'Weakness, listlessness', 'Peak flow rate < 50% of baseline' ]
+    },
+    'Breathing Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Allergic Reaction (26); Asthma (49); Chest Pain (118); Choking (130); Congestion (145); Congestive Heart Failure (149); Cough (163); Foreign Body, Inhaled (263); Hyperventilation (350); Wheezing (652)' ],
+      nurseAlert: 'If known respiratory problems and prescribed inhalers, O2 or peak flow meters (to measure how well air is moving out of the lungs). Assess baseline functioning, O2 saturation level, % oxygen delivery amount and method. Peak flow values are divided into three zones:',
+      alertBullets: [ 'Green: 80% of baseline or higher (mild attack)', 'Yellow: 50% to 80% of baseline (moderate attack)', 'Red: <50% of baseline (severe attack)' ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Chest pain', 'Blue lips or tongue', 'Clammy skin', 'Feeling of suffocation', 'Frothy pink or copious white sputum', 'Altered mental status', 'Severe shortness of breath with sudden onset', 'History of pulmonary embolus, blood clots, or lung collapse', 'Severe wheezing and history of asthma not relieved with inhaler', 'Inability to speak', 'Drooling and inability to swallow', 'Difficulty breathing' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Difficulty taking a deep breath because of severe pain', 'Severe SOB, wheezing, or noisy breathing started within past 2 hours', 'Recent trauma, surgery, or childbirth', 'Inhalation of a foreign body', 'Exposure to something that previously caused a significant reaction (sting, medication, plant, chemical, food, or animal)', 'Speaking in short words', 'Inability to breathe lying down or need to sit up to breathe', 'Immunosuppressed, age > 60, history of sickle cell anemia or diabetes, or bedridden and temperature > 101°F (38.3°C)', 'Peak flow rate < 50% baseline', 'Adult with temperature > 103°F (39.4°C)', 'Progressively worsening shortness of breath' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Speaking in partial sentences', 'Tight cough', 'Mild audible wheezes at rest', 'Pain increasing with breathing', 'Upper respiratory infection and prior hospitalizations for same symptoms', 'Inability to sleep > 1 to 2 hours due to coughing or difficulty breathing', 'History of diabetes or heart disease', 'Peak flow rate 50% to 80% baseline' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Fever', 'Productive cough with gray, green, or yellow sputum', 'Peak flow rate > 80% of baseline' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Numbness or tingling in the fingers or face', 'Recent exposure to a stressful event or situation', 'Exposure to environmental irritants, allergies, or recent cold or flu symptoms', 'Nasal congestion', 'Productive cough with clear sputum' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Use routine prescriptions as directed.', 'Rest or sleep with head elevated on a couple of pillows if lying flat increases breathing difficulty.', 'Increase fluid intake unless your physician has prescribed a fluid-restricted regimen.', 'Avoid environmental irritants (smoke, smog, garden cuttings, chemicals, animals) and other irritants that seem to worsen your symptoms.', 'If rapid breathing, tingling in the face or hands, and anxiety are present, breathe into a small paper bag held loosely around the mouth and nose for 5 minutes. The problem should resolve within that time period.', 'Rest and relax as much as possible.', 'If the problem is caused by excitement, heavy exertion (and resolved within a few minutes and there are no cardiac risk factors), or nasal congestion, there is no real cause for concern. Normal breathing should resume in a short period of time.', 'Monitor peak flow rates.' ],
+      reportToPCP: [ 'Condition worsens or no improvement in 2 days', 'Temperature > 101°F (38.3°C)', 'Peak flow rate 50% to 80% of baseline' ],
+      seekEmergencyCare: [ ' Chest pain', 'Blue lips or tongue, pale or gray face', 'Clammy skin', 'Feeling of suffocation', 'Frothy pink or copious white sputum', 'Decreased level of consciousness', 'Inability to speak', 'Drooling, unable to swallow saliva', 'Peak flow rate < 50% of baseline' ]
+    },
+    'Choking': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Pain Scale', 'History' ],
+      otherProtocolstoConsider: [ 'Breathing Problems (101); Cough (163); Foreign Body, Swallowing of (274); Sore Throat (567); Swallowing Difficulty (589); Weakness (645)' ],
+      nurseAlert: 'If actively choking, and unable to speak, cough, or breathe, instruct caller to call Emergency Medical Services (EMS) or 911. Dispatchers are specially trained in giving emergency procedure instructions over the phone while the ambulance is on the way. If caller is unable to call 911, make the call for them.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Person is conscious and unable to speak, cough, or breathe' ],
+          true: 'Call EMS/911 for emergency choking procedures'
+        },
+        {
+          B: 'Is the following present?',
+          list: [ 'Person is unconscious and not breathing' ],
+          true: 'Call ambulance and begin CPR'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Difficulty breathing', 'Blue lips or face' ],
+          true: 'Call ambulance'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Foreign body aspirated into lungs', 'Coughing up blood or severe pain after dislodging foreign body from throat', 'Unable to remove foreign object from throat and no other symptoms' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Able to speak and cough', 'No difficulty breathing', 'Frequent episodes of choking on saliva, foods, or fluids' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'For frequent choking, eat slowly, taking smaller bites.', 'If there is a sensation that a fish bone is stuck in the throat, try washing down the bone with bread and milk.' ],
+      reportToPCP: [ 'Fish bone in throat and persistent scratchy throat > 2 hours', 'Signs of infection: persistent sore throat, fever, drainage', 'Difficulty swallowing', 'No improvement or condition worsens' ],
+      seekEmergencyCare: [ ' Difficulty breathing', 'Unable to swallow saliva or fluids', 'Coughing up blood or severe pain after dislodging foreign body from the throat' ]
+    },
+    'Common Cold Symptoms': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Runny or Stuffy Nose', 'Sore Throat', 'Fever', 'Cough', 'Headache', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Asthma (49); Avian Influenza (Bird Flu) Exposure (52); Breathing Problems (101); Chest Pain (118); Congestion (145); Cough (163); Earache (200); Fever, Adult (241), Child (244); Hay Fever Problems (300); Severe Acute Respiratory Syndrome (SARS) (536); Sore Throat (567); Swine Flu (H1N1 Virus) Exposure (598); West Nile Virus (648); Wheezing (652)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is there difficulty breathing for reasons other than nasal congestion?',
+          list: [ null ],
+          true: 'Go to Breathing Problems protocol (101)'
+        },
+        {
+          B: 'Is chest pain present unrelated to deep breathing or coughing?',
+          list: [ null ],
+          true: 'Got to Chest Pain protocol (118)'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'pinched skin does not spring back', 'excessive thirst or dry mouth', 'crying without tears' ], 'Fever and neck pain bending head forward', 'Altered mental status, change in behavior or responsiveness', 'Immunosuppressed, age > 60 years, history of diabetes or sickle cell anemia, or bedbound with temperature > 101°F (38.3°C)', 'Infant < 3 months with temperature > 100.4°F (38.0°C)', 'Child with temperature > 105°F (40.6°C)', 'Adult with temperature > 103°F (39.4°C)', 'Fever and child appears very ill', 'Change in child’s breathing pattern: labored, noisy, wheezing, or chest retractions > 30 minutes' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Sore throat or fever > 2 days', 'Wheezing and age < 4 years', 'Persistent wheezing unrelieved by home care measures', 'Ear pain or drainage', 'Sinus pain > 24 hours', 'Fever and history of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, or renal disease', 'Honey-colored crusts in nostril or ear canal or around the mouth', 'Fever and age > 65 years', 'Green, brown, or yellow sputum or nasal discharge > 7 days and condition worsening' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Green, brown, or yellow sputum or nasal discharge < 7 days', 'Blood streaks in sputum', 'History of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, or renal disease', 'Yellow eye drainage' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Do not give cold or cough medications to a child < 6 years old.', 'Take pain reliever of choice for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rest.', 'Drink 6 to 8 glasses of liquids daily, especially warm liquids, such as tea with lemon and honey. Do not give honey to a child < 1 year old.', 'Take decongestant of choice for congestion (unless there is a history of hypertension or the child < 6 years old).', 'Take expectorant of choice for cough. For child > 1 year of age, give 1/2 tsp lemon juice.', 'Suction secretions from infant’s nose with soft rubber suction bulb.', 'Use saline nose drops as needed for nasal congestion. (For homemade saline nasal drops, add 1/4 tsp regular salt to 1/2 cup warm water.) Place three drops in each nostril and wait 1 minute, then attempt to blow nose or suction with a soft rubber suction bulb.', 'Apply petroleum jelly to nasal opening to protect from irritation.', 'Use a vaporizer or humidifier to keep air moist, especially at night, and change the water daily.', 'If the throat is sore, gargle several times a day with warm water. Use frozen cough drops or hard candy, or sip warm chicken broth for additional relief if age > 4 years.', 'Use water to rinse red eyes and wipe with moistened cotton balls. Discard cotton ball after use in each eye.', 'Clear nose of child before breast- or bottle-feeding.', 'Remember that colds are very contagious and have an incubation period of 2 to 5 days. Use good hygiene, wash hands, dispose of used tissues, and cover mouth when sneezing or coughing.', 'Avoid smoking and exposure to second-hand smoke.' ],
+      reportToPCP: [ 'Persistent fever > 3 days or temperature of 105°F (40.6°C)', 'Nasal discharge > 10 days', 'Persistent earache, sinus pain, or yellow eye drainage', 'Formation of honey-colored crusts under nostrils', 'Productive cough or fever', 'Condition persists or worsens' ],
+      seekEmergencyCare: [ ' Difficulty breathing for reasons other than nasal congestion', 'Severe chest pain' ]
+    },
+    'Congestion': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Treatment', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Asthma (49)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Common Cold Symptoms (138)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Earache, Drainage (200)', 'Fever, Adult (241), Child (244)', 'Hay Fever Problems (300)', 'Influenza (374)', 'Severe Acute Respiratory Syndrome (SARS) (536)', 'Sore Throat (567)', 'Swine Flu (H1N1 Virus) Exposure (598)', 'Wheezing (652)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is there difficulty breathing for reasons other than nasal congestion?',
+          list: [ null ],
+          true: 'Go to Breathing Problems protocol (101)'
+        },
+        {
+          B: 'Is chest pain present?',
+          list: [ null ],
+          true: 'Go to Chest Pain protocol (118)'
+        },
+        {
+          C: 'Is wheezing present?',
+          list: [ null ],
+          true: 'Go to Wheezing protocol (652)'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Fever > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Fever > 100.4°F (38.0°C) and age < 3 months', 'Adult with fever > 103°F (39.4°C)', 'Child or elderly person appears very ill', 'Young child with signs of dehydration:', 'sunken eyes or fontanel', 'pinched skin that does not spring back', 'infant cries without tears', 'Child with severe pain, swelling, or redness of the upper part of the face' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Several signs of dehydration:' = [ 'infrequent urination', 'dark yellow urine', 'sunken eyes', 'pinched skin that does not spring back', 'excessive thirst', 'dry mouth or mucous membranes' ], 'Severe pain, swelling, or redness of the upper part of the face' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          F: 'Are any of the following present?',
+          list: [ 'Sore throat or fever > 2 days', 'Persistent fever > 100.4°F (38.0°C) > 3 days', 'Weakness and listlessness', 'Wheezing in a child younger than 4 years', 'Ear pain or drainage', 'History of asthma, cancer, chronic obstructive pulmonary disease, CHF, diabetes, heart disease, renal disease, or weakened immune system', 'Adult with green, brown, or yellow sputum or nasal discharge > 72 hours', 'Child with green, brown, or yellow sputum or nasal discharge > 7 days and condition worsening', 'Persistent pain > 24 hours after home care' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          G: 'Are any of the following present?',
+          list: [ 'Blood streaks in sputum', 'Green, brown, or yellow sputum or nasal discharge < 72 hours', 'Persistent sinus congestion > 7 days after home care' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Do not give cold or cough medications to a child <6 years old.', 'Take your usual pain reliever (acetaminophen, ibuprofen) for fever and discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age <20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Rest and drink 6 to 8 glasses of water a day. Warm liquids, such as tea with lemon and honey, are also soothing. Do not give honey to a child <1 year old.', 'Take OTC decongestants (ask the pharmacist for product suggestions) for congestion. Follow the instructions on the label. (Many decongestants are contraindicated if there is a history of hypertension, asthma, heart disease, glaucoma, or enlarged prostate.) Try a vaporizer, a humidifier, or a hot steamy shower and saline nose drops first; if no relief occurs, try decongestants.', 'For sinus pain, inhale the vapor of peppermint tea. Peppermint has anti- inflammatory compounds and pain relievers like menthol that relax constricted sinuses.', 'Take an expectorant (ask your pharmacist for product suggestions) for cough. Follow the instructions on the label.', 'Try antihistamine if congestion is due to allergy.', 'Use saline nose drops as needed for nasal congestion. (For homemade saline nasal drops, add 1/4 tsp of regular salt to 1/2 cup of warm water.) Blow each nostril separately.', 'Use a vaporizer or humidifier to keep the air moist, especially at night, and change the water daily.', 'If the throat is sore, gargle several times a day with warm water. Use frozen cough drops for additional relief.', 'Remember that infants <3 months old often have congestion and wheezing. Use saline nose drops and a humidifier to reduce congestion. Suction secretions from the infant’s nose with a soft rubber suction bulb.', 'Apply petroleum jelly to the nasal opening to protect it from irritation.', 'Clear the child’s nose before breast- or bottle-feeding.', 'Remember, colds are contagious; use good hygiene, wash hands, and dispose of used tissues. Cover the mouth with a tissue or inside the elbow sleeve when sneezing or coughing.', 'Avoid smoking or exposure to second-hand smoke.' ],
+      reportToPCP: [ 'Persistent temperature > 101°F (38.3°C) and age > 4 months', 'Sore throat > 2 days', 'Green or yellow sputum', 'Persistent earache, sinus pain, or yellow eye drainage', 'Chest pain', 'Severe pain, swelling, or redness of the upper part of the face', 'Difficulty breathing', 'Fever > 100.4°F (38.0°C) and age < 3 months' ],
+      seekEmergencyCare: [ 'Chest pain unrelated to coughing or deep breathing' ,'Difficulty breathing for reasons other than congestion' ,'Young child with sign of dehydration' ]
+    },
+    'Congestive Heart Failure': {
+      keyQuestions: [ ' Name', 'Age', 'Onset', 'Under Treatment for CHF', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Ankle Problems (34)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Cough (163)', 'Swelling (595)', 'Weakness (645)', 'Wheezing (652).' ],
+      nurseAlert: 'Use this protocol only if previously diagnosed with CHF and currently under treatment for CHF.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Sudden onset of severe difficult breathing', 'Chest pain or pressure', 'Altered mental status', 'Dusky or blue lips, tongue, or fingernail beds', 'Pale or gray face', 'Unable to speak more than 2- to 3-word sentences due to shortness of breath', 'Extreme exhaustion', 'Frothy pink or copious white sputum', 'Feeling of suffocation' ],
+          true: 'Call ambulance or Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Sweating', 'Increased anxiety', 'Gradual increase in shortness of breath when lying flat or with activity', 'Shortness of breath with exertion', 'Speaking in partial sentences', 'Upper respiratory infection with fever and cough', 'Sudden weight gain 3–4 pounds in 1–4 days', 'Sudden increased swelling in legs, feet, or abdomen' ],
+          true: 'Seek medical care immediately'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Difficulty sleeping', 'Increased ankle swelling', 'Increasing fatigue or weakness', 'Frequent dry hacking cough', 'Weight gain > 3 pounds in 1 day', 'Increased wheezing' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Congestion, sneezing, cough, and no fever', 'Caregiver concerned and no other symptoms', 'Intermittent ankle swelling' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Take medications as prescribed.', 'Keep appointments with PCP and laboratory testing.', 'Weigh daily before breakfast and after toileting. Keep a record and take it to appointments.', 'Follow low-salt diet as instructed by health-care provider.', 'Pace activities. Slow down if activity causes increased difficulty breathing.', 'Avoid alcohol and smoking.' ],
+      reportToPCP: [ 'Increased difficulty breathing, wheezing, coughing, or fatigue', 'Difficulty sleeping due to breathing problems or increased urination', '>3 pounds weight gain in any 1 day', 'Worsening ankle swelling', 'Condition worsens or no improvement' ],
+      seekEmergencyCare: [ 'Sudden onset of severe difficulty breathing', 'Chest pain or pressure', 'Altered mental status', 'Dusky or blue lips, tongue, face, or fingernail beds', 'Inability to speak', 'Extreme exhaustion', 'Frothy pink or copious white sputum', 'Feeling of suffocation' ]
+    },
+    'Cough': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Prior Treatment', 'Related Symptoms', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Asthma (49); Breathing Problems (101)', 'Chest Pain (118)', 'Choking (130)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Foreign Body, Inhaled (263)', 'Influenza (374)', 'Pertussis (442)', 'Severe Acute Respiratory Syndrome (SARS) (536)', 'Sore Throat (567)', 'Wheezing (652)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is coughing caused by choking on a foreign body, food, or vomit?',
+          list: [ null ],
+          true: 'Go to Choking protocol (130)'
+        },
+        {
+          B: 'For reasons other than nasal congestion, is the following present?',
+          list: [ 'Sudden shortness of breath, rapid breathing, or wheezing' ],
+          true: 'Go to Breathing problems protocol (101)'
+        },
+        {
+          C: 'Is chest pain present?',
+          list: [ null ],
+          true: 'Go to Chest Pain protocol (118)'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Blue lips or tongue', 'Feeling of suffocation', 'Frothy pink sputum', 'Difficulty breathing and inability to speak', 'Difficulty breathing after smoke, flame, or fume inhalation', 'Sudden onset after exposure to something that previously caused a significant reaction (sting, medication, plant, chemical, food, or animal)' ],
+          true: 'Call ambulance or Seek Emergency Care Now'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Cough is unrelated to cold symptoms and person has a history of:' = [ 'chest trauma > 48 hours', 'blood clots or recent long sedentary period', 'recent surgery', 'recent childbirth', 'recent heart attack', 'asthma and unresponsiveness to home care measures or medication' ], 'Coughing up blood', 'Child younger than 6 months with rapid breathing and persistent cough', 'Child appears very ill', 'Change in child’s breathing pattern: labored, noisy, wheezing, or chest retractions > 30 minutes' ],
+          true: 'Seek medical care within 2 hours'
+        },
+        {
+          F: 'Are any of the following present?',
+          list: [ 'Persistent fever > 72 hours that is unresponsive to fever-reducing measures', 'Green or brown sputum > 72 hours', 'Child has a “barking” cough that is unrelieved by exposure to cool air, humidifier, or steam' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          G: 'Are any of the following present?',
+          list: [ 'Cough caused by exercise', 'Persistent or worsening cough during a period of several weeks or months', 'Intermittent mild chest discomfort with deep productive coughing', 'Child with temperature > 101°F (38.3°C) for > 24 hours', 'Cough with weight loss' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Drink 6 to 8 glasses of water daily.', 'Warm mist may help improve conditions. Breathe through a warm wet washcloth placed over the mouth and nose or sit in a steam-filled bathroom for 20 to 30 minutes.', 'Elevate head of bed to reduce coughing at night.', 'For children younger than 1 year, give 1/2 tsp lemon mixed with 1/2 tsp corn syrup to soothe cough.', 'Give older children and adults 1/2 tsp lemon mixed with 1/2 tsp honey or corn syrup. (DO NOT give honey to a child < 1 year.)', 'Drink warm lemonade, apple cider, or tea to help soothe cough.', 'Avoid irritants such as smoking, smog, and chemicals.', 'Turn down the heat, open the windows, or go out into cooler air to help suppress cough.', 'Take cough suppressants (ask your pharmacist for product suggestions) if cough is interfering with activity, causing chest pain or vomiting, or interrupting sleep at night. Do not give cough suppressants to a child < 1 year. Follow instructions on the label.', 'If congested, avoid milk products.', 'Take OTC medications as needed, being sure to follow instructions on the label: For a wet cough, use a decongestant; for a dry cough, use an expectorant during the day and suppressant at night; for an allergy, use an antihistamine or decongestant. Ask your pharmacist for product suggestions.' ],
+      reportToPCP: [ 'No improvement or condition worsens', 'Fever for > 72 hours', 'Green, brown, or gray sputum develops and lasts > 72 hours', 'Coughing up blood (more than streaks or flecks)' ],
+      seekEmergencyCare: [ 'Blue lips or tongue', 'Feeling of suffocation', 'Frothy pink sputum', 'Difficulty breathing and inability to speak' ]
+    },
+    'Croup': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Description of Cough', 'Prior Treatment', 'Medications', 'Associated Symptoms', 'History' ],
+      otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Congestion (145)', 'Cough (163)', 'Fever, Adult (241), Child (244)', 'Influenza (374)', 'Pertussis (442)', 'Sore Throat (567)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Drooling, difficulty swallowing, and child looks ill', 'Lips blue or dusky', 'Severe difficulty breathing', 'Chest caves in when breathing' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Crowing sound when breathing in that does not clear after 20 minutes of steam, or more than three episodes during the last 24 hours', 'Child appears very ill' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'History of pneumonia or other lung problems', 'History of asthma and no improvement after home breathing treatment and usual bronchodilator' ],
+          true: 'Seek medical care within 2 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Condition worsens when lying down', 'Condition interferes with sleep', 'Temperature > 104°F (40°C) ' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Barking cough > 5 days', 'Cough worse at night', 'Barking cough heard during daytime hours' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Warm mist may help improve condition: Breathe through a warm wet washcloth placed over the mouth and nose or sit in a steam-filled bathroom for 20 to 30 minutes.', 'Continuous cool mist may help. Use a cool-mist humidifier or go out into the cool night air.', 'Drink warm clear fluids to soothe cough.', 'Use usual medication for fever (children’s Motrin, ibuprofen, children’s Tylenol, acetaminophen). Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+      reportToPCP: [ 'No improvement or condition worsens', 'Difficulty breathing', 'Temperature > 104°F (40°C)', 'Condition persists in child with asthma after home breathing treatment' ],
+      seekEmergencyCare: [ 'Drooling, difficulty swallowing, and child looks ill', 'Lips turn blue or dusky', 'Severe difficulty breathing', 'Child appears very ill', 'Chest caves in with breathing', 'Crowing sound that does not clear after 20 minutes of home care measures or more than three episodes in a 24-hour period' ]
+    },
+    'Drowning (Near Drowning)': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'History', 'Water Source and Temperature (if known)' ],
+      otherProtocolstoConsider: [ 'Altered Mental Status (29)', 'Back/Neck Injury (56)', 'Breathing Problems (101)', 'Choking (130)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Victim experienced near drowning, and are any of the following present?',
+          list: [ 'Unresponsiveness', 'Suspected injury', 'Vomiting', 'Respiratory distress', 'Difficulty breathing', 'Lips or face blue' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Did a near drowning occur?',
+          list: [ 'Victim was submerged under water but now is breathing and responsive' ],
+          true: 'Seek medical care within 2 to 4 hours and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'For suspected neck injury, do not move victim unless absolutely necessary. Support the head and neck and allow to float in water. If necessary to move, support head and neck and torso as one unit.', 'If vomiting occurs, turn victim to side and clear mouth.', 'Do not press on abdomen, or vomiting may occur.', 'Keep victim warm.' ],
+      reportToPCP: [ 'No improvement or condition worsens' ],
+      seekEmergencyCare: [ null ]
+    },
+    'Facial Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Congestion (145)', 'Facial Skin Problems (225)', 'Mouth Problems (410)', 'Numbness and Tingling (433)', 'Piercing Problems (446)', 'Rash, Adult (501), Child (505)', 'Sinus Problems (556)', 'Shingles: Suspected or Exposure (545)', 'Skin Lesions: Lumps, Bumps, and Sores (559)', 'Tattoo Problems (602)', 'Toothache (611)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Sudden loss of vision', 'Severe pain on one side of face, over eye, blurred vision, and red eye', 'Adult with shoulder, chest, neck, or arm pain', 'History of glaucoma', 'Sudden onset of facial drooping on one side' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Sudden severe pain interferes with activity', 'Facial paralysis', 'Pain, swelling, redness, warmth, drainage, or fever' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Increased pain in afternoon or when bending over', 'Green, brown, or yellow nasal discharge', 'Pain along ridge between nose and lower eyelid', 'Temperature > 101°F (38.3°C)', 'Persistent swelling', 'Facial rash, blisters, or lesions' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Recent red, blistered facial rash', 'Pain, swelling, or bruising after blow to the face', 'History of recent cold', 'Pain follows ingestion of ice-cold foods or fluids', 'Nose and eye drainage' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Alternate cold and warm compresses to forehead and cheeks 1 minute each for 10 minutes, 4 times a day. A sock filled with rice and heated in the microwave works well.', 'Increase fluid intake.', 'Apply ice pack to face injury for 10 to 20 minutes, 4 times a day for first 24 hours to help reduce swelling.', 'Sit in a steamy bathroom for 20 minutes several times a day to promote sinus drainage.', 'Take OTC decongestants as needed for congestion and follow instructions on the label. Ask your pharmacist for product suggestions.', 'Take usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort and fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+      reportToPCP: [ 'Persistent pain or condition worsens', 'Temperature > 101°F (38.3°C)', 'Signs of infection: pain, swelling, redness, warmth, drainage, or red streaks', 'Persistent nasal discharge', 'Change in vision, hearing, smell, or taste' ],
+      seekEmergencyCare: [ 'Sudden loss of vision', 'Severe pain on one side of face, over eye, blurred vision, and red eye', 'Adult with shoulder, chest, neck, or arm pain', 'Sudden facial drooping on one side of the face' ]
+    },
+    'Foreign Body, Inhaled': {
+      keyQuestions: [ ' Name', 'Age', 'Onset', 'Object Inhaled', 'History', 'Medications' ],
+      otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Choking (130)', 'Cough (163)', 'Foreign Body, Swallowing of (274)', 'Piercing Problems (446)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Choking and unable to speak, cough, or breathe', 'Unconscious person who is not breathing' ],
+          true: 'Call ambulance and begin rescue breathing'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Difficulty breathing', 'Lips or face turning blue', 'Inability to cry or speak', 'Suicide attempt' ],
+          true: 'Call ambulance'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Aspirated foreign body into the lungs', 'Coughing up blood or severe pain after dislodging foreign body from the throat', 'Unable to remove foreign object from throat but no other symptoms', 'Feeling of suffocation', 'Drooling', 'Speaking in short words', 'Unable to swallow saliva or fluids' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Fever', 'Speaking in partial sentences', 'Intermittent cough or wheezing after inhaling a foreign object, aerosol, or smoke' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ ' Able to speak and cough', 'No difficulty breathing', 'Frequent episodes of choking on saliva, foods, or fluids', 'Speaking in full sentences' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'For frequent choking, eat slowly, taking smaller bites.', 'If there is a sensation that a fish bone is stuck in the throat, try washing down the bone with bread and milk.' ],
+      reportToPCP: [ 'Fish or chicken bone in throat and persistent scratchy throat > 2 hours', 'Coughing up blood', 'Signs of infection: persistent sore throat, fever, or drainage', 'Difficulty swallowing', 'No improvement or condition worsens' ],
+      seekEmergencyCare: [ ' Difficulty breathing, shortness of breath, or wheezing', 'Unable to swallow saliva or fluids', 'Feeling of suffocation' ]
+    },
+    'Hay Fever Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'History of Known Allergies', 'Medications', 'History. If no history of hay fever, see most severe symptom protocol' ],
+      otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Cough (163)', 'Earache, Drainage (200)', 'Sinus Problems (556)', 'Sore Throat (567)', 'Wheezing (652)' ],
+      nurseAlert: 'Use this protocol only if previously diagnosed with hay fever.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is there difficulty breathing for reasons other than nasal congestion?',
+          list: [ null ],
+          true: 'Go to Breathing Problems protocol (101)'
+        },
+        {
+          B: 'Is chest pain present?',
+          list: [ null ],
+          true: 'Go to Chest Pain protocol (118)'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Wheezing in a client younger than 4 years', 'Persistent wheezing that is unresponsive to home care measures' ],
+          true: 'Go to Wheezing protocol (652)'
+        },
+        {
+          D: 'In addition to clear nasal discharge, sniffing, or sneezing, are any of the following present?',
+          list: [ 'Fever', 'Headache and muscle aches', 'Green, brown, or yellow nasal discharge or sputum for > 24 hours', 'Ear pain or drainage', 'Persistent uncontrollable coughing' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Symptoms persist, even when client avoids triggers', 'Symptoms interfere with daily activities', 'Intermittent coughing', 'Nasal itching', 'Red, itchy, or watery eyes', 'Sore throat', 'Clear nasal drainage' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Take OTC or prescription antihistamines of choice. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid use of nasal sprays unless prescribed by PCP. If sprays are used, do not use > 5 days.', 'Shower and wash hair at night and after having exposure to pollen, dust, or known irritants.', 'When pollen count is high, particularly in the morning, stay indoors with the doors and windows closed.', 'For itchy eyes, apply cold compresses to the eyelids.', 'Avoid pollen and other irritants that worsen the problem.' ],
+      reportToPCP: [ 'Persistent nasal discharge, sneezing, or sniffing that is unresponsive to medication' ,'Fever' ,'Sinus pressure or pain' ,'Green, brown, or yellow nasal discharge or sputum' ,'Earache' ,'Uncontrolled coughing' ,'Symptoms interfere with daily activity' ,'Persistent wheezing or coughing that is unresponsive to home care measures' ],
+      seekEmergencyCare: [ 'Chest pain', 'Difficulty breathing for reasons other than nasal congestion' ]
+    },
+    'Hoarseness': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Contributing Factors', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ ' Allergic Reaction (26)', 'Breathing Problems (101)', 'Cough (163)', 'Croup (166)', 'Hay Fever Problems (300)', 'Hives (335)', 'Foreign Body, Inhaled (263)', 'Sore Throat (567).' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Sudden onset of hoarseness, and are any of the following present?',
+          list: [ 'Sore throat, drooling, and difficulty breathing', 'Sensation of swelling tongue or throat', 'Recent trauma to neck', 'Speaking in short three-word sentences' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Sudden onset of swelling in face', 'Speaking in partial sentences' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' High fever and feels or looks ill', 'Persistent hoarseness >1 week', 'History of tobacco use, recent weight loss, and decreased appetite', 'Dry skin or hair, increased sensitivity to cold, increased fatigue, or unexplained weight gain' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Recent sore throat, cough, cold, or fever', 'Frequent use of voice in work (such as teacher or singer)', 'Heavy use of tobacco or alcohol', 'Recently used voice more than usual (yelling, cheering, singing)', 'Speaking in complete sentences' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Avoid tobacco or alcohol.', 'Rest voice as much as possible.', 'Drink plenty of fluids.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) as tolerated for discomfort or fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Use honey or throat lozenges for throat discomfort or cough.' ],
+      reportToPCP: [ 'Condition persists > 1 week or worsens', 'High fever and appears ill' ],
+      seekEmergencyCare: [ 'Sore throat, drooling, and difficulty breathing', 'Sensation of swelling tongue or throat', 'Speaking in short three-word sentences' ]
+    },
+    'Hyperventilation': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History', 'Associated Symptoms' ],
+      otherProtocolstoConsider: [ 'Anxiety (37)', 'Breathing Problems (101)', 'Chest Pain (118)', 'Numbness and Tingling (433)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is chest pain present?',
+          list: [ null ],
+          true: 'See Chest Pain protocol (118)'
+        },
+        {
+          B: 'In addition to breathing rapidly, are any of the following present?',
+          list: [ ' Blue lips or fingernails', 'Unable to talk', 'Must sit up to breathe' ],
+          true: 'See Breathing Problems protocol (101)'
+        },
+        {
+          C: 'In addition to rapid breathing, are any of the following present?',
+          list: [ ' Severe pain', 'High fever unresponsive to fever-reducing measures', 'Abnormal drowsiness' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'In addition to rapid deep breathing, are any of the following present?',
+          list: [ ' Numbness and tingling around the face, mouth, fingers, or toes', 'Weakness', 'Feeling faint', 'Twitching in the hands and feet', 'Anxiety or emotional upset', 'History or prior episodes of similar symptoms' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Sit down and focus on slowing breathing, one breath every 5 seconds.', 'Cover mouth and nose with a paper bag and breathe in and out 10 times.', 'If no improvement, continue breathing in the bag for 5 to 15 minutes.', 'Breathe without the bag for a few minutes.', 'Repeat breathing with and without the bag until condition improves.' ],
+      reportToPCP: [ 'No improvement or condition worsens', 'Sudden fever occurs during an attack', 'Frequent attacks' ],
+      seekEmergencyCare: [ ' Fainting', 'Seizure', 'Blue lips or fingernails', 'Chest pain' ]
+    },
+    'Influenza': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Symptoms', 'Known Exposure or Community Outbreak', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Avian Influenza (“Bird Flu”) (52)', 'Common Cold Symptoms (138)', 'Congestion (145)', 'Cough (163)', 'Fever, Adult (241), Child (244)', 'Headache (303)', 'Swine Flu (H1N1 Virus) Exposure (598)', 'Sore Throat (567)', 'West Nile Virus (648)' ],
+      nurseAlert: 'Use this protocol if exposure to influenza is known or suspected, there is a community outbreak, or previously diagnosed with Influenza.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Altered mental status', 'Difficulty breathing for reasons other than congestion', 'Fever > 104.9°F (40.5°C)', 'Flat purple or dark red spots on face or trunk and stiff or painful neck', 'Severe headache', 'Skin or lips turning blue', 'New onset of drooling or unable to swallow', 'Age < 6 weeks' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Stiff or painful neck', 'Fever > 103.1°F (39.5°C)', 'Fever, and child or older adult appears very ill, lethargic, or very irritable', 'Signs of dehydration' ],
+          true: 'Seek medical care immediately'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Known exposure and any of the following: fatigue, fever < 103.1°F (39.5°C), dry cough, sore throat, GI symptoms, runny nose or congestion, muscle aches', 'History of CHF, immunosuppression, 6 weeks to 23 months of age, age > 65 years, pregnancy, long-term care resident, asthma, COPD, metabolic disorders' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Mild symptoms', 'No symptoms but parent or person concerned' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Wash hands frequently with soap and water or alcohol-based hand rubs.', 'Reinforce that influenza is highly contagious. Maintain good respiratory etiquette; cover mouth and nose with a tissue when coughing or sneezing.', 'Avoid contact with sick individuals.', 'If sick, avoid contact with other people. If coughing and sneezing, wear a surgical mask during close contact with others to prevent the spread of droplets. Change the mask if it becomes soiled or moist.', 'Get plenty of rest and drink plenty of fluids.', 'Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Give antivirals within 48 hours of symptom onset.' ],
+      reportToPCP: [ ' Stiff or painful neck', 'Fever > 103.1°F (39.5°C)', 'Fever, and child or older adult appears very ill, lethargic, or very irritable', 'Signs of dehydration' ],
+      seekEmergencyCare: [ ' Altered mental status', 'Difficulty breathing', 'Fever > 104.9°F (40.5°C)', 'Flat purple or dark red spots on face or trunk and stiff or painful neck', 'Severe headache', 'Skin or lips turning blue', 'New onset of drooling or unable to swallow' ]
+    },
+    'Sleep Apnea, Adult': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Breathing Problems (101)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Person not breathing', 'Skin turning blue' ],
+          true: 'Call ambulance and Start CPR'
+        },
+        {
+          B: 'While sleeping, did the following occur?',
+          list: [ 'Lapse in breathing for several minutes', 'Skin turned gray or blue and is normal color now', 'Abnormal breathing after the episode', 'Rescue breathing was necessary' ],
+          true: 'Seek medical care within 2 hours'
+        },
+        {
+          C: 'While sleeping, did the following occur?',
+          list: [ 'Lapse in breathing < 2 minutes', 'No change in skin color', 'Breathing normally after the episode', 'Rescue breathing was not necessary', 'Cycles of sleep, choking, sudden wakening, drowsiness, and sleep Follow Home Care Instructions', 'Persistent drowsiness and episodes of falling asleep during the day', 'Decreased ability to function or depression caused by lack of sleep' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Try to remain calm.', 'Eliminate as many contributing risk factors as possible: stress, anxiety, depression, obesity, smoking, and drug or alcohol abuse.', 'Obtain CPR training. Rapid identification of prolonged apnea and prompt CPR can help to prevent death or serious problems related to a lack of oxygen to the brain.', 'If apnea occurs only when sleeping on the back, sleep on the side or stomach. Use pillows for support. Consider attaching an object to the back of sleepwear to encourage other sleep positions.' ],
+      reportToPCP: [ 'Persistent episodes of apnea' ],
+      seekEmergencyCare: [ 'Prolonged period of not breathing', 'Skin turning blue', 'CPR in progress' ]
+    },
+    'Sleep Apnea, Infant': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Newborn Problems (423)', 'Spitting Up, Infant (573)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Infant not breathing', 'Skin turning blue' ],
+          true: 'Call ambulance and Start CPR'
+        },
+        {
+          B: 'While infant was sleeping, did the following occur?',
+          list: [ 'Lapse in breathing for 1 minute', 'Skin turned gray or blue but is normal color now', 'Abnormal breathing after the episode', 'Rescue breathing was necessary' ],
+          true: 'Seek medical care immediately'
+        },
+        {
+          C: 'While infant was sleeping, did the following occur?',
+          list: [ 'Lapse in breathing < 1 minute', 'No change in skin color', 'Infant breathing normally after episode', 'Rescue breathing was not necessary' ],
+          true: 'Seek medical care within 24 hours'
+        },
+      ],
+      homeCareInstructions: [ 'Provide reassurance. Some infants have a pause in breathing of < 15 seconds after several rapid respirations.', 'Reinforce importance of placing child on back for sleep.', 'Discuss use of a respiration monitor with PCP.', 'Obtain CPR training. Rapid identification of apnea and prompt CPR can successfully revive an infant without serious problems.' ],
+      reportToPCP: [ 'Persistent episodes of apnea' ],
+      seekEmergencyCare: [ 'Infant not breathing', 'Skin turning blue', 'CPR in progress' ]
+    },
+    'Wheezing': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History of Intubation', 'Hospitalizations', 'History' ],
+      otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Asthma (49)', 'Breathing Problems (101)', 'Congestion (145)', 'Congestive Heart Failure (149)', 'Cough (163)', 'Croup (166)', 'Hay Fever Problems (300)' ],
+      nurseAlert: 'If known respiratory problems and prescribed inhalers, use O2 or peak flow meters (to measure how well air is moving out of the lungs). Assess baseline functioning, O2 saturation level, and % Oxygen delivered and method. Peak flow values are divided into three zones:',
+      alertBullets: [ 'Green: 80% of baseline or higher (mild attack)', 'Yellow: 50% to 80% of baseline (moderate attack)', 'Red: <50% of baseline (severe attack)' ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ ' Severe respiratory distress', 'Inability to speak', 'Chest retractions', 'Aspiration of foreign body', 'Blue lips or face', 'Severe chest pain', 'Sudden-onset wheezing after medication or exposure to known allergen', 'Peak flow rate < 50% of baseline (if asthmatic)' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Unresponsive to medication treatments', 'Unresponsive to home care measures', 'Must sit up to breathe', 'Wheezing similar to prior episodes that required hospitalization or injections', 'History of CHF, cardiac disease, pulmonary embolus, or blood clot in leg', 'Speaking in partial sentences', 'Peak flow rate 50%–80% of baseline (if asthmatic)' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Peak flow rate > 80% of baseline (if asthmatic)', 'Green, yellow, or rust-colored sputum', 'Infant, elderly, or immunosuppressed' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'First wheezing episode that resolves in short period of time', 'Fever', 'Speaking in full sentences' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Take medication as directed by PCP.', 'Use vaporizer with cool mist.', 'Identify cause and avoid irritant.' ],
+      reportToPCP: [ 'Condition worsens', 'No improvement with medication' ],
+      seekEmergencyCare: [ 'Lips or face turn blue', 'Fighting for air', 'Decreased level of consciousness', 'Inability to speak or speaking in short words', 'Severe chest pain', 'Peak flow rate < 50% of baseline (if asthmatic)' ]
+    },
   },
   'Gastrointestinal Problems': {
       'Abdominal Pain, Adult': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale', 'Associated Symptoms', 'Date of Last Menstrual Period', 'Prior Medical History' ],
+        otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Constipation (152)', 'Diarrhea, Adult (185)', 'Food Poisoning, Suspected (254)', 'Menstrual Problems (407)', 'Rectal Bleeding (510)', 'Urination, Difficult (622)', 'Urination, Painful (626)', 'Vomiting, Adult (638)' ],
+        nurseAlert: 'Many conditions can cause abdominal pain, and some can be potentially life threatening. Err on the side of caution when triaging callers with abdominal pain. Abdominal Pain: Causes and Characteristics: Appendix R (694) is provided to help the nurse gain a better understanding of the many conditions causing abdominal pain. It is NOT to be used to try and diagnose a caller’s condition.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Faint (unconsciousness) or unresponsiveness', 'Severe weakness and inability to stand', 'Cold, pale skin, or profuse sweating', 'Severe, sudden pain radiating to back or legs' ],
+            true: 'Call ambulance'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Light-headedness', 'Vomiting blood or dark coffee-grounds like emesis', 'New onset of rapidly worsening symptoms and age >', 'Bloody or black stools unrelated to hemorrhoids or iron supplements', 'Sudden abdominal and shoulder pain in a woman with menses > 4 weeks late', 'Age > 30, heavy smoker, high blood pressure, high cholesterol, or obesity', 'History of diabetes, heart disease, blood clotting problems, or CHF' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Rapidly increasing pain', 'Pregnancy', 'Unusually heavy vaginal bleeding and possibility of pregnancy', 'History of recent abdominal surgery, frequent falls, or injury to abdomen', 'RLQ pain with poor appetite, nausea and/or vomiting, or fever', 'Ingestion of plant, drug, or chemical', 'Temperature > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Temperature > 103°F (39.4°C)', 'Severe nausea and vomiting', 'Persistent nausea and vomiting, and decreased oral intake and urination', 'Pain worsens with coughing' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'History of hepatitis or exposure', 'Continuous pain > 1 hour', 'Unexplained progressive abdominal swelling Go to E', 'Painful or difficult urination', 'Blood in urine', 'Pain interferes with activity', 'Age > 60 years', 'Nausea, vomiting, diarrhea > 24 hours' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Vaginal or urethral discharge', 'History of abdominal pain, and usual treatment is ineffective', 'Constipation', 'History of nervous stomach', 'Significant increase in stress level', 'Intermittent mild pain associated with an empty stomach, eating certain foods, or use of pain, antibiotic, or anti-inflammatory medications', 'Mild, infrequent diarrhea', 'Other family members ill' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Rest.', 'Consume clear liquids (broth, tea, ginger ale, apple juice, flavored ice, gelatin) in frequent small amounts (sips) until vomiting or diarrhea subsides.', 'After 12 hours without vomiting or diarrhea, introduce a bland diet (rice, potatoes, bread, crackers, bananas, cereal).', 'Take medications as directed by the pharmacy. Some should be taken on an empty stomach and others with food. Avoid aspirin, ibuprofen, and naproxen. Do not take acetaminophen if liver disease is present. Follow the instructions on the label.', 'Apply heat (moist hot towel or heating pad) to the abdomen for cramping or discomfort, or take a warm bath.', 'For gas relief, try Maalox or Mylanta, and follow the instructions on the label. Ask the pharmacist for other suggestions.', 'Avoid alcohol, caffeine, and greasy or spicy foods.', 'If known GERD exists, encourage consumption of smaller, more frequent meals, and avoid spicy or greasy food, caffeine, and chocolate.', 'Try herbal teas such as peppermint or chamomile to soothe an upset stomach.' ],
+        reportToPCP: [ ' Severe pain > 2 hours', 'Temperature > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Temperature > 103°F (39.4°C)', 'Persistent vomiting or diarrhea and decreased oral intake or urination', 'Pain worsens with heat or activity' ],
+        seekEmergencyCare: [ ' Unusually firm or hard abdomen', 'Persistent vomiting', 'Severe persistent pain', 'Fainting/light-headedness', 'Bloody or black stools or emesis' ]
       },
       'Abdominal Pain, Child': {
         keyQuestions: [ '' ],
