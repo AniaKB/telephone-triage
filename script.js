@@ -2426,7 +2426,7 @@ const bodySystem = {
       },
       'Appetite Loss, Adult': {
         keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Prior History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11); Alcohol Problems (22); Anxiety (37); Depression (177); Dizziness (192); Fever, Adult (241); Heart Rate Problems (317); Substance Abuse, Use, or Exposure (581); Vomiting, Adult (638)' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Alcohol Problems (22)', 'Anxiety (37)', 'Depression (177)', 'Dizziness (192)', 'Fever, Adult (241)', 'Heart Rate Problems (317)', 'Substance Abuse, Use, or Exposure (581)', 'Vomiting, Adult (638)' ],
         nurseAlert: null,
         alertBullets: [ null ],
         assessment: [
@@ -2456,35 +2456,40 @@ const bodySystem = {
         seekEmergencyCare: [ 'Altered mental status', 'Fainting', 'Hallucinations', 'Thoughts of suicide', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
       },
       'Appetite Loss, Child': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name, Age, Onset, Allergies, Weight, Medications, Prior History, Eating Disorder Treatment' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Child (14)', 'Altered Mental Status (29)', 'Anxiety (37)', 'Dehydration (173)', 'Depression (177)', 'Dizziness (192)', 'Fever, Child (244)', 'Heart Rate Problems (317)', 'Vomiting, Child (641)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is the following present?',
+            list: [ 'Abdominal pain' ],
+            true: 'Go to Abdominal Pain, Child protocol (14)'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Altered mental status', 'Fainting', 'Vomiting, drowsiness, irritability, and headache or stiff or painful neck' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Child refuses to eat or drink and looks ill', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing', 'Signs of dehydration:' = [ 'decreased urination', 'no urine for > 8 hours in child < 1 year of age', 'no urine for >12 hours in child > 1 year of age', 'crying without tears', 'sunken fontanels', 'excessive thirst, dry mouth' ] ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Unusual frequent urination or bed-wetting', 'Nausea at sight of food, vomiting, yellow skin, fever, fatigue', 'Skin persistently pale', 'Dark urine and pale stools', 'Persistent decrease in appetite, swollen glands, and fatigue', 'Poor weight gain', 'Sudden weight loss', 'Severe dieting or excessive exercise and distorted body image in a teenager', 'Rash or fever' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            E: 'Are any of the following present?',
+            list: [ 'Poor eating habits', 'Increased stress/anxiety', 'Dry skin, brittle hair', 'Recent onset of appetite loss' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Encourage a balanced meal.', 'Do not force child to eat when sore throat makes swallowing difficult. Encourage consumption of ice cream, flavored ice, and cold fluids.', 'Avoid putting too much emphasis on food when child is ill.', 'Understand that it is normal for the child’s appetite to decrease around 2 years of age.', 'Slowly increase amount of food after surgery or illness.', 'Give acetaminophen for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+        reportToPCP: [ 'Nausea and vomiting', 'Persistent appetite loss', 'Persistent weight loss' ],
+        seekEmergencyCare: [ ' Altered mental status', 'Fainting', 'Vomiting, drowsiness, irritability, and headache or stiff or painful neck', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
       },
       'Constipation': {
         keyQuestions: [ '' ],
