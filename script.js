@@ -2424,67 +2424,36 @@ const bodySystem = {
         reportToPCP: [ 'Severe pain > 1 hour', 'Fever', 'Pain worsens with heat or activity' ],
         seekEmergencyCare: [ 'Unusually firm or hard abdomen', 'Persistent vomiting', 'Bloody or black stools or emesis', 'Weakness and inability to walk', 'Severe pain and swelling in testicle(s) or scrotum' ]
       },
-      'Abdominal Pain: Causes and Characteristics (Appendix R)': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
       'Appetite Loss, Adult': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Prior History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11); Alcohol Problems (22); Anxiety (37); Depression (177); Dizziness (192); Fever, Adult (241); Heart Rate Problems (317); Substance Abuse, Use, or Exposure (581); Vomiting, Adult (638)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Altered mental status', 'Fainting', 'Abdominal pain', 'Thoughts of suicide', 'Hallucinations (auditory, tactile, or visual)' ],
+            true: 'Seek emergency care now, if abdominal pain, go to Abdominal Pain Adult protocol (11)'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Palpitations', 'Fever > 101°F (38.4°C) and weakened immune system or advanced age increase in dizziness and heart rate with sitting or standing' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Sudden weight loss > 5–10 pounds', 'Lethargy', 'Yellowing of the skin or whites of the eyes', 'Fever > 101°F (38.4°C) and unresponsive to feverreducing measures', 'Sudden weight gain > 5 pounds', 'Inadequate fluid intake', 'Unexplained weight loss during a period of several weeks', 'Severe depression', 'Abrupt cessation of drugs (including prescription or OTC), alcohol, or caffeine' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Poor eating habits', 'Increased stress/anxiety', 'Recent onset of appetite loss', 'No other symptoms', 'Decrease in activity' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Eat a balanced meal.', 'Slowly increase amount of food after surgery or illness.', 'Exercise regularly.', 'May try liquid diet supplements (ensure). Ask your PCP or pharmacist for additional OTC liquid diet supplements.', 'Try to identify the cause of the appetite loss, and take appropriate action to address the problem (poorly fitting dentures, mouth sores, nausea, depression, swallowing difficulties, etc.)', 'Take usual medication for discomfort and fever. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+        reportToPCP: [ 'Nausea and vomiting', 'Failure to improve' ],
+        seekEmergencyCare: [ 'Altered mental status', 'Fainting', 'Hallucinations', 'Thoughts of suicide', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
       },
       'Appetite Loss, Child': {
         keyQuestions: [ '' ],
