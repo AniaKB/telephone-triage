@@ -2492,35 +2492,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Altered mental status', 'Fainting', 'Vomiting, drowsiness, irritability, and headache or stiff or painful neck', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
       },
       'Constipation': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Last Bowel Movement', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Vomiting, Adult (638), Child (641)', 'Rectal Bleeding (510)', 'Rectal Problems (513)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is the following present?',
+            list: [ 'Severe abdominal pain, swelling, or vomiting' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Persistent vomiting and progressive abdominal swelling', 'Severe pain or cramping', 'Vomiting brown, yellow, or green bitter-tasting emesis', 'Significant rectal bleeding with no history of hemorrhoids or bleeding with constipation', 'Infant < 1 month, breast-feeding, and signs of dehydration' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'No bowel movement in 5–7 days and constipation unresponsive to home care measures', 'Recent surgery, injury, or childbirth', 'History of diverticulitis and fever', 'Infant has no stool for > 6–10 days', 'Child/infant crying, bloating, passing hard stools, and not responding to home care measures', 'Fever for 24–48 hours, cause unknown', 'Infant younger than 2 months had first stool after 24 hours and is now constipated' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Dry hard stools', 'Pain with bowel movements', 'Recent change in stools or bowel habits', 'Chronic constipation', 'Small, frequently occurring, liquid or hard stools', 'Intermittent constipation', 'Recent decrease in activity or bed rest', 'Taking pain medications with codeine or other medications that increase constipation', 'Blood on tissue or surface of stool' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Make sure diet is adequate in volume (quantity), bulk (high fiber), and fluids (6 to 8 [8 ounce] glasses a day, unless on a restricted fluid diet).', 'Drink a hot beverage each morning, such as coffee, tea, or hot water with lemon.', 'Establish a regular time for privacy and elimination each day.', 'Increase exercise as tolerated.', 'Adults may try OTC laxatives (Metamucil, Miralax, glycerin suppositories) or an enema if other measures are unsuccessful. Follow instructions on the label. Ask pharmacist for other product suggestions.', 'Infants:' = [ 'For infants > 1 month, if the infant is drinking juice, give prune or apricot juice mixed with water to help relieve constipation. Do not give enemas or laxatives.', 'For infants > 2 months, give fruit juice (1 ounce per month of age, twice a day).', 'For infants > 4 months, add baby foods high in fiber such as prunes, peaches, pears, or sweet potatoes.' ], 'Children: Increase fruit juice and decrease milk to 1 pint a day. Increase high-fiber foods, such as bran cereals, oatmeal, bran muffins, or popcorn (if child > 4 years). Avoid laxatives and enemas.', 'May use stool softeners such as Citrucel, Metamucil, or mineral oil. (1/2 to 1 tbsp per day is usually sufficient. However, read directions on container label before administering.)', 'For rectal pain due to constipation, sit in a warm bath for 20 minutes.', 'For painful and bleeding hemorrhoids, sit in a warm tub of water after each bowel movement. Try OTC medications for hemorrhoids.' ],
+        reportToPCP: [ 'Condition persists or worsens', 'Fever, vomiting, and pain', 'Home care measures are ineffective.' ],
+        seekEmergencyCare: [ 'Severe abdominal pain, swelling, or vomiting' ]
       },
       'Diarrhea, Adult': {
         keyQuestions: [ '' ],
