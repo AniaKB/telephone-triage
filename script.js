@@ -2642,30 +2642,25 @@ const bodySystem = {
         seekEmergencyCare: [ 'Fainting', 'Difficulty breathing', 'Confusion', 'Difficulty swallowing', 'Severe dizziness' ]
       },
       'Food Poisoning, Suspected': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name','Age', 'Onset', 'Associated Symptoms', 'History', 'Medications', 'Suspected Source' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Avian Influenza “Bird Flu” Exposure (52)', 'Dehydration (173)', 'Diarrhea, Adult (185), Child (188)', 'Rectal Bleeding (510)', 'Vomiting, Adult (638), Child (641)' ],
+        nurseAlert: 'If caller suspects food poisoning after eating at a restaurant, encourage caller to notify the restaurant. Other patrons may have had the same problem. Early notification helps the restaurant to track the source and correct the problem.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Sick 6–48 hours after eating canned, smoked, or vacuum-packed foods and are any of the following present?',
+            list: [ 'Altered mental status', 'Difficulty breathing or swallowing, or blurred vision', 'Vomiting blood', 'Bloody stool' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Pain is severe, worsens, or lasts > 4 hours', 'Nausea and vomiting > 12 hours and unresponsive to home treatment or OTC medications', 'Diarrhea > 48 hours and unresponsive to home treatment or OTC medications', 'Bloody diarrhea', 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'loose dry skin', 'excessive thirst, dry mouth', 'child crying without tears' ], 'Dizziness upon standing', 'Rash', 'Fever' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            C: 'Are any of the following present?',
+            list: [ 'Nausea, vomiting, diarrhea, abdominal pain occurred after eating unrefrigerated meat, poultry, fish, mayonnaise, or egg products', 'Others eating the same meal also are ill' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
         homeCareInstructions: [],
