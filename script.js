@@ -2756,35 +2756,40 @@ const bodySystem = {
         seekEmergencyCare: [ 'Chest, neck, or jaw pain, or discomfort develops', 'Light-headedness' ]
       },
       'Gas/Flatulence': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Constipation (152)', 'Indigestion (370)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is severe abdominal pain present?',
+            list: [ null ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Is the following present?',
+            list: [ 'Black tarry stool' ],
+            true: 'Seek emergency care now'
+          },
+          {
+            C: 'Is the following present?',
+            list: [ 'Severe nausea and vomiting' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Persistent abdominal discomfort after passing gas', 'Blood in stool', 'Pain radiates to back' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            E: 'Are any of the following present?',
+            list: [ 'Intermittent abdominal discomfort or swelling', 'Excessive flatulence', 'Pale, bulky, foul-smelling stools', 'Recent ingestion of high-fiber or gas-producing foods, such as beans or beer' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Avoid gas-forming foods (parsnips, beans, corn, cabbage, onions, fried food).', 'Avoid overindulgence in sweet desserts, fatty foods, and other foods that are known to cause gas.', 'Avoid eating too fast or too much.', 'Avoid laxatives.', 'Drink an adequate amount of fluids each day.', 'Maintain regular bowel habits.', 'Maintain regular bowel habits.', 'Exercise regularly.', 'Try to reduce stress or excitement, especially at mealtime.', 'Sip flat, clear carbonated beverage or peppermint tea to help break up gas.', 'If lactose intolerant and unable to avoid dairy foods, ask pharmacist for OTC product suggestions.', 'As an alternative, try sugar-coated fennel seeds after a meal or sip tea brewed with fennel seeds to break up and disperse gas in the intestinal tract.' ],
+        reportToPCP: [ 'Symptoms persist or worsen after home care measures', 'Nausea/vomiting' ],
+        seekEmergencyCare: [ 'Large amount of blood in stool', 'Black tarry stools', 'Light-headedness' ]
       },
       'Heartburn': {
         keyQuestions: [ '' ],
