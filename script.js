@@ -2725,35 +2725,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Drooling, gagging, choking, or difficulty breathing or swallowing' ]
       },
       'Gas/Belching': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Constipation (152)', 'Heartburn (313)', 'Indigestion (370)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Is the following present?',
+            list: [ 'Chest, jaw, or neck pain or discomfort' ],
+            true: 'Go to Chest Pain protocol (118)'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
+            B: 'Are any of the following present?',
+            list: [ 'Severe abdominal pain', 'Shortness of breath', 'Excessive sweating', 'Palpitations', 'Severe nausea and/or vomiting' ],
+            true: 'Seek medical care within 2 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Persistent abdominal discomfort after belching', 'Pain radiates to back' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Intermittent abdominal discomfort or swelling', 'Burping, belching, or hiccups after meals', 'Belching or heartburn between meals' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Avoid gas-forming foods (parsnips, beans, corn, cabbage, onions, fried food).', 'Avoid overindulgence in sweet desserts, fatty foods, and other foods that are known to cause gas.', 'Avoid eating too fast or too much.', 'Avoid excessive gum chewing.', 'Stop smoking if possible or reduce smoking at mealtime.', 'Drink an adequate amount of fluids each day.', 'Try to reduce stress or excitement, especially at mealtime.', 'Sip flat, clear carbonated beverage or peppermint tea to help break up gas.', 'Take your usual antacids (Di-Gel, Mylanta-II, Mylicon) to help relieve gas. Follow instructions on the label. Ask pharmacist for other product suggestions.' ],
+        reportToPCP: [ 'Symptoms persist or worsen after home care measures', 'Severe pain', 'Shortness of breath', 'Excessive sweating', 'Palpitations', 'Nausea and vomiting' ],
+        seekEmergencyCare: [ 'Chest, neck, or jaw pain, or discomfort develops', 'Light-headedness' ]
       },
       'Gas/Flatulence': {
         keyQuestions: [ '' ],
