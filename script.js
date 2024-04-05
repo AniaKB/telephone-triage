@@ -2694,35 +2694,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Profuse bleeding', 'Severe pain' ]
       },
       'Foreign Body, Swallowing of': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Piercing Problems (446)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Vomiting, Adult (638), Child (641).' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Excessive saliva, drooling, or gagging', 'Difficulty swallowing', 'Coughing, choking, or breathing difficulties', 'Suicide attempt' ],
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Pain or discomfort in throat or chest', 'Abdominal pain', 'Vomiting', 'Object was a battery or sharp object' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Metal object', 'Object size larger than a nickel' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Wood or plastic object', 'Dull glass object (piece of a jar or cup)', 'Object size smaller than a penny', 'Known substance swallowed but no symptoms' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'If no symptoms, try a sip of fluid. If no difficulty, try swallowing bread or soft food.', 'A dull glass object, such as a piece of a jar, cup, or ring, should pass with stools without difficulty in 3 to 4 days.', 'Do not give laxatives. Increase fiber (fruit, vegetables, whole grains) in the diet to help stimulate natural elimination.', 'Check stools for swallowed object.' ],
+        reportToPCP: [ 'Intermittent choking or gagging', 'Abdominal pain', 'No evidence of object in stools within 7 days', 'Vomiting', 'Chest pain', 'Fever' ],
+        seekEmergencyCare: [ 'Drooling, gagging, choking, or difficulty breathing or swallowing' ]
       },
       'Gas/Belching': {
         keyQuestions: [ '' ],
