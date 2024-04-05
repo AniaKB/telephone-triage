@@ -2554,35 +2554,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Person has diabetes and rapid or labored breathing', 'Severe abdominal pain, swelling, and fever' ]
       },
       'Diarrhea, Child': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Frequency', 'Medications', 'History', 'Associated Symptoms' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Child (14); Abdominal Swelling (17); Altered Mental Status (29); Confusion (142); Constipation (152); Dehydration (173); Fever, Child (244); Rectal Bleeding (510); Stools, Abnormal (576); Vomiting, Child (641)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Diarrhea and severe weakness, lethargy, listlessness, or faintness', 'Vomiting with right-sided abdominal pain', 'Infant younger than 3 months with diarrhea and temperature > 100.4°F (38°C)', 'Cold and gray skin', 'Grossly bloody stool', 'Breathing fast and hard', 'Severe pain, drawing knees to chest with cramping' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Signs of dehydration:' = [ 'decreased urination', 'no urine for > 4–6 hours in child younger than 1 year', 'no urine for > 12 hours in child older than 1 year' ], 'Temperature > 104°F (40°C), age > 3 months, and unresponsive to fever-reducing measures', 'crying without tears', 'sunken eyes or fontanels', 'excessive thirst, dry mouth', 'Listlessness', 'Persistent vomiting and diarrhea', 'Diarrhea every hour for > 8 hours', 'Blood in stool' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ '>3 diarrhea stools in 24 hours in a child younger than 1 month', 'Diarrhea for > 3 days or diarrhea while receiving antibiotic therapy', 'Pus or mucus in stool', 'No improvement with home care measures', 'Temperature > 103°F (39.4°C) or temperature > 101°F (38.3°C) for more than 48 hours', 'Fever unresponsive to fever-reducing measures' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Chronic diarrhea', 'Recent change in diet', 'Other family members or pets have diarrhea', 'Recent travel to a foreign country', 'New prescription', 'Recent contact with a snake, lizard, or turtle' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Breast-Feeding Infants ≤ 1 Year Old' = [ 'Continue to feed every 2 hours and offer rehydration fluids (Pedialyte, Infalyte, Rehydralyte) between feedings. Stools usually follow feeding. Diarrhea is a sudden increase in the frequency of stools with loose consistency.', 'Do NOT give Jell-O water mixtures or sports drinks, as these do not contain enough sodium, and the sugar content can make diarrhea worse.' ], 'Formula-Fed Infants ≤ 1 Year Old' = [ 'Give Pedialyte, Infalyte, or Rehydralyte for the first 4 to 6 hours only. Each hour, give at least 2 tsp for every pound your child weighs. Then resume full-strength formula, but give more often than usual. If diarrhea is severe, use a soy formula or soy with added rice (AR) until diarrhea has been gone for 3 days, or switch to soy or lactose-free formula if diarrhea lasts longer than 3 days.', 'Do NOT give Jell-O water mixtures or sports drinks, as these do not contain enough sodium, and the sugar content can make diarrhea worse.' ], 'All Infants > 4 Months and < 12 Months' = [ 'Offer solids, such as infant cereal (especially rice), strained applesauce, carrots, bananas, mashed potatoes, or other high-fiber foods. These starchy foods are more easily digested when your child has diarrhea.', 'Avoid all fruit juices, as these will make diarrhea worse.', 'If your child refuses the solids, offer extra formula rather than water.' ], 'Children > 1 Year Old' = [ 'Fluids: Avoid juices, and increase water and other fluids that are caffeine-free. Eat or drink less milk and milk products for 2 to 3 days. If solids are being taken well, milk products can still be used and should be well tolerated.', 'Maintain regular diet if tolerated well.', 'Avoid foods that would normally cause loose stools in your child, such as spicy sauces or beans.' ], 'Additional Home Care Advice' = [ 'Acetaminophen can be given for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Diarrhea often is very contagious. Wash hands with soap and water after using the toilet or changing a diaper.', 'If diaper rash or redness occurs in the anus, wash with running water, dry, and apply petroleum jelly or other barrier ointment to protect the area, particularly at night and during naps.' ] ],
+        reportToPCP: [ 'No improvement or diarrhea worsens after 48 hours of home care measures', 'Yellow, frothy, bloody, or green stool occurs more than once', 'Signs of dehydration: decreased urination, dry mouth, no tears', 'Fever, weakness, or lethargy', 'Watery diarrhea and vomiting clear fluid > 3 time' ],
+        seekEmergencyCare: [ 'Rapid or labored breathing', 'Severe abdominal pain, swelling, and fever', 'Infant < 2 months and fever > 100.4°F (38.0°C)', 'Gross bloody stools', 'Cold and gray skin', 'Severe listlessness or fainting' ]
       },
       'Feeding Tube Problems': {
         keyQuestions: [ '' ],
