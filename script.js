@@ -2849,35 +2849,35 @@ const bodySystem = {
         seekEmergencyCare: [ null ]
       },
       'Hiccups': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Chest Pain (118)', 'Swallowing Difficulty (589)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Confusion, lethargy', 'Difficulty breathing', 'Fainting', 'Chest, neck, jaw, or arm pain or pressure' ],
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Persistent pain', 'Constant hiccups > 8 hours' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Persistent vomiting', 'Pain in shoulder, abdomen, or back' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Sudden onset after taking a new medication', 'Interferes with sleep', 'Anxiety or irritability', 'Intermittent episodes', 'Increased alcohol use', 'Mild discomfort', 'Recent ingestion of hot or irritating food or drink', 'History of cancer' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Take a deep breath and hold for 15 to 30 seconds.', 'Breathe into a paper bag for 5 minutes.', 'Sip ice water.', 'Swallow dry bread, crackers, a teaspoon of dry sugar, or crushed ice. NOTE: Young children can choke on dry sugar. Place sugar in cloth, tie closed, and soak in water. Have the child suck on the sugar sack. May also hold a teaspoon of sugar on tongue until it melts.', 'Pull on tongue.', 'Apply gentle pressure to closed eyelids.', 'Grasp upper lip between teeth and right side of nose and apply gentle pressure.', 'Stroke back of tongue.', 'Take your usual antacid (Maalox, Mylanta) as directed on container.', 'Divert attention through distraction.' ],
+        reportToPCP: [ 'Persistent or worsening condition' ],
+        seekEmergencyCare: [ ' Chest, neck, jaw, or arm pain or pressure', 'Difficulty breathing', 'Confusion or lethargy', 'Fainting' ]
       },
       'Incontinence, Stool': {
         keyQuestions: [ '' ],
