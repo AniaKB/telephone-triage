@@ -2616,35 +2616,30 @@ const bodySystem = {
         seekEmergencyCare: [ 'Severe bleeding', 'Severe pain', 'Sudden onset of difficulty breathing or shortness of breath' ]
       },
       'Food Allergy, Known or Suspected': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause If Known', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Diarrhea, Adult (185), Child (188)', 'Food Poisoning, Suspected (254)', 'Hives (335)', 'Itching (384)', 'Rash, Adult (501), Child (505)', 'Vomiting, Adult (638), Child (641).' ],
+        nurseAlert: 'Use this protocol only if previously diagnosed with a food allergy or prior reaction to a food substance.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present shortly after eating?',
+            list: [ 'Difficulty breathing', 'Confusion', 'Difficulty swallowing', 'Fainting', 'Severe dizziness' ],
+            true: 'Call ambulance or Seek emergency care now'
+          },
+          {
+            B: 'Is the following present within 30 minutes after eating?',
+            list: [ 'Swelling of lips, tongue, or mouth' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            C: 'Are any of the following present after eating?',
+            list: [ 'Generalized hives or itching', 'Sore throat', 'Postnasal drip and throat clearing', 'Congestion, sneezing, or runny nose', 'Fatigue', 'Headache', 'Persistent diarrhea or vomiting' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Try to identify the food causing the problem and avoid it. Eggs and milk are the most common food allergies in infants. Peanuts, eggs, chocolate, cow’s milk products, soybeans, tree nuts, wheat, fish, and shellfish are the most common causes of food allergies.', 'Eliminate the suspected food from the diet for 2 weeks and note whether symptoms disappear. If so, avoid that food in the future. If not, observe for relationship between other foods and symptoms (hives, swelling in mouth, diarrhea).', 'Try baking soda baths, Caladryl lotion, or calamine for itching, or take an antihistamine (Benadryl) tablet (follow instructions on the label).' ],
+        reportToPCP: [ 'No improvement in symptoms or condition worsens', 'Desire to add suspected food back to diet' ],
+        seekEmergencyCare: [ 'Fainting', 'Difficulty breathing', 'Confusion', 'Difficulty swallowing', 'Severe dizziness' ]
       },
       'Food Poisoning, Suspected': {
         keyQuestions: [ '' ],
