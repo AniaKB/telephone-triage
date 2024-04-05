@@ -2523,35 +2523,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Severe abdominal pain, swelling, or vomiting' ]
       },
       'Diarrhea, Adult': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History', 'Associated Symptoms' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Abdominal Swelling (17)', 'Constipation (152)', 'Dehydration (173)', 'Diabetes Problems (180)', 'Hemorrhoids (324)', 'Rectal Bleeding (510)', 'Stools, Abnormal (576)', 'Vomiting, Adult (638)', 'Weakness (645)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Diarrhea and severe weakness, lethargy, or faintness', 'Severe abdominal pain, swelling, and fever', 'Diabetic and rapid or labored breathing ' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Severe abdominal pain', 'Grossly bloody stool', 'Signs of dehydration:' = [ 'decreased urination', 'sunken eyes', 'loose dry skin', 'excessive thirst, dry mouth', 'dry mucous membranes', 'Dizziness upon standing', 'Persistent vomiting and diarrhea'] ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' Diarrhea every 30–60 minutes for > 6 hours', 'Diarrhea for > 5 days', 'Mucous, pus, yellow, green, or frothy stool > 2 days', 'Persistent fever', 'New onset of loss of bowel control', 'No improvement with home care measures' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Recent change in diet', 'Other family members have diarrhea', 'Recent travel to a foreign country', 'Recent antibiotics in past 2 months', 'New prescription', 'Tube feedings' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Take clear liquid diet first 12 to 24 hours (sips of water, flat soda, clear broth, gelatin [not red], flavored ice).', 'During the next 12 hours, progress to eating soup (avoiding cream soups), dry toast, soda crackers, white rice, pretzels, bananas, applesauce, and potatoes.', 'Progress to a regular diet after soft-formed stools occur.', 'Avoid dairy products, citrus juices, raw fruits and vegetables, and fried or spicy foods for 2 to 5 days after diarrhea subsides.', 'After 6 hours of diarrhea and cramping, or if pain persists, OTC antidiarrheal medications (Imodium, Kaopectate, Pepto-Bismol) can be used. Follow instructions on the label.', 'Acetaminophen can be given for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+        reportToPCP: [ 'No improvement or diarrhea worsens after 48 hours of home care measures', 'Yellow, frothy, bloody, or green stool occurs more than one time', 'Signs of dehydration', 'Fever, weakness, or lethargy', 'Persistent vomiting', 'Person with insulin-dependent diabetes changes diet plan' ],
+        seekEmergencyCare: [ 'Person has diabetes and rapid or labored breathing', 'Severe abdominal pain, swelling, and fever' ]
       },
       'Diarrhea, Child': {
         keyQuestions: [ '' ],
