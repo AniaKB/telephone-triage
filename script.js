@@ -2585,35 +2585,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Rapid or labored breathing', 'Severe abdominal pain, swelling, and fever', 'Infant < 2 months and fever > 100.4°F (38.0°C)', 'Gross bloody stools', 'Cold and gray skin', 'Severe listlessness or fainting' ]
       },
       'Feeding Tube Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Type of Tube', 'Length of Time', 'Tube in Place', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Wound Healing and Infection (659)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Severe bleeding', 'Severe pain', 'Sudden onset of difficulty breathing or shortness of breath' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Feeding tube removed or dislodged and pain, bleeding, or swelling' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Tube frequently clogs after medication or feeding solution is added', 'Unable to unclog tube after trying home care measures', 'Feeding tube fell out', 'Caregiver concerned tube is displaced', 'Insertion site appears infected (redness, swelling, pain, red streaks, or drainage)' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Is the following present?',
+            list: [ 'Inability to pass solution into feeding tube' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'To unclog feeding tube (for a caregiver who has received previous instructions; if no previous instruction, refer caller to home health nurse, PCP, Clinic, or ED):' = [ 'Raise head of bed 45 degrees.', 'Insert the tip of a large syringe into the tube and pull back to remove as much matter from the tube as possible.', 'Fill the syringe with 30 mL (1 ounce) of water.', 'Connect syringe to tube and irrigate.', 'Remove as much matter as possible.', 'Push 5 mL of cranberry juice, cola, or tea into the tube and clamp.', 'Repeat the process until the tube is cleared.' ], 'Flush tube with 50 mL of water after feeding, medications, or supplements are inserted into the tube.', 'To check placement of feeding tube (for a caregiver who has received instruction from a nurse or PCP regarding verifying tube placement):', 'Turn off pump.', 'Using large syringe, insert tip into feeding tube and gently pull back.', 'If there is concern the tube is displaced, do not use the tube until tube placement is verified.' ],
+        reportToPCP: [ 'Unable to unclog tube', 'Signs of infection (fever, drainage, warmth, redness, red streaks, or foulsmelling drainage)', 'Tube becomes dislodged or falls out' ],
+        seekEmergencyCare: [ 'Severe bleeding', 'Severe pain', 'Sudden onset of difficulty breathing or shortness of breath' ]
       },
       'Food Allergy, Known or Suspected': {
         keyQuestions: [ '' ],
