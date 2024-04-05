@@ -2663,40 +2663,35 @@ const bodySystem = {
             true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Drink small sips of clear fluids (apple juice, tea, broth, sports drinks, clear soda pop, ginger ale) frequently (every 5 to 10 minutes) until nausea and vomiting subside. Increase amount as tolerated during the first 24 hours after vomiting subsides.', 'Avoid milk products when experiencing diarrhea.', 'Avoid spicy foods, alcohol, dairy products, and coffee for 48 hours after vomiting and diarrhea have subsided.', 'Avoid aspirin.', 'Prevention:' = [ 'Avoid meats, dressings, sauces, and mayonnaise-based preparations that have been at room temperature for > 2 hours. Maintain a food temperature of < 40°F (4.4°C) or > 140°F (60°C).', 'Do not eat the contents of cans or jars with bulging lids.', 'Defrost meats in the refrigerator or microwave, rather than at room temperature.', 'Wash hands, cutting boards, and countertops frequently, especially after handling raw chicken or eggs.', 'If the food smells unusual or foul, do not eat it.' ] ],
+        reportToPCP: [ 'Condition persists > 48 hours or worsens', 'Blood in the stool or vomit (not streaks or flecks)', 'Temperature > 101°F (38.3°C)' ],
+        seekEmergencyCare: [ 'Blurred vision', 'Difficulty breathing', 'Difficulty swallowing', 'Decreased level of consciousness', 'Signs of dehydration' ]
       },
       'Foreign Body, Rectum': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Child Abuse (127)', 'Constipation (152)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Sexual Assault (539)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Sharp object in rectum', 'Profuse bleeding', 'Severe pain', 'Victim of sexual assault', 'Traumatic injury', 'High fever, chills, nausea, or vomiting' ],
+            true: 'Seek medical care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Unable to remove foreign object after several tries', 'Swelling and tenderness', 'Foul-smelling drainage', 'Rectal bleeding', 'Abdominal or shoulder pain' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Sensation of rectal fullness', 'Rectal pain', 'Retained condom', 'Unable to pass stool' ],
             true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Do not try to remove sharp object or object that has broken inside rectum.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Watch for signs of infection: increased pain, discharge, fever, or swelling.' ],
+        reportToPCP: [ 'Unable to remove foreign object after several tries', 'Swelling and tenderness persist or worsen', 'Foul-smelling drainage or fever', 'Rectal bleeding', 'Unable to pass stool', 'High fever, chills, nausea, or vomiting' ],
+        seekEmergencyCare: [ 'Profuse bleeding', 'Severe pain' ]
       },
       'Foreign Body, Swallowing of': {
         keyQuestions: [ '' ],
