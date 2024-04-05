@@ -2823,35 +2823,30 @@ const bodySystem = {
         seekEmergencyCare: [ 'Shortness of breath', 'Dizziness', 'Cool, moist skin', 'Pain or discomfort in neck, jaw, shoulders, back, or arms', 'Blue or gray face or lips', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ]
       },
       'Hemorrhoids': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Hemorrhoidal Problems', 'Medication', 'History', 'Prior Treatment', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Rectal Bleeding (510)', 'Rectal Problems (513)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Severe persistent rectal bleeding', 'Foreign body', 'High fever' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Severe rectal pain, interfering with activities', 'Signs of infection: redness, pain, drainage, or fever', 'Diabetes' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ ' Bleeding in absence of stool', 'Streaks of blood on stool surface', 'History of pregnancy, prolonged sitting, constipation', 'Increased straining during bowel movements', 'Pain, itching, or mucus discharge after bowel movement', 'Small lumps around or inside the rectal area for 1 to 3 days' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Sit in a warm tub or sitz bath 10 minutes several times daily to relieve discomfort and swelling, especially after painful bowel movements.', 'Clean rectal area with soft tissue or moist wipes after each bowel movement.', 'To relieve itching, apply cold compresses to the area for 10 minutes, 4 times a day.', 'Apply zinc oxide or petroleum jelly to the clean dry area to help reduce irritation and to ease passage of stool. Follow instructions on the label.', 'If no relief with these measures, try OTC medications (hemorrhoid suppositories, hydrocortisone [0.5% strength], Tucks). Follow instructions on the label. Products with witch hazel may help to reduce discomfort. Products with hydrocortisone help to reduce itching.', 'Avoid prolonged sitting, standing, lifting, or straining.', 'Wear cotton clothing and loose underwear.', 'Avoid straining during bowel movements. Take your time, but avoid sitting more than 2 minutes. Get up, do something else and return when it feels easier.', 'To help prevent constipation, drink plenty of water and eat a diet high in fiber (fruits, vegetables, and whole grain cereals).' ],
+        reportToPCP: [ 'Hard lump develops around the rectal opening', 'Excessive rectal bleeding or black stools occur (more than once)', 'Severe pain is unresponsive to home care measures', 'Pain or bleeding > 1 week', 'Signs of infection: increased redness, pain, swelling, drainage, or fever' ],
+        seekEmergencyCare: [ null ]
       },
       'Hiccups': {
         keyQuestions: [ '' ],
