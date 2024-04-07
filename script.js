@@ -2880,35 +2880,37 @@ const bodySystem = {
         seekEmergencyCare: [ ' Chest, neck, jaw, or arm pain or pressure', 'Difficulty breathing', 'Confusion or lethargy', 'Fainting' ]
       },
       'Incontinence, Stool': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14);
+        Constipation (152); Diarrhea, Adult (185), Child (188); Rectal
+        Bleeding (510); Rectal Problems (513); Stools, Abnormal (576)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Incontinence of urine and stool after a seizure, faint, or loss of consciousness', 'Sudden loss of bowel control and slurred speech, muscle weakness, blurred or double vision, or decreased level of consciousness' ],
+            true: 'Call ambulance'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Recent back injury, trauma, or fall, severe pain, and several episodes of incontinence', 'Black or bloody stool with clots' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Recent history of childbirth, vaginal or rectal surgery, hemorrhoids, or anal fistula or fissure', 'Abdominal pain', 'Several incontinent episodes ' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Lump felt inside anal opening', 'Sudden onset of diarrhea and unable to make it to the toilet', 'Frequent involuntary seepage of stool and recent history of no bowel movements or several hard stools', 'Recurrence of stool incontinence in child previously toilet-trained' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ '' ],
+        reportToPCP: [ ' Bloody stool', 'Abdominal pain', 'Several incontinent episodes', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ null ]
       },
       'Indigestion': {
         keyQuestions: [ '' ],
