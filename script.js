@@ -3061,35 +3061,45 @@ const bodySystem = {
         seekEmergencyCare: [ 'Black or bloody stools with clots more than once', 'Child with red peeling rash in rectal area' ]
       },
       'Stools, Abnormal': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Recent Dietary Habits', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Hemorrhoids (324)', 'Rectal Bleeding (510)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is there abdominal pain?',
+            list: [ null ],
+            true: 'Go to Abdominal Pain, Adult (11), Child (14) protocols'
+          },
+          {
+            B: 'Is there diarrhea?',
+            list: [ null ],
+            true: 'Go to Diarrhea, Adult (185), Child (188) protocols'
+          },
+          {
+            C: 'Are any of the following present?',
+            list: [ 'Black or dark stools for more than two bowel movements and light-headedness or dizziness', 'Vomiting blood or dark coffee-grounds–like emesis', 'Passing blood clots' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Black tarry stools without recent ingestion of iron pills, beets, bismuth salicylate (Pepto-Bismol), or spinach', 'Large amount of bright red blood mixed in the stool', 'Bloody stool, fever, vomiting, ill feeling', 'Age < 12 weeks, fever, and bloody stools' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Pale stool, yellow skin and eyes', 'Pale, foamy, bulky, foul-smelling stool', 'Blood mixed in stool or black stools for more than two consecutive bowel movements', 'Persistent weight loss and thin, pencil-like stools ' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            F: 'Are any of the following present?',
+            list: [ 'Stool streaked with red blood', 'Blood on toilet tissue after wiping', 'Discolored stool and recent ingestion of iron pills, beets, Pepto-Bismol, spinach, tomatoes, or peppers, or stool is color of recently ingested food', 'Persistent discoloration', 'Persistent bleeding > 3 days', 'Constipation or hemorrhoids ' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'For hemorrhoids, soak in a warm saline bath for 20 minutes a day (add 2 tbsp of salt or baking soda to the water).', 'Keep rectal area clean.', 'If rectal area is irritated, apply OTC hydrocortisone ointment or zinc oxide paste or powder.', 'If hemorrhoids persist, try OTC preparations to help soothe and shrink hemorrhoids.', 'Increase fluid intake and eat a diet high in fiber: fruits, vegetables, bran, grains, and beans. Avoid constipating foods such as cheese. Note which foods change the color of the stool.', 'Remember the color of the stool should return to normal within 24 hours if the discoloration is caused by a change in diet.', 'Use products with witch hazel (Tucks) to reduce discomfort.' ],
+        reportToPCP: [ 'No improvement in 3 days or condition worsens', 'Abdominal pain', 'Bloody stool, fever, vomiting, ill feeling', 'Pale stool, yellow skin and eyes', 'Pale, foamy, bulky, foul-smelling stool', 'Persistent weight loss and thin, pencil-like stools' ],
+        seekEmergencyCare: [ ' Black or dark stools for more than two consecutive bowel movements and light-headedness or dizziness', 'Vomiting blood or dark coffee-grounds–like emesis', 'Passing bloody stools' ]
       },
       'Vomiting, Adult': {
         keyQuestions: [ '' ],
