@@ -3030,35 +3030,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Vomiting blood or coffee-grounds–like emesis', 'Light-headedness or fainting', 'Intermittent abdominal pain', 'Large amount of bright-red blood mixed with stool or passing of blood clots', 'Frequent black tarry stools' ]
       },
       'Rectal Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+        otherProtocolstoConsider: [ 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Pinworm (453)', 'Rectal Bleeding (510)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Injury to the rectal area', 'Rape or sexual abuse', 'Passing more than once of black or bloody stools with clots', 'Unable to remove foreign object from rectum', 'Child with red peeling rash in rectal area' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Severe pain', 'Severe bleeding' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Persistent pain or itching that is unresponsive to home care measures', 'Exposure to a sexually transmitted disease', 'Recent surgery', 'Painless rash or lesion > 24 degrees', 'Recent colonoscopy, sigmoidoscopy, or invasive procedure' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ 'Intermittent rectal swelling, pain, itching, or bleeding', 'Pain or bleeding for < 48 hours', 'First episode of rectal bleeding, swelling, pain, or itching', 'Rectal itching', 'Visible small worms in stools or around rectal area', 'Painless rash or growth < 24 degrees ' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ ' Soak in a warm bath for 20 to 30 minutes daily.', 'Apply an OTC medication for relief of itching and discomfort.', 'Avoid constipating foods (cheese and white flour products). Include fresh fruits, vegetables, and whole grains in the diet. Drink lots of water every day (unless PCP has ordered a restricted fluid intake).', 'Try OTC medications for hemorrhoids.' ],
+        reportToPCP: [ 'Black or bloody stools more than once', 'No improvement or condition worsens' ],
+        seekEmergencyCare: [ 'Black or bloody stools with clots more than once', 'Child with red peeling rash in rectal area' ]
       },
       'Stools, Abnormal': {
         keyQuestions: [ '' ],
