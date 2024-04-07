@@ -2994,35 +2994,40 @@ const bodySystem = {
         seekEmergencyCare: [ null ]
       },
       'Rectal Bleeding': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Vomiting, Adult (638), Child (641)', 'Stools, Abnormal (576)' ],
+        nurseAlert: 'Rectal bleeding includes black, maroon, or tarry stools, brightred blood on toilet tissue, on the surface of stool, mixed in with formed or diarrheal stool or passed separately.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is abdominal pain present?',
+            list: [ null ],
+            true: 'Go to Abdominal Pain protocol (11)'
+          },
+          {
+            B: 'Are any of the following present?',
+            list: [ 'Vomiting blood or coffee-grounds–like emesis care now”', 'Intermittent abdominal pain', 'Frequent black tarry stools', 'Large amount of bright-red blood mixed in the stool or passing of blood clots' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            C: 'Is the following present?',
+            list: [ 'Use of blood thinners, steroids, nonsteroidal anti-inflammatory medications, or large doses of aspirin' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Recent history of cancer', 'Temperature > 100°F (37.7°C)' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            E: 'Are any of the following present?',
+            list: [ 'Stool streaked with red blood', 'Blood on toilet tissue after wiping', 'Constipation or hemorrhoids', 'Bleeding persists > 2–3 days after constipation improves', 'Taking iron preparations or bismuth subsalicylate (Pepto-Bismol)', 'Recent ingestion of beets or spinach ' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Soak in a warm saline bath for 20 minutes a day to cleanse the area and promote healing. (Add 2 tbsp of salt or baking soda to the water.)', 'Keep rectal area clean. May use medicated pads (Tucks) to cleanse and soothe area; follow instruction on the label. Ask pharmacist for additional product suggestions.', 'If rectal area is irritated, apply OTC hydrocortisone ointment (AnusolHC, Cortaid) or zinc oxide paste or powder.', 'If hemorrhoids persist, try OTC preparations (Anusol, Nupercainal, Preparation H) to help soothe and shrink hemorrhoids. Follow instructions on the label.', 'Increase fluid intake and eat a diet high in fiber: fruits, vegetables, bran, grains, and beans. Avoid constipating foods such as cheese. This is particularly important if taking narcotic pain medications for discomfort.', 'If taking iron preparations or bismuth subsalicylate (Pepto-Bismol) or eating spinach or beets, follow up with PCP for stool guaiac.', 'Exercise 30 minutes a day even if only at 10- or 15-minute intervals.' ],
+        reportToPCP: [ 'No improvement in 3 days or bleeding worsens', 'Abdominal pain', 'Constipation or hemorrhoids persist > 1 week after home treatment', 'Blood mixed with stool or black stools' ],
+        seekEmergencyCare: [ 'Vomiting blood or coffee-grounds–like emesis', 'Light-headedness or fainting', 'Intermittent abdominal pain', 'Large amount of bright-red blood mixed with stool or passing of blood clots', 'Frequent black tarry stools' ]
       },
       'Rectal Problems': {
         keyQuestions: [ '' ],
