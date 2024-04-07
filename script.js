@@ -2908,40 +2908,40 @@ const bodySystem = {
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [ '' ],
-        reportToPCP: [ ' Bloody stool', 'Abdominal pain', 'Several incontinent episodes', 'No improvement or condition worsens' ],
+        homeCareInstructions: [ 'Avoid constipation. Increase fiber, bulk, and fluids (fresh fruit, vegetables, whole grains, cereals, and brown rice). Try Metamucil to add bulk. Drink 6 to 8 glasses of water daily. Exercise regularly.', 'In a child previously toilet-trained:', 'Allow child to determine time for toileting. Do not force child to sit on toilet.', 'Provide praise when toilet is used.', 'Discuss with child a reward for staying clean all day.', 'If child is soiled, have the child clean self and change clothes (if old enough).', 'Do not scold or punish for accidents or allow other siblings to tease the child.', 'If an elderly or disabled adult is having difficulty making it to the toilet in time, do not show anger. Discuss ways to identify warning signs and get to the bathroom as soon as signs occur.', 'Consider renting or buying a portable toilet for use when sudden diarrhea attacks occur.', 'Review diet and medications, such as use of laxatives, new medications, prune juice, or castor oil.' ],
+        reportToPCP: [ 'Bloody stool', 'Abdominal pain', 'Several incontinent episodes', 'No improvement or condition worsens' ],
         seekEmergencyCare: [ null ]
       },
       'Indigestion': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Symptoms Usually Occur Soon After Eating', 'Allergies', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Diarrhea, Adult (185), Child (188)', 'Gas/Belching (282)', 'Gas/Flatulence (284)', 'Heartburn (313)', 'Rectal Bleeding (510)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
+        nurseAlert: 'Indigestion and heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Err on the side of caution when triaging callers with symptoms like chest pain. Chest Pain: Causes and Characteristics, Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller\'s condition.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Is there a burning or heavy sensation in the chest, and are any of the following present?',
+            list: [ 'Shortness of breath', 'Cool moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'History of cardiac disease or diabetes', 'Pain occurs with exertion', 'Feeling of impending doom', 'Chest pain and palpitations' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Belching blood', 'Vomiting blood or dark coffee-grounds–like emesis', 'Black tarry stool', 'Severe abdominal pain' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Discomfort persists after taking medication', 'Condition worsening, requires more frequent use of medication', 'Frequent vomiting, weight loss, or decreased appetite', 'Difficult or painful swallowing' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ ' Pain increased with use of aspirin, ibuprofen, or steroids', 'Increased pain when bending, exercising, or lying down soon after eating', 'Frequent belching or gas', 'Acid taste in mouth', 'Bloated or full feeling', 'Recent increase in stress', 'Symptoms appear soon after eating or drinking', 'Mild nausea or diarrhea after eating', 'Previously diagnosed with reflux esophagitis', 'Recently started new medication' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Try OTC medications (Maalox, Mylanta, Riopan, Tums, Pepcid, Prilosec) and follow instructions on the label. Liquids often provide faster relief than tablets. Consult with PCP if taking other prescription medications.', 'Do not give Pepto-Bismol to a child.', 'Avoid eating 2 to 3 hours before bed.', 'Do not lie down for 2 to 3 hours after eating or bend over or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks.', 'Eat small, frequent meals.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, and carbonated beverages.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top panty hose, or pants or skirts with a tight waistband.', 'Take time to eat and drink, thoroughly chewing food.', 'Avoid chewing gum or other activities that result in swallowing air.', 'Avoid foods and drinks known to cause stomach upset and heartburn. Try taking OTC medications (Pepcid AC, Pepto-Bismol, or Prilosec) before eating foods causing symptoms. Follow instructions on the label.', 'Try Gas-X for belching and follow instructions on the label.', 'Sip a tonic made of 4 ounces ginger ale, 1 tsp grated ginger root, 1 tsp honey to soothe an upset stomach.', 'Avoid straining during bowel movements, urinating, and lifting.' ],
+        reportToPCP: [ 'Persistent discomfort unresponsive to home care measures after > 3 days or condition worsens', 'No relief from antacids', 'Difficult or painful swallowing' ],
+        seekEmergencyCare: [ 'Shortness of breath', 'Cool moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Belching or vomiting blood or dark coffee-grounds–like emesis', 'Severe abdominal pain', 'Chest pain', 'Pain occurs with exertion' ]
       },
       'Ostomy Problems': {
         keyQuestions: [ '' ],
