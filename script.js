@@ -2881,9 +2881,7 @@ const bodySystem = {
       },
       'Incontinence, Stool': {
         keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14);
-        Constipation (152); Diarrhea, Adult (185), Child (188); Rectal
-        Bleeding (510); Rectal Problems (513); Stools, Abnormal (576)' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', ' Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Rectal  Bleeding (510)', 'Rectal Problems (513)', ' Stools, Abnormal (576)' ],
         nurseAlert: null,
         alertBullets: [ null ],
         assessment: [
@@ -2944,35 +2942,35 @@ const bodySystem = {
         seekEmergencyCare: [ 'Shortness of breath', 'Cool moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Belching or vomiting blood or dark coffee-grounds–like emesis', 'Severe abdominal pain', 'Chest pain', 'Pain occurs with exertion' ]
       },
       'Ostomy Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Type of Ostomy or Reason for Pouch', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Bleeding, Severe (86)', 'Constipation (152)', 'Wound Healing and Infection (659)' ],
+        nurseAlert: 'Use this protocol if the person has an ostomy and has concerns or questions.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Severe bleeding from stoma', 'Severe abdominal pain or swelling', 'Persistent vomiting', 'Fever and abdomen tender or rigid', 'Constipation, abdominal pain, swelling, and vomiting' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Urostomy and temperature > 100.4°F (38°C) and urine is pink, red, or unusually cloudy', 'Nausea, loss of appetite, and abdominal pain', 'Drainage leaking into a surgical wound', 'Taking blood-thinning medication and new onset of bleeding at stoma site or urine is pink or red', 'No ostomy drainage' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'No bowel movement for more than 4 days and constipation unresponsive to home care measures', 'Unable to manage the ostomy or pouch wound' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            D: 'Are any of the following present?',
+            list: [ 'Small amount of bleeding at the stoma site', 'New onset of itching and burning at ostomy or pouch site', 'Decreased ostomy drainage', 'Mild constipation', 'New medication and change in normal bowel habits' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Ostomy Care' = [ 'Check appliance and make sure parts are snapped securely together.', 'If the ostomy is leaking, remove the appliance, clean the skin with mild soap and water, dry well, and prepare the skin as directed by a nurse or PCP; apply the new appliance. Hold in place for 5 minutes to ensure pouch seals to the skin.', 'Take prescribed medications as directed.' ], 'Bleeding Stoma' = [ 'Remember that a small amount of bleeding is normal, and tissues bleed easily, similar to the bleeding of the gums after brushing teeth.' ], 'Constipation' = [ 'Make sure the diet is adequate in volume, bulk (high fiber), and fluids (6 to 8 glasses a day, unless on a fluid-restricted diet).', 'Drink a hot beverage each morning, such as coffee, tea, hot water with lemon, or prune juice.', 'Follow the prescribed plan for using stool softeners, laxatives, and irrigation.', 'When taking medications with codeine or other medications that increase constipation, follow the constipation-prevention plan prescribed by the PCP.' ] ],
+        reportToPCP: [ 'Fever or bleeding persists or worsens', 'Constipation persists or worsens after home care measures', 'Drainage leaking into a surgical wound', 'Persistent leakage after home care measures', 'Itching and burning persists after use of prescribed medication' ],
+        seekEmergencyCare: [ 'Severe bleeding', 'Severe abdominal pain or swelling', 'Persistent vomiting', 'Fever and abdomen is tender and rigid' ]
       },
       'Pinworms': {
         keyQuestions: [ '' ],
