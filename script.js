@@ -2973,35 +2973,25 @@ const bodySystem = {
         seekEmergencyCare: [ 'Severe bleeding', 'Severe abdominal pain or swelling', 'Persistent vomiting', 'Fever and abdomen is tender and rigid' ]
       },
       'Pinworms': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Known or Suspected Pinworms', 'Medications', 'History' ],
+        otherProtocolstoConsider: [ 'Bedbug Exposure or Concerns (64)', 'Itching (384)', 'Rectal Problems (513)' ],
+        nurseAlert: null,
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Signs of infection (pain, swelling, redness, drainage, warmth, or fever) in rectal area', 'Severe rectal itching worsening at night and early morning', '¼" to ½" white, thread-like worms in rectal or vaginal area', 'Worms visible in stool' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Mild redness, itching, or tenderness in rectal area', 'Child has difficulty sleeping, irritability, or vaginal irritation', 'Exposed to bedclothes or bed linens of child with pinworms', 'Rectal symptoms persist > 1 week after treatment', 'Family member diagnosed with pinworms and concerned about transmission' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'To detect pinworms in a child, shine a light on the child’s anus in a darkened room several hours after bedtime. If present, the worms will move back into the anus.', 'Trim nails closely and encourage good hand washing.', 'Discourage nail biting or thumb sucking.', 'Wash linen and underwear in hot soapy water until pinworms are gone.', 'Vacuum or mop bedroom daily for 2 weeks after treatment.', 'Bathe every morning and clean the affected area. Showers are preferable.', 'Wear shorts or panties under pajamas.', 'To reduce itching:', 'Apply zinc oxide or 1% hydrocortisone cream ointment to affected area.', 'Take a warm bath with Epsom salts or table salt.', 'A prescription medication may be necessary to eliminate the pinworms. Take medication completely and as directed.', 'Try OTC pinworm medication (Reese’s) and follow instructions on the label.' ],
+        reportToPCP: [ 'Signs of infection: pain, swelling, redness, drainage, or warmth', 'Condition persists > 3 weeks after treatment' ],
+        seekEmergencyCare: [ null ]
       },
       'Rectal Bleeding': {
         keyQuestions: [ '' ],
