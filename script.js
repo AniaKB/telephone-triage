@@ -3102,35 +3102,35 @@ const bodySystem = {
         seekEmergencyCare: [ ' Black or dark stools for more than two consecutive bowel movements and light-headedness or dizziness', 'Vomiting blood or dark coffee-grounds–like emesis', 'Passing bloody stools' ]
       },
       'Vomiting, Adult': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name, Age, Onset, History, Medications, Associated Symptoms, Suspected Cause' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Altered Mental Status (29)', 'Chest Pain (118)', 'Dehydration (173)', 'Diabetes Problems (180)', 'Diarrhea, Adult (185)', 'Fever, Adult (241)', 'Food Poisoning, Suspected (254)', 'Headache (303)', 'Head Injury (307)', 'Postoperative Problems (458)', 'Pregnancy, Nausea and Vomiting (478)' ],
+        nurseAlert: 'There are many conditions that cause vomiting. When vomiting is associated with several other symptoms, use the protocol that is the primary concern and has the highest probability of a referral to a higher level of care.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
+            A: 'Are any of the following present?',
+            list: [ 'Altered mental status', 'Fainting', 'Vomiting bright red blood or dark coffee-grounds– like emesis', 'Recent injury to head or abdomen and vomiting', 'Chest pain or discomfort, difficulty breathing, palpitations, or sweating', 'Persistent severe abdominal pain that interferes with activity' ],
+            true: 'Call ambulance or Seek emergency care now'
           },
           {
-            B: '',
-            list: [ '' ],
+            B: 'Are any of the following present?',
+            list: [ 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'loose dry skin', 'excessive thirst', 'dry mouth', 'dizziness on standing or rising to sitting position' ], 'Suspicion that recent ingestion of wild mushrooms or plant is causing vomiting', 'History of diabetes and unable to control vomiting with home care measures' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
-            list: [ '' ],
+            C: 'Are any of the following present?',
+            list: [ 'Persistent vomiting for > 24 hours that is unrelieved by home care measures', 'Recent surgery, hospitalization, or diagnostic procedure', 'New-onset jaundice' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+            D: 'Are any of the following present?',
+            list: [ ' Diarrhea or constipation', 'History of travel out of the country or a camping trip', 'Other household members are ill', 'Excessive ingestion of food, alcohol, or fluids', 'Recent ingestion of an antibiotic, pain medication, or new medication', 'Possible pregnancy' ],
+            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
           }
         ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
+        homeCareInstructions: [ 'Do not eat or drink anything for 1 hour after last emesis.', 'Drink sips of clear fluids for first 12 hours, including gelatin, water, sports drinks, flat soda, clear broth, flavored ice, or apple juice. Do not drink citrus juices.', 'Increase fluids as tolerated.', 'After 12 hours, try small amounts of bland foods, such as rice, potatoes, soda crackers, pretzels, dry toast, and applesauce.', 'After bland food is tolerated, resume normal diet, as tolerated.', 'Retake medications if vomiting occurs within 30 minutes of taking usual medication.', 'Avoid milk, citrus foods and juices, spicy and fatty foods, alcohol, coffee, and caffeinated beverages.', 'Take OTC dimenhydrinate (Dramamine) or phosphorated carbohydrate solution (Emetrol) for nausea, and follow instructions on the package.', 'Viruses causing nausea and vomiting are easily spread. Pay special attention to hand washing. Avoid using towels, tableware, and cups used by infected person.' ],
+        reportToPCP: [ 'Fever, weakness, or abdominal pain', 'No improvement in 48 hours or condition worsens', 'Signs of dehydration' ],
+        seekEmergencyCare: [ ' Altered mental status', 'Vomiting blood or dark coffee-grounds–like emesis', 'Persistent severe pain that interferes with activity', 'Fainting', 'Chest pain, difficulty breathing, palpitations, or sweating' ]
       },
       'Vomiting, Child': {
         keyQuestions: [ '' ],
