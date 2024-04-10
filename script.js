@@ -3133,28 +3133,28 @@ const bodySystem = {
         seekEmergencyCare: [ ' Altered mental status', 'Vomiting blood or dark coffee-grounds–like emesis', 'Persistent severe pain that interferes with activity', 'Fainting', 'Chest pain, difficulty breathing, palpitations, or sweating' ]
       },
       'Vomiting, Child': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
+        keyQuestions: [ 'Name', 'Age', 'Onset', 'Suspected Cause', 'History', 'Medications', 'Associated Symptoms' ],
+        otherProtocolstoConsider: [ 'Abdominal Pain, Child (14)', 'Altered Mental Status (29)', 'Constipation (152)', 'Dehydration (173)', 'Diarrhea, Child (188)', 'Fever, Child (244)', 'Food Poisoning, Suspected (254). Headache (303)', 'Head Injury (307)', 'Postoperative Problems (458)' ],
+        nurseAlert: 'There are many conditions that cause vomiting. When vomiting is associated with several other symptoms, use the protocol that is the primary concern and has the highest probability of a referral to a higher level of care.',
+        alertBullets: [ null ],
         assessment: [
           {
-            A: '',
-            list: [ '' ],
+            A: 'Are any of the following present?',
+            list: [ 'Altered mental status: listless, unusually irritable, confused', 'Severe headache, stiff neck, or pain bending head forward', 'Vomiting bright red blood or dark coffee-grounds– like emesis', 'Recent head or abdominal injury', 'Exposure to a poisonous substance (such as medications, plants, cleaning agents, pesticides, or wild mushrooms)', 'Neonate < 1 month of age', 'Abdomen is hard or firm when not crying' ],
             true: 'Seek emergency care now'
           },
           {
-            B: '',
+            B: 'Are any of the following present?',
             list: [ '' ],
             true: 'Seek medical care within 2 to 4 hours'
           },
           {
-            C: '',
+            C: 'Are any of the following present?',
             list: [ '' ],
             true: 'Seek medical care within 24 hours'
           },
           {
-            D: '',
+            D: 'Are any of the following present?',
             list: [ '' ],
             true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
           }
