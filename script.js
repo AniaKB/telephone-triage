@@ -2357,812 +2357,812 @@ const bodySystem = {
     },
   },
   'Gastrointestinal Problems': {
-      'Abdominal Pain, Adult': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale', 'Associated Symptoms', 'Date of Last Menstrual Period', 'Prior Medical History' ],
-        otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Constipation (152)', 'Diarrhea, Adult (185)', 'Food Poisoning, Suspected (254)', 'Menstrual Problems (407)', 'Rectal Bleeding (510)', 'Urination, Difficult (622)', 'Urination, Painful (626)', 'Vomiting, Adult (638)' ],
-        nurseAlert: 'Many conditions can cause abdominal pain, and some can be potentially life threatening. Err on the side of caution when triaging callers with abdominal pain. Abdominal Pain: Causes and Characteristics: Appendix R (694) is provided to help the nurse gain a better understanding of the many conditions causing abdominal pain. It is NOT to be used to try and diagnose a caller’s condition.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Faint (unconsciousness) or unresponsiveness', 'Severe weakness and inability to stand', 'Cold, pale skin, or profuse sweating', 'Severe, sudden pain radiating to back or legs' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Light-headedness', 'Vomiting blood or dark coffee-grounds like emesis', 'New onset of rapidly worsening symptoms and age >', 'Bloody or black stools unrelated to hemorrhoids or iron supplements', 'Sudden abdominal and shoulder pain in a woman with menses > 4 weeks late', 'Age > 30, heavy smoker, high blood pressure, high cholesterol, or obesity', 'History of diabetes, heart disease, blood clotting problems, or CHF' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Rapidly increasing pain', 'Pregnancy', 'Unusually heavy vaginal bleeding and possibility of pregnancy', 'History of recent abdominal surgery, frequent falls, or injury to abdomen', 'RLQ pain with poor appetite, nausea and/or vomiting, or fever', 'Ingestion of plant, drug, or chemical', 'Temperature > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Temperature > 103°F (39.4°C)', 'Severe nausea and vomiting', 'Persistent nausea and vomiting, and decreased oral intake and urination', 'Pain worsens with coughing' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'History of hepatitis or exposure', 'Continuous pain > 1 hour', 'Unexplained progressive abdominal swelling Go to E', 'Painful or difficult urination', 'Blood in urine', 'Pain interferes with activity', 'Age > 60 years', 'Nausea, vomiting, diarrhea > 24 hours' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Vaginal or urethral discharge', 'History of abdominal pain, and usual treatment is ineffective', 'Constipation', 'History of nervous stomach', 'Significant increase in stress level', 'Intermittent mild pain associated with an empty stomach, eating certain foods, or use of pain, antibiotic, or anti-inflammatory medications', 'Mild, infrequent diarrhea', 'Other family members ill' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Rest.', 'Consume clear liquids (broth, tea, ginger ale, apple juice, flavored ice, gelatin) in frequent small amounts (sips) until vomiting or diarrhea subsides.', 'After 12 hours without vomiting or diarrhea, introduce a bland diet (rice, potatoes, bread, crackers, bananas, cereal).', 'Take medications as directed by the pharmacy. Some should be taken on an empty stomach and others with food. Avoid aspirin, ibuprofen, and naproxen. Do not take acetaminophen if liver disease is present. Follow the instructions on the label.', 'Apply heat (moist hot towel or heating pad) to the abdomen for cramping or discomfort, or take a warm bath.', 'For gas relief, try Maalox or Mylanta, and follow the instructions on the label. Ask the pharmacist for other suggestions.', 'Avoid alcohol, caffeine, and greasy or spicy foods.', 'If known GERD exists, encourage consumption of smaller, more frequent meals, and avoid spicy or greasy food, caffeine, and chocolate.', 'Try herbal teas such as peppermint or chamomile to soothe an upset stomach.' ],
-        reportToPCP: [ ' Severe pain > 2 hours', 'Temperature > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Temperature > 103°F (39.4°C)', 'Persistent vomiting or diarrhea and decreased oral intake or urination', 'Pain worsens with heat or activity' ],
-        seekEmergencyCare: [ ' Unusually firm or hard abdomen', 'Persistent vomiting', 'Severe persistent pain', 'Fainting/light-headedness', 'Bloody or black stools or emesis' ]
-      },
-      'Abdominal Pain, Child': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale', 'Associated Symptoms', 'Prior History', 'Date of Last Menstrual Period' ],
-        otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Constipation (152)', 'Diarrhea, Child (188)', 'Food Poisoning, Suspected (254)', 'Menstrual Problems (407)', 'Urination, Difficult (622)', 'Urination, Painful (626)', 'Vomiting, Child (641)' ],
-        nurseAlert: 'Many conditions can cause abdominal pain, and some can be potentially life threatening. Err on the side of caution when triaging callers with abdominal pain. Abdominal Pain: Causes and Characteristics: Appendix R (694) is provided to help the nurse gain a better understanding of the many conditions causing abdominal pain. It is NOT to be used to try and diagnose a caller’s condition.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Severe persistent pain > 2 hours', 'Rapidly increasing pain', 'RLQ pain with poor appetite, nausea and/or vomiting, fever, grasping abdomen, walking bent over, screaming, grunting respirations, or lying with knees drawn toward chest', 'Unusually heavy vaginal bleeding and possibility of pregnancy', 'Ingestion of unknown chemical substance, plant, or medication', 'Recent abdominal trauma', 'Black, bloody, or jelly-like stools unrelated to hemorrhoids or iron supplements', 'Weight loss', 'Vomiting blood or dark coffee-grounds–like emesis', 'Weakness and inability to walk', 'Severe pain and swelling in testicle(s) or scrotum' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Severe nausea and vomiting', 'Continuous pain > 2 hours and unresponsive to home care', 'Unexplained progressive abdominal swelling', 'Painful or difficult urination', 'Age < 2 years and intermittent pain', 'Pain interferes with activity', 'Decreased urine output', 'Nausea, vomiting, or diarrhea > 24 hours and unresponsive to home care', 'Known hernia or hydrocele and pain or crying > 2 hours' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Vaginal or urethral discharge', 'History of abdominal pain, and usual treatment is ineffective', 'Significant increase in stress level', 'Blood in urine', 'Temperature > 101°F (38.3°C), cough, or weakness' ],
-            true: 'Seek medical care within 24 to 48 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Constipation', 'History of a nervous stomach and increased stress level', 'Intermittent mild pain associated with an empty stomach, eating certain foods, or use of pain, antibiotic, or anti-inflammatory medications', 'Mild infrequent diarrhea', 'Other family members are ill NO Follow Home Care', 'Persistent sore throat > 24 hours' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Rest.', 'Consume clear liquids (fruit juice diluted with ½ water, weak tea, broth, sports drinks, flavored ice, gelatin, clear soft drink) or bland diet (rice, potatoes, soda crackers, pretzels, dry toast, applesauce, bananas) for 12 to 24 hours. Recommend electrolyte/mineral supplement or other rehydrating fluid solution (such as Pedialyte) for small children or infants.', 'If diarrhea is present, avoid fruit juice or full-strength sports drinks.', 'Take medications as directed by the pharmacy. Some should be taken on an empty stomach and others with food. Avoid ibuprofen and other antiinflammatory medications. Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Apply a moist, hot towel or heating pad to the abdomen for cramping.' ],
-        reportToPCP: [ 'Severe pain > 1 hour', 'Fever', 'Pain worsens with heat or activity' ],
-        seekEmergencyCare: [ 'Unusually firm or hard abdomen', 'Persistent vomiting', 'Bloody or black stools or emesis', 'Weakness and inability to walk', 'Severe pain and swelling in testicle(s) or scrotum' ]
-      },
-      'Appetite Loss, Adult': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Prior History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Alcohol Problems (22)', 'Anxiety (37)', 'Depression (177)', 'Dizziness (192)', 'Fever, Adult (241)', 'Heart Rate Problems (317)', 'Substance Abuse, Use, or Exposure (581)', 'Vomiting, Adult (638)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Altered mental status', 'Fainting', 'Abdominal pain', 'Thoughts of suicide', 'Hallucinations (auditory, tactile, or visual)' ],
-            true: 'Seek emergency care now, if abdominal pain, go to Abdominal Pain Adult protocol (11)'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Palpitations', 'Fever > 101°F (38.4°C) and weakened immune system or advanced age increase in dizziness and heart rate with sitting or standing' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Sudden weight loss > 5–10 pounds', 'Lethargy', 'Yellowing of the skin or whites of the eyes', 'Fever > 101°F (38.4°C) and unresponsive to feverreducing measures', 'Sudden weight gain > 5 pounds', 'Inadequate fluid intake', 'Unexplained weight loss during a period of several weeks', 'Severe depression', 'Abrupt cessation of drugs (including prescription or OTC), alcohol, or caffeine' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Poor eating habits', 'Increased stress/anxiety', 'Recent onset of appetite loss', 'No other symptoms', 'Decrease in activity' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Eat a balanced meal.', 'Slowly increase amount of food after surgery or illness.', 'Exercise regularly.', 'May try liquid diet supplements (ensure). Ask your PCP or pharmacist for additional OTC liquid diet supplements.', 'Try to identify the cause of the appetite loss, and take appropriate action to address the problem (poorly fitting dentures, mouth sores, nausea, depression, swallowing difficulties, etc.)', 'Take usual medication for discomfort and fever. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
-        reportToPCP: [ 'Nausea and vomiting', 'Failure to improve' ],
-        seekEmergencyCare: [ 'Altered mental status', 'Fainting', 'Hallucinations', 'Thoughts of suicide', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
-      },
-      'Appetite Loss, Child': {
-        keyQuestions: [ 'Name, Age, Onset, Allergies, Weight, Medications, Prior History, Eating Disorder Treatment' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Child (14)', 'Altered Mental Status (29)', 'Anxiety (37)', 'Dehydration (173)', 'Depression (177)', 'Dizziness (192)', 'Fever, Child (244)', 'Heart Rate Problems (317)', 'Vomiting, Child (641)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Abdominal pain' ],
-            true: 'Go to Abdominal Pain, Child protocol (14)'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Altered mental status', 'Fainting', 'Vomiting, drowsiness, irritability, and headache or stiff or painful neck' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Child refuses to eat or drink and looks ill', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing', 'Signs of dehydration:' = [ 'decreased urination', 'no urine for > 8 hours in child < 1 year of age', 'no urine for >12 hours in child > 1 year of age', 'crying without tears', 'sunken fontanels', 'excessive thirst, dry mouth' ] ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Unusual frequent urination or bed-wetting', 'Nausea at sight of food, vomiting, yellow skin, fever, fatigue', 'Skin persistently pale', 'Dark urine and pale stools', 'Persistent decrease in appetite, swollen glands, and fatigue', 'Poor weight gain', 'Sudden weight loss', 'Severe dieting or excessive exercise and distorted body image in a teenager', 'Rash or fever' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Poor eating habits', 'Increased stress/anxiety', 'Dry skin, brittle hair', 'Recent onset of appetite loss' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Encourage a balanced meal.', 'Do not force child to eat when sore throat makes swallowing difficult. Encourage consumption of ice cream, flavored ice, and cold fluids.', 'Avoid putting too much emphasis on food when child is ill.', 'Understand that it is normal for the child’s appetite to decrease around 2 years of age.', 'Slowly increase amount of food after surgery or illness.', 'Give acetaminophen for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
-        reportToPCP: [ 'Nausea and vomiting', 'Persistent appetite loss', 'Persistent weight loss' ],
-        seekEmergencyCare: [ ' Altered mental status', 'Fainting', 'Vomiting, drowsiness, irritability, and headache or stiff or painful neck', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
-      },
-      'Constipation': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Last Bowel Movement', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Vomiting, Adult (638), Child (641)', 'Rectal Bleeding (510)', 'Rectal Problems (513)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Severe abdominal pain, swelling, or vomiting' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Persistent vomiting and progressive abdominal swelling', 'Severe pain or cramping', 'Vomiting brown, yellow, or green bitter-tasting emesis', 'Significant rectal bleeding with no history of hemorrhoids or bleeding with constipation', 'Infant < 1 month, breast-feeding, and signs of dehydration' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'No bowel movement in 5–7 days and constipation unresponsive to home care measures', 'Recent surgery, injury, or childbirth', 'History of diverticulitis and fever', 'Infant has no stool for > 6–10 days', 'Child/infant crying, bloating, passing hard stools, and not responding to home care measures', 'Fever for 24–48 hours, cause unknown', 'Infant younger than 2 months had first stool after 24 hours and is now constipated' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Dry hard stools', 'Pain with bowel movements', 'Recent change in stools or bowel habits', 'Chronic constipation', 'Small, frequently occurring, liquid or hard stools', 'Intermittent constipation', 'Recent decrease in activity or bed rest', 'Taking pain medications with codeine or other medications that increase constipation', 'Blood on tissue or surface of stool' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Make sure diet is adequate in volume (quantity), bulk (high fiber), and fluids (6 to 8 [8 ounce] glasses a day, unless on a restricted fluid diet).', 'Drink a hot beverage each morning, such as coffee, tea, or hot water with lemon.', 'Establish a regular time for privacy and elimination each day.', 'Increase exercise as tolerated.', 'Adults may try OTC laxatives (Metamucil, Miralax, glycerin suppositories) or an enema if other measures are unsuccessful. Follow instructions on the label. Ask pharmacist for other product suggestions.', 'Infants:' = [ 'For infants > 1 month, if the infant is drinking juice, give prune or apricot juice mixed with water to help relieve constipation. Do not give enemas or laxatives.', 'For infants > 2 months, give fruit juice (1 ounce per month of age, twice a day).', 'For infants > 4 months, add baby foods high in fiber such as prunes, peaches, pears, or sweet potatoes.' ], 'Children: Increase fruit juice and decrease milk to 1 pint a day. Increase high-fiber foods, such as bran cereals, oatmeal, bran muffins, or popcorn (if child > 4 years). Avoid laxatives and enemas.', 'May use stool softeners such as Citrucel, Metamucil, or mineral oil. (1/2 to 1 tbsp per day is usually sufficient. However, read directions on container label before administering.)', 'For rectal pain due to constipation, sit in a warm bath for 20 minutes.', 'For painful and bleeding hemorrhoids, sit in a warm tub of water after each bowel movement. Try OTC medications for hemorrhoids.' ],
-        reportToPCP: [ 'Condition persists or worsens', 'Fever, vomiting, and pain', 'Home care measures are ineffective.' ],
-        seekEmergencyCare: [ 'Severe abdominal pain, swelling, or vomiting' ]
-      },
-      'Diarrhea, Adult': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History', 'Associated Symptoms' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Abdominal Swelling (17)', 'Constipation (152)', 'Dehydration (173)', 'Diabetes Problems (180)', 'Hemorrhoids (324)', 'Rectal Bleeding (510)', 'Stools, Abnormal (576)', 'Vomiting, Adult (638)', 'Weakness (645)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Diarrhea and severe weakness, lethargy, or faintness', 'Severe abdominal pain, swelling, and fever', 'Diabetic and rapid or labored breathing ' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Severe abdominal pain', 'Grossly bloody stool', 'Signs of dehydration:' = [ 'decreased urination', 'sunken eyes', 'loose dry skin', 'excessive thirst, dry mouth', 'dry mucous membranes', 'Dizziness upon standing', 'Persistent vomiting and diarrhea'] ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' Diarrhea every 30–60 minutes for > 6 hours', 'Diarrhea for > 5 days', 'Mucous, pus, yellow, green, or frothy stool > 2 days', 'Persistent fever', 'New onset of loss of bowel control', 'No improvement with home care measures' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Recent change in diet', 'Other family members have diarrhea', 'Recent travel to a foreign country', 'Recent antibiotics in past 2 months', 'New prescription', 'Tube feedings' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Take clear liquid diet first 12 to 24 hours (sips of water, flat soda, clear broth, gelatin [not red], flavored ice).', 'During the next 12 hours, progress to eating soup (avoiding cream soups), dry toast, soda crackers, white rice, pretzels, bananas, applesauce, and potatoes.', 'Progress to a regular diet after soft-formed stools occur.', 'Avoid dairy products, citrus juices, raw fruits and vegetables, and fried or spicy foods for 2 to 5 days after diarrhea subsides.', 'After 6 hours of diarrhea and cramping, or if pain persists, OTC antidiarrheal medications (Imodium, Kaopectate, Pepto-Bismol) can be used. Follow instructions on the label.', 'Acetaminophen can be given for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
-        reportToPCP: [ 'No improvement or diarrhea worsens after 48 hours of home care measures', 'Yellow, frothy, bloody, or green stool occurs more than one time', 'Signs of dehydration', 'Fever, weakness, or lethargy', 'Persistent vomiting', 'Person with insulin-dependent diabetes changes diet plan' ],
-        seekEmergencyCare: [ 'Person has diabetes and rapid or labored breathing', 'Severe abdominal pain, swelling, and fever' ]
-      },
-      'Diarrhea, Child': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Frequency', 'Medications', 'History', 'Associated Symptoms' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Child (14); Abdominal Swelling (17); Altered Mental Status (29); Confusion (142); Constipation (152); Dehydration (173); Fever, Child (244); Rectal Bleeding (510); Stools, Abnormal (576); Vomiting, Child (641)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Diarrhea and severe weakness, lethargy, listlessness, or faintness', 'Vomiting with right-sided abdominal pain', 'Infant younger than 3 months with diarrhea and temperature > 100.4°F (38°C)', 'Cold and gray skin', 'Grossly bloody stool', 'Breathing fast and hard', 'Severe pain, drawing knees to chest with cramping' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Signs of dehydration:' = [ 'decreased urination', 'no urine for > 4–6 hours in child younger than 1 year', 'no urine for > 12 hours in child older than 1 year' ], 'Temperature > 104°F (40°C), age > 3 months, and unresponsive to fever-reducing measures', 'crying without tears', 'sunken eyes or fontanels', 'excessive thirst, dry mouth', 'Listlessness', 'Persistent vomiting and diarrhea', 'Diarrhea every hour for > 8 hours', 'Blood in stool' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ '>3 diarrhea stools in 24 hours in a child younger than 1 month', 'Diarrhea for > 3 days or diarrhea while receiving antibiotic therapy', 'Pus or mucus in stool', 'No improvement with home care measures', 'Temperature > 103°F (39.4°C) or temperature > 101°F (38.3°C) for more than 48 hours', 'Fever unresponsive to fever-reducing measures' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Chronic diarrhea', 'Recent change in diet', 'Other family members or pets have diarrhea', 'Recent travel to a foreign country', 'New prescription', 'Recent contact with a snake, lizard, or turtle' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Breast-Feeding Infants ≤ 1 Year Old' = [ 'Continue to feed every 2 hours and offer rehydration fluids (Pedialyte, Infalyte, Rehydralyte) between feedings. Stools usually follow feeding. Diarrhea is a sudden increase in the frequency of stools with loose consistency.', 'Do NOT give Jell-O water mixtures or sports drinks, as these do not contain enough sodium, and the sugar content can make diarrhea worse.' ], 'Formula-Fed Infants ≤ 1 Year Old' = [ 'Give Pedialyte, Infalyte, or Rehydralyte for the first 4 to 6 hours only. Each hour, give at least 2 tsp for every pound your child weighs. Then resume full-strength formula, but give more often than usual. If diarrhea is severe, use a soy formula or soy with added rice (AR) until diarrhea has been gone for 3 days, or switch to soy or lactose-free formula if diarrhea lasts longer than 3 days.', 'Do NOT give Jell-O water mixtures or sports drinks, as these do not contain enough sodium, and the sugar content can make diarrhea worse.' ], 'All Infants > 4 Months and < 12 Months' = [ 'Offer solids, such as infant cereal (especially rice), strained applesauce, carrots, bananas, mashed potatoes, or other high-fiber foods. These starchy foods are more easily digested when your child has diarrhea.', 'Avoid all fruit juices, as these will make diarrhea worse.', 'If your child refuses the solids, offer extra formula rather than water.' ], 'Children > 1 Year Old' = [ 'Fluids: Avoid juices, and increase water and other fluids that are caffeine-free. Eat or drink less milk and milk products for 2 to 3 days. If solids are being taken well, milk products can still be used and should be well tolerated.', 'Maintain regular diet if tolerated well.', 'Avoid foods that would normally cause loose stools in your child, such as spicy sauces or beans.' ], 'Additional Home Care Advice' = [ 'Acetaminophen can be given for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Diarrhea often is very contagious. Wash hands with soap and water after using the toilet or changing a diaper.', 'If diaper rash or redness occurs in the anus, wash with running water, dry, and apply petroleum jelly or other barrier ointment to protect the area, particularly at night and during naps.' ] ],
-        reportToPCP: [ 'No improvement or diarrhea worsens after 48 hours of home care measures', 'Yellow, frothy, bloody, or green stool occurs more than once', 'Signs of dehydration: decreased urination, dry mouth, no tears', 'Fever, weakness, or lethargy', 'Watery diarrhea and vomiting clear fluid > 3 time' ],
-        seekEmergencyCare: [ 'Rapid or labored breathing', 'Severe abdominal pain, swelling, and fever', 'Infant < 2 months and fever > 100.4°F (38.0°C)', 'Gross bloody stools', 'Cold and gray skin', 'Severe listlessness or fainting' ]
-      },
-      'Feeding Tube Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Type of Tube', 'Length of Time', 'Tube in Place', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Wound Healing and Infection (659)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Severe bleeding', 'Severe pain', 'Sudden onset of difficulty breathing or shortness of breath' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Feeding tube removed or dislodged and pain, bleeding, or swelling' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Tube frequently clogs after medication or feeding solution is added', 'Unable to unclog tube after trying home care measures', 'Feeding tube fell out', 'Caregiver concerned tube is displaced', 'Insertion site appears infected (redness, swelling, pain, red streaks, or drainage)' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Is the following present?',
-            list: [ 'Inability to pass solution into feeding tube' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'To unclog feeding tube (for a caregiver who has received previous instructions; if no previous instruction, refer caller to home health nurse, PCP, Clinic, or ED):' = [ 'Raise head of bed 45 degrees.', 'Insert the tip of a large syringe into the tube and pull back to remove as much matter from the tube as possible.', 'Fill the syringe with 30 mL (1 ounce) of water.', 'Connect syringe to tube and irrigate.', 'Remove as much matter as possible.', 'Push 5 mL of cranberry juice, cola, or tea into the tube and clamp.', 'Repeat the process until the tube is cleared.' ], 'Flush tube with 50 mL of water after feeding, medications, or supplements are inserted into the tube.', 'To check placement of feeding tube (for a caregiver who has received instruction from a nurse or PCP regarding verifying tube placement):', 'Turn off pump.', 'Using large syringe, insert tip into feeding tube and gently pull back.', 'If there is concern the tube is displaced, do not use the tube until tube placement is verified.' ],
-        reportToPCP: [ 'Unable to unclog tube', 'Signs of infection (fever, drainage, warmth, redness, red streaks, or foulsmelling drainage)', 'Tube becomes dislodged or falls out' ],
-        seekEmergencyCare: [ 'Severe bleeding', 'Severe pain', 'Sudden onset of difficulty breathing or shortness of breath' ]
-      },
-      'Food Allergy, Known or Suspected': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause If Known', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Diarrhea, Adult (185), Child (188)', 'Food Poisoning, Suspected (254)', 'Hives (335)', 'Itching (384)', 'Rash, Adult (501), Child (505)', 'Vomiting, Adult (638), Child (641).' ],
-        nurseAlert: 'Use this protocol only if previously diagnosed with a food allergy or prior reaction to a food substance.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present shortly after eating?',
-            list: [ 'Difficulty breathing', 'Confusion', 'Difficulty swallowing', 'Fainting', 'Severe dizziness' ],
-            true: 'Call ambulance or Seek emergency care now'
-          },
-          {
-            B: 'Is the following present within 30 minutes after eating?',
-            list: [ 'Swelling of lips, tongue, or mouth' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present after eating?',
-            list: [ 'Generalized hives or itching', 'Sore throat', 'Postnasal drip and throat clearing', 'Congestion, sneezing, or runny nose', 'Fatigue', 'Headache', 'Persistent diarrhea or vomiting' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Try to identify the food causing the problem and avoid it. Eggs and milk are the most common food allergies in infants. Peanuts, eggs, chocolate, cow’s milk products, soybeans, tree nuts, wheat, fish, and shellfish are the most common causes of food allergies.', 'Eliminate the suspected food from the diet for 2 weeks and note whether symptoms disappear. If so, avoid that food in the future. If not, observe for relationship between other foods and symptoms (hives, swelling in mouth, diarrhea).', 'Try baking soda baths, Caladryl lotion, or calamine for itching, or take an antihistamine (Benadryl) tablet (follow instructions on the label).' ],
-        reportToPCP: [ 'No improvement in symptoms or condition worsens', 'Desire to add suspected food back to diet' ],
-        seekEmergencyCare: [ 'Fainting', 'Difficulty breathing', 'Confusion', 'Difficulty swallowing', 'Severe dizziness' ]
-      },
-      'Food Poisoning, Suspected': {
-        keyQuestions: [ 'Name','Age', 'Onset', 'Associated Symptoms', 'History', 'Medications', 'Suspected Source' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Avian Influenza “Bird Flu” Exposure (52)', 'Dehydration (173)', 'Diarrhea, Adult (185), Child (188)', 'Rectal Bleeding (510)', 'Vomiting, Adult (638), Child (641)' ],
-        nurseAlert: 'If caller suspects food poisoning after eating at a restaurant, encourage caller to notify the restaurant. Other patrons may have had the same problem. Early notification helps the restaurant to track the source and correct the problem.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Sick 6–48 hours after eating canned, smoked, or vacuum-packed foods and are any of the following present?',
-            list: [ 'Altered mental status', 'Difficulty breathing or swallowing, or blurred vision', 'Vomiting blood', 'Bloody stool' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Pain is severe, worsens, or lasts > 4 hours', 'Nausea and vomiting > 12 hours and unresponsive to home treatment or OTC medications', 'Diarrhea > 48 hours and unresponsive to home treatment or OTC medications', 'Bloody diarrhea', 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'loose dry skin', 'excessive thirst, dry mouth', 'child crying without tears' ], 'Dizziness upon standing', 'Rash', 'Fever' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Nausea, vomiting, diarrhea, abdominal pain occurred after eating unrefrigerated meat, poultry, fish, mayonnaise, or egg products', 'Others eating the same meal also are ill' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Drink small sips of clear fluids (apple juice, tea, broth, sports drinks, clear soda pop, ginger ale) frequently (every 5 to 10 minutes) until nausea and vomiting subside. Increase amount as tolerated during the first 24 hours after vomiting subsides.', 'Avoid milk products when experiencing diarrhea.', 'Avoid spicy foods, alcohol, dairy products, and coffee for 48 hours after vomiting and diarrhea have subsided.', 'Avoid aspirin.', 'Prevention:' = [ 'Avoid meats, dressings, sauces, and mayonnaise-based preparations that have been at room temperature for > 2 hours. Maintain a food temperature of < 40°F (4.4°C) or > 140°F (60°C).', 'Do not eat the contents of cans or jars with bulging lids.', 'Defrost meats in the refrigerator or microwave, rather than at room temperature.', 'Wash hands, cutting boards, and countertops frequently, especially after handling raw chicken or eggs.', 'If the food smells unusual or foul, do not eat it.' ] ],
-        reportToPCP: [ 'Condition persists > 48 hours or worsens', 'Blood in the stool or vomit (not streaks or flecks)', 'Temperature > 101°F (38.3°C)' ],
-        seekEmergencyCare: [ 'Blurred vision', 'Difficulty breathing', 'Difficulty swallowing', 'Decreased level of consciousness', 'Signs of dehydration' ]
-      },
-      'Foreign Body, Rectum': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Child Abuse (127)', 'Constipation (152)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Sexual Assault (539)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Sharp object in rectum', 'Profuse bleeding', 'Severe pain', 'Victim of sexual assault', 'Traumatic injury', 'High fever, chills, nausea, or vomiting' ],
-            true: 'Seek medical care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Unable to remove foreign object after several tries', 'Swelling and tenderness', 'Foul-smelling drainage', 'Rectal bleeding', 'Abdominal or shoulder pain' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Sensation of rectal fullness', 'Rectal pain', 'Retained condom', 'Unable to pass stool' ],
-            true: 'Seek medical care within 24 hours'
-          }
-        ],
-        homeCareInstructions: [ 'Do not try to remove sharp object or object that has broken inside rectum.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Watch for signs of infection: increased pain, discharge, fever, or swelling.' ],
-        reportToPCP: [ 'Unable to remove foreign object after several tries', 'Swelling and tenderness persist or worsen', 'Foul-smelling drainage or fever', 'Rectal bleeding', 'Unable to pass stool', 'High fever, chills, nausea, or vomiting' ],
-        seekEmergencyCare: [ 'Profuse bleeding', 'Severe pain' ]
-      },
-      'Foreign Body, Swallowing of': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Piercing Problems (446)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Vomiting, Adult (638), Child (641).' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Excessive saliva, drooling, or gagging', 'Difficulty swallowing', 'Coughing, choking, or breathing difficulties', 'Suicide attempt' ],
-            true: 'Call ambulance or Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Pain or discomfort in throat or chest', 'Abdominal pain', 'Vomiting', 'Object was a battery or sharp object' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Metal object', 'Object size larger than a nickel' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Wood or plastic object', 'Dull glass object (piece of a jar or cup)', 'Object size smaller than a penny', 'Known substance swallowed but no symptoms' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'If no symptoms, try a sip of fluid. If no difficulty, try swallowing bread or soft food.', 'A dull glass object, such as a piece of a jar, cup, or ring, should pass with stools without difficulty in 3 to 4 days.', 'Do not give laxatives. Increase fiber (fruit, vegetables, whole grains) in the diet to help stimulate natural elimination.', 'Check stools for swallowed object.' ],
-        reportToPCP: [ 'Intermittent choking or gagging', 'Abdominal pain', 'No evidence of object in stools within 7 days', 'Vomiting', 'Chest pain', 'Fever' ],
-        seekEmergencyCare: [ 'Drooling, gagging, choking, or difficulty breathing or swallowing' ]
-      },
-      'Gas/Belching': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Constipation (152)', 'Heartburn (313)', 'Indigestion (370)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is the following present?',
-            list: [ 'Chest, jaw, or neck pain or discomfort' ],
-            true: 'Go to Chest Pain protocol (118)'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Severe abdominal pain', 'Shortness of breath', 'Excessive sweating', 'Palpitations', 'Severe nausea and/or vomiting' ],
-            true: 'Seek medical care within 2 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Persistent abdominal discomfort after belching', 'Pain radiates to back' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Intermittent abdominal discomfort or swelling', 'Burping, belching, or hiccups after meals', 'Belching or heartburn between meals' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Avoid gas-forming foods (parsnips, beans, corn, cabbage, onions, fried food).', 'Avoid overindulgence in sweet desserts, fatty foods, and other foods that are known to cause gas.', 'Avoid eating too fast or too much.', 'Avoid excessive gum chewing.', 'Stop smoking if possible or reduce smoking at mealtime.', 'Drink an adequate amount of fluids each day.', 'Try to reduce stress or excitement, especially at mealtime.', 'Sip flat, clear carbonated beverage or peppermint tea to help break up gas.', 'Take your usual antacids (Di-Gel, Mylanta-II, Mylicon) to help relieve gas. Follow instructions on the label. Ask pharmacist for other product suggestions.' ],
-        reportToPCP: [ 'Symptoms persist or worsen after home care measures', 'Severe pain', 'Shortness of breath', 'Excessive sweating', 'Palpitations', 'Nausea and vomiting' ],
-        seekEmergencyCare: [ 'Chest, neck, or jaw pain, or discomfort develops', 'Light-headedness' ]
-      },
-      'Gas/Flatulence': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Constipation (152)', 'Indigestion (370)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is severe abdominal pain present?',
-            list: [ null ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Is the following present?',
-            list: [ 'Black tarry stool' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Is the following present?',
-            list: [ 'Severe nausea and vomiting' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Persistent abdominal discomfort after passing gas', 'Blood in stool', 'Pain radiates to back' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Intermittent abdominal discomfort or swelling', 'Excessive flatulence', 'Pale, bulky, foul-smelling stools', 'Recent ingestion of high-fiber or gas-producing foods, such as beans or beer' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Avoid gas-forming foods (parsnips, beans, corn, cabbage, onions, fried food).', 'Avoid overindulgence in sweet desserts, fatty foods, and other foods that are known to cause gas.', 'Avoid eating too fast or too much.', 'Avoid laxatives.', 'Drink an adequate amount of fluids each day.', 'Maintain regular bowel habits.', 'Maintain regular bowel habits.', 'Exercise regularly.', 'Try to reduce stress or excitement, especially at mealtime.', 'Sip flat, clear carbonated beverage or peppermint tea to help break up gas.', 'If lactose intolerant and unable to avoid dairy foods, ask pharmacist for OTC product suggestions.', 'As an alternative, try sugar-coated fennel seeds after a meal or sip tea brewed with fennel seeds to break up and disperse gas in the intestinal tract.' ],
-        reportToPCP: [ 'Symptoms persist or worsen after home care measures', 'Nausea/vomiting' ],
-        seekEmergencyCare: [ 'Large amount of blood in stool', 'Black tarry stools', 'Light-headedness' ]
-      },
-      'Heartburn': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Associated Symptoms', 'Pain Scale' ],
-        otherProtocolstoConsider: [ ' Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Gas/Belching (282)', 'Indigestion (370)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
-        nurseAlert: 'Heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics: Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'In addition to a burning or heavy sensation, are any of the following present?',
-            list: [ 'Shortness of breath', 'Cool, moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'History of diabetes or cardiac disease', 'Dizziness or light-headednes' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Discomfort persists after taking antacids', 'Condition worsening, requiring more frequent use of antacids', 'Difficult or painful swallowing', 'Sensation that pill is stuck in esophagus' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Pain increased with use of medications', 'Increased pain bending over, exercising, or lying down soon after eating', 'Nausea or vomiting', 'Pregnancy', 'Frequent belching', 'Burping stomach contents into mouth', 'Obesity', 'Heavy tobacco or alcohol use', 'Increased stress' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Try OTC antacids (Maalox, Mylanta, Riopan, Tums) and follow directions on bottle. Try OTC Pepcid AC, Tagamet HB, Zantac, or Prilosec. Consult with PCP if taking other prescription medications. Liquids provide faster relief than tablets. Do not give Pepto-Bismol to a child. Ask pharmacist for additional product suggestions.', 'Avoid eating or drinking 2 to 3 hours before going to bed.', 'Do not lie down, bend over, or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks, or lie on left side to help speed stomach emptying and reduce reflux.', 'Eat small meals, but eat them more than three times a day.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, or any other food or drink that triggers heartburn.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top pantyhose, and pants or skirts with a tight-fitting waistband.', 'Fifty minutes after dinner, sip 1 tsp apple cider vinegar, diluted in water or juice; this will help hasten digestion of food, lessening reflux when sleeping.' ],
-        reportToPCP: [ 'Discomfort occurs after taking prescribed medication', 'No improvement in 3 days or condition worsens', 'No relief from antacids or other OTC drugs (such as Pepcid AC or Zantac)', 'Frequent use of antacids', 'Difficult or painful swallowing' ],
-        seekEmergencyCare: [ 'Shortness of breath', 'Dizziness', 'Cool, moist skin', 'Pain or discomfort in neck, jaw, shoulders, back, or arms', 'Blue or gray face or lips', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ]
-      },
-      'Hemorrhoids': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Hemorrhoidal Problems', 'Medication', 'History', 'Prior Treatment', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Rectal Bleeding (510)', 'Rectal Problems (513)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Severe persistent rectal bleeding', 'Foreign body', 'High fever' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Severe rectal pain, interfering with activities', 'Signs of infection: redness, pain, drainage, or fever', 'Diabetes' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ ' Bleeding in absence of stool', 'Streaks of blood on stool surface', 'History of pregnancy, prolonged sitting, constipation', 'Increased straining during bowel movements', 'Pain, itching, or mucus discharge after bowel movement', 'Small lumps around or inside the rectal area for 1 to 3 days' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Sit in a warm tub or sitz bath 10 minutes several times daily to relieve discomfort and swelling, especially after painful bowel movements.', 'Clean rectal area with soft tissue or moist wipes after each bowel movement.', 'To relieve itching, apply cold compresses to the area for 10 minutes, 4 times a day.', 'Apply zinc oxide or petroleum jelly to the clean dry area to help reduce irritation and to ease passage of stool. Follow instructions on the label.', 'If no relief with these measures, try OTC medications (hemorrhoid suppositories, hydrocortisone [0.5% strength], Tucks). Follow instructions on the label. Products with witch hazel may help to reduce discomfort. Products with hydrocortisone help to reduce itching.', 'Avoid prolonged sitting, standing, lifting, or straining.', 'Wear cotton clothing and loose underwear.', 'Avoid straining during bowel movements. Take your time, but avoid sitting more than 2 minutes. Get up, do something else and return when it feels easier.', 'To help prevent constipation, drink plenty of water and eat a diet high in fiber (fruits, vegetables, and whole grain cereals).' ],
-        reportToPCP: [ 'Hard lump develops around the rectal opening', 'Excessive rectal bleeding or black stools occur (more than once)', 'Severe pain is unresponsive to home care measures', 'Pain or bleeding > 1 week', 'Signs of infection: increased redness, pain, swelling, drainage, or fever' ],
-        seekEmergencyCare: [ null ]
-      },
-      'Hiccups': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Chest Pain (118)', 'Swallowing Difficulty (589)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Confusion, lethargy', 'Difficulty breathing', 'Fainting', 'Chest, neck, jaw, or arm pain or pressure' ],
-            true: 'Call ambulance or Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Persistent pain', 'Constant hiccups > 8 hours' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Persistent vomiting', 'Pain in shoulder, abdomen, or back' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Sudden onset after taking a new medication', 'Interferes with sleep', 'Anxiety or irritability', 'Intermittent episodes', 'Increased alcohol use', 'Mild discomfort', 'Recent ingestion of hot or irritating food or drink', 'History of cancer' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Take a deep breath and hold for 15 to 30 seconds.', 'Breathe into a paper bag for 5 minutes.', 'Sip ice water.', 'Swallow dry bread, crackers, a teaspoon of dry sugar, or crushed ice. NOTE: Young children can choke on dry sugar. Place sugar in cloth, tie closed, and soak in water. Have the child suck on the sugar sack. May also hold a teaspoon of sugar on tongue until it melts.', 'Pull on tongue.', 'Apply gentle pressure to closed eyelids.', 'Grasp upper lip between teeth and right side of nose and apply gentle pressure.', 'Stroke back of tongue.', 'Take your usual antacid (Maalox, Mylanta) as directed on container.', 'Divert attention through distraction.' ],
-        reportToPCP: [ 'Persistent or worsening condition' ],
-        seekEmergencyCare: [ ' Chest, neck, jaw, or arm pain or pressure', 'Difficulty breathing', 'Confusion or lethargy', 'Fainting' ]
-      },
-      'Incontinence, Stool': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', ' Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Rectal  Bleeding (510)', 'Rectal Problems (513)', ' Stools, Abnormal (576)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Incontinence of urine and stool after a seizure, faint, or loss of consciousness', 'Sudden loss of bowel control and slurred speech, muscle weakness, blurred or double vision, or decreased level of consciousness' ],
-            true: 'Call ambulance'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Recent back injury, trauma, or fall, severe pain, and several episodes of incontinence', 'Black or bloody stool with clots' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Recent history of childbirth, vaginal or rectal surgery, hemorrhoids, or anal fistula or fissure', 'Abdominal pain', 'Several incontinent episodes ' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Lump felt inside anal opening', 'Sudden onset of diarrhea and unable to make it to the toilet', 'Frequent involuntary seepage of stool and recent history of no bowel movements or several hard stools', 'Recurrence of stool incontinence in child previously toilet-trained' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Avoid constipation. Increase fiber, bulk, and fluids (fresh fruit, vegetables, whole grains, cereals, and brown rice). Try Metamucil to add bulk. Drink 6 to 8 glasses of water daily. Exercise regularly.', 'In a child previously toilet-trained:', 'Allow child to determine time for toileting. Do not force child to sit on toilet.', 'Provide praise when toilet is used.', 'Discuss with child a reward for staying clean all day.', 'If child is soiled, have the child clean self and change clothes (if old enough).', 'Do not scold or punish for accidents or allow other siblings to tease the child.', 'If an elderly or disabled adult is having difficulty making it to the toilet in time, do not show anger. Discuss ways to identify warning signs and get to the bathroom as soon as signs occur.', 'Consider renting or buying a portable toilet for use when sudden diarrhea attacks occur.', 'Review diet and medications, such as use of laxatives, new medications, prune juice, or castor oil.' ],
-        reportToPCP: [ 'Bloody stool', 'Abdominal pain', 'Several incontinent episodes', 'No improvement or condition worsens' ],
-        seekEmergencyCare: [ null ]
-      },
-      'Indigestion': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Symptoms Usually Occur Soon After Eating', 'Allergies', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Diarrhea, Adult (185), Child (188)', 'Gas/Belching (282)', 'Gas/Flatulence (284)', 'Heartburn (313)', 'Rectal Bleeding (510)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
-        nurseAlert: 'Indigestion and heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Err on the side of caution when triaging callers with symptoms like chest pain. Chest Pain: Causes and Characteristics, Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller\'s condition.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is there a burning or heavy sensation in the chest, and are any of the following present?',
-            list: [ 'Shortness of breath', 'Cool moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'History of cardiac disease or diabetes', 'Pain occurs with exertion', 'Feeling of impending doom', 'Chest pain and palpitations' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Belching blood', 'Vomiting blood or dark coffee-grounds–like emesis', 'Black tarry stool', 'Severe abdominal pain' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Discomfort persists after taking medication', 'Condition worsening, requires more frequent use of medication', 'Frequent vomiting, weight loss, or decreased appetite', 'Difficult or painful swallowing' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Pain increased with use of aspirin, ibuprofen, or steroids', 'Increased pain when bending, exercising, or lying down soon after eating', 'Frequent belching or gas', 'Acid taste in mouth', 'Bloated or full feeling', 'Recent increase in stress', 'Symptoms appear soon after eating or drinking', 'Mild nausea or diarrhea after eating', 'Previously diagnosed with reflux esophagitis', 'Recently started new medication' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Try OTC medications (Maalox, Mylanta, Riopan, Tums, Pepcid, Prilosec) and follow instructions on the label. Liquids often provide faster relief than tablets. Consult with PCP if taking other prescription medications.', 'Do not give Pepto-Bismol to a child.', 'Avoid eating 2 to 3 hours before bed.', 'Do not lie down for 2 to 3 hours after eating or bend over or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks.', 'Eat small, frequent meals.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, and carbonated beverages.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top panty hose, or pants or skirts with a tight waistband.', 'Take time to eat and drink, thoroughly chewing food.', 'Avoid chewing gum or other activities that result in swallowing air.', 'Avoid foods and drinks known to cause stomach upset and heartburn. Try taking OTC medications (Pepcid AC, Pepto-Bismol, or Prilosec) before eating foods causing symptoms. Follow instructions on the label.', 'Try Gas-X for belching and follow instructions on the label.', 'Sip a tonic made of 4 ounces ginger ale, 1 tsp grated ginger root, 1 tsp honey to soothe an upset stomach.', 'Avoid straining during bowel movements, urinating, and lifting.' ],
-        reportToPCP: [ 'Persistent discomfort unresponsive to home care measures after > 3 days or condition worsens', 'No relief from antacids', 'Difficult or painful swallowing' ],
-        seekEmergencyCare: [ 'Shortness of breath', 'Cool moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Belching or vomiting blood or dark coffee-grounds–like emesis', 'Severe abdominal pain', 'Chest pain', 'Pain occurs with exertion' ]
-      },
-      'Ostomy Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Type of Ostomy or Reason for Pouch', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Bleeding, Severe (86)', 'Constipation (152)', 'Wound Healing and Infection (659)' ],
-        nurseAlert: 'Use this protocol if the person has an ostomy and has concerns or questions.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Severe bleeding from stoma', 'Severe abdominal pain or swelling', 'Persistent vomiting', 'Fever and abdomen tender or rigid', 'Constipation, abdominal pain, swelling, and vomiting' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Urostomy and temperature > 100.4°F (38°C) and urine is pink, red, or unusually cloudy', 'Nausea, loss of appetite, and abdominal pain', 'Drainage leaking into a surgical wound', 'Taking blood-thinning medication and new onset of bleeding at stoma site or urine is pink or red', 'No ostomy drainage' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'No bowel movement for more than 4 days and constipation unresponsive to home care measures', 'Unable to manage the ostomy or pouch wound' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Small amount of bleeding at the stoma site', 'New onset of itching and burning at ostomy or pouch site', 'Decreased ostomy drainage', 'Mild constipation', 'New medication and change in normal bowel habits' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Ostomy Care' = [ 'Check appliance and make sure parts are snapped securely together.', 'If the ostomy is leaking, remove the appliance, clean the skin with mild soap and water, dry well, and prepare the skin as directed by a nurse or PCP; apply the new appliance. Hold in place for 5 minutes to ensure pouch seals to the skin.', 'Take prescribed medications as directed.' ], 'Bleeding Stoma' = [ 'Remember that a small amount of bleeding is normal, and tissues bleed easily, similar to the bleeding of the gums after brushing teeth.' ], 'Constipation' = [ 'Make sure the diet is adequate in volume, bulk (high fiber), and fluids (6 to 8 glasses a day, unless on a fluid-restricted diet).', 'Drink a hot beverage each morning, such as coffee, tea, hot water with lemon, or prune juice.', 'Follow the prescribed plan for using stool softeners, laxatives, and irrigation.', 'When taking medications with codeine or other medications that increase constipation, follow the constipation-prevention plan prescribed by the PCP.' ] ],
-        reportToPCP: [ 'Fever or bleeding persists or worsens', 'Constipation persists or worsens after home care measures', 'Drainage leaking into a surgical wound', 'Persistent leakage after home care measures', 'Itching and burning persists after use of prescribed medication' ],
-        seekEmergencyCare: [ 'Severe bleeding', 'Severe abdominal pain or swelling', 'Persistent vomiting', 'Fever and abdomen is tender and rigid' ]
-      },
-      'Pinworms': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Known or Suspected Pinworms', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Bedbug Exposure or Concerns (64)', 'Itching (384)', 'Rectal Problems (513)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Signs of infection (pain, swelling, redness, drainage, warmth, or fever) in rectal area', 'Severe rectal itching worsening at night and early morning', '¼" to ½" white, thread-like worms in rectal or vaginal area', 'Worms visible in stool' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Mild redness, itching, or tenderness in rectal area', 'Child has difficulty sleeping, irritability, or vaginal irritation', 'Exposed to bedclothes or bed linens of child with pinworms', 'Rectal symptoms persist > 1 week after treatment', 'Family member diagnosed with pinworms and concerned about transmission' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'To detect pinworms in a child, shine a light on the child’s anus in a darkened room several hours after bedtime. If present, the worms will move back into the anus.', 'Trim nails closely and encourage good hand washing.', 'Discourage nail biting or thumb sucking.', 'Wash linen and underwear in hot soapy water until pinworms are gone.', 'Vacuum or mop bedroom daily for 2 weeks after treatment.', 'Bathe every morning and clean the affected area. Showers are preferable.', 'Wear shorts or panties under pajamas.', 'To reduce itching:', 'Apply zinc oxide or 1% hydrocortisone cream ointment to affected area.', 'Take a warm bath with Epsom salts or table salt.', 'A prescription medication may be necessary to eliminate the pinworms. Take medication completely and as directed.', 'Try OTC pinworm medication (Reese’s) and follow instructions on the label.' ],
-        reportToPCP: [ 'Signs of infection: pain, swelling, redness, drainage, or warmth', 'Condition persists > 3 weeks after treatment' ],
-        seekEmergencyCare: [ null ]
-      },
-      'Rectal Bleeding': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Vomiting, Adult (638), Child (641)', 'Stools, Abnormal (576)' ],
-        nurseAlert: 'Rectal bleeding includes black, maroon, or tarry stools, brightred blood on toilet tissue, on the surface of stool, mixed in with formed or diarrheal stool or passed separately.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is abdominal pain present?',
-            list: [ null ],
-            true: 'Go to Abdominal Pain protocol (11)'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Vomiting blood or coffee-grounds–like emesis care now”', 'Intermittent abdominal pain', 'Frequent black tarry stools', 'Large amount of bright-red blood mixed in the stool or passing of blood clots' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            C: 'Is the following present?',
-            list: [ 'Use of blood thinners, steroids, nonsteroidal anti-inflammatory medications, or large doses of aspirin' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Recent history of cancer', 'Temperature > 100°F (37.7°C)' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Stool streaked with red blood', 'Blood on toilet tissue after wiping', 'Constipation or hemorrhoids', 'Bleeding persists > 2–3 days after constipation improves', 'Taking iron preparations or bismuth subsalicylate (Pepto-Bismol)', 'Recent ingestion of beets or spinach ' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Soak in a warm saline bath for 20 minutes a day to cleanse the area and promote healing. (Add 2 tbsp of salt or baking soda to the water.)', 'Keep rectal area clean. May use medicated pads (Tucks) to cleanse and soothe area; follow instruction on the label. Ask pharmacist for additional product suggestions.', 'If rectal area is irritated, apply OTC hydrocortisone ointment (AnusolHC, Cortaid) or zinc oxide paste or powder.', 'If hemorrhoids persist, try OTC preparations (Anusol, Nupercainal, Preparation H) to help soothe and shrink hemorrhoids. Follow instructions on the label.', 'Increase fluid intake and eat a diet high in fiber: fruits, vegetables, bran, grains, and beans. Avoid constipating foods such as cheese. This is particularly important if taking narcotic pain medications for discomfort.', 'If taking iron preparations or bismuth subsalicylate (Pepto-Bismol) or eating spinach or beets, follow up with PCP for stool guaiac.', 'Exercise 30 minutes a day even if only at 10- or 15-minute intervals.' ],
-        reportToPCP: [ 'No improvement in 3 days or bleeding worsens', 'Abdominal pain', 'Constipation or hemorrhoids persist > 1 week after home treatment', 'Blood mixed with stool or black stools' ],
-        seekEmergencyCare: [ 'Vomiting blood or coffee-grounds–like emesis', 'Light-headedness or fainting', 'Intermittent abdominal pain', 'Large amount of bright-red blood mixed with stool or passing of blood clots', 'Frequent black tarry stools' ]
-      },
-      'Rectal Problems': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
-        otherProtocolstoConsider: [ 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Pinworm (453)', 'Rectal Bleeding (510)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Injury to the rectal area', 'Rape or sexual abuse', 'Passing more than once of black or bloody stools with clots', 'Unable to remove foreign object from rectum', 'Child with red peeling rash in rectal area' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Severe pain', 'Severe bleeding' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Persistent pain or itching that is unresponsive to home care measures', 'Exposure to a sexually transmitted disease', 'Recent surgery', 'Painless rash or lesion > 24 degrees', 'Recent colonoscopy, sigmoidoscopy, or invasive procedure' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Intermittent rectal swelling, pain, itching, or bleeding', 'Pain or bleeding for < 48 hours', 'First episode of rectal bleeding, swelling, pain, or itching', 'Rectal itching', 'Visible small worms in stools or around rectal area', 'Painless rash or growth < 24 degrees ' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ ' Soak in a warm bath for 20 to 30 minutes daily.', 'Apply an OTC medication for relief of itching and discomfort.', 'Avoid constipating foods (cheese and white flour products). Include fresh fruits, vegetables, and whole grains in the diet. Drink lots of water every day (unless PCP has ordered a restricted fluid intake).', 'Try OTC medications for hemorrhoids.' ],
-        reportToPCP: [ 'Black or bloody stools more than once', 'No improvement or condition worsens' ],
-        seekEmergencyCare: [ 'Black or bloody stools with clots more than once', 'Child with red peeling rash in rectal area' ]
-      },
-      'Stools, Abnormal': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Recent Dietary Habits', 'Medications', 'History' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Hemorrhoids (324)', 'Rectal Bleeding (510)' ],
-        nurseAlert: null,
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Is there abdominal pain?',
-            list: [ null ],
-            true: 'Go to Abdominal Pain, Adult (11), Child (14) protocols'
-          },
-          {
-            B: 'Is there diarrhea?',
-            list: [ null ],
-            true: 'Go to Diarrhea, Adult (185), Child (188) protocols'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Black or dark stools for more than two bowel movements and light-headedness or dizziness', 'Vomiting blood or dark coffee-grounds–like emesis', 'Passing blood clots' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ 'Black tarry stools without recent ingestion of iron pills, beets, bismuth salicylate (Pepto-Bismol), or spinach', 'Large amount of bright red blood mixed in the stool', 'Bloody stool, fever, vomiting, ill feeling', 'Age < 12 weeks, fever, and bloody stools' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            E: 'Are any of the following present?',
-            list: [ 'Pale stool, yellow skin and eyes', 'Pale, foamy, bulky, foul-smelling stool', 'Blood mixed in stool or black stools for more than two consecutive bowel movements', 'Persistent weight loss and thin, pencil-like stools ' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            F: 'Are any of the following present?',
-            list: [ 'Stool streaked with red blood', 'Blood on toilet tissue after wiping', 'Discolored stool and recent ingestion of iron pills, beets, Pepto-Bismol, spinach, tomatoes, or peppers, or stool is color of recently ingested food', 'Persistent discoloration', 'Persistent bleeding > 3 days', 'Constipation or hemorrhoids ' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'For hemorrhoids, soak in a warm saline bath for 20 minutes a day (add 2 tbsp of salt or baking soda to the water).', 'Keep rectal area clean.', 'If rectal area is irritated, apply OTC hydrocortisone ointment or zinc oxide paste or powder.', 'If hemorrhoids persist, try OTC preparations to help soothe and shrink hemorrhoids.', 'Increase fluid intake and eat a diet high in fiber: fruits, vegetables, bran, grains, and beans. Avoid constipating foods such as cheese. Note which foods change the color of the stool.', 'Remember the color of the stool should return to normal within 24 hours if the discoloration is caused by a change in diet.', 'Use products with witch hazel (Tucks) to reduce discomfort.' ],
-        reportToPCP: [ 'No improvement in 3 days or condition worsens', 'Abdominal pain', 'Bloody stool, fever, vomiting, ill feeling', 'Pale stool, yellow skin and eyes', 'Pale, foamy, bulky, foul-smelling stool', 'Persistent weight loss and thin, pencil-like stools' ],
-        seekEmergencyCare: [ ' Black or dark stools for more than two consecutive bowel movements and light-headedness or dizziness', 'Vomiting blood or dark coffee-grounds–like emesis', 'Passing bloody stools' ]
-      },
-      'Vomiting, Adult': {
-        keyQuestions: [ 'Name, Age, Onset, History, Medications, Associated Symptoms, Suspected Cause' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Altered Mental Status (29)', 'Chest Pain (118)', 'Dehydration (173)', 'Diabetes Problems (180)', 'Diarrhea, Adult (185)', 'Fever, Adult (241)', 'Food Poisoning, Suspected (254)', 'Headache (303)', 'Head Injury (307)', 'Postoperative Problems (458)', 'Pregnancy, Nausea and Vomiting (478)' ],
-        nurseAlert: 'There are many conditions that cause vomiting. When vomiting is associated with several other symptoms, use the protocol that is the primary concern and has the highest probability of a referral to a higher level of care.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Altered mental status', 'Fainting', 'Vomiting bright red blood or dark coffee-grounds– like emesis', 'Recent injury to head or abdomen and vomiting', 'Chest pain or discomfort, difficulty breathing, palpitations, or sweating', 'Persistent severe abdominal pain that interferes with activity' ],
-            true: 'Call ambulance or Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'loose dry skin', 'excessive thirst', 'dry mouth', 'dizziness on standing or rising to sitting position' ], 'Suspicion that recent ingestion of wild mushrooms or plant is causing vomiting', 'History of diabetes and unable to control vomiting with home care measures' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ 'Persistent vomiting for > 24 hours that is unrelieved by home care measures', 'Recent surgery, hospitalization, or diagnostic procedure', 'New-onset jaundice' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ ' Diarrhea or constipation', 'History of travel out of the country or a camping trip', 'Other household members are ill', 'Excessive ingestion of food, alcohol, or fluids', 'Recent ingestion of an antibiotic, pain medication, or new medication', 'Possible pregnancy' ],
-            true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [ 'Do not eat or drink anything for 1 hour after last emesis.', 'Drink sips of clear fluids for first 12 hours, including gelatin, water, sports drinks, flat soda, clear broth, flavored ice, or apple juice. Do not drink citrus juices.', 'Increase fluids as tolerated.', 'After 12 hours, try small amounts of bland foods, such as rice, potatoes, soda crackers, pretzels, dry toast, and applesauce.', 'After bland food is tolerated, resume normal diet, as tolerated.', 'Retake medications if vomiting occurs within 30 minutes of taking usual medication.', 'Avoid milk, citrus foods and juices, spicy and fatty foods, alcohol, coffee, and caffeinated beverages.', 'Take OTC dimenhydrinate (Dramamine) or phosphorated carbohydrate solution (Emetrol) for nausea, and follow instructions on the package.', 'Viruses causing nausea and vomiting are easily spread. Pay special attention to hand washing. Avoid using towels, tableware, and cups used by infected person.' ],
-        reportToPCP: [ 'Fever, weakness, or abdominal pain', 'No improvement in 48 hours or condition worsens', 'Signs of dehydration' ],
-        seekEmergencyCare: [ ' Altered mental status', 'Vomiting blood or dark coffee-grounds–like emesis', 'Persistent severe pain that interferes with activity', 'Fainting', 'Chest pain, difficulty breathing, palpitations, or sweating' ]
-      },
-      'Vomiting, Child': {
-        keyQuestions: [ 'Name', 'Age', 'Onset', 'Suspected Cause', 'History', 'Medications', 'Associated Symptoms' ],
-        otherProtocolstoConsider: [ 'Abdominal Pain, Child (14)', 'Altered Mental Status (29)', 'Constipation (152)', 'Dehydration (173)', 'Diarrhea, Child (188)', 'Fever, Child (244)', 'Food Poisoning, Suspected (254). Headache (303)', 'Head Injury (307)', 'Postoperative Problems (458)' ],
-        nurseAlert: 'There are many conditions that cause vomiting. When vomiting is associated with several other symptoms, use the protocol that is the primary concern and has the highest probability of a referral to a higher level of care.',
-        alertBullets: [ null ],
-        assessment: [
-          {
-            A: 'Are any of the following present?',
-            list: [ 'Altered mental status: listless, unusually irritable, confused', 'Severe headache, stiff neck, or pain bending head forward', 'Vomiting bright red blood or dark coffee-grounds– like emesis', 'Recent head or abdominal injury', 'Exposure to a poisonous substance (such as medications, plants, cleaning agents, pesticides, or wild mushrooms)', 'Neonate < 1 month of age', 'Abdomen is hard or firm when not crying' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: 'Are any of the following present?',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: 'Are any of the following present?',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: 'Are any of the following present?',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
+    'Abdominal Pain, Adult': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale', 'Associated Symptoms', 'Date of Last Menstrual Period', 'Prior Medical History' ],
+      otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Constipation (152)', 'Diarrhea, Adult (185)', 'Food Poisoning, Suspected (254)', 'Menstrual Problems (407)', 'Rectal Bleeding (510)', 'Urination, Difficult (622)', 'Urination, Painful (626)', 'Vomiting, Adult (638)' ],
+      nurseAlert: 'Many conditions can cause abdominal pain, and some can be potentially life threatening. Err on the side of caution when triaging callers with abdominal pain. Abdominal Pain: Causes and Characteristics: Appendix R (694) is provided to help the nurse gain a better understanding of the many conditions causing abdominal pain. It is NOT to be used to try and diagnose a caller’s condition.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Faint (unconsciousness) or unresponsiveness', 'Severe weakness and inability to stand', 'Cold, pale skin, or profuse sweating', 'Severe, sudden pain radiating to back or legs' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Light-headedness', 'Vomiting blood or dark coffee-grounds like emesis', 'New onset of rapidly worsening symptoms and age >', 'Bloody or black stools unrelated to hemorrhoids or iron supplements', 'Sudden abdominal and shoulder pain in a woman with menses > 4 weeks late', 'Age > 30, heavy smoker, high blood pressure, high cholesterol, or obesity', 'History of diabetes, heart disease, blood clotting problems, or CHF' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Rapidly increasing pain', 'Pregnancy', 'Unusually heavy vaginal bleeding and possibility of pregnancy', 'History of recent abdominal surgery, frequent falls, or injury to abdomen', 'RLQ pain with poor appetite, nausea and/or vomiting, or fever', 'Ingestion of plant, drug, or chemical', 'Temperature > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Temperature > 103°F (39.4°C)', 'Severe nausea and vomiting', 'Persistent nausea and vomiting, and decreased oral intake and urination', 'Pain worsens with coughing' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'History of hepatitis or exposure', 'Continuous pain > 1 hour', 'Unexplained progressive abdominal swelling Go to E', 'Painful or difficult urination', 'Blood in urine', 'Pain interferes with activity', 'Age > 60 years', 'Nausea, vomiting, diarrhea > 24 hours' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Vaginal or urethral discharge', 'History of abdominal pain, and usual treatment is ineffective', 'Constipation', 'History of nervous stomach', 'Significant increase in stress level', 'Intermittent mild pain associated with an empty stomach, eating certain foods, or use of pain, antibiotic, or anti-inflammatory medications', 'Mild, infrequent diarrhea', 'Other family members ill' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Rest.', 'Consume clear liquids (broth, tea, ginger ale, apple juice, flavored ice, gelatin) in frequent small amounts (sips) until vomiting or diarrhea subsides.', 'After 12 hours without vomiting or diarrhea, introduce a bland diet (rice, potatoes, bread, crackers, bananas, cereal).', 'Take medications as directed by the pharmacy. Some should be taken on an empty stomach and others with food. Avoid aspirin, ibuprofen, and naproxen. Do not take acetaminophen if liver disease is present. Follow the instructions on the label.', 'Apply heat (moist hot towel or heating pad) to the abdomen for cramping or discomfort, or take a warm bath.', 'For gas relief, try Maalox or Mylanta, and follow the instructions on the label. Ask the pharmacist for other suggestions.', 'Avoid alcohol, caffeine, and greasy or spicy foods.', 'If known GERD exists, encourage consumption of smaller, more frequent meals, and avoid spicy or greasy food, caffeine, and chocolate.', 'Try herbal teas such as peppermint or chamomile to soothe an upset stomach.' ],
+      reportToPCP: [ ' Severe pain > 2 hours', 'Temperature > 101°F (38.3°C) and age > 60 years, bedridden, or weakened immune system', 'Temperature > 103°F (39.4°C)', 'Persistent vomiting or diarrhea and decreased oral intake or urination', 'Pain worsens with heat or activity' ],
+      seekEmergencyCare: [ ' Unusually firm or hard abdomen', 'Persistent vomiting', 'Severe persistent pain', 'Fainting/light-headedness', 'Bloody or black stools or emesis' ]
+    },
+    'Abdominal Pain, Child': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Pain Scale', 'Associated Symptoms', 'Prior History', 'Date of Last Menstrual Period' ],
+      otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Constipation (152)', 'Diarrhea, Child (188)', 'Food Poisoning, Suspected (254)', 'Menstrual Problems (407)', 'Urination, Difficult (622)', 'Urination, Painful (626)', 'Vomiting, Child (641)' ],
+      nurseAlert: 'Many conditions can cause abdominal pain, and some can be potentially life threatening. Err on the side of caution when triaging callers with abdominal pain. Abdominal Pain: Causes and Characteristics: Appendix R (694) is provided to help the nurse gain a better understanding of the many conditions causing abdominal pain. It is NOT to be used to try and diagnose a caller’s condition.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Severe persistent pain > 2 hours', 'Rapidly increasing pain', 'RLQ pain with poor appetite, nausea and/or vomiting, fever, grasping abdomen, walking bent over, screaming, grunting respirations, or lying with knees drawn toward chest', 'Unusually heavy vaginal bleeding and possibility of pregnancy', 'Ingestion of unknown chemical substance, plant, or medication', 'Recent abdominal trauma', 'Black, bloody, or jelly-like stools unrelated to hemorrhoids or iron supplements', 'Weight loss', 'Vomiting blood or dark coffee-grounds–like emesis', 'Weakness and inability to walk', 'Severe pain and swelling in testicle(s) or scrotum' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Severe nausea and vomiting', 'Continuous pain > 2 hours and unresponsive to home care', 'Unexplained progressive abdominal swelling', 'Painful or difficult urination', 'Age < 2 years and intermittent pain', 'Pain interferes with activity', 'Decreased urine output', 'Nausea, vomiting, or diarrhea > 24 hours and unresponsive to home care', 'Known hernia or hydrocele and pain or crying > 2 hours' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Vaginal or urethral discharge', 'History of abdominal pain, and usual treatment is ineffective', 'Significant increase in stress level', 'Blood in urine', 'Temperature > 101°F (38.3°C), cough, or weakness' ],
+          true: 'Seek medical care within 24 to 48 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Constipation', 'History of a nervous stomach and increased stress level', 'Intermittent mild pain associated with an empty stomach, eating certain foods, or use of pain, antibiotic, or anti-inflammatory medications', 'Mild infrequent diarrhea', 'Other family members are ill NO Follow Home Care', 'Persistent sore throat > 24 hours' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Rest.', 'Consume clear liquids (fruit juice diluted with ½ water, weak tea, broth, sports drinks, flavored ice, gelatin, clear soft drink) or bland diet (rice, potatoes, soda crackers, pretzels, dry toast, applesauce, bananas) for 12 to 24 hours. Recommend electrolyte/mineral supplement or other rehydrating fluid solution (such as Pedialyte) for small children or infants.', 'If diarrhea is present, avoid fruit juice or full-strength sports drinks.', 'Take medications as directed by the pharmacy. Some should be taken on an empty stomach and others with food. Avoid ibuprofen and other antiinflammatory medications. Do not give aspirin to a child. Avoid aspirinlike products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Apply a moist, hot towel or heating pad to the abdomen for cramping.' ],
+      reportToPCP: [ 'Severe pain > 1 hour', 'Fever', 'Pain worsens with heat or activity' ],
+      seekEmergencyCare: [ 'Unusually firm or hard abdomen', 'Persistent vomiting', 'Bloody or black stools or emesis', 'Weakness and inability to walk', 'Severe pain and swelling in testicle(s) or scrotum' ]
+    },
+    'Appetite Loss, Adult': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'Prior History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Alcohol Problems (22)', 'Anxiety (37)', 'Depression (177)', 'Dizziness (192)', 'Fever, Adult (241)', 'Heart Rate Problems (317)', 'Substance Abuse, Use, or Exposure (581)', 'Vomiting, Adult (638)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Altered mental status', 'Fainting', 'Abdominal pain', 'Thoughts of suicide', 'Hallucinations (auditory, tactile, or visual)' ],
+          true: 'Seek emergency care now, if abdominal pain, go to Abdominal Pain Adult protocol (11)'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Palpitations', 'Fever > 101°F (38.4°C) and weakened immune system or advanced age increase in dizziness and heart rate with sitting or standing' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Sudden weight loss > 5–10 pounds', 'Lethargy', 'Yellowing of the skin or whites of the eyes', 'Fever > 101°F (38.4°C) and unresponsive to feverreducing measures', 'Sudden weight gain > 5 pounds', 'Inadequate fluid intake', 'Unexplained weight loss during a period of several weeks', 'Severe depression', 'Abrupt cessation of drugs (including prescription or OTC), alcohol, or caffeine' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Poor eating habits', 'Increased stress/anxiety', 'Recent onset of appetite loss', 'No other symptoms', 'Decrease in activity' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Eat a balanced meal.', 'Slowly increase amount of food after surgery or illness.', 'Exercise regularly.', 'May try liquid diet supplements (ensure). Ask your PCP or pharmacist for additional OTC liquid diet supplements.', 'Try to identify the cause of the appetite loss, and take appropriate action to address the problem (poorly fitting dentures, mouth sores, nausea, depression, swallowing difficulties, etc.)', 'Take usual medication for discomfort and fever. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+      reportToPCP: [ 'Nausea and vomiting', 'Failure to improve' ],
+      seekEmergencyCare: [ 'Altered mental status', 'Fainting', 'Hallucinations', 'Thoughts of suicide', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
+    },
+    'Appetite Loss, Child': {
+      keyQuestions: [ 'Name, Age, Onset, Allergies, Weight, Medications, Prior History, Eating Disorder Treatment' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Child (14)', 'Altered Mental Status (29)', 'Anxiety (37)', 'Dehydration (173)', 'Depression (177)', 'Dizziness (192)', 'Fever, Child (244)', 'Heart Rate Problems (317)', 'Vomiting, Child (641)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Abdominal pain' ],
+          true: 'Go to Abdominal Pain, Child protocol (14)'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Altered mental status', 'Fainting', 'Vomiting, drowsiness, irritability, and headache or stiff or painful neck' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Child refuses to eat or drink and looks ill', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing', 'Signs of dehydration:' = [ 'decreased urination', 'no urine for > 8 hours in child < 1 year of age', 'no urine for >12 hours in child > 1 year of age', 'crying without tears', 'sunken fontanels', 'excessive thirst, dry mouth' ] ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Unusual frequent urination or bed-wetting', 'Nausea at sight of food, vomiting, yellow skin, fever, fatigue', 'Skin persistently pale', 'Dark urine and pale stools', 'Persistent decrease in appetite, swollen glands, and fatigue', 'Poor weight gain', 'Sudden weight loss', 'Severe dieting or excessive exercise and distorted body image in a teenager', 'Rash or fever' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Poor eating habits', 'Increased stress/anxiety', 'Dry skin, brittle hair', 'Recent onset of appetite loss' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Encourage a balanced meal.', 'Do not force child to eat when sore throat makes swallowing difficult. Encourage consumption of ice cream, flavored ice, and cold fluids.', 'Avoid putting too much emphasis on food when child is ill.', 'Understand that it is normal for the child’s appetite to decrease around 2 years of age.', 'Slowly increase amount of food after surgery or illness.', 'Give acetaminophen for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+      reportToPCP: [ 'Nausea and vomiting', 'Persistent appetite loss', 'Persistent weight loss' ],
+      seekEmergencyCare: [ ' Altered mental status', 'Fainting', 'Vomiting, drowsiness, irritability, and headache or stiff or painful neck', 'Known or suspected eating disorder, and persistent increase in dizziness and heart rate with sitting or standing' ]
+    },
+    'Constipation': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Last Bowel Movement', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Vomiting, Adult (638), Child (641)', 'Rectal Bleeding (510)', 'Rectal Problems (513)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Severe abdominal pain, swelling, or vomiting' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Persistent vomiting and progressive abdominal swelling', 'Severe pain or cramping', 'Vomiting brown, yellow, or green bitter-tasting emesis', 'Significant rectal bleeding with no history of hemorrhoids or bleeding with constipation', 'Infant < 1 month, breast-feeding, and signs of dehydration' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'No bowel movement in 5–7 days and constipation unresponsive to home care measures', 'Recent surgery, injury, or childbirth', 'History of diverticulitis and fever', 'Infant has no stool for > 6–10 days', 'Child/infant crying, bloating, passing hard stools, and not responding to home care measures', 'Fever for 24–48 hours, cause unknown', 'Infant younger than 2 months had first stool after 24 hours and is now constipated' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Dry hard stools', 'Pain with bowel movements', 'Recent change in stools or bowel habits', 'Chronic constipation', 'Small, frequently occurring, liquid or hard stools', 'Intermittent constipation', 'Recent decrease in activity or bed rest', 'Taking pain medications with codeine or other medications that increase constipation', 'Blood on tissue or surface of stool' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Make sure diet is adequate in volume (quantity), bulk (high fiber), and fluids (6 to 8 [8 ounce] glasses a day, unless on a restricted fluid diet).', 'Drink a hot beverage each morning, such as coffee, tea, or hot water with lemon.', 'Establish a regular time for privacy and elimination each day.', 'Increase exercise as tolerated.', 'Adults may try OTC laxatives (Metamucil, Miralax, glycerin suppositories) or an enema if other measures are unsuccessful. Follow instructions on the label. Ask pharmacist for other product suggestions.', 'Infants:' = [ 'For infants > 1 month, if the infant is drinking juice, give prune or apricot juice mixed with water to help relieve constipation. Do not give enemas or laxatives.', 'For infants > 2 months, give fruit juice (1 ounce per month of age, twice a day).', 'For infants > 4 months, add baby foods high in fiber such as prunes, peaches, pears, or sweet potatoes.' ], 'Children: Increase fruit juice and decrease milk to 1 pint a day. Increase high-fiber foods, such as bran cereals, oatmeal, bran muffins, or popcorn (if child > 4 years). Avoid laxatives and enemas.', 'May use stool softeners such as Citrucel, Metamucil, or mineral oil. (1/2 to 1 tbsp per day is usually sufficient. However, read directions on container label before administering.)', 'For rectal pain due to constipation, sit in a warm bath for 20 minutes.', 'For painful and bleeding hemorrhoids, sit in a warm tub of water after each bowel movement. Try OTC medications for hemorrhoids.' ],
+      reportToPCP: [ 'Condition persists or worsens', 'Fever, vomiting, and pain', 'Home care measures are ineffective.' ],
+      seekEmergencyCare: [ 'Severe abdominal pain, swelling, or vomiting' ]
+    },
+    'Diarrhea, Adult': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History', 'Associated Symptoms' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Abdominal Swelling (17)', 'Constipation (152)', 'Dehydration (173)', 'Diabetes Problems (180)', 'Hemorrhoids (324)', 'Rectal Bleeding (510)', 'Stools, Abnormal (576)', 'Vomiting, Adult (638)', 'Weakness (645)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Diarrhea and severe weakness, lethargy, or faintness', 'Severe abdominal pain, swelling, and fever', 'Diabetic and rapid or labored breathing ' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Severe abdominal pain', 'Grossly bloody stool', 'Signs of dehydration:' = [ 'decreased urination', 'sunken eyes', 'loose dry skin', 'excessive thirst, dry mouth', 'dry mucous membranes', 'Dizziness upon standing', 'Persistent vomiting and diarrhea'] ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' Diarrhea every 30–60 minutes for > 6 hours', 'Diarrhea for > 5 days', 'Mucous, pus, yellow, green, or frothy stool > 2 days', 'Persistent fever', 'New onset of loss of bowel control', 'No improvement with home care measures' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Recent change in diet', 'Other family members have diarrhea', 'Recent travel to a foreign country', 'Recent antibiotics in past 2 months', 'New prescription', 'Tube feedings' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Take clear liquid diet first 12 to 24 hours (sips of water, flat soda, clear broth, gelatin [not red], flavored ice).', 'During the next 12 hours, progress to eating soup (avoiding cream soups), dry toast, soda crackers, white rice, pretzels, bananas, applesauce, and potatoes.', 'Progress to a regular diet after soft-formed stools occur.', 'Avoid dairy products, citrus juices, raw fruits and vegetables, and fried or spicy foods for 2 to 5 days after diarrhea subsides.', 'After 6 hours of diarrhea and cramping, or if pain persists, OTC antidiarrheal medications (Imodium, Kaopectate, Pepto-Bismol) can be used. Follow instructions on the label.', 'Acetaminophen can be given for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+      reportToPCP: [ 'No improvement or diarrhea worsens after 48 hours of home care measures', 'Yellow, frothy, bloody, or green stool occurs more than one time', 'Signs of dehydration', 'Fever, weakness, or lethargy', 'Persistent vomiting', 'Person with insulin-dependent diabetes changes diet plan' ],
+      seekEmergencyCare: [ 'Person has diabetes and rapid or labored breathing', 'Severe abdominal pain, swelling, and fever' ]
+    },
+    'Diarrhea, Child': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Frequency', 'Medications', 'History', 'Associated Symptoms' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Child (14); Abdominal Swelling (17); Altered Mental Status (29); Confusion (142); Constipation (152); Dehydration (173); Fever, Child (244); Rectal Bleeding (510); Stools, Abnormal (576); Vomiting, Child (641)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Diarrhea and severe weakness, lethargy, listlessness, or faintness', 'Vomiting with right-sided abdominal pain', 'Infant younger than 3 months with diarrhea and temperature > 100.4°F (38°C)', 'Cold and gray skin', 'Grossly bloody stool', 'Breathing fast and hard', 'Severe pain, drawing knees to chest with cramping' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Signs of dehydration:' = [ 'decreased urination', 'no urine for > 4–6 hours in child younger than 1 year', 'no urine for > 12 hours in child older than 1 year' ], 'Temperature > 104°F (40°C), age > 3 months, and unresponsive to fever-reducing measures', 'crying without tears', 'sunken eyes or fontanels', 'excessive thirst, dry mouth', 'Listlessness', 'Persistent vomiting and diarrhea', 'Diarrhea every hour for > 8 hours', 'Blood in stool' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ '>3 diarrhea stools in 24 hours in a child younger than 1 month', 'Diarrhea for > 3 days or diarrhea while receiving antibiotic therapy', 'Pus or mucus in stool', 'No improvement with home care measures', 'Temperature > 103°F (39.4°C) or temperature > 101°F (38.3°C) for more than 48 hours', 'Fever unresponsive to fever-reducing measures' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Chronic diarrhea', 'Recent change in diet', 'Other family members or pets have diarrhea', 'Recent travel to a foreign country', 'New prescription', 'Recent contact with a snake, lizard, or turtle' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Breast-Feeding Infants ≤ 1 Year Old' = [ 'Continue to feed every 2 hours and offer rehydration fluids (Pedialyte, Infalyte, Rehydralyte) between feedings. Stools usually follow feeding. Diarrhea is a sudden increase in the frequency of stools with loose consistency.', 'Do NOT give Jell-O water mixtures or sports drinks, as these do not contain enough sodium, and the sugar content can make diarrhea worse.' ], 'Formula-Fed Infants ≤ 1 Year Old' = [ 'Give Pedialyte, Infalyte, or Rehydralyte for the first 4 to 6 hours only. Each hour, give at least 2 tsp for every pound your child weighs. Then resume full-strength formula, but give more often than usual. If diarrhea is severe, use a soy formula or soy with added rice (AR) until diarrhea has been gone for 3 days, or switch to soy or lactose-free formula if diarrhea lasts longer than 3 days.', 'Do NOT give Jell-O water mixtures or sports drinks, as these do not contain enough sodium, and the sugar content can make diarrhea worse.' ], 'All Infants > 4 Months and < 12 Months' = [ 'Offer solids, such as infant cereal (especially rice), strained applesauce, carrots, bananas, mashed potatoes, or other high-fiber foods. These starchy foods are more easily digested when your child has diarrhea.', 'Avoid all fruit juices, as these will make diarrhea worse.', 'If your child refuses the solids, offer extra formula rather than water.' ], 'Children > 1 Year Old' = [ 'Fluids: Avoid juices, and increase water and other fluids that are caffeine-free. Eat or drink less milk and milk products for 2 to 3 days. If solids are being taken well, milk products can still be used and should be well tolerated.', 'Maintain regular diet if tolerated well.', 'Avoid foods that would normally cause loose stools in your child, such as spicy sauces or beans.' ], 'Additional Home Care Advice' = [ 'Acetaminophen can be given for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Diarrhea often is very contagious. Wash hands with soap and water after using the toilet or changing a diaper.', 'If diaper rash or redness occurs in the anus, wash with running water, dry, and apply petroleum jelly or other barrier ointment to protect the area, particularly at night and during naps.' ] ],
+      reportToPCP: [ 'No improvement or diarrhea worsens after 48 hours of home care measures', 'Yellow, frothy, bloody, or green stool occurs more than once', 'Signs of dehydration: decreased urination, dry mouth, no tears', 'Fever, weakness, or lethargy', 'Watery diarrhea and vomiting clear fluid > 3 time' ],
+      seekEmergencyCare: [ 'Rapid or labored breathing', 'Severe abdominal pain, swelling, and fever', 'Infant < 2 months and fever > 100.4°F (38.0°C)', 'Gross bloody stools', 'Cold and gray skin', 'Severe listlessness or fainting' ]
+    },
+    'Feeding Tube Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Type of Tube', 'Length of Time', 'Tube in Place', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Swelling (17)', 'Wound Healing and Infection (659)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Severe bleeding', 'Severe pain', 'Sudden onset of difficulty breathing or shortness of breath' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Feeding tube removed or dislodged and pain, bleeding, or swelling' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Tube frequently clogs after medication or feeding solution is added', 'Unable to unclog tube after trying home care measures', 'Feeding tube fell out', 'Caregiver concerned tube is displaced', 'Insertion site appears infected (redness, swelling, pain, red streaks, or drainage)' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Is the following present?',
+          list: [ 'Inability to pass solution into feeding tube' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'To unclog feeding tube (for a caregiver who has received previous instructions; if no previous instruction, refer caller to home health nurse, PCP, Clinic, or ED):' = [ 'Raise head of bed 45 degrees.', 'Insert the tip of a large syringe into the tube and pull back to remove as much matter from the tube as possible.', 'Fill the syringe with 30 mL (1 ounce) of water.', 'Connect syringe to tube and irrigate.', 'Remove as much matter as possible.', 'Push 5 mL of cranberry juice, cola, or tea into the tube and clamp.', 'Repeat the process until the tube is cleared.' ], 'Flush tube with 50 mL of water after feeding, medications, or supplements are inserted into the tube.', 'To check placement of feeding tube (for a caregiver who has received instruction from a nurse or PCP regarding verifying tube placement):', 'Turn off pump.', 'Using large syringe, insert tip into feeding tube and gently pull back.', 'If there is concern the tube is displaced, do not use the tube until tube placement is verified.' ],
+      reportToPCP: [ 'Unable to unclog tube', 'Signs of infection (fever, drainage, warmth, redness, red streaks, or foulsmelling drainage)', 'Tube becomes dislodged or falls out' ],
+      seekEmergencyCare: [ 'Severe bleeding', 'Severe pain', 'Sudden onset of difficulty breathing or shortness of breath' ]
+    },
+    'Food Allergy, Known or Suspected': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause If Known', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Allergic Reaction (26)', 'Diarrhea, Adult (185), Child (188)', 'Food Poisoning, Suspected (254)', 'Hives (335)', 'Itching (384)', 'Rash, Adult (501), Child (505)', 'Vomiting, Adult (638), Child (641).' ],
+      nurseAlert: 'Use this protocol only if previously diagnosed with a food allergy or prior reaction to a food substance.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present shortly after eating?',
+          list: [ 'Difficulty breathing', 'Confusion', 'Difficulty swallowing', 'Fainting', 'Severe dizziness' ],
+          true: 'Call ambulance or Seek emergency care now'
+        },
+        {
+          B: 'Is the following present within 30 minutes after eating?',
+          list: [ 'Swelling of lips, tongue, or mouth' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present after eating?',
+          list: [ 'Generalized hives or itching', 'Sore throat', 'Postnasal drip and throat clearing', 'Congestion, sneezing, or runny nose', 'Fatigue', 'Headache', 'Persistent diarrhea or vomiting' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Try to identify the food causing the problem and avoid it. Eggs and milk are the most common food allergies in infants. Peanuts, eggs, chocolate, cow’s milk products, soybeans, tree nuts, wheat, fish, and shellfish are the most common causes of food allergies.', 'Eliminate the suspected food from the diet for 2 weeks and note whether symptoms disappear. If so, avoid that food in the future. If not, observe for relationship between other foods and symptoms (hives, swelling in mouth, diarrhea).', 'Try baking soda baths, Caladryl lotion, or calamine for itching, or take an antihistamine (Benadryl) tablet (follow instructions on the label).' ],
+      reportToPCP: [ 'No improvement in symptoms or condition worsens', 'Desire to add suspected food back to diet' ],
+      seekEmergencyCare: [ 'Fainting', 'Difficulty breathing', 'Confusion', 'Difficulty swallowing', 'Severe dizziness' ]
+    },
+    'Food Poisoning, Suspected': {
+      keyQuestions: [ 'Name','Age', 'Onset', 'Associated Symptoms', 'History', 'Medications', 'Suspected Source' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Avian Influenza “Bird Flu” Exposure (52)', 'Dehydration (173)', 'Diarrhea, Adult (185), Child (188)', 'Rectal Bleeding (510)', 'Vomiting, Adult (638), Child (641)' ],
+      nurseAlert: 'If caller suspects food poisoning after eating at a restaurant, encourage caller to notify the restaurant. Other patrons may have had the same problem. Early notification helps the restaurant to track the source and correct the problem.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Sick 6–48 hours after eating canned, smoked, or vacuum-packed foods and are any of the following present?',
+          list: [ 'Altered mental status', 'Difficulty breathing or swallowing, or blurred vision', 'Vomiting blood', 'Bloody stool' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Pain is severe, worsens, or lasts > 4 hours', 'Nausea and vomiting > 12 hours and unresponsive to home treatment or OTC medications', 'Diarrhea > 48 hours and unresponsive to home treatment or OTC medications', 'Bloody diarrhea', 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'loose dry skin', 'excessive thirst, dry mouth', 'child crying without tears' ], 'Dizziness upon standing', 'Rash', 'Fever' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Nausea, vomiting, diarrhea, abdominal pain occurred after eating unrefrigerated meat, poultry, fish, mayonnaise, or egg products', 'Others eating the same meal also are ill' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Drink small sips of clear fluids (apple juice, tea, broth, sports drinks, clear soda pop, ginger ale) frequently (every 5 to 10 minutes) until nausea and vomiting subside. Increase amount as tolerated during the first 24 hours after vomiting subsides.', 'Avoid milk products when experiencing diarrhea.', 'Avoid spicy foods, alcohol, dairy products, and coffee for 48 hours after vomiting and diarrhea have subsided.', 'Avoid aspirin.', 'Prevention:' = [ 'Avoid meats, dressings, sauces, and mayonnaise-based preparations that have been at room temperature for > 2 hours. Maintain a food temperature of < 40°F (4.4°C) or > 140°F (60°C).', 'Do not eat the contents of cans or jars with bulging lids.', 'Defrost meats in the refrigerator or microwave, rather than at room temperature.', 'Wash hands, cutting boards, and countertops frequently, especially after handling raw chicken or eggs.', 'If the food smells unusual or foul, do not eat it.' ] ],
+      reportToPCP: [ 'Condition persists > 48 hours or worsens', 'Blood in the stool or vomit (not streaks or flecks)', 'Temperature > 101°F (38.3°C)' ],
+      seekEmergencyCare: [ 'Blurred vision', 'Difficulty breathing', 'Difficulty swallowing', 'Decreased level of consciousness', 'Signs of dehydration' ]
+    },
+    'Foreign Body, Rectum': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Child Abuse (127)', 'Constipation (152)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Sexual Assault (539)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Sharp object in rectum', 'Profuse bleeding', 'Severe pain', 'Victim of sexual assault', 'Traumatic injury', 'High fever, chills, nausea, or vomiting' ],
+          true: 'Seek medical care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Unable to remove foreign object after several tries', 'Swelling and tenderness', 'Foul-smelling drainage', 'Rectal bleeding', 'Abdominal or shoulder pain' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Sensation of rectal fullness', 'Rectal pain', 'Retained condom', 'Unable to pass stool' ],
+          true: 'Seek medical care within 24 hours'
+        }
+      ],
+      homeCareInstructions: [ 'Do not try to remove sharp object or object that has broken inside rectum.', 'Take your usual pain medication (aspirin, acetaminophen, or ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Watch for signs of infection: increased pain, discharge, fever, or swelling.' ],
+      reportToPCP: [ 'Unable to remove foreign object after several tries', 'Swelling and tenderness persist or worsen', 'Foul-smelling drainage or fever', 'Rectal bleeding', 'Unable to pass stool', 'High fever, chills, nausea, or vomiting' ],
+      seekEmergencyCare: [ 'Profuse bleeding', 'Severe pain' ]
+    },
+    'Foreign Body, Swallowing of': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Piercing Problems (446)', 'Rectal Bleeding (510)', 'Rectal Problems (513)', 'Vomiting, Adult (638), Child (641).' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Excessive saliva, drooling, or gagging', 'Difficulty swallowing', 'Coughing, choking, or breathing difficulties', 'Suicide attempt' ],
+          true: 'Call ambulance or Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Pain or discomfort in throat or chest', 'Abdominal pain', 'Vomiting', 'Object was a battery or sharp object' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Metal object', 'Object size larger than a nickel' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Wood or plastic object', 'Dull glass object (piece of a jar or cup)', 'Object size smaller than a penny', 'Known substance swallowed but no symptoms' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'If no symptoms, try a sip of fluid. If no difficulty, try swallowing bread or soft food.', 'A dull glass object, such as a piece of a jar, cup, or ring, should pass with stools without difficulty in 3 to 4 days.', 'Do not give laxatives. Increase fiber (fruit, vegetables, whole grains) in the diet to help stimulate natural elimination.', 'Check stools for swallowed object.' ],
+      reportToPCP: [ 'Intermittent choking or gagging', 'Abdominal pain', 'No evidence of object in stools within 7 days', 'Vomiting', 'Chest pain', 'Fever' ],
+      seekEmergencyCare: [ 'Drooling, gagging, choking, or difficulty breathing or swallowing' ]
+    },
+    'Gas/Belching': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Constipation (152)', 'Heartburn (313)', 'Indigestion (370)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is the following present?',
+          list: [ 'Chest, jaw, or neck pain or discomfort' ],
+          true: 'Go to Chest Pain protocol (118)'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Severe abdominal pain', 'Shortness of breath', 'Excessive sweating', 'Palpitations', 'Severe nausea and/or vomiting' ],
+          true: 'Seek medical care within 2 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Persistent abdominal discomfort after belching', 'Pain radiates to back' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Intermittent abdominal discomfort or swelling', 'Burping, belching, or hiccups after meals', 'Belching or heartburn between meals' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Avoid gas-forming foods (parsnips, beans, corn, cabbage, onions, fried food).', 'Avoid overindulgence in sweet desserts, fatty foods, and other foods that are known to cause gas.', 'Avoid eating too fast or too much.', 'Avoid excessive gum chewing.', 'Stop smoking if possible or reduce smoking at mealtime.', 'Drink an adequate amount of fluids each day.', 'Try to reduce stress or excitement, especially at mealtime.', 'Sip flat, clear carbonated beverage or peppermint tea to help break up gas.', 'Take your usual antacids (Di-Gel, Mylanta-II, Mylicon) to help relieve gas. Follow instructions on the label. Ask pharmacist for other product suggestions.' ],
+      reportToPCP: [ 'Symptoms persist or worsen after home care measures', 'Severe pain', 'Shortness of breath', 'Excessive sweating', 'Palpitations', 'Nausea and vomiting' ],
+      seekEmergencyCare: [ 'Chest, neck, or jaw pain, or discomfort develops', 'Light-headedness' ]
+    },
+    'Gas/Flatulence': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Constipation (152)', 'Indigestion (370)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is severe abdominal pain present?',
+          list: [ null ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Is the following present?',
+          list: [ 'Black tarry stool' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Is the following present?',
+          list: [ 'Severe nausea and vomiting' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Persistent abdominal discomfort after passing gas', 'Blood in stool', 'Pain radiates to back' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Intermittent abdominal discomfort or swelling', 'Excessive flatulence', 'Pale, bulky, foul-smelling stools', 'Recent ingestion of high-fiber or gas-producing foods, such as beans or beer' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Avoid gas-forming foods (parsnips, beans, corn, cabbage, onions, fried food).', 'Avoid overindulgence in sweet desserts, fatty foods, and other foods that are known to cause gas.', 'Avoid eating too fast or too much.', 'Avoid laxatives.', 'Drink an adequate amount of fluids each day.', 'Maintain regular bowel habits.', 'Maintain regular bowel habits.', 'Exercise regularly.', 'Try to reduce stress or excitement, especially at mealtime.', 'Sip flat, clear carbonated beverage or peppermint tea to help break up gas.', 'If lactose intolerant and unable to avoid dairy foods, ask pharmacist for OTC product suggestions.', 'As an alternative, try sugar-coated fennel seeds after a meal or sip tea brewed with fennel seeds to break up and disperse gas in the intestinal tract.' ],
+      reportToPCP: [ 'Symptoms persist or worsen after home care measures', 'Nausea/vomiting' ],
+      seekEmergencyCare: [ 'Large amount of blood in stool', 'Black tarry stools', 'Light-headedness' ]
+    },
+    'Heartburn': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Associated Symptoms', 'Pain Scale' ],
+      otherProtocolstoConsider: [ ' Abdominal Pain, Adult (11), Child (14)', 'Chest Pain (118)', 'Gas/Belching (282)', 'Indigestion (370)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
+      nurseAlert: 'Heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Error on the side of caution when triaging callers with chest pain. Chest Pain: Causes and Characteristics: Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller’s condition.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'In addition to a burning or heavy sensation, are any of the following present?',
+          list: [ 'Shortness of breath', 'Cool, moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'History of diabetes or cardiac disease', 'Dizziness or light-headednes' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Discomfort persists after taking antacids', 'Condition worsening, requiring more frequent use of antacids', 'Difficult or painful swallowing', 'Sensation that pill is stuck in esophagus' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Pain increased with use of medications', 'Increased pain bending over, exercising, or lying down soon after eating', 'Nausea or vomiting', 'Pregnancy', 'Frequent belching', 'Burping stomach contents into mouth', 'Obesity', 'Heavy tobacco or alcohol use', 'Increased stress' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Try OTC antacids (Maalox, Mylanta, Riopan, Tums) and follow directions on bottle. Try OTC Pepcid AC, Tagamet HB, Zantac, or Prilosec. Consult with PCP if taking other prescription medications. Liquids provide faster relief than tablets. Do not give Pepto-Bismol to a child. Ask pharmacist for additional product suggestions.', 'Avoid eating or drinking 2 to 3 hours before going to bed.', 'Do not lie down, bend over, or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks, or lie on left side to help speed stomach emptying and reduce reflux.', 'Eat small meals, but eat them more than three times a day.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, or any other food or drink that triggers heartburn.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top pantyhose, and pants or skirts with a tight-fitting waistband.', 'Fifty minutes after dinner, sip 1 tsp apple cider vinegar, diluted in water or juice; this will help hasten digestion of food, lessening reflux when sleeping.' ],
+      reportToPCP: [ 'Discomfort occurs after taking prescribed medication', 'No improvement in 3 days or condition worsens', 'No relief from antacids or other OTC drugs (such as Pepcid AC or Zantac)', 'Frequent use of antacids', 'Difficult or painful swallowing' ],
+      seekEmergencyCare: [ 'Shortness of breath', 'Dizziness', 'Cool, moist skin', 'Pain or discomfort in neck, jaw, shoulders, back, or arms', 'Blue or gray face or lips', 'Fainting', 'Vomiting blood or dark coffee-grounds–like emesis' ]
+    },
+    'Hemorrhoids': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Hemorrhoidal Problems', 'Medication', 'History', 'Prior Treatment', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Rectal Bleeding (510)', 'Rectal Problems (513)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Severe persistent rectal bleeding', 'Foreign body', 'High fever' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Severe rectal pain, interfering with activities', 'Signs of infection: redness, pain, drainage, or fever', 'Diabetes' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ ' Bleeding in absence of stool', 'Streaks of blood on stool surface', 'History of pregnancy, prolonged sitting, constipation', 'Increased straining during bowel movements', 'Pain, itching, or mucus discharge after bowel movement', 'Small lumps around or inside the rectal area for 1 to 3 days' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Sit in a warm tub or sitz bath 10 minutes several times daily to relieve discomfort and swelling, especially after painful bowel movements.', 'Clean rectal area with soft tissue or moist wipes after each bowel movement.', 'To relieve itching, apply cold compresses to the area for 10 minutes, 4 times a day.', 'Apply zinc oxide or petroleum jelly to the clean dry area to help reduce irritation and to ease passage of stool. Follow instructions on the label.', 'If no relief with these measures, try OTC medications (hemorrhoid suppositories, hydrocortisone [0.5% strength], Tucks). Follow instructions on the label. Products with witch hazel may help to reduce discomfort. Products with hydrocortisone help to reduce itching.', 'Avoid prolonged sitting, standing, lifting, or straining.', 'Wear cotton clothing and loose underwear.', 'Avoid straining during bowel movements. Take your time, but avoid sitting more than 2 minutes. Get up, do something else and return when it feels easier.', 'To help prevent constipation, drink plenty of water and eat a diet high in fiber (fruits, vegetables, and whole grain cereals).' ],
+      reportToPCP: [ 'Hard lump develops around the rectal opening', 'Excessive rectal bleeding or black stools occur (more than once)', 'Severe pain is unresponsive to home care measures', 'Pain or bleeding > 1 week', 'Signs of infection: increased redness, pain, swelling, drainage, or fever' ],
+      seekEmergencyCare: [ null ]
+    },
+    'Hiccups': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Chest Pain (118)', 'Swallowing Difficulty (589)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Confusion, lethargy', 'Difficulty breathing', 'Fainting', 'Chest, neck, jaw, or arm pain or pressure' ],
+          true: 'Call ambulance or Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Persistent pain', 'Constant hiccups > 8 hours' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Persistent vomiting', 'Pain in shoulder, abdomen, or back' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Sudden onset after taking a new medication', 'Interferes with sleep', 'Anxiety or irritability', 'Intermittent episodes', 'Increased alcohol use', 'Mild discomfort', 'Recent ingestion of hot or irritating food or drink', 'History of cancer' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Take a deep breath and hold for 15 to 30 seconds.', 'Breathe into a paper bag for 5 minutes.', 'Sip ice water.', 'Swallow dry bread, crackers, a teaspoon of dry sugar, or crushed ice. NOTE: Young children can choke on dry sugar. Place sugar in cloth, tie closed, and soak in water. Have the child suck on the sugar sack. May also hold a teaspoon of sugar on tongue until it melts.', 'Pull on tongue.', 'Apply gentle pressure to closed eyelids.', 'Grasp upper lip between teeth and right side of nose and apply gentle pressure.', 'Stroke back of tongue.', 'Take your usual antacid (Maalox, Mylanta) as directed on container.', 'Divert attention through distraction.' ],
+      reportToPCP: [ 'Persistent or worsening condition' ],
+      seekEmergencyCare: [ ' Chest, neck, jaw, or arm pain or pressure', 'Difficulty breathing', 'Confusion or lethargy', 'Fainting' ]
+    },
+    'Incontinence, Stool': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', ' Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Rectal  Bleeding (510)', 'Rectal Problems (513)', ' Stools, Abnormal (576)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Incontinence of urine and stool after a seizure, faint, or loss of consciousness', 'Sudden loss of bowel control and slurred speech, muscle weakness, blurred or double vision, or decreased level of consciousness' ],
+          true: 'Call ambulance'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Recent back injury, trauma, or fall, severe pain, and several episodes of incontinence', 'Black or bloody stool with clots' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Recent history of childbirth, vaginal or rectal surgery, hemorrhoids, or anal fistula or fissure', 'Abdominal pain', 'Several incontinent episodes ' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Lump felt inside anal opening', 'Sudden onset of diarrhea and unable to make it to the toilet', 'Frequent involuntary seepage of stool and recent history of no bowel movements or several hard stools', 'Recurrence of stool incontinence in child previously toilet-trained' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Avoid constipation. Increase fiber, bulk, and fluids (fresh fruit, vegetables, whole grains, cereals, and brown rice). Try Metamucil to add bulk. Drink 6 to 8 glasses of water daily. Exercise regularly.', 'In a child previously toilet-trained:', 'Allow child to determine time for toileting. Do not force child to sit on toilet.', 'Provide praise when toilet is used.', 'Discuss with child a reward for staying clean all day.', 'If child is soiled, have the child clean self and change clothes (if old enough).', 'Do not scold or punish for accidents or allow other siblings to tease the child.', 'If an elderly or disabled adult is having difficulty making it to the toilet in time, do not show anger. Discuss ways to identify warning signs and get to the bathroom as soon as signs occur.', 'Consider renting or buying a portable toilet for use when sudden diarrhea attacks occur.', 'Review diet and medications, such as use of laxatives, new medications, prune juice, or castor oil.' ],
+      reportToPCP: [ 'Bloody stool', 'Abdominal pain', 'Several incontinent episodes', 'No improvement or condition worsens' ],
+      seekEmergencyCare: [ null ]
+    },
+    'Indigestion': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Symptoms Usually Occur Soon After Eating', 'Allergies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Abdominal Swelling (17)', 'Chest Pain (118)', 'Diarrhea, Adult (185), Child (188)', 'Gas/Belching (282)', 'Gas/Flatulence (284)', 'Heartburn (313)', 'Rectal Bleeding (510)', 'Vomiting, Adult (638), Child (641)', 'Swallowing Difficulty (589)' ],
+      nurseAlert: 'Indigestion and heartburn can mimic chest pain. There are many conditions that cause chest pain; some can be potentially life-threatening. Err on the side of caution when triaging callers with symptoms like chest pain. Chest Pain: Causes and Characteristics, Appendix S (696) is provided to help the nurse gain a better understanding of the many conditions causing chest pain. It is NOT to be used to try and diagnose a caller\'s condition.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is there a burning or heavy sensation in the chest, and are any of the following present?',
+          list: [ 'Shortness of breath', 'Cool moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'History of cardiac disease or diabetes', 'Pain occurs with exertion', 'Feeling of impending doom', 'Chest pain and palpitations' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Belching blood', 'Vomiting blood or dark coffee-grounds–like emesis', 'Black tarry stool', 'Severe abdominal pain' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Discomfort persists after taking medication', 'Condition worsening, requires more frequent use of medication', 'Frequent vomiting, weight loss, or decreased appetite', 'Difficult or painful swallowing' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Pain increased with use of aspirin, ibuprofen, or steroids', 'Increased pain when bending, exercising, or lying down soon after eating', 'Frequent belching or gas', 'Acid taste in mouth', 'Bloated or full feeling', 'Recent increase in stress', 'Symptoms appear soon after eating or drinking', 'Mild nausea or diarrhea after eating', 'Previously diagnosed with reflux esophagitis', 'Recently started new medication' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Try OTC medications (Maalox, Mylanta, Riopan, Tums, Pepcid, Prilosec) and follow instructions on the label. Liquids often provide faster relief than tablets. Consult with PCP if taking other prescription medications.', 'Do not give Pepto-Bismol to a child.', 'Avoid eating 2 to 3 hours before bed.', 'Do not lie down for 2 to 3 hours after eating or bend over or exercise soon after eating.', 'Elevate head of bed 4 to 6 inches using blocks or bricks.', 'Eat small, frequent meals.', 'Avoid spicy foods, alcohol, coffee, smoking, chocolate, citrus fruits, tomatoes, vinegar, fatty foods, and carbonated beverages.', 'If aspirin or ibuprofen worsens the problem, try acetaminophen. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Avoid tight-fitting clothing, such as girdles, belts, control-top panty hose, or pants or skirts with a tight waistband.', 'Take time to eat and drink, thoroughly chewing food.', 'Avoid chewing gum or other activities that result in swallowing air.', 'Avoid foods and drinks known to cause stomach upset and heartburn. Try taking OTC medications (Pepcid AC, Pepto-Bismol, or Prilosec) before eating foods causing symptoms. Follow instructions on the label.', 'Try Gas-X for belching and follow instructions on the label.', 'Sip a tonic made of 4 ounces ginger ale, 1 tsp grated ginger root, 1 tsp honey to soothe an upset stomach.', 'Avoid straining during bowel movements, urinating, and lifting.' ],
+      reportToPCP: [ 'Persistent discomfort unresponsive to home care measures after > 3 days or condition worsens', 'No relief from antacids', 'Difficult or painful swallowing' ],
+      seekEmergencyCare: [ 'Shortness of breath', 'Cool moist skin', 'Pain in the neck, jaw, shoulders, back, or arms', 'Blue or gray face, lips, earlobes, or fingernails', 'Belching or vomiting blood or dark coffee-grounds–like emesis', 'Severe abdominal pain', 'Chest pain', 'Pain occurs with exertion' ]
+    },
+    'Ostomy Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Type of Ostomy or Reason for Pouch', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Bleeding, Severe (86)', 'Constipation (152)', 'Wound Healing and Infection (659)' ],
+      nurseAlert: 'Use this protocol if the person has an ostomy and has concerns or questions.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Severe bleeding from stoma', 'Severe abdominal pain or swelling', 'Persistent vomiting', 'Fever and abdomen tender or rigid', 'Constipation, abdominal pain, swelling, and vomiting' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Urostomy and temperature > 100.4°F (38°C) and urine is pink, red, or unusually cloudy', 'Nausea, loss of appetite, and abdominal pain', 'Drainage leaking into a surgical wound', 'Taking blood-thinning medication and new onset of bleeding at stoma site or urine is pink or red', 'No ostomy drainage' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'No bowel movement for more than 4 days and constipation unresponsive to home care measures', 'Unable to manage the ostomy or pouch wound' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Small amount of bleeding at the stoma site', 'New onset of itching and burning at ostomy or pouch site', 'Decreased ostomy drainage', 'Mild constipation', 'New medication and change in normal bowel habits' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Ostomy Care' = [ 'Check appliance and make sure parts are snapped securely together.', 'If the ostomy is leaking, remove the appliance, clean the skin with mild soap and water, dry well, and prepare the skin as directed by a nurse or PCP; apply the new appliance. Hold in place for 5 minutes to ensure pouch seals to the skin.', 'Take prescribed medications as directed.' ], 'Bleeding Stoma' = [ 'Remember that a small amount of bleeding is normal, and tissues bleed easily, similar to the bleeding of the gums after brushing teeth.' ], 'Constipation' = [ 'Make sure the diet is adequate in volume, bulk (high fiber), and fluids (6 to 8 glasses a day, unless on a fluid-restricted diet).', 'Drink a hot beverage each morning, such as coffee, tea, hot water with lemon, or prune juice.', 'Follow the prescribed plan for using stool softeners, laxatives, and irrigation.', 'When taking medications with codeine or other medications that increase constipation, follow the constipation-prevention plan prescribed by the PCP.' ] ],
+      reportToPCP: [ 'Fever or bleeding persists or worsens', 'Constipation persists or worsens after home care measures', 'Drainage leaking into a surgical wound', 'Persistent leakage after home care measures', 'Itching and burning persists after use of prescribed medication' ],
+      seekEmergencyCare: [ 'Severe bleeding', 'Severe abdominal pain or swelling', 'Persistent vomiting', 'Fever and abdomen is tender and rigid' ]
+    },
+    'Pinworms': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Known or Suspected Pinworms', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Bedbug Exposure or Concerns (64)', 'Itching (384)', 'Rectal Problems (513)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Signs of infection (pain, swelling, redness, drainage, warmth, or fever) in rectal area', 'Severe rectal itching worsening at night and early morning', '¼" to ½" white, thread-like worms in rectal or vaginal area', 'Worms visible in stool' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Mild redness, itching, or tenderness in rectal area', 'Child has difficulty sleeping, irritability, or vaginal irritation', 'Exposed to bedclothes or bed linens of child with pinworms', 'Rectal symptoms persist > 1 week after treatment', 'Family member diagnosed with pinworms and concerned about transmission' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'To detect pinworms in a child, shine a light on the child’s anus in a darkened room several hours after bedtime. If present, the worms will move back into the anus.', 'Trim nails closely and encourage good hand washing.', 'Discourage nail biting or thumb sucking.', 'Wash linen and underwear in hot soapy water until pinworms are gone.', 'Vacuum or mop bedroom daily for 2 weeks after treatment.', 'Bathe every morning and clean the affected area. Showers are preferable.', 'Wear shorts or panties under pajamas.', 'To reduce itching:', 'Apply zinc oxide or 1% hydrocortisone cream ointment to affected area.', 'Take a warm bath with Epsom salts or table salt.', 'A prescription medication may be necessary to eliminate the pinworms. Take medication completely and as directed.', 'Try OTC pinworm medication (Reese’s) and follow instructions on the label.' ],
+      reportToPCP: [ 'Signs of infection: pain, swelling, redness, drainage, or warmth', 'Condition persists > 3 weeks after treatment' ],
+      seekEmergencyCare: [ null ]
+    },
+    'Rectal Bleeding': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Vomiting, Adult (638), Child (641)', 'Stools, Abnormal (576)' ],
+      nurseAlert: 'Rectal bleeding includes black, maroon, or tarry stools, brightred blood on toilet tissue, on the surface of stool, mixed in with formed or diarrheal stool or passed separately.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is abdominal pain present?',
+          list: [ null ],
+          true: 'Go to Abdominal Pain protocol (11)'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Vomiting blood or coffee-grounds–like emesis care now”', 'Intermittent abdominal pain', 'Frequent black tarry stools', 'Large amount of bright-red blood mixed in the stool or passing of blood clots' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          C: 'Is the following present?',
+          list: [ 'Use of blood thinners, steroids, nonsteroidal anti-inflammatory medications, or large doses of aspirin' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Recent history of cancer', 'Temperature > 100°F (37.7°C)' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Stool streaked with red blood', 'Blood on toilet tissue after wiping', 'Constipation or hemorrhoids', 'Bleeding persists > 2–3 days after constipation improves', 'Taking iron preparations or bismuth subsalicylate (Pepto-Bismol)', 'Recent ingestion of beets or spinach ' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Soak in a warm saline bath for 20 minutes a day to cleanse the area and promote healing. (Add 2 tbsp of salt or baking soda to the water.)', 'Keep rectal area clean. May use medicated pads (Tucks) to cleanse and soothe area; follow instruction on the label. Ask pharmacist for additional product suggestions.', 'If rectal area is irritated, apply OTC hydrocortisone ointment (AnusolHC, Cortaid) or zinc oxide paste or powder.', 'If hemorrhoids persist, try OTC preparations (Anusol, Nupercainal, Preparation H) to help soothe and shrink hemorrhoids. Follow instructions on the label.', 'Increase fluid intake and eat a diet high in fiber: fruits, vegetables, bran, grains, and beans. Avoid constipating foods such as cheese. This is particularly important if taking narcotic pain medications for discomfort.', 'If taking iron preparations or bismuth subsalicylate (Pepto-Bismol) or eating spinach or beets, follow up with PCP for stool guaiac.', 'Exercise 30 minutes a day even if only at 10- or 15-minute intervals.' ],
+      reportToPCP: [ 'No improvement in 3 days or bleeding worsens', 'Abdominal pain', 'Constipation or hemorrhoids persist > 1 week after home treatment', 'Blood mixed with stool or black stools' ],
+      seekEmergencyCare: [ 'Vomiting blood or coffee-grounds–like emesis', 'Light-headedness or fainting', 'Intermittent abdominal pain', 'Large amount of bright-red blood mixed with stool or passing of blood clots', 'Frequent black tarry stools' ]
+    },
+    'Rectal Problems': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Foreign Body, Rectum (269)', 'Hemorrhoids (324)', 'Pinworm (453)', 'Rectal Bleeding (510)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Injury to the rectal area', 'Rape or sexual abuse', 'Passing more than once of black or bloody stools with clots', 'Unable to remove foreign object from rectum', 'Child with red peeling rash in rectal area' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Severe pain', 'Severe bleeding' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Persistent pain or itching that is unresponsive to home care measures', 'Exposure to a sexually transmitted disease', 'Recent surgery', 'Painless rash or lesion > 24 degrees', 'Recent colonoscopy, sigmoidoscopy, or invasive procedure' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Intermittent rectal swelling, pain, itching, or bleeding', 'Pain or bleeding for < 48 hours', 'First episode of rectal bleeding, swelling, pain, or itching', 'Rectal itching', 'Visible small worms in stools or around rectal area', 'Painless rash or growth < 24 degrees ' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ ' Soak in a warm bath for 20 to 30 minutes daily.', 'Apply an OTC medication for relief of itching and discomfort.', 'Avoid constipating foods (cheese and white flour products). Include fresh fruits, vegetables, and whole grains in the diet. Drink lots of water every day (unless PCP has ordered a restricted fluid intake).', 'Try OTC medications for hemorrhoids.' ],
+      reportToPCP: [ 'Black or bloody stools more than once', 'No improvement or condition worsens' ],
+      seekEmergencyCare: [ 'Black or bloody stools with clots more than once', 'Child with red peeling rash in rectal area' ]
+    },
+    'Stools, Abnormal': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Recent Dietary Habits', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Constipation (152)', 'Diarrhea, Adult (185), Child (188)', 'Hemorrhoids (324)', 'Rectal Bleeding (510)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Is there abdominal pain?',
+          list: [ null ],
+          true: 'Go to Abdominal Pain, Adult (11), Child (14) protocols'
+        },
+        {
+          B: 'Is there diarrhea?',
+          list: [ null ],
+          true: 'Go to Diarrhea, Adult (185), Child (188) protocols'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Black or dark stools for more than two bowel movements and light-headedness or dizziness', 'Vomiting blood or dark coffee-grounds–like emesis', 'Passing blood clots' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Black tarry stools without recent ingestion of iron pills, beets, bismuth salicylate (Pepto-Bismol), or spinach', 'Large amount of bright red blood mixed in the stool', 'Bloody stool, fever, vomiting, ill feeling', 'Age < 12 weeks, fever, and bloody stools' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          E: 'Are any of the following present?',
+          list: [ 'Pale stool, yellow skin and eyes', 'Pale, foamy, bulky, foul-smelling stool', 'Blood mixed in stool or black stools for more than two consecutive bowel movements', 'Persistent weight loss and thin, pencil-like stools ' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          F: 'Are any of the following present?',
+          list: [ 'Stool streaked with red blood', 'Blood on toilet tissue after wiping', 'Discolored stool and recent ingestion of iron pills, beets, Pepto-Bismol, spinach, tomatoes, or peppers, or stool is color of recently ingested food', 'Persistent discoloration', 'Persistent bleeding > 3 days', 'Constipation or hemorrhoids ' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'For hemorrhoids, soak in a warm saline bath for 20 minutes a day (add 2 tbsp of salt or baking soda to the water).', 'Keep rectal area clean.', 'If rectal area is irritated, apply OTC hydrocortisone ointment or zinc oxide paste or powder.', 'If hemorrhoids persist, try OTC preparations to help soothe and shrink hemorrhoids.', 'Increase fluid intake and eat a diet high in fiber: fruits, vegetables, bran, grains, and beans. Avoid constipating foods such as cheese. Note which foods change the color of the stool.', 'Remember the color of the stool should return to normal within 24 hours if the discoloration is caused by a change in diet.', 'Use products with witch hazel (Tucks) to reduce discomfort.' ],
+      reportToPCP: [ 'No improvement in 3 days or condition worsens', 'Abdominal pain', 'Bloody stool, fever, vomiting, ill feeling', 'Pale stool, yellow skin and eyes', 'Pale, foamy, bulky, foul-smelling stool', 'Persistent weight loss and thin, pencil-like stools' ],
+      seekEmergencyCare: [ ' Black or dark stools for more than two consecutive bowel movements and light-headedness or dizziness', 'Vomiting blood or dark coffee-grounds–like emesis', 'Passing bloody stools' ]
+    },
+    'Vomiting, Adult': {
+      keyQuestions: [ 'Name, Age, Onset, History, Medications, Associated Symptoms, Suspected Cause' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Altered Mental Status (29)', 'Chest Pain (118)', 'Dehydration (173)', 'Diabetes Problems (180)', 'Diarrhea, Adult (185)', 'Fever, Adult (241)', 'Food Poisoning, Suspected (254)', 'Headache (303)', 'Head Injury (307)', 'Postoperative Problems (458)', 'Pregnancy, Nausea and Vomiting (478)' ],
+      nurseAlert: 'There are many conditions that cause vomiting. When vomiting is associated with several other symptoms, use the protocol that is the primary concern and has the highest probability of a referral to a higher level of care.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Altered mental status', 'Fainting', 'Vomiting bright red blood or dark coffee-grounds– like emesis', 'Recent injury to head or abdomen and vomiting', 'Chest pain or discomfort, difficulty breathing, palpitations, or sweating', 'Persistent severe abdominal pain that interferes with activity' ],
+          true: 'Call ambulance or Seek emergency care now'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes', 'loose dry skin', 'excessive thirst', 'dry mouth', 'dizziness on standing or rising to sitting position' ], 'Suspicion that recent ingestion of wild mushrooms or plant is causing vomiting', 'History of diabetes and unable to control vomiting with home care measures' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Persistent vomiting for > 24 hours that is unrelieved by home care measures', 'Recent surgery, hospitalization, or diagnostic procedure', 'New-onset jaundice' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ ' Diarrhea or constipation', 'History of travel out of the country or a camping trip', 'Other household members are ill', 'Excessive ingestion of food, alcohol, or fluids', 'Recent ingestion of an antibiotic, pain medication, or new medication', 'Possible pregnancy' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Do not eat or drink anything for 1 hour after last emesis.', 'Drink sips of clear fluids for first 12 hours, including gelatin, water, sports drinks, flat soda, clear broth, flavored ice, or apple juice. Do not drink citrus juices.', 'Increase fluids as tolerated.', 'After 12 hours, try small amounts of bland foods, such as rice, potatoes, soda crackers, pretzels, dry toast, and applesauce.', 'After bland food is tolerated, resume normal diet, as tolerated.', 'Retake medications if vomiting occurs within 30 minutes of taking usual medication.', 'Avoid milk, citrus foods and juices, spicy and fatty foods, alcohol, coffee, and caffeinated beverages.', 'Take OTC dimenhydrinate (Dramamine) or phosphorated carbohydrate solution (Emetrol) for nausea, and follow instructions on the package.', 'Viruses causing nausea and vomiting are easily spread. Pay special attention to hand washing. Avoid using towels, tableware, and cups used by infected person.' ],
+      reportToPCP: [ 'Fever, weakness, or abdominal pain', 'No improvement in 48 hours or condition worsens', 'Signs of dehydration' ],
+      seekEmergencyCare: [ ' Altered mental status', 'Vomiting blood or dark coffee-grounds–like emesis', 'Persistent severe pain that interferes with activity', 'Fainting', 'Chest pain, difficulty breathing, palpitations, or sweating' ]
+    },
+    'Vomiting, Child': {
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Suspected Cause', 'History', 'Medications', 'Associated Symptoms' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Child (14)', 'Altered Mental Status (29)', 'Constipation (152)', 'Dehydration (173)', 'Diarrhea, Child (188)', 'Fever, Child (244)', 'Food Poisoning, Suspected (254). Headache (303)', 'Head Injury (307)', 'Postoperative Problems (458)' ],
+      nurseAlert: 'There are many conditions that cause vomiting. When vomiting is associated with several other symptoms, use the protocol that is the primary concern and has the highest probability of a referral to a higher level of care.',
+      alertBullets: [ null ],
+      assessment: [
+        {
+          A: 'Are any of the following present?',
+          list: [ 'Altered mental status: listless, unusually irritable, confused', 'Severe headache, stiff neck, or pain bending head forward', 'Vomiting bright red blood or dark coffee-grounds– like emesis', 'Recent head or abdominal injury', 'Exposure to a poisonous substance (such as medications, plants, cleaning agents, pesticides, or wild mushrooms)', 'Neonate < 1 month of age', 'Abdomen is hard or firm when not crying' ],
+          true: 'Seek emergency care now. If poison ingestion is suspected, go to Poisoning, Suspected (455) protocol'
+        },
+        {
+          B: 'Are any of the following present?',
+          list: [ 'Signs of dehydration:' = [ 'decreased urine', 'sunken eyes or fontanel', 'dry mouth', 'crying without tears', 'unusual listlessness' ], 'Breathing hard or fast', 'Persistent abdominal pain interferes with activity', 'Child appears very ill', 'History of diabetes and unable to control vomiting with home care measures', 'Infant < 3 months old and has vomited > 2 times or has projectile vomiting' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Vomiting > 12 hours', 'Temperature > 101°F (38.3°C) for > 24 hours', 'Vomited > 3 times in the last 6 hours', 'Persistent diarrhea', 'Infant with forceful vomiting after feeding' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Moderate diarrhea or constipation', 'History of travel out of the country or a camping trip', 'Other household members are ill', 'Excessive ingestion of food or fluids', 'Recent ingestion of an antibiotic, pain medication, or new medication', 'Earache, cold, sore throat, or fever' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [ 'Infants' = [ 'Introduce 1 tsp Lytren, Pedialyte, Infalyte, or Kaolectrolyte every 5 minutes and increase as tolerated.', 'If infant drinks juice, introduce 1 tsp every 5 minutes, then clear liquids as tolerated. Do not give juice if diarrhea is also present.', 'If breast-feeding and infant vomits 3 or more times, offer breast for 4 to 5 minutes every 30 to 60 minutes, and offer rehydration fluids between breast-feeds, 1 tsp every 5 to 15 minutes. It should not be necessary to discontinue breast-feeding.', 'If using formula, use small, frequent feedings.' ], 'Children' = [ 'Avoid eating or drinking for 1 to 2 hours after vomiting. ', 'Drink 1 tsp every 5 minutes for 4 hours (fruit juice diluted with water, weak tea with sugar, clear broth, gelatin, or flavored ice). After 4 hours without vomiting, the amount of fluids offered may increase. ', 'Avoid milk for 12 to 24 hours after vomiting subsides. ', 'Slowly introduce bland foods, such as rice, potatoes, soda cracker, pretzels, dry toast, applesauce, and bananas, as tolerated 8 hours after last emesis.' ], 'Additional Home Care Advice' = [ 'Acetaminophen can be given for fever. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'If, after vomiting has subsided, diarrhea is present or continues, follow home care instructions for the treatment of diarrhea. Vomiting should always be treated first.', 'Wash hands with soap and water frequently when caring for a child with vomiting and/or diarrhea.' ] ],
+      reportToPCP: [ 'High fever, weakness, or abdominal pain for > 2 hours', 'No improvement in 48 hours or condition worsens', 'Signs of dehydration' ],
+      seekEmergencyCare: [ ' Altered mental status', 'Vomiting blood or dark coffee-grounds–like emesis', 'Develops a severe headache, stiff neck, or pain bending head forward', 'Abdomen becomes hard or firm when not crying' ]
+    },
   },
   'Genital/Obstetrics and Gynecological Problems': {
       'Breast-Feeding Problems': {
