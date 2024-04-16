@@ -3165,719 +3165,719 @@ const bodySystem = {
     },
   },
   'Genital/Obstetrics and Gynecological Problems': {
-      'Breast-Feeding Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Breast Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Contraception, Emergency (EC)': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Foreign Body, Vagina': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Genital Lesions': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Genital Problems, Male': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Menstrual Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Postpartum Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Cold Symptoms': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Fetal Movement Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Hypertension': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Leaking Vaginal Fluid': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Nausea and Vomiting': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Suspected Labor': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Suspected Labor < 36 Weeks': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Urination Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Pregnancy, Vaginal Bleeding': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Scrotal Problems': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Sexual Assault': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Sexually Transmitted Disease (STD)': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Vaginal Bleeding': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
-      'Vaginal Discharge/Pain/Itching': {
-        keyQuestions: [ '' ],
-        otherProtocolstoConsider: [ '' ],
-        nurseAlert: '',
-        alertBullets: [ '' ],
-        assessment: [
-          {
-            A: '',
-            list: [ '' ],
-            true: 'Seek emergency care now'
-          },
-          {
-            B: '',
-            list: [ '' ],
-            true: 'Seek medical care within 2 to 4 hours'
-          },
-          {
-            C: '',
-            list: [ '' ],
-            true: 'Seek medical care within 24 hours'
-          },
-          {
-            D: '',
-            list: [ '' ],
-            true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
-          }
-        ],
-        homeCareInstructions: [],
-        reportToPCP: [ '' ],
-        seekEmergencyCare: [ '' ]
-      },
+    'Breast-Feeding Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Breast Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Contraception, Emergency (EC)': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Foreign Body, Vagina': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Genital Lesions': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Genital Problems, Male': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Menstrual Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Postpartum Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Cold Symptoms': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Fetal Movement Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Hypertension': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Leaking Vaginal Fluid': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Nausea and Vomiting': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Suspected Labor': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Suspected Labor < 36 Weeks': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Urination Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Pregnancy, Vaginal Bleeding': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Scrotal Problems': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Sexual Assault': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Sexually Transmitted Disease (STD)': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Vaginal Bleeding': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
+    'Vaginal Discharge/Pain/Itching': {
+      keyQuestions: [ '' ],
+      otherProtocolstoConsider: [ '' ],
+      nurseAlert: '',
+      alertBullets: [ '' ],
+      assessment: [
+        {
+          A: '',
+          list: [ '' ],
+          true: 'Seek emergency care now'
+        },
+        {
+          B: '',
+          list: [ '' ],
+          true: 'Seek medical care within 2 to 4 hours'
+        },
+        {
+          C: '',
+          list: [ '' ],
+          true: 'Seek medical care within 24 hours'
+        },
+        {
+          D: '',
+          list: [ '' ],
+          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+        }
+      ],
+      homeCareInstructions: [],
+      reportToPCP: [ '' ],
+      seekEmergencyCare: [ '' ]
+    },
   },
   'Urination Problems': {
       'Bed-Wetting': {
