@@ -3166,35 +3166,45 @@ const bodySystem = {
   },
   'Genital/Obstetrics and Gynecological Problems': {
     'Breast-Feeding Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Problem', 'Frequency of Feedings', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Breast Problems (98)', 'Crying, Excessive, in Infants (169)', 'Postpartum Problems (462)', 'Spitting Up Infant (573)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Is the breast-feeding infant having any of the following problems?',
+          list: [ 'Respiratory distress', 'Extreme lethargy', 'Projectile vomiting' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Infant refuses to breast-feed because of intermittent lethargy or irritability', 'Newborn jaundice (yellow skin) below the waist', 'Signs of dehydration:', 'fewer than six wet diapers by age 5 days', 'fewer than one wet diaper after birth per day before day 5', 'sunken fontanel', 'dry mouth', 'more than three brick dust urinations', 'Fewer than three yellow stools per day after day 5', 'Puslike drainage from the woman’s nipple', 'Woman has temperature > 100°F (37.7°C), muscle aches, chills, fatigue, or headache' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Milk not in by day 6', 'Swelling and soreness of breast that is unresponsive to home care measures', 'Hard, red, warm area of breast', 'Red streak on the breast tissue', 'Swollen node on the same side as painful breast', 'Unable to get infant to latch on for feeding', 'Sudden searing, stabbing, or burning or radiating pain in breasts' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Breasts are engorged (hardness, swelling, and tenderness)', 'Nipples are cracked, red, or sore', 'Infant has difficulty grasping nipple and maintaining vacuum while sucking', 'Infant pulls away or pushes off breast and cries during feeding', 'Insufficient milk supply for breast-feeding', 'Painful breasts during weaning', 'Uterine cramping and increased vaginal bleeding in new mother during breast-feeding' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [
+        'Signs of Infection' = [ 'Apply moist hot packs to affected area 10 to 15 minutes, 4 times a day.', 'Express milk manually or pump to help prevent engorgement.', 'Breast-feed frequently (every 1 to 3 hours, even on affected side).', 'Limit activity (encourage others to help with housework).', 'Do not wean at this time.' ], 
+        'Engorgement' = [ 'Apply warm water compress to breast or shower before feeding.', 'Massage breast toward nipple.', 'Manually express milk or use a breast pump immediately before a feeding to soften the area around the nipple/areola.', 'Breast-feed on both sides at each feeding.', 'Wear a supportive bra.', 'Apply ice packs after breast-feeding (frozen vegetable bags covered in a lightweight towel can be used).' ],
+        'Sore, Cracked Nipples' = [ 'Establish rooting reflex by stroking infant’s cheek and compress as much breast tissue as possible into the infant’s mouth.', 'Wait until the infant has a wide open mouth, like a yawn. The lips should be flanged.', 'If only the nipple is in the infant’s mouth, the nipple may become sore, bruised, cracked, or irritated.', 'Break suction by putting a finger in the corner of the infant’s mouth. Do not pull the nipple out of the infant’s mouth without first breaking the suction.', 'Clean the breast with plain water only. Do not use soap or antiseptic on the breast.', 'A thin layer of lanolin or breast milk can be applied to the nipples after feedings. Allow nipples to air-dry briefly after each feeding.', 'Rotate breast-feeding positions (cradle, football, side-lying).', 'Start each feeding on the least sore side.' ],
+        'Infant Has Difficulty Grasping Breast, Pulls Away, Pushes Off' = [ 'Express breast milk before feeding if breast is too full. This also helps aid letdown.', 'Encourage rooting reflex and wait until the infant’s mouth is wide open.', 'Compress and hold the breast tissue until the infant has a good latch and starts suckling for a minute.', 'Massage breast while infant’s swallowing is slowing down.', 'Try different breast-feeding positions (cradle, football, side-lying).' ],
+        'Insufficient Milk Supply' = [ 'Remember that frequent breast-feeding stimulates milk supply.', 'Try breast-feeding every 2 to 3 hours (minimum of eight breast-feedings per 24 hours).', 'May need to awaken infant and offer breast-feeding.', 'Offer both breasts at one feeding.', 'Massage breast and use a warm water compress before breast-feeding.', 'Encourage nutritive (active swallowing) feeding by stimulating the infant during feedings (rub back, tickle toes, touch under jaw).', 'Remember that six wet diapers per 24 hours after day 5 is adequate output.', 'Infant should have a minimum of three yellow stools per 24 hours from day 5 until the age of 6 to 8 weeks.', 'Stooling decreases at 6 to 8 weeks.', 'Sudden softening of breast at 6 to 8 weeks after delivery is normal because milk supply is adjusting and becoming efficient.', 'Cluster feedings (every 1 to 1½ hours) occur often during growth spurts.', 'Avoid emotional stress and anxiety and estrogen-containing birth control pills.', 'Do not give solids before infant is 4 months old because solids reduce the infant’s sucking and the mother’s milk supply.', 'Minimize use of pacifiers.', 'Contact PCP or obstetrics/gynecology provider if taking estrogen-containing birth control pills.' ],
+        'Uterine Cramping and Increased Vaginal Bleeding' = [ 'Cramping is normal with breast-feeding in the early postpartum period.', 'Call PCP if saturating one pad per hour (bright red bleeding).', 'Breast-feeding helps the uterus return to normal state faster.' ],
+        'Exhaustion' = [ 'Remember that taking care of an infant is hard work.', 'Try to nap while the infant naps.', 'Take care of yourself by eating a well-balanced diet.', 'Drink enough fluids to keep your urine light yellow.', 'Take vitamins and iron supplements as directed by your PCP.', 'Avoid drugs, smoking, and drinking alcohol, and limit caffeine consumption.', 'Postpartum depression may contribute to exhaustion. If depression lasts longer than 2 weeks, contact your PCP.', 'If infant is feeding often at night, gently stimulate and awaken the infant every 2 to 3 hours during the day.' ],
+        'Painful Breasts During Weaning' = [ 'Wear a supportive bra.', 'Avoid weaning too rapidly; lengthen weaning time if needed.', 'Decrease one to two feedings (at same time each day) every 2 to 4 days.', 'Wait until breasts become accustomed to the change before decreasing another feeding.', 'Use ice packs to reduce swelling.', 'Manually express small amounts of milk or use a breast pump until a little relief is felt.' ],
+        'Sleepy Infant' = [ 'Unwrap blankets and undress infant to change diaper.', 'Massage infant’s legs, back, and arms.', 'Give infant a back rub by walking your fingers down his/her spine.', 'Try infant “sit-ups” by holding the infant away from you and gently lift him/her toward your face.', 'If newborn has not eaten in 6 hours, feed infant pumped breast milk or formula.' ],
+      ],
+      reportToPCP: [ 'Condition persists or worsens', 'Signs of infection develop', 'Symptoms of infection persist > 2 to 3 days or fever suddenly rises', 'Signs of thrush (sudden breast pain)', 'Infant shows signs of dehydration', 'Infant refuses to breast-feed, has jaundice below the waist, or < 3 yellow stools per day after day 5' ],
+      seekEmergencyCare: [ 'Infant has respiratory distress, extreme lethargy, or projectile vomiting' ]
     },
     'Breast Problems': {
       keyQuestions: [ '' ],
