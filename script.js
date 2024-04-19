@@ -3207,35 +3207,30 @@ const bodySystem = {
       seekEmergencyCare: [ 'Infant has respiratory distress, extreme lethargy, or projectile vomiting' ]
     },
     'Breast Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History (if breast-feeding, see Breast-Feeding Problems [93])' ],
+      otherProtocolstoConsider: [ 'Fever, Adult (241), Child (244)', 'Laceration (398)', 'Menstrual Problems (407)', 'Piercing Problems (446)', 'Pregnancy Problems (481)', 'Tattoo Problems (602)', 'Wound Healing and Infection (659)' ],
+      nurseAlert: 'If new piercing or tattoo and signs of infection, irritation or feeling ill go to Piercing Problems (446) or Tattoo problems (602)',
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
-        },
-        {
-          B: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Chills or fever and headache during postpartum period', 'Recent trauma or piercing to breast and laceration or signs of infection', 'Muscle aches, fever, and painful red area on breast during postpartum period', 'Foul-smelling discharge from nipple', 'Severe pain', 'Puncture and leaking of breast implant' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ ' History of red, hot, lumpy breasts', 'Skin ulceration', 'Bloody discharge', 'Nipple drainage in nonpregnant woman', 'Sudden searing, stabbing, or burning pain in breasts', 'New tattoo and pain at wound site, chills, feeling ill, or headache' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          C: 'Are any of the following present?',
+          list: [ 'Recent trauma to the breast and pain, swelling, or bruising', 'Lumpy breasts and no other symptoms', 'Lump is unrelated to premenstrual cycle', 'Lump in a male', 'Female’s last breast examination > 1 year ago', 'Lumps appear 1 week before menstruation and disappear after menses', 'Dimpling or change in nipple position', 'Nipple soreness or curdlike drainage after taking antibiotics' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Watch for signs of infection: fever; nipple or fissure discharge; red, hot, painful area; red streaks. Apply moist hot packs to affected area for 10 to 15 minutes, 4 times a day, until symptoms subside.', 'If trauma is related, apply ice packs every 2 to 4 hours for first 24 to 48 hours, then apply hot packs for 10 to 15 minutes, 4 times a day.', 'Keep nipples clean and dry.', 'Avoid clothing that irritates nipples.', 'For premenstrual swelling and tenderness, reduce intake of salty foods, caffeine, chocolate, and cola beverages.', 'Follow PCP recommendations for regular self-breast checks and mammograms.' ],
+      reportToPCP: [ ' Lump persists for 48 hours after a trauma', 'Condition persists or worsens', 'Signs of infection', 'Bloody, green, brown, or yellow drainage', 'Severe pain' ],
+      seekEmergencyCare: [ null ]
     },
     'Contraception, Emergency (EC)': {
       keyQuestions: [ '' ],
