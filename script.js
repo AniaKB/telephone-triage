@@ -3316,35 +3316,35 @@ const bodySystem = {
       seekEmergencyCare: [ null ]
     },
     'Genital Problems, Male': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Genital Lesions (286)', 'Piercing Problems (446)', 'Scrotal Problems (528)', 'Sexually Transmitted Disease (STD) (542)', 'Skin Lesions: Lumps, Bumps and Sores (559)', 'Tattoo Problems (602)', 'Urination, Difficult (622)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Persistent painful erection after application of ice pack for 30 minutes', 'Severe pain or swelling', 'Trauma to penis and deformity or bleeding', 'Foreign body in penis' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ ' Unable to pull foreskin back over head of penis', 'Unable to urinate', 'Pain with urination', 'Flank pain', 'Pain in groin after urinating and temperature > 100°F (37.8°C)', 'Pain or swelling in scrotum or testicle(s)' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Persistent swelling, hard lump, or sore on penis', 'Known or suspected exposure to an STD', 'Painful rash or sores', 'Penile discharge > 24 hours', 'Redness or swelling at tip of penis', 'Blood in urine', 'Blood in semen', 'Rash with blisters on penis', 'Swollen foreskin' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Pain during or after intercourse', 'Difficulty having or maintaining an erection and history of diabetes or taking antidepressants, antianxiety medications, blood pressure medications, or diuretics', 'Premature ejaculation', 'Loss of sexual interest', 'Penis caught in zipper', 'Swelling and cut on infant penis', 'Painless rash or growth > 24 hours' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ ' If pain during intercourse, consider using OTC lubricating jelly (K-Y jelly). Do not use petroleum jelly.', 'If tip of penis is painful after intercourse, explore probable causes, such as allergy to contraceptive cream or condom, and change to alternative methods.', 'If tip of penis is red from rubbing against a diaper, push penis down when diapering infant.', 'If client has sexual dysfunction problems and is taking prescription medications, has diabetes, or has emotional problems, client should discuss with PCP.', 'To release penis caught in zipper:', 'cut off the bottom of the zipper and pull the edges back', 'apply petroleum jelly to penis and zipper track and pull zipper in the direction that originally caused the problem', 'if unable to release penis, seek medical care immediately', 'Look for hair wrapped around infant’s penis and cut to release pressure. Swelling should go down. If unable to remove hair or swelling persists, seek medical care immediately.', 'If an STD is suspected, partner also should be treated. Use a condom until both partners have finished taking prescription medication.' ],
+      reportToPCP: [ ' No improvement or problem worsens after home care measures', 'Persistent sexual dysfunction problems' ],
+      seekEmergencyCare: [ 'Persistent painful erection', 'Severe pain or swelling', 'Inability to urinate' ]
     },
     'Menstrual Problems': {
       keyQuestions: [ '' ],
