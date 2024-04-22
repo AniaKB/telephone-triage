@@ -3234,34 +3234,34 @@ const bodySystem = {
     },
     'Contraception, Emergency (EC)': {
       keyQuestions: [ 'Name', 'Age', 'Onset (number of hours since last unprotected intercourse)', 'Cause', 'Medications', 'Birth Control History', 'Other Symptoms' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      otherProtocolstoConsider: [ 'Blood/Body Fluid Exposure (88)', 'Domestic Abuse (195)', 'Foreign Body, Rectum (269), Vagina (277)', 'Sexual Assault (539)', 'Sexually Transmitted Disease (STD)', 'Vaginal Bleeding (630)', 'Vaginal Discharge/Pain/Itching (633)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Are any of the following present?',
+          list: [ 'Recently taken emergency contraception pills and signs of allergic reaction (difficulty breathing or swallowing, sudden throat or tongue swelling, inability to speak, or chest pain)' ],
+          true: 'Go to Allergic Reaction protocol (26)'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
+          B: 'Has sexual assault occurred with any of the following present?',
+          list: [ 'Vaginal or anal tears or bleeding', 'Request for sexual assault examination and evidence collection', 'Victim is a minor' ],
+          true: 'Seek emergency care now and Do not shower or change clothes to allow for evidence collection'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Sexual assault or forced sex occurred and medical examination without collection of evidence has been requested', 'Unprotected intercourse occurred < 120 hours (5 days) and person requests protection for sexually transmitted disease and pregnancy', 'Copper IUD as EC has been requested; unprotected intercourse has occurred within past 5 day' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          D: 'Are any of the following present?',
+          list: [ ' Questions or concerns about EC', 'Unprotected sex > 120 hours and person has concerns about pregnancy', 'EC pills taken and concerns about side effects exist; or person has nausea/vomiting, abdominal pain, dizziness, fatigue, headache, menstrual changes, or breast tenderness' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Provide reassurance and general information:', 'EC pills are for emergencies and should not be used for ongoing contraception.', 'EC pills do not protect against sexually transmitted diseases.', 'EC pills are most effective in the first 72 hours but can be taken up to 120 hours after unprotected sex. (The EC product “Next Choice” is taken within 72 hours [telephone 866-9WATSON]. “Plan B” is taken within 120 hours. [1-888-not-2-late or 1-668-2-5283]).', 'EC can be obtained without a prescription from select pharmacies if age is 16 or older (some states may vary in age restrictions). If age < 16 years or younger, a prescription is required. Check with your pharmacy for any age requirements.', 'Additional information about EC can be located at http://ec.princeton.edu or at the hotline 1-888-not-2-late (1-668-2- 5283).', 'If pregnancy is a concern, advice a urine pregnancy test be taken. Urine pregnancy tests can be purchased at most drug stores and many markets with pharmacy products.', 'To prevent nausea and vomiting, Dramamine II or Benadryl may be taken one hour before the first EC dose.', 'Provide reassurance; nausea usually passes in a short period of time.', 'If vomiting occurs within one hour of taking EC pills, repeat the dose along with an anti-nausea medication.', 'If side effects such as nausea/vomiting, abdominal pain, dizziness, fatigue, or breast tenderness persist > 24 hours after taking EC pills, contact the PCP.', 'After taking EC pills within 120 hours and having had no menses within 21 days, take a urine pregnancy test. If positive, follow up with the PCP. If negative, wait another 7 days. If no menses occur, take another urine pregnancy test and follow up with the PCP with results.' ],
+      reportToPCP: [ 'Persistent nausea/vomiting, abdominal pain, dizziness, fatigue, or breast tenderness > 24 hours', 'Pelvic pain with or without fever', 'Concerns about pregnancy or sexually transmitted disease', 'Vaginal drainage' ],
+      seekEmergencyCare: [ 'Signs of allergic reaction; difficulty breathing, sudden throat or tongue swelling, rash, or hives', 'Skin or lips turn gray, blue, or pale', 'Sudden onset of profuse sweating', 'Decrease in level of consciousness' ]
     },
     'Foreign Body, Vagina': {
       keyQuestions: [ '' ],
