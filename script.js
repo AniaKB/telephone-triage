@@ -3378,35 +3378,37 @@ const bodySystem = {
       seekEmergencyCare: [ 'Persistent severe bleeding requiring use of more than one full-size sanitary pad per hour for 8 hours', 'Passage of blood clots or tissue' ]
     },
     'Postpartum Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Date of Delivery', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Breast-Feeding Problems (93)', 'Constipation (152)', 'Depression (177)', 'Vaginal Discharge/Pain/Itching (633)', 'Wound Healing and Infection (659)' ],
+      nurseAlert: 'There are many conditions that can occur following a delivery. When there are multiple associated symptoms, focus on the primary concern that has the highest probability of a referral to a higher level of care.',
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Are any of the following present?',
+          list: [ 'Shortness of breath or difficulty breathing', 'Vaginal bleeding requiring use of more than one full-size pad per hour and weakness, dizziness', 'Altered mental status', 'Skin pale, moist, and cool', 'Severe lower abdominal pain < 48 hours after delivery', 'Thoughts of harming infant or self', 'Cesarean section and incision is separating' ],
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Temperature > 100°F (37.8°C) 4–10 days after delivery', 'Bleeding with fever or abdominal pain', 'Increased bleeding and abdominal cramping first week after delivery (saturating one pad with bright red bleeding in < 1 hour)', 'Abnormal vaginal discharge with bleeding, fever, or pain, or discharge is foul smelling', 'Vomiting, diarrhea, fever, or rash', 'Calf swelling, pain, or redness', 'Clots of blood larger than a lemon', 'Headache unrelieved by home care measures', 'Muscle aches, fever, and painful red area on breast', 'Chills or fever and headache', 'Vaginal bleeding requiring use of more than one fullsize pad per hour' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Persistent depression > 2–3 weeks', 'Urgency, frequency, or pain with urination', 'Abnormal vaginal discharge without fever', 'Increased pain at episiotomy incision site', 'Increased pain, swelling, foul-smelling drainage, redness, or warmth at cesarean section incision site' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          D: 'Are any of the following present?',
+          list: [ 'Engorged, tender, hard breasts', 'Cramping', 'Constipation', 'Stretching or pulling sensation at episiotomy site' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Balance activity and rest for first 2 weeks after delivery.', 'Can usually return to work after 6-week checkup if cleared by physician (8 weeks for cesarean section).', 'Remember that contractions 3 to 4 days after delivery are normal and arestimulated by breast-feeding.', 'Bowel movements may not occur 1 to 2 days after delivery. Drink 6 to 8 glasses of water and juices a day and increase intake of fruits, vegetables, and bran. Laxatives (Metamucil) may help. Follow instructions on the label.', 'Sit in a warm bath or sitz bath to relieve discomfort.', 'Apply dry heat to perineum after bath for 10 minutes. May try exposing perineum a foot away from a 25-watt light bulb or using a hair dryer on the low setting.', 'After toileting or changing pad, clean area using soap and warm water in a squirt bottle or antiseptic wipes, cleaning from front to back.', 'Change pad after toileting.', 'Remember that a blood and mucous vaginal discharge may persist for several weeks after delivery, and the discharge increases with activity.', 'Vaginal bleeding 4 to 8 weeks after delivery is not a cause for alarm and usually is the return of menstruation.', 'Discomfort and dryness during intercourse after delivery can be reduced with use of K-Y Jelly. Avoid intercourse until discharge has stopped and stitches are healed. Discuss contraception options with PCP. If breastfeeding, milk letdown may occur.', 'Wear a good supportive bra 24 hours a day for 10 days. If breasts become tender and hard, take a warm bath or apply warm compresses to breasts.', 'Remember that depression after delivery is not unusual and should subside. Discuss depression with PCP.',
+      'Cesarean Section Delivery'  = [ 'Expect vaginal bleeding for as long as 6 weeks.', 'Do not insert anything into the vagina for 6 weeks.', 'Avoid stairs and lifting anything heavier than 10 pounds.', 'Do not soak in tub.', 'Get plenty of rest.', 'Change dressing daily until drainage has stopped.', 'Remove sterile strips after 7 to 10 days.' ],
+      'Postpartum Depression (Blues)' = [ 'Get as much rest as possible, nap while infant naps.', 'Exercise, such as walking.', 'Eat a well-balanced diet.', 'Encourage family and friends to help with meal preparation, chores, infant care, and housework.', 'Talk about your feelings.' ] ],
+      reportToPCP: [ 'No improvement with home care measures or condition worsens', 'Fever, abdominal pain, or unusual vaginal discharge', 'Signs of infection: increased redness, pain, red streaks from the wound, warmth, foul-smelling or thick green drainage, or fever', 'Persistent depression' ],
+      seekEmergencyCare: [ 'Shortness of breath or difficulty breathing', 'Vaginal bleeding requiring use of more than one full-size pad per hour and weakness or dizziness', 'Altered mental status', 'Skin pale and moist' ]
     },
     'Pregnancy, Cold Symptoms': {
       keyQuestions: [ '' ],
