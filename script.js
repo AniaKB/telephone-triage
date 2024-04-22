@@ -3233,7 +3233,7 @@ const bodySystem = {
       seekEmergencyCare: [ null ]
     },
     'Contraception, Emergency (EC)': {
-      keyQuestions: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset (number of hours since last unprotected intercourse)', 'Cause', 'Medications', 'Birth Control History', 'Other Symptoms' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
       alertBullets: [ '' ],
