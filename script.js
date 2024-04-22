@@ -3264,35 +3264,25 @@ const bodySystem = {
       seekEmergencyCare: [ 'Signs of allergic reaction; difficulty breathing, sudden throat or tongue swelling, rash, or hives', 'Skin or lips turn gray, blue, or pale', 'Sudden onset of profuse sweating', 'Decrease in level of consciousness' ]
     },
     'Foreign Body, Vagina': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Object', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Piercing Problems (446)', 'Sexual Assault (539)', 'Vaginal Bleeding (630)', 'Vaginal Discharge/Pain/Itching (633)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Sharp object embedded in vagina', 'Profuse bleeding', 'Severe pain', 'Sexual assault', 'Rapid onset: rash, fever, peeling hands or feet, general ill feeling, vomiting, or diarrhea' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
-        },
-        {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
-        },
-        {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          B: 'Are any of the following present?',
+          list: [ ' Unable to remove foreign object after several tries', 'Swelling and tenderness', 'Foul-smelling discharge', 'Tampon left in vagina > 24 hours and cannot be removed', 'Unable to remove contraceptive or pleasure device' ],
+          true: 'Seek medical care within 24 hours. Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Do not try to remove sharp object or object that has broken inside vagina.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen). Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.', 'Watch for signs of infection: increased pain, discharge, fever, or swelling.' ],
+      reportToPCP: [ 'Unable to remove foreign object after several tries', 'Swelling and tenderness persist or worsen', 'Foul-smelling drainage or fever', 'Rash, fever, peeling hands or feet, general ill feeling, vomiting, or diarrhea' ],
+      seekEmergencyCare: [ 'Profuse bleeding', 'Severe pain' ]
     },
     'Genital Lesions': {
       keyQuestions: [ '' ],
