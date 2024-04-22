@@ -3285,35 +3285,35 @@ const bodySystem = {
       seekEmergencyCare: [ 'Profuse bleeding', 'Severe pain' ]
     },
     'Genital Lesions': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Genital Problems, Male (289)', 'Lice (404)', 'Piercing Problems (446)', 'Scrotal Problems (528)', 'Sexually Transmitted Disease (STD) (542)', 'Skin Lesions: Lumps, Bumps, and Sores (559)', 'Tattoo Problems (602)', 'Vaginal Discharge/Pain/Itching (633)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Are any of the following present?',
+          list: [ 'Severe pain', 'Signs of infection: increased pain, redness, swelling, drainage, warmth, fever' ],
+          true: 'Seek medical care within 4 to 12 hours'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
-        },
-        {
-          C: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Open sores', 'New onset of scattered clustered blisters', 'Fever and general ill feeling', 'Swollen glands in groin area', 'Vaginal or penile discharge or bleeding', 'Severe itching or burning', 'Sores elsewhere on the body', 'Pelvic pain', 'Foreign body', 'Painful lump at vaginal opening', 'No improvement > 3 days of home treatment for yeast infection' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          C: 'Are any of the following present?',
+          list: [ 'Diagnosed herpes, genital warts, or exposure to an STD and requests treatment', 'Painful urination or bowel movements', 'Painless rash or hard bumps in genital or rectal area > 24 hours' ],
+          true: 'Seek medical care within 48 hours'
+        },
+        {
+          D: 'Are any of the following present?',
+          list: [ 'Itchy red rash', 'History of recent strenuous activity and sweating', 'Pink, scaly, itchy rash on inner thighs, groin, or scrotum', 'Raised red, tender, or white or hard bumps', 'Painless rash or growths < 24 hours' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Soak in a warm bath.', 'Avoid bubble bath, harsh or perfumed soaps, scented toilet paper, or hygiene products.', 'Avoid sexual activity until symptoms subside.', 'Keep area clean and dry.', 'Wear cotton underwear and loose garments. Avoid restrictive clothing.', 'Try OTC cream (Lotrimin) for itchy rash. Follow instructions on the label.', 'If lice are suspected by the presence of small insects or eggs on pubic hairs, see Lice protocol.', 'If caller suspects an STD, refer to local public health department or clinic.' ],
+      reportToPCP: [ 'Signs of infection: pain, redness, swelling, drainage, warmth, red streaks, or swollen glands in the groin', 'No improvement after 2 days or condition worsens', 'Increased pain or swelling', 'Discharge or fever develops', 'Suspected exposure to an STD', 'Severe pain' ],
+      seekEmergencyCare: [ null ]
     },
     'Genital Problems, Male': {
       keyQuestions: [ '' ],
