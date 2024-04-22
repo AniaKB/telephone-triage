@@ -3347,35 +3347,35 @@ const bodySystem = {
       seekEmergencyCare: [ 'Persistent painful erection', 'Severe pain or swelling', 'Inability to urinate' ]
     },
     'Menstrual Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Provera Injection History', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Sexually Transmitted Disease (542)', 'Vaginal Bleeding (630)', 'Vaginal Discharge/Pain/Itching (633)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Persistent severe bleeding that requires use of more than one full-size sanitary pad per hour for 8', 'Passage of large blood clots or tissue and different than usual menstrual cycle', 'Severe pain and possible pregnancy', 'Sexually active and last menstrual period is 6–8 weeks ago and abdominal or shoulder pain or vaginal bleeding' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Unusually severe pain and no possibility of pregnancy', 'Unexplained fever (temperature > 100°F or 37.8°C) and abdominal pain', 'Fainting or dizziness sitting up or standing', 'Use of tampons and sudden high fever, sunburn-type rash, general ill feeling, dizziness, vomiting, watery diarrhea, rapid pulse, or headache' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Cramping interferes with school, work, or daily activity', 'Persistent vaginal discharge', 'Persistent vaginal bleeding for > 10 days or < 21 days since last period', 'Possible pregnancy and bleeding and no pain' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          D: 'Are any of the following present?',
+          list: [ ' Persistent pain after bleeding stops', 'Late period and history of increased stress, strenuous activity, significant weight loss, recent illness, stopped taking birth control pills, or older than 40 years of age', 'Light bleeding or mild abdominal discomfort midcycle', 'Irritability, bloating, headaches, or breast tenderness before period', 'Vaginal bleeding occurs after menopause', 'Breakthrough bleeding and taking birth control pills', 'Irregular periods', 'Postcoital bleeding' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ ' Take usual pain medication (aspirin, acetaminophen, ibuprofen, naproxen). Avoid aspirin and ibuprofen if pregnant. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist. Follow the directions on the label.', 'Apply heating pad or hot water bottle to abdomen for 20 to 30 minutes for abdominal discomfort or take a warm bath. Do not fall asleep on a heating pad.', 'Change tampons frequently, at least every 4 hours. Use pads at night.', 'Avoid using tampons if skin infection is present and near the genitals.', 'If period is > 2 weeks late, use home pregnancy kit on first morning urine sample.', 'For premenstrual symptoms, decrease salt, caffeine, and sugar in the diet and alcohol and cigarette use before menstruation.', 'Increase exercise to help reduce cramping and premenstrual symptoms' ],
+      reportToPCP: [ 'No improvement in 3 days or condition worsens', 'Menstrual cramps interfere with school, work, or daily activity', 'Fainting or dizziness sitting up or standing', 'Unexplained fever and abdominal pain' ],
+      seekEmergencyCare: [ 'Persistent severe bleeding requiring use of more than one full-size sanitary pad per hour for 8 hours', 'Passage of blood clots or tissue' ]
     },
     'Postpartum Problems': {
       keyQuestions: [ '' ],
@@ -3404,7 +3404,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3435,7 +3435,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3466,7 +3466,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3497,7 +3497,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3528,7 +3528,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3559,7 +3559,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3590,7 +3590,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3621,7 +3621,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3652,7 +3652,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3683,7 +3683,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3714,7 +3714,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3745,7 +3745,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3776,7 +3776,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3807,7 +3807,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3838,7 +3838,7 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
@@ -3869,11 +3869,12 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [],
+      homeCareInstructions: [ '' ],
       reportToPCP: [ '' ],
       seekEmergencyCare: [ '' ]
     },
   },
+  /*
   'Urination Problems': {
       'Bed-Wetting': {
         keyQuestions: [ '' ],
@@ -7856,8 +7857,8 @@ const bodySystem = {
         seekEmergencyCare: [ '' ]
       },
   }
+};*/
 };
-
 /* let Appendix = []; */
 
 alert("Please be aware that information has not been reviewed and may not be up to date. Use at own risk");
