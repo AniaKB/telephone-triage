@@ -3411,41 +3411,46 @@ const bodySystem = {
       seekEmergencyCare: [ 'Shortness of breath or difficulty breathing', 'Vaginal bleeding requiring use of more than one full-size pad per hour and weakness or dizziness', 'Altered mental status', 'Skin pale and moist' ]
     },
     'Pregnancy, Cold Symptoms': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
-      alertBullets: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestational Age', 'Number of Pregnancies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Breathing Problems (101)', 'Congestion (145)', 'Cough (163)', 'Earache (200)', 'Fever, Adult (241)', 'Pregnancy Problems (481)', 'Sore Throat (567)' ],
+      nurseAlert: null,
+      alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Shortness of breath, difficulty talking, or inability to talk', 'Chest pain', 'Temperature > 103°F (39.5°C)', 'Difficulty breathing for reasons other than nasal congestion' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Is the following present at 24 weeks of pregnancy?',
+          list: [ 'No fetal movement' ],
+          true: 'Seek medical care immediately'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Temperature > 101°F (38.4°C)', '>20 respirations per minute', 'Decreased fetal movement', 'Wheezing and unresponsive to home care measures', 'Fewer than 10 fetal movements in 1 hour' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Green or brown sputum or nasal discharge', 'Severe sore throat', 'History of asthma, diabetes, heart disease, or immunosuppression', 'Ear pain or drainage' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          E: 'Are any of the following present?',
+          list: [ ' Nasal congestion', 'Cough', 'Sore throat', 'Temperature < 101°F (38.4°C)', 'Malaise', 'Headache' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Monitor temperature every 4 hours.', 'Increase oral fluids to 6 to 8 glasses daily.', 'Use a warm moist vaporizer and change the water daily.', 'Gargle with salt water; sip warm chicken broth or suck on frozen hard candy for additional relief.', 'Limit activity; rest.', 'Monitor fetal movement; if fewer than 10 fetal movements in 1 hour, seek medical care.', 'Monitor contractions.', 'Apply petroleum jelly to nasal opening to protect from infection.', 'Use saline nose drops as needed for nasal congestion.' ],
+      reportToPCP: [ 'Sputum or nasal discharge green or brown', 'Severe sore throat', 'Temperature > 101°F (38.4°C)', 'Condition worsens or no improvement with home care measures', 'No or decreased fetal movement' ],
+      seekEmergencyCare: [ ' Shortness of breath, difficulty talking, or inability to talk', 'Chest pain', 'Significant vaginal bleeding', 'Temperature > 103°F (39.5°C)' ]
     },
     'Pregnancy, Fetal Movement Problems': {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3476,7 +3481,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3507,7 +3512,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3538,7 +3543,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3569,7 +3574,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3600,7 +3605,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3631,7 +3636,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3662,7 +3667,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3693,7 +3698,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3724,7 +3729,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3755,7 +3760,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3786,7 +3791,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3817,7 +3822,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
@@ -3848,7 +3853,7 @@ const bodySystem = {
       keyQuestions: [ '' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
-      alertBullets: [ '' ],
+      alertBullets: [ null ],
       assessment: [
         {
           A: '',
