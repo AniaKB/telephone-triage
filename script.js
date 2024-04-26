@@ -3447,35 +3447,35 @@ const bodySystem = {
       seekEmergencyCare: [ ' Shortness of breath, difficulty talking, or inability to talk', 'Chest pain', 'Significant vaginal bleeding', 'Temperature > 103°F (39.5°C)' ]
     },
     'Pregnancy, Fetal Movement Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestation', 'Number of Pregnancies', 'History', 'Medications' ],
+      otherProtocolstoConsider: [ 'Pregnancy, Hypertension (472)', 'Pregnancy, Leaking Vaginal Fluid (475)', 'Pregnancy Problems (481)', 'Pregnancy, Suspected Labor (485)', 'Pregnancy, Suspected Labor < 36 Weeks (488)', 'Pregnancy, Vaginal Bleeding (494)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Is there significant vaginal bleeding and pregnancy is > 20 weeks?',
+          list: [ null ],
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present and pregnancy is > 24 weeks?',
+          list: [ 'Severe abdominal pain', 'No fetal movement', 'Severe headache', 'Recent trauma to abdomen', 'Rupture of membrane with green-, brown-, or redstained fluid' ],
+          true: 'Seek medical care immediately'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Fewer than 10 fetal movements in 1 hour', 'Leakage of clear vaginal fluid', 'Strong, regular contractions', 'Headache not relieved by home care measures', 'Epigastric pain (right upper quadrant pain)', 'Vomiting and inability to keep fluids down', 'Small amount of bright red blood on pad, underwear, bed, or clothes', 'Visual disturbances' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
-        },
-        {
-          D: '',
-          list: [ '' ],
+          D: 'Is the following present?',
+          list: [ 'Decreased fetal movement, less than normal daily activity' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Empty the bladder.', 'Drink a glass of juice.', 'Lie down on left side and place hand on abdomen. Count any fetal movement (kick, jab, or roll). If fewer than 10 fetal movements in 1 hour, seek medical care.' ],
+      reportToPCP: [ 'Decreased fetal movement, less than normal daily pattern', 'Condition persists or worsens' ],
+      seekEmergencyCare: [ 'Severe abdominal pain', 'Significant vaginal bleeding' ]
     },
     'Pregnancy, Hypertension': {
       keyQuestions: [ '' ],
