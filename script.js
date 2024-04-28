@@ -3479,34 +3479,34 @@ const bodySystem = {
     },
     'Pregnancy, Hypertension': {
       keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestational Age', 'Number of Pregnancies', 'History', 'Medications' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      otherProtocolstoConsider: [ 'Pregnancy, Fetal Movement Problems (469)', 'Pregnancy Problems (481)', 'Pregnancy, Suspected Labor (485)', 'Pregnancy, Suspected Labor < 36 Weeks (488)' ],
+      nurseAlert: 'Use this protocol if pregnant and under treatment for known pregnancy-induced hypertension.',
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Are any of the following present?',
+          list: [ 'Seizure activity', 'Convulsions', 'Unresponsiveness', '>20 weeks’ gestation and:', 'severe abdominal pain', 'significant vaginal bleeding', 'imminent delivery, with fetal head crowning' ],
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Bright red vaginal bleeding', 'Severe headache', 'No fetal movement lower back', 'Epigastric pain (right upper quadrant)', 'Visual disturbances (blurred or double vision, spots before eyes, or seeing stars or halo around objects)' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Headache unrelieved by home care measures', 'Fewer than 10 fetal movements in 1 hour', 'Regular, strong contractions', 'Abdominal pain', 'Blood pressure elevated (if monitoring at home after resting)', 'Vomiting and inability to keep fluids down' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Gradual swelling of the feet or legs', 'Headache relieved by home care measures', 'Weight gain greater than 2 pounds per week', 'Nausea' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Rest on left side.', 'Monitor fetal movement; if fewer than 10 fetal movements in 1 hour, seek medical care.' ],
+      reportToPCP: [ 'Headache not relieved by home care measures', 'Weight gain greater than 2 pounds per week', 'Bright red vaginal bleeding', 'Fewer than 10 fetal movements in 1 hour', 'Sudden increase in swelling of hands, face, legs, or lower back', 'Epigastric pain (right upper quadrant)', 'Visual disturbances (blurred or double vision, spots before eyes, or seeing stars or halo around objects)' ],
+      seekEmergencyCare: [ ' Seizure activity', 'Unresponsiveness', 'Convulsions', 'Significant vaginal bleeding', 'Severe abdominal pain', 'Imminent delivery with fetal head crowning' ]
     },
     'Pregnancy, Leaking Vaginal Fluid': {
       keyQuestions: [ '' ],
