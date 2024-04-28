@@ -3478,7 +3478,7 @@ const bodySystem = {
       seekEmergencyCare: [ 'Severe abdominal pain', 'Significant vaginal bleeding' ]
     },
     'Pregnancy, Hypertension': {
-      keyQuestions: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestational Age', 'Number of Pregnancies', 'History', 'Medications' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
       alertBullets: [ null ],
