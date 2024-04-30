@@ -3509,7 +3509,7 @@ const bodySystem = {
       seekEmergencyCare: [ ' Seizure activity', 'Unresponsiveness', 'Convulsions', 'Significant vaginal bleeding', 'Severe abdominal pain', 'Imminent delivery with fetal head crowning' ]
     },
     'Pregnancy, Leaking Vaginal Fluid': {
-      keyQuestions: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestation', 'Number of Pregnancies', 'History', 'Medications' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
       alertBullets: [ null ],
