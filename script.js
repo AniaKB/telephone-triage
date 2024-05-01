@@ -3510,28 +3510,28 @@ const bodySystem = {
     },
     'Pregnancy, Leaking Vaginal Fluid': {
       keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestation', 'Number of Pregnancies', 'History', 'Medications' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      otherProtocolstoConsider: [ 'Pregnancy Problems (481)', 'Pregnancy, Suspected Labor (485)', 'Pregnancy, Suspected Labor < 36 Weeks (488)', 'Pregnancy, Vaginal Bleeding (494)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Are any of the following present and pregnancy is > 20 weeks?',
+          list: [ 'Rupture of membrane with prolapsed umbilical cord', 'Imminent delivery, with fetal head crowning', 'Significant vaginal bleeding (soaking > 1 pad per hour in > 2 hours or 6 pads in 12 hours)' ],
+          true: 'Call ambulance and Follow Emergency Instructions'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
+          B: 'Are any of the following present?',
+          list: [ 'Severe abdominal pain', 'No fetal movement', 'Green-, brown-, or red-stained fluid', 'Known breech or transverse position of fetus', '<37 weeks’ pregnant', 'Current herpes outbreak with regular, strong contractions or leaking of fluid' ],
+          true: 'Seek medical care immediately'
         },
         {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
+          C: 'Are any of the following present?',
+          list: [ 'Clear fluid leaking from vagina', 'Strong, regular contractions', 'Fever or chills', 'Fewer than 10 fetal movements in 1 hour' ],
+          true: 'Seek medical care within 2 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Lost mucous plug', 'Irregular contractions', 'Increase of mucus-like vaginal discharge' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
