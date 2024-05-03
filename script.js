@@ -3535,9 +3535,9 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Emergency Care Instructions:' = [ 'If leaking vaginal fluid and umbilical cord is prolapsed, calmly tell the patient to hand the telephone to someone else to call ambulance andget on hands and knees in the knee–chest position, with head down and buttocks up' ], 'Home Care Instructions:' = [ 'Remember it is not unusual to lose the mucous plug in the weeks before true labor.', 'Monitor fetal movement; if fewer than 10 fetal movements in 1 hour, seek medical care.', 'Monitor contractions; if contractions are strong, last 45 to 60 seconds, and occur in a regular pattern every 5 minutes for 1 to 2 hours, or if contractions are increasing in intensity or strength, go to the delivering facility.', 'Empty the bladder.', 'Put on a clean, dry sanitary pad. Reevaluate in 1 hour. If the pad is wet, there is continued leakage of vaginal fluid, or if you are unsure, seek medical care.' ] ],
+      reportToPCP: [ 'Spotting', 'Fewer than 10 fetal movements in 1 hour', 'Strong regular contractions', 'Fever or chills', 'Clear fluid leaking from vagina' ],
+      seekEmergencyCare: [ 'Rupture of membranes with prolapsed umbilical cord', 'Imminent delivery, with fetal head crowning', 'Severe abdominal pain', 'Green- or brown-stained fluid', 'Significant vaginal bleeding', 'No fetal movement' ]
     },
     'Pregnancy, Nausea and Vomiting': {
       keyQuestions: [ '' ],
