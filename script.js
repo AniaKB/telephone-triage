@@ -3576,35 +3576,46 @@ const bodySystem = {
       seekEmergencyCare: [ 'Fainting', 'Altered mental status', 'Vomiting bright red blood or dark coffee-grounds–like emesis', 'Chest pain or difficulty breathing' ]
     },
     'Pregnancy Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Gestation', 'Number of Pregnancies', 'History', 'Medications' ],
+      otherProtocolstoConsider: [ 'Back Pain (59)', 'Breast Problems (98)', 'Constipation (152)', 'Diarrhea, Adult (185)', 'Foot Problems (257)', 'Headache (303)', 'Heartburn (313)', 'Hemorrhoids (324)', 'Pregnancy, Hypertension (472)', 'Pregnancy, Leaking Vaginal Fluid (475)', 'Pregnancy, Nausea and Vomiting (478)', 'Pregnancy, Suspected Labor (485)', 'Pregnancy, Suspected Labor < 36 Weeks (488)', 'Pregnancy, Urination Problems (491)', 'Pregnancy, Vaginal Bleeding (494)', 'Swelling (595)' ],
+      nurseAlert: 'There are many conditions that can occur during pregnancy. When there are multiple associated symptoms, focus on the primary concern that has the highest probability of a referral to a higher level of care.',
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Pregnancy of > 20 weeks, and are any of the following present?',
+          list: [ 'Imminent delivery with fetal head crowning', 'Severe headache, double or blurred vision, disorientation, dizziness, or irritability', 'Previous trauma to mitral valve area, fall, blunt injury to abdomen, etc.', 'Passing large clots', 'Seizure', 'Severe abdominal pain', 'Leaking fluid with prolapsed umbilical cord', 'Diagnosed preeclampsia with new symptoms' ],
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'No fetal movement', 'Sudden swelling in face, hands, legs, or lower back', 'Headache, spots in front of eyes, dizziness, fainting, or vomiting', 'Regular contractions or leaking vaginal fluid' ],
+          true: 'Seek medical care immediately'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Known hypertension and blood pressure is increasing', 'Leg pain, swelling, redness, or warmth that worsens with weight bearing', 'Pain, vaginal bleeding, or fever', 'Persistent headache unresponsive to pain relievers', 'Persistent vomiting of all foods and fluids and/or abdominal pain', 'Fewer than 10 fetal movements in 1 hour' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Urgent, frequent, or painful urination', 'Sudden weight gain > 3 pounds per week during the second trimester or > 1 pound per week during the third trimester', 'Cough with pain, shortness of breath, or yellow, green, or bloody sputum', 'Fever > 101°F (38.3°C) for > 2 days', 'Earache or sore throat > 2 days', 'Generalized rash of unknown cause and itching', 'Diarrhea and fever, bloody stools, > 10 stools a day, severe abdominal pain, vomiting' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          E: 'Are any of the following present?',
+          list: [ 'Nausea and vomiting (morning sickness) during first trimester', 'Dizziness, lightheadedness, or fainting', 'Heartburn', 'Hemorrhoids', 'Swelling of hands, fingers, feet, or legs', 'Aches and pain in back, legs, feet, or groin' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'If diagnosed with preeclampsia or preterm labor, rest while lying on left side.',
+        'Nausea and Vomiting' = [ 'Do not eat or drink for 1 hour after last emesis.', 'Take small sips of clear fluid for first 12 hours after vomiting.', 'Increase fluids as tolerated.', 'After 12 hours of no vomiting, try bland foods (crackers, dry toast, bananas).', 'Resume normal diet after 12 hours if no emesis.', 'Morning sickness:', 'Eat dry bread, cereal, or crackers upon rising in the morning.', 'Get up slowly.', 'Open window for fresh air while sleeping or cooking.', 'Eat several small meals during the day. Avoid fluids with meals.', 'Drink ginger ale or orange or grape juice between meals.', 'Avoid fatty or highly seasoned foods.', 'Avoid lying down immediately after a meal.', 'Eat crackers, cheese, or pretzels if nauseated. Lightheadedness and Dizziness', 'Get up slowly; avoid sudden changes in posture.', 'Avoid lying flat on back or standing for prolonged periods of time.', 'Avoid hot, stuffy rooms.', 'Do not skip meals.' ],
+        'Heartburn' = [ 'Sleep with several pillows or elevate the head of the bed on several blocks.', 'Eat frequent small meals.', 'Change position frequently.', 'Suck on hard candy or sip hot tea.', 'Antacids (Maalox, Tums) may help reduce discomfort. Follow instructions on the label.' ],
+        'Hemorrhoids' = [ 'Avoid straining with bowel movements.', 'Drink 10 to 12 glasses of water a day.', 'Eat lots of fresh fruits, whole grains, and vegetables.', 'Take warm baths.', 'Use hemorrhoidal creams, suppositories, or medicated pads (Preparation H) as needed for discomfort. Follow instructions on the label.' ],
+        'Swelling' = [ 'Minimize salt in diet.', 'Massage feet.', 'Elevate legs above the heart.', 'Wear supportive hose.', 'Avoid tight-fitting clothing or bands around the abdomen.', 'Sleep on left side.' ],
+        'Aches and Pains' = [ 'Massage affected areas.', 'Apply moist heat to area.', 'Lie on affected side and draw leg up to chest.', 'Crawl on all fours and rock pelvis forward several times a day.', 'Take acetaminophen for discomfort if desired, and follow instructions on the label. Do not take aspirin.' ],
+      ],
+      reportToPCP: [ 'Conditions persist or worsen after home care measures', 'Less than 10 movements < 1 hour' ],
+      seekEmergencyCare: [ 'Imminent delivery', 'Severe headache, double or blurred vision, disorientation, dizziness', 'Passing large clots', 'Severe abdominal pain', 'Leaking vaginal fluid with prolapsed umbilical cord', 'Sudden swelling in face, hands, legs, or lower back', 'Headache, spots in front of eyes', 'Regular contractions or leaking vaginal fluid', 'No fetal movement' ]
     },
     'Pregnancy, Suspected Labor': {
       keyQuestions: [ '' ],
