@@ -3540,35 +3540,40 @@ const bodySystem = {
       seekEmergencyCare: [ 'Rupture of membranes with prolapsed umbilical cord', 'Imminent delivery, with fetal head crowning', 'Severe abdominal pain', 'Green- or brown-stained fluid', 'Significant vaginal bleeding', 'No fetal movement' ]
     },
     'Pregnancy, Nausea and Vomiting': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Frequency', 'Gestation', 'Number of Pregnancies', 'History', 'Medications' ],
+      otherProtocolstoConsider: [ 'Dehydration (173), Dizziness (192)', 'Diarrhea, Adult (185)', 'Headache (303)', 'Head Injury (307)', 'Pregnancy, Hypertension (472)', 'Pregnancy Problems (481)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Are any of the following present?',
+          list: [ 'Chest pain', 'Difficulty breathing', 'Altered mental status', 'Pregnancy > 20 weeks and any of the following are present:', 'vomiting bright red blood or dark coffee-grounds– like emesis', 'recent head injury', 'fainting', 'sweating or palpitations' ],
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Is the following present?',
+          list: [ 'No fetal movement and gestational age > 24 weeks' ],
+          true: 'Seek medical care now'
+        },
+        {
+          C: 'Are any of the following present?',
+          list: [ 'Diarrhea', 'Temperature > 100.4°F (38.9°C)', 'Dehydration symptoms', 'Diabetes', 'Cramps or regular, strong contractions', 'Inability for > 24 hours to keep down fluids', 'Dark amber urine', 'Epigastric pain (right upper quadrant pain)', 'Fewer than 10 fetal movements < 1 hour' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Nausea and vomiting or heartburn unrelieved by home care measures', 'Nausea but able to keep down some fluids or food' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          E: 'Are any of the following present?',
+          list: [ 'Urine yellow', 'Heartburn' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Do not drink or eat for 1 hour after last emesis.', 'Take small sips of clear fluid for first 12 hours after vomiting.', 'Increase fluids as tolerated.', 'After 12 hours of no vomiting, try bland foods (crackers, dry toast, bananas).', 'Resume normal diet after 12 hours if no emesis.', 'Morning sickness:' = [ 'Eat dry bread, cereal, or crackers upon rising in the morning.', 'Get up slowly.', 'Open window for fresh air while sleeping or cooking.', 'Eat several meals during the day; avoid fluids with meals.', 'Drink ginger ale or orange or grape juice between meals.', 'Avoid fatty or highly seasoned foods.', 'Avoid lying down immediately after a meal.', 'Eat crackers, cheese, or pretzels if nauseated.' ]],
+      reportToPCP: [ 'Nausea and vomiting or heartburn unrelieved by home care measures', 'Continuous nausea but able to keep down food', 'Condition worsens', 'No or decreased fetal movements' ],
+      seekEmergencyCare: [ 'Fainting', 'Altered mental status', 'Vomiting bright red blood or dark coffee-grounds–like emesis', 'Chest pain or difficulty breathing' ]
     },
     'Pregnancy Problems': {
       keyQuestions: [ '' ],
