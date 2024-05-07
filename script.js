@@ -3618,7 +3618,7 @@ const bodySystem = {
       seekEmergencyCare: [ 'Imminent delivery', 'Severe headache, double or blurred vision, disorientation, dizziness', 'Passing large clots', 'Severe abdominal pain', 'Leaking vaginal fluid with prolapsed umbilical cord', 'Sudden swelling in face, hands, legs, or lower back', 'Headache, spots in front of eyes', 'Regular contractions or leaking vaginal fluid', 'No fetal movement' ]
     },
     'Pregnancy, Suspected Labor': {
-      keyQuestions: [ '' ],
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestational Age', 'Number of Pregnancies', 'Medications', 'History' ],
       otherProtocolstoConsider: [ '' ],
       nurseAlert: '',
       alertBullets: [ null ],
