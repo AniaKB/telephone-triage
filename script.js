@@ -3619,34 +3619,34 @@ const bodySystem = {
     },
     'Pregnancy, Suspected Labor': {
       keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestational Age', 'Number of Pregnancies', 'Medications', 'History' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11)', 'Pregnancy, Fetal Movement Problems (469)', 'Pregnancy, Leaking Vaginal Fluid (475)', 'Pregnancy Problems (481)', 'Pregnancy, Suspected Labor < 36 Weeks (488)', 'Pregnancy, Urination Problems (491)', 'Pregnancy, Vaginal Bleeding (494)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'More than 20 weeks pregnant, and are any of the following present?',
+          list: [ 'Imminent delivery with fetal head crowning', 'Significant vaginal bleeding', 'Seizure or convulsions', 'Severe abdominal pain', 'Rupture of membranes with prolapsed umbilical cord' ],
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
+          B: 'Are any of the following present?',
+          list: [ 'Severe headache', 'Known breech or transverse position of fetus at first sign of contractions or leaking of fluid', 'Leaking brown or green vaginal fluid', 'Current herpes outbreak with regular, strong contractions', 'Contractions and < 37 weeks’ gestation', 'No fetal movement' ],
+          true: 'Seek medical care immediately'
         },
         {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
+          C: 'Are any of the following present?',
+          list: [ 'First pregnancy and strong, regular contractions (every 5 minutes, lasting 45–60 seconds, for 1–2 hours)', 'Pregnancy other than first and strong, regular contractions (every 5–10 minutes, lasting 45–60 seconds, for 1–2 hours)', 'Leaking clear vaginal fluid', 'History of known hypertension, diabetes, or other pregnancy complications', 'History of rapid labor', 'Long driving distance to delivering facility', 'Fewer than 10 fetal movements in 1 hour', 'Contractions increasing in intensity or strength', 'Pelvic pressure' ],
+          true: 'Seek medical care within 2 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Irregular contractions', 'Spotting', 'Aches and pain in back, feet, or groin', 'Urgency, frequency, or pain with urination' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Walk, shower, massage, apply warm or cold packs to back for comfort, change positions, or use pelvic rocking to help with early labor.', 'Eat light meals.', 'Monitor contractions: frequency = start of one contraction to the start of the next contraction (i.e., 5 minutes); duration = how long the contraction lasts (i.e., 30 to 45 seconds).', 'Monitor fetal movement; if fewer than 10 fetal movements in 1 hour, seek medical care.', 'If leaking vaginal fluid and umbilical cord is prolapsed:', 'hand telephone to someone else to call ambulance', 'get on hands and knees in the knee–chest position, with head down and buttocks up', 'Increase fluid intake; avoid caffeine. If contracting, drink 32 ounces of fluid, lie on left side, and monitor contractions. If > 4 contractions in 1 hour, call back. Keep bladder empty.' ],
+      reportToPCP: [ 'Conditions persist or worsen after home care measures', 'Leaking clear, brown, or green vaginal fluid', 'Fewer than 10 fetal movements in 1 hour' ],
+      seekEmergencyCare: [ 'Imminent delivery with fetal head crowning', 'Seizure', 'Significant vaginal bleeding', 'Severe abdominal pain', 'Rupture of membranes with prolapsed umbilical cord' ]
     },
     'Pregnancy, Suspected Labor < 36 Weeks': {
       keyQuestions: [ '' ],
