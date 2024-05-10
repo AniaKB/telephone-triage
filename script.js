@@ -3657,22 +3657,22 @@ const bodySystem = {
         {
           A: 'Are any of the following present and pregnancy between 20 and 36 weeks?',
           list: [ 'Severe abdominal pain', 'Leaking fluid and prolapsed umbilical cord', 'Significant bright red vaginal bleeding', 'Imminent delivery with fetal head crowning' ],
-          true: 'Seek emergency care now'
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
           B: 'Are any of the following present?',
           list: [ 'No fetal movement', 'History of cervical cerclage', 'Six or more contractions in 1 hour', 'Leaking of vaginal fluid', 'Multiple gestation and four or more contractions in 1 hour', 'Any contractions with known placenta previa or partial abruption' ],
-          true: 'Seek medical care within 2 to 4 hours'
+          true: 'Seek medical care immediately'
         },
         {
           C: 'Are any of the following present?',
           list: [ 'Four to five contractions in 1 hour', 'Fever/chills', 'Painful, frequent, or urgent urination', 'Current herpes outbreak with first sign of contractions', 'Any contractions with known breech or transverse lie of fetus', 'Fewer than 10 fetal movements in 1 hour', 'Menstrual-like cramps', 'Pelvic pressure', 'New-onset lower backache', 'Any rhythmic pain', 'Increasing vaginal discharge', 'Groin pain', 'History of preterm labor medications' ],
-          true: 'Seek medical care within 24 hours'
+          true: 'Seek medical care within 2 hours'
         },
         {
           D: 'Are any of the following present?',
           list: [ 'Lost mucous plug', 'Fewer than four painless contractions in 1 hour' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
       homeCareInstructions: [ 'Rest on left side, and monitor contractions.', 'Drink fluids.', 'Monitor fetal movement.', 'Empty the bladder.', 'Avoid nipple stimulation and intercourse.' ],
@@ -3680,35 +3680,30 @@ const bodySystem = {
       seekEmergencyCare: [ 'Imminent delivery, with fetal head crowning', 'Leaking vaginal fluid and prolapsed umbilical cord', 'Significant vaginal bleeding', 'Severe abdominal pain' ]
     },
     'Pregnancy, Urination Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestational Age', 'Number of Pregnancies', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Pregnancy, Leaking Vaginal Fluid (475)', 'Pregnancy Problems (481)', 'Pregnancy, Suspected Labor (485)', 'Pregnancy, Suspected Labor < 36 Week (488)', 'Pregnancy, Vaginal Bleeding (494)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
-        },
-        {
-          B: '',
-          list: [ '' ],
+          A: 'Are any of the following present and pregnancy of > 20 weeks?',
+          list: [ 'Temperature > 100°F (37.8°C)', 'Chills or headache', 'Flank pain', 'Hematuria (blood in urine)', 'Decreased fetal movement', 'Strong, regular contractions', 'Symptoms of preterm labor (< 37 weeks’ gestation):', 'pelvic pressure', 'lower backache', 'any rhythmic pain', 'groin pain', 'menstrual-like cramps', 'pink discharge', 'bloody show' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Pain or burning with urination', 'Cloudy or dark urine', 'Difficulty starting a stream', 'Frequent, urgent, or painful urination' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          C: 'Is the following present?',
+          list: [ 'Difficulty urinating after sexual activity' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Drink lots of fluids.', 'Drink cranberry juice 3 times a day or take 500 mg of vitamin C 3 times a day.', 'Urinate before and after intercourse.', 'Wipe from front to back after using the bathroom.', 'Wash hands after using the bathroom.', 'Wear cotton underwear.', 'Monitor temperature, fetal movements, and contractions.', 'For difficulty starting to urinate, turn on water faucet (sound of running water can help to stimulate urination) and pour warm water over perineum while sitting on the toilet.' ],
+      reportToPCP: [ 'Condition worsens or no improvement' ],
+      seekEmergencyCare: [ null ]
     },
     'Pregnancy, Vaginal Bleeding': {
       keyQuestions: [ '' ],
