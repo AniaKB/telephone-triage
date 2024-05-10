@@ -3649,35 +3649,35 @@ const bodySystem = {
       seekEmergencyCare: [ 'Imminent delivery with fetal head crowning', 'Seizure', 'Significant vaginal bleeding', 'Severe abdominal pain', 'Rupture of membranes with prolapsed umbilical cord' ]
     },
     'Pregnancy, Suspected Labor < 36 Weeks': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Due Date', 'Number of Pregnancies', 'Gestational Age', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Pregnancy, Fetal Movement Problems (469)', 'Pregnancy, Leaking Vaginal Fluid (475)', 'Pregnancy, Suspected Labor (485)', 'Pregnancy, Urination Problems (491)', 'Pregnancy, Vaginal Bleeding (494)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Are any of the following present and pregnancy between 20 and 36 weeks?',
+          list: [ 'Severe abdominal pain', 'Leaking fluid and prolapsed umbilical cord', 'Significant bright red vaginal bleeding', 'Imminent delivery with fetal head crowning' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'No fetal movement', 'History of cervical cerclage', 'Six or more contractions in 1 hour', 'Leaking of vaginal fluid', 'Multiple gestation and four or more contractions in 1 hour', 'Any contractions with known placenta previa or partial abruption' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Four to five contractions in 1 hour', 'Fever/chills', 'Painful, frequent, or urgent urination', 'Current herpes outbreak with first sign of contractions', 'Any contractions with known breech or transverse lie of fetus', 'Fewer than 10 fetal movements in 1 hour', 'Menstrual-like cramps', 'Pelvic pressure', 'New-onset lower backache', 'Any rhythmic pain', 'Increasing vaginal discharge', 'Groin pain', 'History of preterm labor medications' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Lost mucous plug', 'Fewer than four painless contractions in 1 hour' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Rest on left side, and monitor contractions.', 'Drink fluids.', 'Monitor fetal movement.', 'Empty the bladder.', 'Avoid nipple stimulation and intercourse.' ],
+      reportToPCP: [ 'No fetal movement or fewer than 10 movements in 1 hour', 'More than four contractions in 1 hour', 'Increasing vaginal discharge', 'Any contractions with known placenta previa or partial abruption', 'Urgent, frequent, or painful urination', 'Fever or chills' ],
+      seekEmergencyCare: [ 'Imminent delivery, with fetal head crowning', 'Leaking vaginal fluid and prolapsed umbilical cord', 'Significant vaginal bleeding', 'Severe abdominal pain' ]
     },
     'Pregnancy, Urination Problems': {
       keyQuestions: [ '' ],
