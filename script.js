@@ -3706,35 +3706,35 @@ const bodySystem = {
       seekEmergencyCare: [ null ]
     },
     'Pregnancy, Vaginal Bleeding': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Gestational Age', 'Number of Pregnancies', 'Number of Saturated Pads', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Pregnancy Problems (481)', 'Pregnancy, Suspected Labor < 36 Weeks (488)', 'Pregnancy, Urination Problems (491)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Pregnancy > 20 weeks, and are any of the following present?',
+          list: [ 'Severe abdominal pain', 'Imminent delivery with fetal head crowning', 'Rupture of membranes with suspected prolapsed umbilical cord', 'Decreased level of consciousness', 'Fainting', 'Soaking > one full-size pad in < 1 hour and weakness', 'Soaking > one full-size pad per hour for > 2 hours or > 6 pads in 12 hours' ],
+          true: 'Call ambulance or Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
+          B: 'Are any of the following present?',
+          list: [ 'No fetal movement and > 20 weeks pregnant', 'Moderate vaginal bleeding (need to wear a sanitary pad but not saturating)', 'Bright red bleeding, trickling down leg', 'Known placenta previa or abruption with any bleeding', 'Any recent trauma', 'Abdominal pain' ],
+          true: 'Seek medical care immediately'
         },
         {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
+          C: 'Are any of the following present?',
+          list: [ 'Fewer than 10 fetal movements in 1 hour', 'Strong, regular contractions', 'Leaking of clear amniotic fluid', 'Small amount of bright red blood on pad, underwear, bed, or clothes' ],
+          true: 'Seek medical care within 2 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          D: 'Is the following present?',
+          list: [ 'Spotting; dark brown or pink blood seen when wiping or a small amount on underwear' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Dark brown or pink spotting can occur after recent intercourse or recent vaginal examination.', 'Monitor fetal movements; if fewer than 10 fetal movements in 1 hour, seek medical care.', 'Monitor contractions.' ],
+      reportToPCP: [ 'Spotting is dark brown or pink when wiping or on underwear', 'No improvement or condition worsen' ],
+      seekEmergencyCare: [ ' Significant vaginal bleeding', 'Fainting or decreased level of consciousness', 'Severe abdominal pain', 'Imminent delivery with fetal head crowning', 'Leaking fluid and prolapsed umbilical cord' ]
     },
     'Scrotal Problems': {
       keyQuestions: [ '' ],
