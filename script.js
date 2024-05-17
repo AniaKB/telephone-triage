@@ -3737,66 +3737,61 @@ const bodySystem = {
       seekEmergencyCare: [ ' Significant vaginal bleeding', 'Fainting or decreased level of consciousness', 'Severe abdominal pain', 'Imminent delivery with fetal head crowning', 'Leaking fluid and prolapsed umbilical cord' ]
     },
     'Scrotal Problems': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Cause', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Genital Lesions (286)', 'Genital Problems, Male (289)', 'Piercing Problems (446)', 'Sexually Transmitted Disease (542)', 'Urination, Painful (626)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Severe testicular pain and swelling and are any of the following present?',
+          list: [ 'Injury to genitals < 48 hours ago', 'No known injury, sudden onset of pain, swelling, fever, nausea, vomiting', 'Scrotum black, blue, or bright red' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Injury to genitals > 48 hours ago with pain and swelling', 'Gradual onset of pain, fever, or swelling', 'One enlarged testicle', 'Unable to reduce scrotal swelling in infant in whom fever, vomiting, and irritability are present' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          C: 'Are any of the following present?',
+          list: [ 'Painless lump or swelling', 'Sores or painful red rash on scrotal sac', 'Signs of infection: pain, swelling, redness, warmth, red streaks, or drainage', 'Scrotal itching, redness, swelling, or discomfort' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Is the following present?',
+          list: [ 'Painless rash < 24 hours' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'While waiting for appointment or visit, support scrotum on rolled towel, apply ice pack to area, and wear supporter.', 'Take your usual pain medication (aspirin, acetaminophen, ibuprofen) for discomfort. Do not give aspirin to a child. Avoid aspirin-like products if age < 20 years. Avoid acetaminophen if liver disease is present. Avoid ibuprofen if kidney disease or stomach problems exist or in the case of pregnancy. Follow the directions on the label.' ],
+      reportToPCP: [ 'Any lump', 'No improvement after 48 hours or condition worsens', 'Signs of infection: pain, swelling, redness, warmth, red streaks, or drainage', 'Pain for > 2 weeks', 'Pain with urination', 'Fever' ],
+      seekEmergencyCare: [ 'Testicles turn black, blue, or bright red' ]
     },
     'Sexual Assault': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Blood/Body Fluid Exposure (88)', 'Child Abuse (127)', 'Domestic Abuse (195)', 'Foreign Body, Rectum (269)', 'Foreign Body, Vagina (277)', 'Rectal Problems (513)', 'Sexually Transmitted Disease (STD) (542)', 'Vaginal Bleeding (630)', 'Vaginal Discharge/Pain/Itching (633)' ],
+      nurseAlert: 'Many sexual assault victims are confused about what to do after an assault. Encourage to go the ED where a sexual assault examination can be performed by staff specially trained in sexual assault evidence collection, examination, support, and follow up. Instruct not to shower before going to the ED. In some states the RN sexual assault examiner can examine victims and collect evidence in locations other than the ED. Refer to the services available in your local area.',
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Sexual assault is in process at time of call', 'Victim is seriously injured, unconscious, or dead' ],
+          true: 'Call ambulance and local police'
+        },
+        {
+          B: 'Sexual assault has occurred and are any of the following present?',
+          list: [ 'Vaginal or anal tearing or bleeding', 'Suspected fractures or dislocations', 'Abrasions, lacerations, bruising, discoloration, or swelling', 'Difficulty breathing, chest pain, or abdominal pain', 'Victim requests an examination and collection of evidence', 'Victim is a minor' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
-        },
-        {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
-        },
-        {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          C: 'Sexual assault has occurred and victim requests a medical examination without collection of evidence or has questions and concerns. Ask the following questions:',
+          list: [ 'Are you in a safe environment now?', 'Are you alone?', 'Where is the abuser now?', 'Do you have family or friends who can help you?', 'Have you called the police?', 'Have you called a rape crisis center or rape hotline?' ],
+          true: 'Seek medical care within 24 hours and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Advise the victim to stay in a safe and supportive environment.', 'Encourage the victim to have a medical examination with testing for STDs and pregnancy.', 'Encourage the victim to report the incident to the police.', 'Encourage the victim to call a rape crisis center or rape hotline.', 'Advise caller not to shower or change clothes before the medical examination.' ],
+      reportToPCP: [ 'Pain or bleeding persists or worsens', 'Feelings of anger, depression, suicidal thoughts, or uncontrollable crying', 'Fever, discharge, or sores develop' ],
+      seekEmergencyCare: [ null ]
     },
     'Sexually Transmitted Disease (STD)': {
       keyQuestions: [ '' ],
