@@ -3851,35 +3851,33 @@ const bodySystem = {
       seekEmergencyCare: [ 'Severe pain interferes with activity', 'Soaking more than one full-size pad in < 1 hour and weakness', 'Decreased level of consciousness', 'Skin pale and moist', 'Soaking > 2 pads or tampons per hour for > 2 hours or 1 pad or tampon per hour for > 6 hours' ]
     },
     'Vaginal Discharge/Pain/Itching': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Allergies', 'Medications', 'History', 'Pain Scale' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Fever, Adult (241), Child (244)', 'Genital Lesions (286)', 'Menstrual Problems (407)', 'Sexually Transmitted Disease (STD) (542)', 'Vaginal Bleeding (630)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
-        },
-        {
-          B: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Severe pelvic pain interferes with activity', 'Temperature > 102.0°F (38.9°C), increased pain, chills, shakes, or vomiting', 'Foul-smelling vaginal discharge, pain, or itching and history of recent trauma, rape, surgery, pregnancy, or abortion', 'Last menstrual period > 6 weeks ago, abdominal pain, suspicion of pregnancy' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Itching interferes with activity', 'Temperature > 100.0°F (37.8°C)', 'Foul odor and large amount of discharge', 'Green, brown, or white cottage-cheese–like discharge', 'Exposure to venereal disease or other STD and request for an examination', 'Painful sores or irritation on labia or vagina', 'History of one ovary and of child-bearing age', 'Tampon in place and unable to remove' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          C: 'Are any of the following present?',
+          list: [ 'Frequent use of scented feminine hygiene products', 'Pain during or after intercourse', 'Last Papanicolaou smear > 1 year ago', 'Small amount of clear, white, or yellow discharge', 'Recent prolonged sexual activity', 'Concerned about possible STD and no known exposure', 'Painless sore on labia or vagina', 'Onset of symptoms while on antibiotics', 'Exposure to chemicals or bubble bath' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Note how discharge differs from usual discharge and understand that it is important that there might be a need for further investigation.',
+      'For Swelling, Itching, or Irritation' = [ 'Soak in a tub of warm water (avoid scented bubble baths).', 'Wear loose-fitting undergarments and clothing.', 'Wear underwear with cotton-lined crotch.', 'Avoid scented feminine hygiene products, tampons, sanitary pads, and toilet tissue.', 'Apply clotrimazole Gyne-Lotrimin cream to the area. Ask your pharmacist for other OTC product suggestions.', 'Apply cool compresses to the area.'],
+      'For Discharge' = [ 'Eat yogurt daily to help prevent infection while taking antibiotics.', 'Clean the area frequently.'],
+      'For Known Infection' = [ 'Notify partner of infection and the need for treatment.', 'Use a condom during sexual activity to help prevent cross-infection.', 'Apply heating pad to abdomen for discomfort.', 'Avoid sexual intercourse while symptoms are present or until examined by PCP.'] ],
+      reportToPCP: [ ' Temperature > 102.0°F (38.9°C), shakes, chills, vomiting, or increased pain', 'Symptoms persist > 3 days', 'Foul odor and large amount of discharge' ],
+      seekEmergencyCare: [ null ]
     },
   },
   /*
