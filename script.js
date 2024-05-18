@@ -3794,30 +3794,25 @@ const bodySystem = {
       seekEmergencyCare: [ null ]
     },
     'Sexually Transmitted Disease (STD)': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset', 'Suspected STD', 'Known or Suspected Exposure to STD', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Blood/Body Fluid Exposure (88)', 'Genital Lesions (286)', 'Genital Problems, Male (289)', 'Sexual Assault (539)', 'Urination, Painful (626)', 'Vaginal Discharge/Pain/Itching (633)' ],
+      nurseAlert: 'Use this protocol if known STD, exposure or suspected exposure to STD. Sexually Transmitted Disease Table: Appendix N (687) is provided to help the nurse gain a better understanding of many sexually transmitted diseases, their mode of disease transmission, incubation period, and contagious period. It is NOT to be used to try and diagnose a caller’s condition.',
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
-          true: 'Seek emergency care now'
+          A: 'Are any of the following present?',
+          list: [ 'Victim of sexual assault', 'Unprotected sex with known HIV carrier', 'Unprotected anal, oral, or vaginal sex with suspected HIV carrier' ],
+          true: 'Seek medical care now to discuss options'
         },
         {
-          B: '',
-          list: [ '' ],
-          true: 'Seek medical care within 2 to 4 hours'
-        },
-        {
-          C: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Suspected or known exposure to STD', 'Vaginal or penile discharge', 'Vaginal, penile, or perineal lesions', 'Pelvic pain with or without fever' ],
           true: 'Seek medical care within 24 hours'
         },
         {
-          D: '',
-          list: [ '' ],
-          true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
+          C: 'Are any of the following present?',
+          list: [ 'Possible vaginal yeast infection', 'Known genital herpes' ],
+          true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
       homeCareInstructions: [ '' ],
