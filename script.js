@@ -3848,7 +3848,7 @@ const bodySystem = {
       ],
       homeCareInstructions: [ 'Remember that breakthrough bleeding is not unusual at the time of ovulation, during the first 3 months of a regimen of birth control pills, while taking Provera, or with emotional crisis.', 'Change tampons frequently.', 'If fever, chills, or muscle aches occur while using tampons, discontinue use and notify PCP if condition persists or worsens.', 'If miscarriage is suspected, do not flush toilet; save tissue and clots for physician to examine.' ],
       reportToPCP: [ 'Bleeding persists or worsens', 'Severe abdominal pain', 'Fever, chills, or muscle aches', 'Passing tissue or large clots' ],
-      seekEmergencyCare: [ ' Severe pain interferes with activity', 'Soaking more than one full-size pad in < 1 hour and weakness', 'Decreased level of consciousness', 'Skin pale and moist', 'Soaking > 2 pads or tampons per hour for > 2 hours or 1 pad or tampon per hour for > 6 hours' ]
+      seekEmergencyCare: [ 'Severe pain interferes with activity', 'Soaking more than one full-size pad in < 1 hour and weakness', 'Decreased level of consciousness', 'Skin pale and moist', 'Soaking > 2 pads or tampons per hour for > 2 hours or 1 pad or tampon per hour for > 6 hours' ]
     },
     'Vaginal Discharge/Pain/Itching': {
       keyQuestions: [ '' ],
