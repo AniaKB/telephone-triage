@@ -3815,40 +3815,40 @@ const bodySystem = {
           true: 'Call back or call PCP for appointment if no improvement and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'A warm bath may ease discomfort of herpes but will not cure it. Avoid sex when open sores are present. Use latex condoms at all times.', 'If unprotected sex has occurred with multiple partners or with a person who is known to have or is suspected of having HIV, obtain a laboratory test for HIV infection immediately and then 3 and 6 months after the initial exposure. Avoid the potential of infecting others and yourself by using a condom or abstaining from sex. Contact PCP or Health Department Clinic for testing. Possible medical treatment is available immediately after contact.', 'Both partners should be tested and treated for STDs and should avoid unprotected sexual contact.', 'Discuss STD and HIV exposure history with a new partner before engaging in sexual intimacy.', 'Use latex condoms (unless an allergy to latex exists).' ],
+      reportToPCP: [ 'At risk for HIV infection and persistent illness, fatigue, weight loss, diarrhea, swollen glands, sores, dry cough, or night sweats', 'Suspected exposure to STD', 'Unusual vaginal or penile discharge, genital lesions, or genital pain', 'Known genital herpes and unable to tolerate persistent discomfort', 'Pelvic pain with or without fever' ],
+      seekEmergencyCare: [ 'null' ]
     },
     'Vaginal Bleeding': {
-      keyQuestions: [ '' ],
-      otherProtocolstoConsider: [ '' ],
-      nurseAlert: '',
+      keyQuestions: [ 'Name', 'Age', 'Onset (see Pregnancy, Vaginal Bleeding (494) if pregnant)', 'Number of Saturated Pads or Tampons and Size', 'Medications', 'History' ],
+      otherProtocolstoConsider: [ 'Abdominal Pain, Adult (11), Child (14)', 'Pregnancy Problems (481)', 'Pregnancy, Vaginal Bleeding (494)', 'Sexual Assault (539)', 'Vaginal Discharge/Pain/Itching (633)' ],
+      nurseAlert: null,
       alertBullets: [ null ],
       assessment: [
         {
-          A: '',
-          list: [ '' ],
+          A: 'Are any of the following present?',
+          list: [ 'Recent rape or trauma', 'Pregnancy > 20 weeks and sudden bleeding', 'Soaking more than one full-size pad in < 1 hour and weakness', 'Decreased level of consciousness', 'Skin pale and moist', 'Sudden unexpected bright red bleeding', 'Soaking > 2 pads or tampons per hour > 2 hours or > 1 pad or tampon per hour > 6 hours' ],
           true: 'Seek emergency care now'
         },
         {
-          B: '',
-          list: [ '' ],
+          B: 'Are any of the following present?',
+          list: [ 'Pelvic pain with bleeding (different from usual menstrual discomfort)', 'Unusually heavy bleeding', 'Postmenopause and sudden bleeding or spotting (not taking medroxyprogesterone [Provera])', 'Dizziness or light-headedness when sitting up', 'Recent abortion and increased bleeding, pain, or fever' ],
           true: 'Seek medical care within 2 to 4 hours'
         },
         {
-          C: '',
-          list: [ '' ],
-          true: 'Seek medical care within 24 hours'
+          C: 'Are any of the following present?',
+          list: [ 'Pregnancy and bleeding' ],
+          true: 'Go to Pregnancy, Vaginal Bleeding (494) protocol'
         },
         {
-          D: '',
-          list: [ '' ],
+          D: 'Are any of the following present?',
+          list: [ 'Small amount of bleeding:', 'after intercourse', 'during first 3 months of taking birth control pills', 'missed birth control pill mid-cycle', 'postmenopause and use of Provera', 'Bleeding > 10 days' ],
           true: 'Call back or call PCP for appointment if no improvement” and Follow Home Care Instructions'
         }
       ],
-      homeCareInstructions: [ '' ],
-      reportToPCP: [ '' ],
-      seekEmergencyCare: [ '' ]
+      homeCareInstructions: [ 'Remember that breakthrough bleeding is not unusual at the time of ovulation, during the first 3 months of a regimen of birth control pills, while taking Provera, or with emotional crisis.', 'Change tampons frequently.', 'If fever, chills, or muscle aches occur while using tampons, discontinue use and notify PCP if condition persists or worsens.', 'If miscarriage is suspected, do not flush toilet; save tissue and clots for physician to examine.' ],
+      reportToPCP: [ 'Bleeding persists or worsens', 'Severe abdominal pain', 'Fever, chills, or muscle aches', 'Passing tissue or large clots' ],
+      seekEmergencyCare: [ ' Severe pain interferes with activity', 'Soaking more than one full-size pad in < 1 hour and weakness', 'Decreased level of consciousness', 'Skin pale and moist', 'Soaking > 2 pads or tampons per hour for > 2 hours or 1 pad or tampon per hour for > 6 hours' ]
     },
     'Vaginal Discharge/Pain/Itching': {
       keyQuestions: [ '' ],
